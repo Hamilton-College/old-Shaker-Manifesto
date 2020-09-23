@@ -1,1 +1,29 @@
+Div2:
+type:
+section
+article
+national-news - National News
+letter - Correspondence
+hymn - 	Hymns
+humor - Humor
+ann lee - Mother Ann Lee
+aphorism - Sayings
+lesson - Moral/religious lessons
+poem - Poetry
 
+Div3:
+type:
+food - Food
+recipe - Recipes
+health
+crops
+house - Health and Sanitation
+book notice - Book and Journals
+shaker-report - Shaker Community Reports
+none
+obituary
+editorial
+poem - Poetry
+letter - Correspondence
+publication
+fiction
