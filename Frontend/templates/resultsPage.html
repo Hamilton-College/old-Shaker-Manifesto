@@ -8,9 +8,13 @@
 </head>
 <body>
     <div class="container">
+        <div id="first">
+            <a href="http://elib.hamilton.edu/">
+            <img src="../static/Images/Hamilton Library Logo.PNG" alt="Hamilton logo"width="145" height="60", class = "HamiltonLogo" >
+            </a>
+        </div>
         <!-- <h2> <a class="simpleSearch" href = "index.html"> Simple Search </a></h2> -->
-        <img src="../static/Images/Shaker Manifesto Logo.PNG" alt="Shaker logo"width="200" height="60", class = "ShakerLogo" >
-        <p>Search results will be displayed here</p>
+        <img src="../static/Images/Shaker Manifesto Logo.PNG" alt="Shaker logo"width="200" height="60", class = "ShakerLogoResults" >
         <!-- <div class="searchBar">
             <input class="searchText" type="text" name="" placeholder="Search">
             <a class="searchButton" href="http://www.google.com"> </a>
@@ -18,6 +22,29 @@
         <!-- <form action="#" method="post">
 
         </form> -->
+        <br>
+        <div class="resultsSearchBar">
+            <!-- # we want the hash to be something else -->
+            <form action= "resultsPage.html" method="GET"> 
+                <input type="text", name="query">
+                <input type="submit" value="search">
+            </form>
+        </div>
+        <br><br><br>
+        <p>Search results related to "{{enteredText}}" will be displayed here</p>
+        
+        {%if topics%}
+            <p>The specific topics include: {{topics}}</p> <br><br>
+        {%endif%}
+        <p>Results:</p>
+        {%if query%} <!-- If we don't want advanced search to work this way, we can call query something else since it's using a different function anyway -->
+            {% for i in query%}
+                <p>- Article {{i}}</p>
+            {%endfor%}
+        {%endif%}
+
+
+        
         
     </div>
 </body>

@@ -13,14 +13,16 @@
     <div class="container">
         <div id="wrapper">
             <div id="first">
-                <img src="../static/Images/Hamilton Library Logo.PNG" alt="Shaker logo"width="200" height="80", class = "HamiltonLogo" >
+                <a href="http://elib.hamilton.edu/">
+                <img src="../static/Images/Hamilton Library Logo.PNG" alt="Shaker logo"width="145" height="60", class = "HamiltonLogo" >
             </div>
             <div id="second">
                 <h2> <a class="advancedSearch" href = "advancedSearch.html"> Advanced Search </a></h2>
             </div>
         </div>
-        <br><br><br>
-        <img src="../static/Images/Shaker Manifesto Logo.PNG" alt="Shaker logo"width="800" height="200", class = "ShakerLogo" >
+        <br>
+        <br>
+        <img src="../static/Images/Shaker Manifesto Logo.PNG" alt="Shaker logo"width="600" height="150", class = "ShakerLogo" >
         
         <!-- <div class="searchBar">
             <form method="POST">
@@ -30,13 +32,12 @@
 
         </div> -->
         <div class="searchBar">
-            <!-- # we want the hash to be something else -->
+            <!-- the action needs to be # so that we don't go to another page. and method needs to be post in order to put it in the dict -->
             <form action= "#" method="POST"> 
-                <input type="text", name="nm">
-                <input type="submit" value="submit">
+                <input type="text", name="query">
+                <input type="submit" value="search">
             </form>
         </div>
-        
     </div>
     <!-- bootstrap scripts for styling -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
