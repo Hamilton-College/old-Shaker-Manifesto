@@ -1,5 +1,7 @@
 from fast_autocomplete import AutoComplete
 
+AUTOCOMPLETE = None
+
 def init():
     names = None
     with open("names.txt") as file:
@@ -9,7 +11,9 @@ def init():
     return AutoComplete(words=words)
 
 
-def search(ac, s):
+def search(s):
+    if not AUTOCOMPLETE:
+        init()
     return sorted(ac.search(word=s, max_cost=3, size=10))
 
 def main():
