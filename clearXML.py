@@ -71,45 +71,27 @@ def get_xml_names(filename):
     xml_traverse(root, names)
     return names
 
-    # dict = {}
-    # xml = open(filename, "r")
-    # print("Retrieving names from: " + filename)
-    # r = re.compile("<persName\s*reg=\"(?P<name>[^\"]+)\"\s*TEIform=\"persName\"((/>)|(>\s*(?P<alias>[^<]+)\s*</persName>))")
-    #
-    # c = xml.read(1)
-    # while c:
-    #     if c == '<' and xml.read(8) == 'persName':
-    #         tag = "<persName"
-    #         print("enter loop")
-    #         while r.match(tag) is None:
-    #             c = xml.read(1)
-    #             # if not c:
-    #             #     break
-    #             tag += c
-    #         print(tag)
-    #         m = r.match(tag)
-    #         if m:
-    #             print(m.groups())
-    #             dict.get(m.group("name").strip(), []).append(m.group("alias"))
-    #             # dict[m.group("alias").strip()] = m.group("name").strip()
-    #
-    #     while True:
-    #         try:
-    #             loc = xml.tell()
-    #             c = xml.read(1)
-    #             break
-    #         except UnicodeDecodeError:
-    #             print(loc + 1)
-    #             continue
-    #
-    # xml.close()
-    # return dict
-
 def xml_traverse(root, names):
     for elem in root:
         if elem.attrib.get("TEIform") == "persName":
             names.append(elem.attrib.get("reg"))
         xml_traverse(elem, names)
+
+
+def clean_text(filename):
+    l = []
+    with open(filename) as f:
+        for line in f.readlines():
+            word = ""
+            for c in line:
+                if ord('A') <= ord(c) and ord(c) <= ord('Z') or\
+                        ord('a') <= ord(c) and ord(c) <= ord('z'):
+                    word += c
+                elif word and word[-1] != ' ' and c in [' ', '\t', '\n', '\r', '.', ',', '-']:
+                    word += ' '
+            for w in word.split():
+                l.append(w.strip())
+    print(*sorted(list(set(l))), sep='\n')
 
 
 def main():
@@ -123,8 +105,11 @@ def main():
         # filename = sys.argv[1]
         # print("Cleaning file: " + filename)
         # cleanXML(filename)
-        f = open(sys.argv[1])
-        print(*sorted(list(set([line.strip() for line in f]))), sep='\n')
+
+        # f = open(sys.argv[1])
+        # print(*sorted(list(set([line.strip() for line in f]))), sep='\n')
+
+        clean_text(sys.argv[1])
     elif len(sys.argv) == 3 and sys.argv[1] == '-c':
         s = set()
         for filename in os.listdir(sys.argv[2]):

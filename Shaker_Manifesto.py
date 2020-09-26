@@ -17,8 +17,5 @@ def advancedSearch():
 def results():
     return render_template("resultsPage.html")
 
-
-
-
 if __name__ == "__main__":
     app.run(debug=True)
