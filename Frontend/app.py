@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template, redirect, url_for
 from flask_mysqldb import MySQL 
 
+
 app = Flask(__name__)
 
 app.config["MYSQL_HOST"] = "localhost"
@@ -84,6 +85,13 @@ def basicResults1(enteredText, query=None): # this input str var will eventually
     # this is to figure out if it's a topic or query
     print(type(query))
     query = query.split("),")
+    for i in range(len(query)):
+        j = 0
+        while(j < len(query[i])):
+            if(query[i][j].isalnum() == False):
+                query[i] = query[i].replace(query[i][j], "", 1)
+            else:
+                j += 1
     print(query)
     return render_template("resultsPage.html", query=query, enteredText=enteredText)#, topics=topics)
 

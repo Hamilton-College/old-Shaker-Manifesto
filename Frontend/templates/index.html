@@ -31,13 +31,23 @@
             </form>
 
         </div> -->
-        <div class="searchBar">
-            <!-- the action needs to be # so that we don't go to another page. and method needs to be post in order to put it in the dict -->
+        <form autocomplete="off" action="/action_page.php">
+        <div class="autocomplete" style="width:300px;">
+            <input id="myInput" type="text" name="myCountry" placeholder="Country">
+        </div>
+        <input type="submit">
+        </form>
+        <script>
+            autocomplete(document.getElementById("myInput"), countries);
+        </script>
+
+        <!-- Combine the following with autocomplete. Uncomment this: -->
+        <!-- <div class="searchBar">
             <form action= "#" method="POST"> 
                 <input type="text", name="query">
                 <input type="submit" value="search">
             </form>
-        </div>
+        </div> -->
     </div>
     <!-- bootstrap scripts for styling -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
