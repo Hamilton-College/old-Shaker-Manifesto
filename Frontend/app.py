@@ -1,5 +1,5 @@
 from flask import Flask, request, render_template, redirect, url_for
-from flask_mysqldb import MySQL 
+from flask_mysqldb import MySQL
 
 
 app = Flask(__name__)
@@ -11,16 +11,17 @@ app.config["MYSQL_DB"] = "sample-db"
 
 mysql = MySQL(app)
 
-# BASIC SEARCH 
+# BASIC SEARCH
 
 # POST is to send/change data.
 @app.route("/", methods=["POST", "GET"])
 def basicSearch():
+    print(app.root_path)
     if(request.method == "GET"):
         return render_template("index.html")
     else: # POST
         if(not request.form["query"]):
-            return render_template("index.html") # maybe display a flash message here 
+            return render_template("index.html") # maybe display a flash message here
 
         query = request.form["query"] # name in brackets matches the name of the post form in the HTML
         enteredText = query
@@ -30,8 +31,8 @@ def basicSearch():
         curr.execute(queryString)
         fetchdata = curr.fetchall()
         curr.close()
-        
-        # return render_template("resultsPage.html", query=query) # query(left) is the name of the variable we put in the html. 
+
+        # return render_template("resultsPage.html", query=query) # query(left) is the name of the variable we put in the html.
         return redirect(url_for("basicResults1", query=fetchdata, enteredText = enteredText)) # put in the function of the url you want to go to
 
 
@@ -55,7 +56,7 @@ def displayAdvanced():
         query = request.form["query"] # name matches the name of the post form in the HTML
         query = query.upper()
         print("query:", query)
-            # return render_template("resultsPage.html", query=query) # query(left) is the name of the variable in results.html. Right var is the one here. 
+            # return render_template("resultsPage.html", query=query) # query(left) is the name of the variable in results.html. Right var is the one here.
         if(query and topics):
             return redirect(url_for("advancedResults", query=query, topics = topics)) # put in the function of the url you want to go to
         elif(not topics):

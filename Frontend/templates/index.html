@@ -23,7 +23,7 @@
         <br>
         <br>
         <img src="../static/Images/Shaker Manifesto Logo.PNG" alt="Shaker logo"width="600" height="150", class = "ShakerLogo" >
-        
+
         <!-- <div class="searchBar">
             <form method="POST">
                 <input class="searchText" type="submit" name="query" placeholder="Search">
@@ -31,23 +31,24 @@
             </form>
 
         </div> -->
-        <form autocomplete="off" action="/action_page.php">
+        <!-- <form autocomplete="off" action="/action_page.php">
         <div class="autocomplete" style="width:300px;">
-            <input id="myInput" type="text" name="myCountry" placeholder="Country">
+            <input id="search_term" type="text" name="myCountry" placeholder="Name">
         </div>
         <input type="submit">
         </form>
-        <script>
-            autocomplete(document.getElementById("myInput"), countries);
-        </script>
+        <script type="text/text/javascript" src="../static/javascript/autocomplete.js">
+            autocomplete(document.getElementById("search_term"));
+        </script> -->
 
         <!-- Combine the following with autocomplete. Uncomment this: -->
-        <!-- <div class="searchBar">
-            <form action= "#" method="POST"> 
-                <input type="text", name="query">
+        <div class="searchBar">
+            <form action= "#" method="POST" autocomplete=off>
+                <input id="MySearchTerm" type="text", name="query", onkeydown="AutoComplete()">
                 <input type="submit" value="search">
             </form>
-        </div> -->
+            <script type="text/javascript" src="../static/javascript/AutoComplete.js" defer> </script>
+        </div>
     </div>
     <!-- bootstrap scripts for styling -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

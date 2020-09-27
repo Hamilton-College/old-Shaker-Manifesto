@@ -1,4 +1,5 @@
 from fast_autocomplete import AutoComplete
+from flask import request
 
 AUTOCOMPLETE = None
 
@@ -12,16 +13,20 @@ def init():
 
 
 def search(s):
-    if not AUTOCOMPLETE:
-        init()
-    return sorted(ac.search(word=s, max_cost=3, size=10))
+    global AUTOCOMPLETE
+    if AUTOCOMPLETE is None:
+        AUTOCOMPLETE = init()
+    return sorted(AUTOCOMPLETE.search(word=s, max_cost=3, size=10))
 
 def main():
-    autocomplete = init()
+    AUTOCOMPLETE = init()
     s = input("::>")
     while s != "exit":
-        print(*search(autocomplete, s), sep='\n')
+        print(*search(s), sep='\n')
         s = input("::>")
+
+
+
 
 if __name__ == "__main__":
     main()
