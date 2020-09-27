@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI.2 id="spe-sha-tm1901" TEIform="TEI.2"><teiHeader type="text" status="new" TEIform="teiHeader"><fileDesc TEIform="fileDesc"><titleStmt TEIform="titleStmt"><title level="j" TEIform="title">The Manifesto</title></titleStmt><extent n="pagination" TEIform="extent">28</extent><publicationStmt TEIform="publicationStmt"><publisher TEIform="publisher">Hamilton College Library</publisher><pubPlace TEIform="pubPlace">Clinton, New York, United States of America</pubPlace></publicationStmt><sourceDesc default="NO" TEIform="sourceDesc"><biblStruct default="NO" TEIform="biblStruct"><monogr TEIform="monogr"><imprint TEIform="imprint"><publisher TEIform="publisher">United Societies</publisher><pubPlace TEIform="pubPlace">Shaker Village, New Hampshire</pubPlace><biblScope type="volume" TEIform="biblScope">19</biblScope><biblScope type="issue" TEIform="biblScope">1</biblScope><date value="18890101" TEIform="date">January 1889</date><biblScope type="pages" TEIform="biblScope">1-24</biblScope></imprint></monogr></biblStruct></sourceDesc></fileDesc></teiHeader><text TEIform="text"><body TEIform="body"><div0 type="volume" n="19" org="uniform" sample="complete" part="N" TEIform="div0"><div1 type="issue" n="1" org="uniform" sample="complete" part="N" TEIform="div1"><!--
+                    <pb n="t.p." id="p1"/>
+                    <p>JANUARY. THE MANIFESTO Published by the United Societies, Vol. XIX. "For what is a man profited, if he shall gain the
+                        whole world, and lose his own soul? or what shall a man give in exchange for his soul."—Matt. XVI., 26. Canterbury,
+                       N. H., 1889.</p>
+                    --><!--
+                    <pb id="p2"/>
+                    <div2 type="none">
+                        <p>CONTENTS. Page. Shaker Church Covenant, 3 Earthly Riches, 12 Letter—L. M. Pomeroy, \3 F. W. Evans, Rambling
+                            Thoughts, 14 Bible Study, 15 Welcome, New Year, 18 Vegetarianism, 19 What an appetite, 21 Dec. 31st, " Coming
+                            Millennium, , " Letter—Daniel Orcutt, 22 The Brooklet, - " Prisoner's Study, Tyndal's Testament, 23 Seeds of
+                            Good and 111, " Books & Papers, 24 Everyday Work, Deaths, .... -</p>
+                    </div2>
+                    <div2 type="section">
+                        <head>
+                            <index level1="Advertisements"/>[Advertisements]</head>
+                        <p>[Advertisements deleted.]</p>
+                    </div2>
+                --><pb n="1" id="p3" TEIform="pb"/><div2 type="publication" org="uniform" sample="complete" part="N" TEIform="div2"><p TEIform="p">MANIFESTO Published by the United Societies. VOL. XIX. For what is a man profited, if he
+                            shall gain the whole world, and lose his own soul? or what shall a man give in exchange for
+                            his soul."—Matt. XVI., 26. Shaker Village, N. H., 1889. THE</p></div2><pb n="2" id="p4" TEIform="pb"/><pb n="3" id="p5" TEIform="pb"/><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Shaker church covenant" TEIform="index"/>SHAKER CHURCH COVENANT</head><p TEIform="p">PREAMBLE. We, the Brethren and Sisters of the United Society of Believers (called Shakers,)
+                            residing in the county of____—, and State of--------, being connected together as a
+                            religious and social community, distinguished by the name and title of the Church of the
+                            United Society, in the town of--------, which for many years has been established and in
+                            successful operation, under the charge of the Ministry and Eldership thereof, and, feeling
+                            the importance not only of renewing and confirming our spiritual covenant with God and each
+                            oilier, but also of renewing and improving our social compact, and amending the written form
+                            thereof, do make, ordain, and declare the following articles of agreement as a summary of
+                            the principles, rules and regulations established in the Church of the said United Society,
+                            which are to be kept and maintained by us, both in our collective and individual capacities,
+                            as a covenant or constitution, which shall stand as a lawful testimony of our religious and
+                            social compact, before all men, and in all cases of question and law relating to the
+                            possession and improvement of our united and consecrated interest, property, and estate :
+                            ARTICLE I. Of the Gospel Ministry. Section 1. Their origin, call and institution : We
+                            solemnly declare to each other and to all whom it may concern, that we have received, and do
+                            hereby acknowledge as the foundation of our faith, order and government, the testimony or
+                            Gospel of Christ, in his first and second appearing, and we do hereby solemnly agree to
+                            support and maintain the true primitive faith and Christian principles, the morals, rules
+                            and manners pertaining to the said Gospel, as ministered by the founders of this Society,
+                            and kept and conveyed through a regular order of ministration, down to the present day. And,
+                            although, as a religious society, <pb n="4" id="p6" TEIform="pb"/> THE MANIFESTO. we are variously
+                            associated, with respect to the local situations of our respective communities, yet we are
+                            known and distinguished as a peculiar people, and consider and acknowledge ourselves as
+                            members of one general community, possessing one faith, and subject to one united, parental
+                            and ministerial administration, which has been regularly supported from the first foundation
+                            pillars of the Institution, and which continues to operate for the support, protection and
+                            strength of every part of said community. Section 2. Their order and office : We further
+                            acknowledge and declare that for the purpose of promoting and maintaining union, order and
+                            harmony throughout the various branches of this community, the primary administration of
+                            parental authority has been settled in the first established Ministry at New Lebanon, N. Y.,
+                            there to rest and remain as the center of union to all who are in Gospel relation and
+                            communion with the Society. The established order of this Ministry includes four persons ;
+                            two of each sex. Section 3. Perpetuity of their office and how supplied : We further
+                            acknowledge and declare that the said primary administration of parental authority has been
+                            and is perpetuated as follows : Namely, that the first in that office and calling possesses
+                            the right given by the sanction of divine authority, through the first founders of this
+                            Society, to prescribe or direct any regulation or appointment which they may judge most
+                            proper and necessary respecting the Ministry or any other important matter which may concern
+                            the welfare of the Church, subsequent to their decease. But in case no such regulation or
+                            appointment be so pre- scribed or directed, then the right to direct and authorize such
+                            regulation and appointment devolves upon the surviving members of the Ministry, in council
+                            with the Elders of the Church, or others, as the nature of the case in their judgment may
+                            require. Such appoint- ments being officially communicated to all concerned, and receiving
+                            the general approbation of the Church, are confirmed and supported in the Society. This is
+                            agreeable to the example recorded in the Scriptures, and continued by the founders of this
+                            Society, and is the order and manner which has been regularly practiced, acknowledged, and
+                            maintained in the Community from the beginning. Section 4. Of the Ministerial office in the
+                            several societies or communities : We further acknowledge and declare, covenant and agree
+                            that the Ministerial cffice and authority in any Society or Community of our faith, which
+                            has emanated, or which may emanate, in a regular line cf order from the center of union
+                            aforesaid, is, and shall be acknowledged, owned and respected, as the spiritual and primary
+                            authority of such Society or Community, in all matters pertaining to the Ministerial office.
+                            And in case of the decease or removal of any individual of said Ministry, in any such
+                            Society, his or her lot and place shall be filled by agreement of the surviving Ministers,
+                            in council with the Elders and others, as the nature of the case may require, together with
+                            the 4 <pb n="5" id="p7" TEIform="pb"/> THE MANIFESTO. knowledge and approbation of the primary
+                            Ministerial authority at New Lebanon, N. Y., aforesaid, to which they are responsible.
+                            Section 5. Powers and duties of the Ministry: The Ministry being appointed and established
+                            as aforesaid are vested with the primary authority of the Church and its various branches.
+                            Hence, it becomes their special duty to guide and superintend the spiritual concerns of the
+                            Society as a body of people under their care and government, and in connection with the
+                            Elders in their respective families and departments, who shall act in union with them, to
+                            give and establish such orders, rules and regulations as may be found necessary for the
+                            government and protection of the Church and Society within the limits of their jurisdiction,
+                            and also to counsel, advise and judge in all matters of importance, whether spiritual or
+                            temporal. The said Ministry are also invested with authority in connection with the Elders
+                            as aforesaid, to nominate and appoint to office Ministers, Elders, Deacons, and Trustees,
+                            and to assign offices of care and trust to such brethren and sisters as they, the said
+                            Ministers and Elders, shall judge to be best qualified for the several offices to which they
+                            may be appointed ; and we do hereby covenant and agree that such nominations and
+                            appointments being made and officially communicated to those concerned, and receiving the
+                            general approbation of the Church, or of the families concerned, shall thenceforth be
+                            confirmed and supported, until altered or revoked by the authority aforesaid. ARTICLE II.
+                            Institution of the Church. Section 1. The object and design of Church relation : We further
+                            acknowledge and declare that the great object, purpose and design of our uniting ourselves
+                            together as a church or body of people, in social and religious compact, is faithfully and
+                            honestly to occupy, improve and diffuse the various gifts and talents, both of a spiritual
+                            and ^temporal nature, with which Divine wisdom has blest us, for the service of God, for the
+                            honor of the Gospel, and for the mutual protection, support, comfort and happiness of each
+                            other as brethren and sisters in the Gospel, aod for such other pious and charitable
+                            purposes as the Gospel may require. Section 2. Who are not admissible into Church relation:
+                            As the unity, stability and purity of the Church essentially depend on the character and
+                            qualifications of its members, and as it is a matter of importance that it should not be
+                            encumbered with persons who are under any involvement or incapacity, natural or moral:
+                            Therefore, no member of any company or association in business or civil concern, no
+                            co-partner in trade, no person under any legal embarrassment or obligations of service, no
+                            minor, no slave or bond servant, no insane person, no profane person, nor any person who
+                            lives in the willful violation of the known and acknowledged principles of moral conduct,
+                            shall be deemed qualified for admission 5 <pb n="6" id="p8" TEIform="pb"/> THE MANIFESTO. into the
+                            covenant relation and communion of the Church. Section 3. Preparation for admission into
+                            Church relation : In order that believers may be prepared for entering into the sacred
+                            privilege of Church relation, it is of primary importance that sufficient opportunity and
+                            privilege should be afforded under the Ministry of the Gospel, for them to acquire suitable
+                            instruction in the genuine principles of righteousness, honesty, justice and true holiness,
+                            and also that they should prove their faith and Christian morality by their practical
+                            obedience to the precepts of the Gospel according to their instructions. It is also
+                            indispensably necessary for them to receive the one uniting spirit of Christ, and to become
+                            so far of one heart and one mind, that they are willing to sacrifice all other relations for
+                            this sacred one. Another essential step, is to settle all just and equitable claims of
+                            creditors and filial heirs, so that whatever property they may possess, shall be justly
+                            their own. When this is done, and they feel themselves sufficiently prepared to make a
+                            deliberate and final choice, to devote themselves, with all they possess, wholly to the
+                            service of God, without reserve, and it shall be deemed proper by the leading authority of
+                            the Church, after examination and due consideration, to allow them to associate together in
+                            the capacity of a Church, or a branch thereof in Gospel order, they may then consecrate
+                            themselves and all they possess to the service of God forever, and confirm the same by
+                            signing and sealing a written covenant predicated upon the principles herein contained, and
+                            fulfilling on their part, all its obligations. Section 4. Admission of new members : As the
+                            door must be kept open for the admission of new members into the Church, when duly prepared,
+                            it is agreed that each and every person who shall at any time after the date and execution
+                            of the Church Covenant, in any branch of the Community, be admitted into the Church as a
+                            member thereof, shall previously have a fair opportunity to obtain a full, clear and
+                            explicit understanding of the object and design of the Church Covenant, and of the
+                            obligations it enjoins upon the members. For this purpose, he or she shall, in the presence
+                            of two of the deacons or acting trustees of the Church, read, or hear the same distinctly
+                            read, so as to be able freely to acknowledge his or her full approbation and acceptance
+                            thereof, in all its parts. Then he, she or they (as the case may be,) shall be at liberty to
+                            sign the same; and having signed and sealed it, and being subject to all the obligations
+                            required of the original signers shall thenceforth be entitled to all the benefits and
+                            privileges thereunto appertaining; and the signature or signatures thus added shall be
+                            certified by the said deacons or trustees, together with the date thereof. Section 5.
+                            Concerning youth and children : Youth and children, being minors, cannot be received as
+                            members of the Church possessing a concentrated interest in a united capacity, yet it is
+                            agreed that they may be received under the immediate care and government of the Church, at
+                            the desire or consent of such person or persons as have a lawful right 6 <pb n="7" id="p9" TEIform="pb"/>
+                            THE MANIFESTO. to or control of such minors, together with their own desire or consent. But
+                            no minor under the care of" the Church can be employed therein for wages of any kind.
+                            ARTICLE III. Of the Trusteeship. Section 1. Appointment, qualifications and powers of
+                            Trustees : It has been found necessary for the establishment of order in the Society m its
+                            various branches, that superintending Deacons and Deaconesses should be appointed and
+                            authorized to act as Trustees or agents of the temporalities of the Church. They must be
+                            recommended by honesty and integrity, their fidelity in trust and their capacity for the
+                            transaction of business; of these qualifications the Ministry and Elders must be the judges.
+                            The official Trustees of the Church are generally known among us by the title of Office
+                            Deacons, of which there must be two or more; and being appointed by the authority afore-
+                            said, they are invested with power to take the general charge and oversight of all the
+                            property, estate and interest, dedicated, devoted, consecrated and given up for the benefit
+                            of the Church ; to hold in trust the fee of all the lands belonging to the Church ; also all
+                            gifts, grants and donations which have been, or may hereafter be dedicated, devoted,
+                            consecrated and given up as aforesaid ; and the said property, estate, interest, gifts,
+                            grants and donations shall constitute the united and consecrated interest of the Church, and
+                            shall be held in trust by the said Deacons, as acting Trustees, in their official capacity,
+                            and by their successors in said office and trust forSection 2. Duties of the Trustees : It
+                            is and shall be the duty of the said Deacons or acting Trustees to improve, use and
+                            appropriate the said united interest for the benefit of the church in all its departments ;
+                            and for such other religious and charitable purposes as the Gospel may require ; and also to
+                            make all just and equitable defense in law for the protection and security of the
+                            consecrated and united interest, rights and privileges of the Church and Society, jointly
+                            and severally as an associated community, as far as circumstances and the nature of the case
+                            may require; Provided, nevertheless, that all the transactions of the said Deacons or acting
+                            Trustees, in the use, management, protection, defense and disposal of the aforesaid
+                            interest, shall be for the benefit and privilege m,d in behalf of the Church or Society as
+                            aforesaid; and not for any private interest, object or purpose whatever. Section 3. Trustees
+                            to give information and be responsible to the Ministry and Elders: It shall also be the duty
+                            of the Trustees to give information to the Ministry and Elders of the church of the general
+                            state of the temporal concerns of the church and society committed to their charge ; and
+                            also to report to the said authority all losses sustained in the united interest thereof,
+                            which shall come under their cognizance. And no disposal of any real estate of the Church,
+                            nor any important contract shall be con7 ever. <pb n="8" id="p10" TEIform="pb"/> THE MANIFESTO. sidered
+                            valid without the previous approbation of the authority aforesaid, to whom the said Deacons
+                            and Trustees are and shall, at all times, be held responsible in all their transactions.
+                            Section 4. Books of account and record to be kept: It shall also be the duty of the Deacons
+                            or acting Trustees to keep or cause to be kept, regular books of account, in which shall be
+                            entered the debt and credit accounts of all mercantile operations and business transactions
+                            between the Church and others ; all receipts and expenditures, bonds, notes and bills of
+                            account, and all other matters that concern the united interest of the church ; and also a
+                            book or books of records, in which shall be recorded a true and correct copy of this
+                            Covenant; also all appointments, removals and changes in office of Ministry, Elders, Deacons
+                            and Trustees ; all admissions, removals, departure and decease of members, together with all
+                            other matters and trans- actions of a public nature which are necessary to be recorded for
+                            the benefit of the Church, and for the preservation and security of the documents, papers
+                            and written instruments pertaining to the united interest and concerns of the church,
+                            committed to their charge. And the said record shall be annually inspected by the leading
+                            authority of the church, who, together with the Trustees, shall be the official auditors of
+                            the same ; and the signature of one or more of said auditors, with the date of inspection
+                            and approval shall be deemed sufficient authority for the correctness and validity of the
+                            facts and matters so recorded. Section 5. Trustees to execute a declara'ion of trust: For
+                            the better security of the united and consecrated interest of the Church to the proper uses
+                            and purposes stipulated in this covenant, it shall be the duty of the Trustee or Trustees,
+                            who may be vested with the lawful title or claim to the real estate of the Church, to make
+                            and execute a declaration of trust, in due form of law, embracing all and singular the
+                            lands, tenements and hereditaments, with every matter of interest pertaining to the Church
+                            which at the time being may be vested in him or them, or that may in future come under his
+                            or their charge of office, during his or their said Trusteeship. The said declaration shall
+                            state expressly that the said Trustee or Trustees hold all such lands, tenements or
+                            hereditaments, and all the personal property of every description belonging to the Church or
+                            Society, in trust for the uses and purposes expressed in and subject to the rules,
+                            conditions and regulations prescribed by the covenant and constitution of the said Church or
+                            Society, or any amendments thereto which shall hereafter be adopted by the general
+                            approbation of the Church, and in conformity with the primitive faith and acknowledged
+                            principles of the Society. And the said declaration shall be in writing, duly executed under
+                            his or their hands and seals, and shall be recorded in the Book of Records provided for in
+                            the preceding section. Section 6. Vacancies in certain cases ; how supplied : We further
+                            covenant and agree that in case it should at any time happen, in 8 <pb n="9" id="p11" TEIform="pb"/> THE
+                            MANIFESTO. the course of Divine Providence, that the office of Trustees should become wholly
+                            vacant, by the death or defection of all the Trustees in whom may be vested the fee of the
+                            lands or real estate belonging to said Church or Society, then, and in that case, one or
+                            more successors shall be appointed by the constitutional authority recognized in this
+                            Covenant, according to the rules and regulations prescribed by the same. And the said
+                            appointment, being duly recorded in the Book of Records, provided for in this article, shall
+                            be deemed, and is hereby declared to vest in such successor or successors, all the rights,
+                            interest and authority of their predecessors, in respect to all such lands, property or
+                            estate belonging to the Church or Society as aforesaid. ARTICLE IV. Of the Eldership.
+                            Section 1. Choice and appointment of Elders : The united interests and objects of believers
+                            established in Gospel order, require that Elders should be chosen and appointed for the
+                            spiritual protection of families, whose business it is to take the lead in their several
+                            departments in the care and government of the concerns of the Church and of the different
+                            families established in and pertaining to the Society. Their number and order should
+                            correspond with that of the Min- istry. They are required to be persons of good
+                            understanding, of approved faithfulness and integrity, and gifted in spiritual
+                            administration. They must be selected and appointed by the Ministry, who are to judge of
+                            their qualifications. Section 2. Duties of the Elders : As faithful watchmen upon the walls
+                            of Zion, it becomes the duty of the Elders to watch over their respective families; to
+                            instruct the members in their respective duties ; to counsel, encourage, admonish, exhort
+                            and reprove as occasion may require; to lead the worship ; to be examples to the members, of
+                            obedience to the principles and orders of the Gospel, and to see that the orders, rules and
+                            regulations pertaining to their respective families or departments are properly kept.
+                            ARTICLE V. Of Family Deacons and Deaconesses. Section 1. Their qualifications and
+                            appointments : The office of family Deacons and Deaconesses has long been established in the
+                            Church, and is essentially necessary for the care, management and direction of the domestic
+                            concerns in each family, order or branch of the Church. They are required to be persons of
+                            correct and well-grounded faith in the established principles of the Gospel, faithful in
+                            duty, closely united to their Elders, and of sufficient capacity in business. Of their
+                            qualifications, the Ministry and Elders by whom they are chosen and appointed must be the
+                            judges. Their number in each family is generally two of each sex, but may be more or less,
+                            according to the size of the family and the extent of their various duties. 9 <pb n="10" id="p12" TEIform="pb"/> THE MANIFESTO. Section 2. Their duties and obligations : The Deacons and
+                            Deaconesses of families are intrusted with the care and oversight of the domestic concerns
+                            of their respective families. It is their duty to make proper arrangements in business ; to
+                            maintain good order ; watch over, counsel and direct the members in their various
+                            occupations, as occasion may require ; to make application to the office Deacons or Trustees
+                            for whatever supplies are needed in the several departments of the family; to maintain
+                            union, harmony and good understanding with the said office Deacons ; and to report to their
+                            Elders, the state of matters which fall under their cognizance and observation. But their
+                            power is restricted to the domestic concerns of their respective families and departments,
+                            and does not extend to any immediate or direct correspondence with those without the
+                            boundaries of the Church. They have no immediate concern with trade and commerce, therefore
+                            it is not their business to buy and sell, nor in any way to dispose of the property under
+                            their care, except with the counsel and approbation of the Trustees. ARTICLE VI. Privileges
+                            and Obligations of Members. Section 1. Benefits and privileges of members in church relation
+                            : The united interest of the Church having been formed and established by the free-will
+                            offerings and pious donations of the members respectively, from the commencement of the
+                            institution for the object and purposes already stated, it canuot be considered either as a
+                            joint tenancy or a tenancy in common, but as a consecrated whole, designed for and devoted
+                            to the uses and purposes of the Gospel forever, agreeable to the established principles of
+                            the Church : Therefore it shall be held, possessed and enjoyed by the Church, in their
+                            united capacity, as a sacred and covenant right: That is to say, all and every member
+                            thereof, while standing in Gospel union and maintaining the principles of this Covenant,
+                            shall enjoy equal rights, benefits and privileges, in the use of all things pertaining to
+                            the Church, according to their several needs and circumstances; and no difference shall be
+                            made on account of what any one has contributed and devoted, or may hereafter contribute and
+                            devote to the support and benefit of the institution. Section 2. Proviso : It is
+                            nevertheless stipulated and agreed that the benefits, privileges and enjoyments secured by
+                            this Covenant to the members of the Church, shall not be considered as extendiog to any
+                            person who shall refuse to comply with the conditions of this association ; or who shall
+                            refuse to submit to the admonition and discipline of the constituted authority of the Church
+                            ; or who shall willfully depart from the principles and practice of those religious and
+                            moral obligations which have been established in the Church, agreeable to the primitive
+                            faith and distinguished principles of this institution ; of which refusal or noncompliance
+                            the leading authority acknowledged in the first article of this Covenant shall be the proper
+                            and constitutional judges. 10 <pb n="11" id="p13" TEIform="pb"/> THE MANIFESTO. 11 Section 3. Obligation
+                            of the members : As subordination and obedience is the life and soul of every well-regulated
+                            community, so our strength and protection, our happiness and prosperity, in our capacity of
+                            Church members, must depend on our faithful obedience to the rules and orders established in
+                            the Church, and to the instruction, counsel and advice of its leaders. Therefore, we do
+                            hereby covenant and agree that we will receive and acknowledge, as our Elders in the Gospel,
+                            those members in the Church who are or may be chosen and appointed for the time being to
+                            that office and calling by the authority aforesaid ; and also that we will, as faithful
+                            brethren and sisters in Christ, conform and subject ourselves to the known and established
+                            faith and principles of our community, and to the counsels and directions of the Elders, who
+                            shall act in union, as aforesaid, end also to all the orders, rules and regulations which
+                            are or may be given and established in the Church, according to the principles and by the
+                            authority aforesaid. Section 4. Duties of the members : The faithful improvement of our time
+                            and talents in doing good, is a duty which God requires of man, as a rational, social and
+                            accountable being, and this duty is indispensable in the members of the Church of Christ.
+                            Therefore, it is and shall be required of all and every member of this institution, unitedly
+                            and individually, to occupy and improve their time and talents to support and maintain the
+                            interest of the Society, to promote the objects of this Covenant, and discharge their duty
+                            to God and each other according to their several abilities and callings, as mem- bers in
+                            union with one common lead; so that the various gifts and talents of all may be improved for
+                            the mutual benefit of each other and all concerned. Section 5. As we esteem the mutual
+                            possession and enjoyment of the consecrated interest and privileges of the Church a valuable
+                            consideration, fully adequate to any amount of personal interest, labor or service, devoted
+                            or consecrated by any individual; we, therefore, covenant and agree, in conformity with an
+                            established and well-known principle of the Church, that no person whatever under its care
+                            and protection, can be employed for wages of any kind, on his or her individual account, and
+                            that no ground is or can be afforded for the recovery of any property or service devoted or
+                            consecrated as aforesaid ; and it is also agreed that in case of the removal of any member
+                            or members from one family, society or branch of the Church to another, his, her or their
+                            previous signature ©r signatures to the Church or Family Covenant from whence such member or
+                            members shall have removed, shall forever bar all claims which are incompatible with the
+                            true intent and meaning of this Covenant, in the same manner as if such removal had not
+                            taken place. Yet all who shall so remove, in union with the authority aforesaid, shall be
+                            entitled to all the benefits and privileges of the Order in which they shall then be placed,
+                            so long as they shall conform to the rules and regulations of the same. <pb n="12" id="p14" TEIform="pb"/> 12 THE MANIFESTO. ARTICLE VII. Dedication and Release. Section 1. Dedication and
+                            consecration of persons, property and service : According to the faith of the Gospel which
+                            we have received and agreeable to the uniform practice of the Church of Christ from its
+                            first establishment in this Society, we covenant and agree to dedicate, davote, consecrate
+                            and give up, and by this Covenant we do solemnly and conscientiously dedicate, devote,
+                            consecrate and give up ourselves and services together with all our temporal interest to the
+                            service of God and the support and benefit of the Church of this community, and to such
+                            other pious and charitable purposes as the Gospel may require, to be under the care and
+                            direction of such Elders, Deacons, and Trustees as are or may be appointed and established
+                            in the Church by the authority aforesaid. Section 2. Dedication and release of private
+                            claim: Whereas, in pursuance of the requirement of the Gospel, and in the full exercise of
+                            our faith, reason and understanding, we have freely and voluntarily sacrificed all
+                            self-interest, and consecrated and devoted our persons, services and property, as aforesaid,
+                            to the pious and benevolent purposes of the Gospel: Therefore, we do hereby solemnly and
+                            conscientiously, unitedly and individually for ourselves and our heirs, release and quit
+                            claim to the Deacons, or acting Trustees of the Church for the time being, for the uses and
+                            purposes aforesaid, all our private personal right, title, interest, claim and demand of, in
+                            and to the estate, interest, property, and appurtenances so consecrated, devoted and given
+                            up ; and we hereby jointly and severally promise and declare in the presence of God, and
+                            before these witnesses that we will never hereafter, neither directly nor indirectly, under
+                            any circumstances whatever, contrary to the stipulations of this Covenant, make nor require
+                            any account of any interest, property, labor or service, nor any division thereof which is,
+                            has been, or may be devoted by us. or any of us to the uses and purposes aforesaid, nor
+                            bring any charge of debt or damage, or hold any claim, nor demand whatever against the said
+                            Deacons or Trustees, nor against the Church or Society, nor against any member thereof, on
+                            account of any property or service given, rendered, devoted or consecrated to the aforesaid
+                            sacred and charitable purposes. In confirmation of all the aforesaid statements, covenants,
+                            promises, and articles of agreement, we have hereunto subscribed our names and affixed our
+                            seals, commencing on this---------day of --------in the year of our Lord one thousand eight
+                            hundred and---------.</p></div2><div2 type="poem" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Earthly riches" TEIform="index"/>EARTHLY RICHES</head><p TEIform="p">Who envies those who have the burden Of riches in this life? With them the toil and care are
+                            equal And great the daily strife. They're servants in their Father's keeping, Eesponsible,
+                            yet frail, And anxious ever, waking, sleeping, For duties that assail. </p><byline TEIform="byline"><persName reg="W., M." TEIform="persName"/>M. W.</byline></div2><pb n="13" id="p15" TEIform="pb"/><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Correspondence" TEIform="index"/>Correspondence</head><div3 type="letter" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Westfield, Massachusetts, November 1888" TEIform="index"/>Westfield, Mass, Nov. 1888</head><p TEIform="p">Elder Evans :—I read a communication in the "Springfield Union" written by you about
+                                spiritualism. I cannot see how the Fox girls have exposed it. I certainly know they did
+                                not produce the raps with their toes. It is impossible for any one to produce raps so,
+                                or—as it is thought by many— to converse with our departed friends. No oue ever did, or
+                                ever can converse with their friends after death. I plainly say it is impossible. I have
+                                been a medium myself, and I know something about spiritualism. I have been a writ- ing,
+                                tipping, test and speaking medium. I think it is high time it was exposed. I know just
+                                how it is done, and I want the world to know too. I would like to see you, and talk with
+                                you on spiritualism, and give you nay experience. I am no medium now, nor ever will be
+                                again. I shall ever fight against spiritualism. Oh how deceitful! Scripture says, "Try
+                                the spirits, and see whether they are of God." I have tried it, and say, No, no ; never.
+                                I am always glad to see people against it, and I am always ready to help them. I have
+                                got enough of it. There is no religion in it; no good in it. It is just what our Savior
+                                said would be before his coming again. I for one, long for his appearing. I never can
+                                believe in spiritualism again. I never have heard from my friends since they have been
+                                laid away in the cold and silent grave ; I know they will rest until the resurrection.
+                                My mother used to speak of the Shakers at New Lebanon : she has visited there with them
+                                ; she always thought a great deal of them. I can talk about spiritualism better than I
+                                can write : it would take me quite a while to write my experience. Oh how deceitful,
+                                deceitful! It is nothing but the enemy. No spirit friend will ever deceive ; never. I
+                                can face any medium and tell them spiritualism is a fraud. It is a power that produces
+                                raps, tipping tables, writing and test-giving; it is all done by power unseen. "Woe to
+                                the inhabitants of the earth and of the sea ! for the dev- il is come down unto you,
+                                having great wrath, because he knotveth that he hath but a short time." (Rev. xii., 12.)
+                                I would like to hear from you, and I would like to give you my experience. Yours for
+                                truth, P. S. We are commanded to let our light shine. I will come to your place if you
+                                wish and the Lord be willing. I shall forever turn traitor to spiritualism ; there is no
+                                religion in it: the so-called spirit hates all good. I see by the 'Union' that you had a
+                                communication sent you from Spring field ; was it in favor of spiritualism, if I may be
+                                so bold as to ask? Please let me know if you wish me to come. I am against spiritualism
+                                : I hate the name of it—the liar !</p><byline TEIform="byline"><persName reg="Pomeroy, L. M." TEIform="persName"/>Mrs. L. M. Pomeroy</byline></div3><div3 type="letter" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Reply" TEIform="index"/>REPLY</head><p TEIform="p">Mt. Lebanon, N. Y., Nov. 1888. Mrs. L. M. Pomeroy. Respected Friend :—Your letter of the
+                                oth. inst. received. I have not seen the "Springfield Union" containing my article yet;
+                                it will come soon. <pb n="14" id="p16" TEIform="pb"/> 14 THE MANIFESTO. So, you put yourself in the
+                                same class with Margaret and Katie Fox. They are mediums. You have been "a medium for
+                                writing, tipping, test and speaking medium, &amp;c." You ''know just how it is
+                                done." Margaret and Kate were mediums ; and now they say that they have been acting as
+                                frauds, all these years. You do the same ; and then expect the world to believe you.
+                                Yet, you look for the Savior ; expect the bodily resurrection ; and affirm that the dead
+                                cannot return until their bodies rise ; that none have ever returned ; you are positive
+                                about it, &amp;c. You forget that Moses and Elias, and Samuel, returned and talked
+                                with Jesus and Saul; and many other Scripture statements. Do you not think that yourself
+                                and the Fox women are very wicked women, and that no person should believe a word that
+                                any of you may utter ? Then you contradict yourself, and affirm your belief in
+                                Spiritualism, saying, "It is a power that produces raps, tipping tables, writing, and
+                                test-giving ; it is all done by power unseen." "For the devil has come down unto you,
+                                having great wrath, because he knoweth his time is short."—Thus you admit yourself to
+                                have been a medium for the devil to use in misleading humanity. Do not wish you to come
+                                here—better repent. Respectfully,</p><byline TEIform="byline"><persName reg="Evans, F. W." TEIform="persName"/>F. W. Evans</byline></div3></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Rambling thoughts" TEIform="index"/>RAMBLING THOUGHTS</head><byline TEIform="byline"><persName reg="Perkins, Abraham" TEIform="persName"/>Abraham Perkins</byline><p TEIform="p">Happiness is the pursuit of all men. How singularly strange the course of many to find it!
+                            Unto this most valuable and inestimable prize, heaven opens the door. There only is to be
+                            found genuine peace and durable comfort. He who appeals to the natural instincts of his own
+                            unregenerated heart for happiness is sure to fail in the enterprise ; while he, who in his
+                            life is governed by the revelation of light and truth unto him manifested, putting his trust
+                            in God, is equally sure of success. No honest individual will be left in darkness. Though
+                            the struggle be long and the conflict severe, in his research for happiness supreme, a wise
+                            provision is made to accomplish the object sought; ultimately, man will be led to the
+                            knowledge of all truth. As true as there is a God, so sure is he to fulfill all his promises
+                            to man ; for he hath declared, that whosoever seeks him shall find him. Therefrom we are to
+                            learn, that such receive the baptism of the spirit of God and come into possession of the
+                            elements of eternal life. Such have found the Comforter, a balm for every wound and woe. He
+                            who fosters the spirit which courts mortal frailties, who dwells upon human weaknesses,
+                            whose strong sympathies are with the weak and faulty, is exposed to become blind to truth
+                            and a subject to the same spirit. Thus the miud becomes shrouded in darkness, the soul is
+                            led irresistibly into error and the affections are alienated ; all of which combined,
+                            culminate in ruin. The wise will beware of sympathizing with the murmurer, fault finder and
+                            complainer, and will shun the idler, the gossiper and the traducer of character. Their
+                            friendship is as deadly as the poison of asps or as microbes which cause the immense suf-
+                            fering and mortality to so many of our race. ( Enfield, N. H. *</p></div2><pb n="15" id="p17" TEIform="pb"/><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Bible study" TEIform="index"/>BIBLE STUDY</head><byline TEIform="byline"><persName reg="Hollister, A. G." TEIform="persName"/>A. G. HOLLISTER</byline><p TEIform="p">The Bible is regarded by nearly all Protestant denominations, as the Word of God, and by many
+                            of their teachers, as an infallible standard and test for all revealed truth. By revealed
+                            truth, is here meant religious truth made known by Divine inspiration and spiritual wor-
+                            ship. Believers in Christ's second appearing distinguish between the Word of God, which is
+                            life-giving or "living and powerful, sharper than a two-edged sword," and the Bible, which
+                            is a man made record of portions of the Word, uttered from two to six thousand years ago.
+                            The living Word proceeds now in the forming work of a new Creation, which springs upon the
+                            decay of the old, and absorbs its vital forces as the germ of a sprouting seed absorbs the
+                            vitality of its environing mass, and leaves the lifeless shell to decompose in the earth. As
+                            the word of God to Adam was not sufficient direction for Noah—nor the word to Noah
+                            sufficient for Abraham—so the word to Abraham was not sufficient for Moses, nor for Elijah,
+                            Jeremiah and Daniel. And as the Word received by all these together was not sufficient to
+                            direct Jesus Christ in his work, but each messenger of a dispensation required a special
+                            Word to qualify him for the work to which he was called, so also was there a special Word
+                            not recorded in the Bible, given to our Mother, to enable her to perform the increasing work
+                            which God required in her day and time. And there must always be a living Word of God in his
+                            church, for present Divine direction, so long as God has a covenant people on Earth. There
+                            is no contradiction in the living Word, however numerous its messengers, and this is one of
+                            the criterions whereby it is known to be true, coming as it does through different
+                            witnesses. Neither has that Word ever set limits to the future increase of its utterance and
+                            operations among the children of God. Though at times inoperative, or unperceived for a
+                            season, it has ever been renewed with increasing power. This admitted, some have claimed
+                            that the present Word of God is sufficient, and those guided thereby have no need to know
+                            the past. Others rely wholly upon the ancient record, to the exclusion of the life-giving
+                            present, assuming that the former is sufficient for all time. It would be just as reasonable
+                            to conclude that the sunshine of two thousand years ago, gave sufficient light and heat for
+                            all time, and that consequently there is no further need for the sun to shine. But both
+                            assumptions are partial and one-sided. Both set up arbitrary limits to understanding. Both
+                            admit portions of the truth, and reject its complementary equivalents necessary to complete
+                            knowledge. Hence either method pursued alone does not lead to satisfactory results. They
+                            need combining, as really as do the primary colors of light, to make a perfect whole, with
+                            which to detect error and avoid mistakes. Whatever may be the Word uttered, knowledge
+                            thereof is graded to the understanding of the party receiving it. Understanding is a product
+                            of instruction and experience. The less experience and less instruction, other things being
+                            equal, the less power of comprehension. . Those races of the earth who have <pb n="16" id="p18" TEIform="pb"/> THF MANIFESTO. 15 BIBLE STUDY. A. G. HOLLISTER. The Bible is regarded by
+                            nearly all Protestant denominations, as the Word of God, and by many of their teachers, as
+                            an infallible standard and test for all revealed truth. By revealed truth, is here meant
+                            religious truth made known by Divine inspiration and spiritual worship. Believers in
+                            Christ's second appearing distinguish between the Word of God, which is life-giving or
+                            "living and powerful, sharper than a two-edged sword," and the Bible, which is a man made
+                            record of portions of the Word, uttered from two to six thousand years ago. The living Word
+                            proceeds now in the forming work of a new Creation, which springs upon the decay of the old,
+                            and absorbs its vital forces as the germ of a sprouting seed absorbs the vitality of its
+                            environing mass, and leaves the lifeless shell to decompose in the earth. As the word of God
+                            to Adam was not sufficient direction for Noah—nor the word to Noah sufficient for Abraham—so
+                            the word to Abraham was not sufficient for Moses, nor for Elijah, Jeremiah and Daniel. And
+                            as the Word received by all these together was not sufficient to direct Jesus Christ in his
+                            work, but each messenger of a dispensation required a special Word to qualify him for the
+                            work to which he was called, so also was there a special Word not recorded in the Bible,
+                            given to our Mother, to enable her to perform the increasing work which God required in her
+                            day and time. And there must always be a living Word of God in his church, for present
+                            Divine direction, so long as God has a covenant people on Earth. There is no contradiction
+                            in the living Word, however numerous its messengers, and this is one of the criterions
+                            whereby it is known to be true, coming as it does through different witnesses. Neither has
+                            that Word ever set limits to the future increase of its utterance and operations among the
+                            children of God. Though at times inoperative, or unperceived for a season, it has ever been
+                            renewed with increasing power. This admitted, some have claimed that the present Word of God
+                            is sufficient, and those guided thereby have no need to know the past. Others rely wholly
+                            upon the ancient record, to the exclusion of the life-giving present, assuming that the
+                            former is sufficient for all time. It would be just as reasonable to conclude that the
+                            sunshine of two thousand years ago, gave sufficient light and heat for all time, and that
+                            consequently there is no further need for the sun to shine. But both assumptions are partial
+                            and one-sided. Both set up arbitrary limits to understanding. Both admit portions of the
+                            truth, and reject its complementary equivalents necessary to complete knowledge. Hence
+                            either method pursued alone does not lead to satisfactory results. They need com- bining, as
+                            really as do the primary colors of light, to make a perfect whole, with which to detect
+                            error and avoid mistakes. Whatever may be the Word uttered, knowledge thereof is graded to
+                            the understanding of the party receiving it. Understanding is a product of instruction and
+                            experience. The less experience and less instruction, other things being equal, the less
+                            power of comprehension. . Those races of the earth who have <pb n="17" id="p19" TEIform="pb"/> THE
+                            MANIFESTO. the discriminating faculty which the Creator gave them, have separated between
+                            wheat and cheat, and found by practicing the restraints commanded, that error is condemned
+                            and truth sustained. For be it understood, that the Bible has no light in itself, but like a
+                            mirror, reflects back into the mind, the light of the intelligence shed upon it, sometimes
+                            with added intensity. Should we have Bible Classes for acquiring a knowledge of Scripture,
+                            and of the Faith of Believers in Christ's Second Appearing, as illustrated and confirmed
+                            thereby? It seems to the writer that if properly organized and conducted, no literary study
+                            can be more profitable, for its illuminating effects, the growth of spiritual understanding,
+                            and for the increase, spread, and building up of our most precious faith. Precious indeed
+                            because it saves the obedient from sin, and from the doleful consequences thereof. Doubly
+                            precious because scarce, which caused Jesus to ask "When the Son of man cometh, will he find
+                            faith on the earth?" As no one mind possesses all knowledge nor all wisdom, unless it be the
+                            mind that was in Jesus Christ and our first gospel Parents, it would seem best to be guided
+                            in our interpretations by the concurring testimony, so far as it can be ascertained, of the
+                            true witnesses of Christ, who have lived his life by following his example of virgin purity.
+                            I mean the Apostles both of his first and second appearing. For manners and customs of
+                            people in Bible lands, and for critical meanings of original words, we will have to rely
+                            upon scholars who have made such matters their study. Focusing the attention of many minds
+                            on the subject in connection with the in- creasing development of God's spiritual work in
+                            late years will afford greater light for the elucidation of many topics, and for clearer
+                            interpretations of some matters heretofore obscure. Perhaps improvements may be made upon
+                            explanations formerly given, but all harmo- nizing with each other, and with the united
+                            testimony of previous witnesses. Because as truth is a unit, and cannot conflict with
+                            itself, all contradiction partakes of faLehood, and is ruled out by the laws of evidence.
+                            But since truth has many various aspects when seen from different standpoints,
+                            interpretations also may be various without conflicting. An original, unsupported witness or
+                            testimony, has little or no weight. But when one witness or truth confirms another, both are
+                            strengthened thereby, and the greater the number of reliable witnesses or truths, affirming
+                            a position or fact, the more firmly said position or fact is established in our confidence.
+                            The word of God is truth, and as every truth is in substantial agreement with every other
+                            truth on the same plane, it is written that k'by the mouth of two or three witnesses shall
+                            every word be established." If we reject the ancient record of the true abiding Word of God,
+                            because of a present living Word which is most necessary for us, we reject a valuable and
+                            important witness, and weaken our own testimony by so much. No one need believe these
+                            positions unless they are true in fact and seeming. Mt. Lebanon, N. Y.</p></div2><div2 type="saying" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="He who hath truth on the tongue replies readily" TEIform="index"/>
+                            He who hath truth on the tongue replies readily
+                        </head><p TEIform="p">He who hath truth on the tongue replies readily.</p><byline TEIform="byline"><persName reg="W., M." TEIform="persName"/>M. W.</byline></div2><div2 type="saying" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Ill-will, like the blighting frost, destroys life's sweetest blossoms" TEIform="index"/>
+                            Ill-will, like the blighting frost, destroys life's sweetest blossoms
+                        </head><p TEIform="p">Ill-will, like the blighting frost, destroys life's sweetest blossoms.</p><byline TEIform="byline"><persName reg="A., M. J." TEIform="persName"/>M. J. A.</byline></div2><pb n="18" id="p20" TEIform="pb"/><div2 type="publication" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Manifesto, January, 1889. Office of Publication" TEIform="index"/>THE MANIFESTO. JANUARY,
+                            1889. Office of Publication</head><p TEIform="p">The Manifesto is published on the first of each month, at Shaker Village, Mer. Co., N. H. All
+                            articles for publication should be addressed to Henry CBonn, and all letters on financial
+                            business to A. Y. Cochran. One copy per year, postage paid, " six months, " Send for
+                            specimen copy, free. .75 .40</p></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Editorials" TEIform="index"/>Editoria[l]</head><div3 type="editorial" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Welcome, new year" TEIform="index"/>WELCOME, NEW YEAR</head><byline TEIform="byline"><persName reg="Editor" TEIform="persName"/></byline><p TEIform="p">Passing along from month to month and from year to year with the testimony of the cross
+                                of Christ, which we have made to be our testimony, we have now reached the initial
+                                number of the nineteenth volume of The Manifesto. Even this willing perseverance in a
+                                good work, this faithful continuance in a Christian duty that we owe to God and man, is
+                                sufficient cause'for great thankfulness. All the crosses and trials that we have passed
+                                through, and all the anxieties and even vexations that have at times filled our minds
+                                should now vanish like the mist before the morning sun. A new year has come to greet us,
+                                a series of twelve months are preparing to bear us company on our pilgrimage to the Holy
+                                City. With the introduction of a New Year so auspicious, so effulgent with light from
+                                God, so anticipatory of righteousness and peace, our hearts cannot fail to rejoice. If
+                                led by the spirit of God, and thereby becoming the sons and daughters of God, our
+                                mission before the children of this world, although manifested in a still, small voice,
+                                cannot fail to exert an influence for good and inspire souls to look forward to a better
+                                and to a brighter day. Our mission inasmuch as it harmonizes with that of the apostolic
+                                church, should be aggressive against that which is wrong, must fight the good fight of
+                                faith and overcome all the powers of darkness. Through the manifestation of this spirit
+                                which crucifies the elements of a worldly life, we may rest assured that its influence
+                                will carry God's precious goodness wherever it may chance to fall. We need have no doubt
+                                of our success, if our hearts are pure, as that insures us an entrance into the Kingdom
+                                of our Heavenly Father. Those who have written in the past, will not fail to write again
+                                and again, as growth in the mind by cultivation, is as valuable in this department, as
+                                growth and value can be in any other. Those who have not written or who have been
+                                parsimonious, will study with profit this brief but valuable lesson. "Like begets like."
+                                An active interest in the cultivation of that wThich is good and profitable, will
+                                stimulate a greater and greater zeal in the same work, till it culminates in an interest
+                                for God that can never grow dim. Whoever writes in the fulness of the light which God
+                                gives them, and in prayer for the peace and prosperity of others cannot fail to
+                                accomplish a <pb n="19" id="p21" TEIform="pb"/> THE .MANIFESTO. 19 good work for themselves and a
+                                corresponding one for their readers. It does not need an elaborate discourse on
+                                speculative theology nor a lengthy dissertation on prophecies and mira- cles to direct a
+                                fellow pilgrim on the way to the cross or to give him an introduction to Evangelist or
+                                to any other of the heavenly guides. The simple story of right over wrong has nothing
+                                mysterious, requires no commentary, not even a biblical Diction- ary. It enters at once
+                                upon an assurance which cannot fail. "Blessed are the poor in spirit for theirs is the
+                                Kingdom of Heaven." Any wayfaring man can easily comprehend a message so concise and so
+                                in sympathy with the human heart. In this number we have published the Covenant of the
+                                Church. A document of great importance to the Community and about which many who are not
+                                intimately acquainted with the Society, have had much to say. To give the work a careful
+                                perusal will be time well spent, as this is an essential part of the foundation of
+                                Community life, and upon which every one must build to become successful. The first
+                                Covenant for the Society was written in the year 1796. Since that date several articles
+                                have been added till in 1832 the present form was written and signed by the then adult
+                                members, and then by all accessions of members since that time. Probationary or
+                                Novitiate members on entering the Society are expected to sign The Articles of
+                                Agreement, which stipulates briefly what the Society will do, and also what the new
+                                member agrees to do. Too much care cannot be exercised in holding this covenant and
+                                these articles of agreement in their respective places and in seeing that the names of
+                                all who have reached the age of majority are clearly entered, in the presence of
+                                witnesses, to the one that is deemed expedient.</p></div3></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Health" TEIform="index"/>Sanitary</head><div3 type="health" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Vegetarianism" TEIform="index"/>VEGETARIANISM</head><p TEIform="p">An antiquarian is not one whu eats antiquities, neither is a vegetarian one who eats only
+                                vegetables, although Webster's definition conveys this meaning: "Vegetarian: One who
+                                holds that vegetables constitute the only proper food for man, and who Jives solely upon
+                                them." The definition given by the Vegetarian Society is as follows : "A vegetarian diet
+                                consists of the products of the vegetable kingdom—chiefly grains, pulse, fruits, and
+                                nuts—with or without the addition of eggs, milk and its products, as cheese and butter
+                                to the exclusion of the flesh of animals (fish^ flesh and fowl,) and its products, as
+                                fat, dripping, lard, suet, etc." The definition given in The Imperial Dictionary of the
+                                English Language, by John Ogilvie, London, corresponds with the latter definition.
+                                "Vegetarian : One who abstains from animal food and lives exclusively on vegetables,
+                                eggs, milk, etc. Strict vegetarians eat vegetables and farinaceous food only, and will
+                                not eat butter, eggs, or even milk." According to Prof! Mayor, of Cambridge, England,
+                                vegetable and vegetarian are not synonymous, the latter being a newly-coined word, which
+                                has the meaning given in the last two explanations. Assuming the latter definition, let
+                                us glance at the opinions of a few of the World's greatest thinkers, concerning a
+                                Vegetarian Diet. Baron Cuvier says: "The natural food of man, judging from his
+                                structure, appears to consist principally of the fruits, roots, and other succulent
+                                parts of vegetables."-^Animal Kingdom, p. 46. Prof. Lawrence en- <pb n="20" id="p22" TEIform="pb"/>
+                                20 THE MANIFESTO. larges on this idea as follows : "The teeth of man have not the
+                                slightest resemblance to those of the carnivorous animals, except that their enamel is
+                                confined to the external surface. He possesses, indeed, teeth called'canine,' but they
+                                do not exceed the level of the others, and are obviously unsuited to the purposes which
+                                the corresponding teeth execute in carnivorous animals. * * * Whether we consider the
+                                teeth and jaws, or the immediate instruments of digestion, the human structure closely
+                                resembles that of the simicB; all of which, in their natural state, are completely
+                                herbivorous."—Lectures on Physiology, pp. 189-191. Linnaeus confirms their decision in
+                                the words : "This species of food (fruit) is that which is most suitable to man, which
+                                is evinced by the series of quadrupeds, analogy, wild men, apes, the structure of the
+                                mouth, of the stomach and the hands."—Linncci Amcemtates Academical, vol. x, p. 8. As to
+                                the possibility of fully supporting human life by a Vegetarian Diet, Sir Henry Thompson
+                                writes: "The vegetable eater, pure and simple, can extract from his food all the
+                                principles necessary for the growth and support of the body, as well as for the
+                                production of heat and force."—Food and Feeding, p. 11. To the same question Liebig
+                                answers moie minutely : "Grain and other nutritious vegetables yield us, not only in
+                                starch, sugar, and gum, the carbon which protects our organs from the action of oxygen,
+                                and produces in the organism the heat which is essential to life, but also in the form
+                                of vegetable fibrine, albumen, and caseine, the elements of our blood from which the
+                                other parts of our body are developed. * * Vegetable fibrine and animal Sbrine,
+                                vegetable albumen and animal albumen, hardly differ, even in form; * * and when they are
+                                present the graminivorous animal obtains in its food the very same principles, on the
+                                presence of which the nutrition of the car- nivora entirely depends." In addition to the
+                                arguments set forth by the preceding writers, we must remember that, under the most
+                                favorable circumstances the flesh of animals can never be free from impurities. The
+                                process of waste and repair is constantly going on in the living body, and hence there
+                                is always present in the sys- tem a certain amount of broken-down cell tissue, which is
+                                on its way to the excretory outlets of the system. If this process is suddenly stopped
+                                by killing the animal, this effete matter, together with the impure venous blood which
+                                is in the capillaries (a large proportion) remains in the flesh, rendering it impure and
+                                unhealthy. If in addition, the animals are actually diseased, as good authorities say 80
+                                per cent, are, caused by immature breeding and putting them in an unnatural condition by
+                                fattening and shipping in crowded freight cars, flesh-eating becomes actually dangerous.
+                                It is now well known that not only the different parasitic diseases may be communicated
+                                to man, but pleuropneumonia, erysipelas, swine typhoid, cattleplague, and foot-and-mouth
+                                disease, aie also transmissible to man. With the Biblical student the following
+                                Scripture verse has great weight, no mention whatever being made of flesh foods:
+                                "Behold, I have given you every herb bearing seed which is upon the face of all the
+                                earth, and every tree in which is the fruit of a tree yielding seed; to you it shall be
+                                for meat."—Gen. i., 29. The attention of those who long and sigh for beauty, which " * *
+                                * * gives The features perfectness, and to the form Its delicate proportions," is
+                                directed to the statement of Adam Smith in his Wealth of Nations, that the most beau-
+                                tiful women in the British dominions are found among the lower ranks of the people of
+                                Ireland, who are generally fed with potatoes. Also, to the Scriptural fact that Dan- iel
+                                and his companions, who ate grain and pulse, were "fairer and fatter in flesh than all
+                                the children which did eat the portions of the king's meat."—Dan. i., 15. Those who live
+                                on a Vegetarian Diet are, as a rule, heavier, stronger in muscle, and capable of greater
+                                endurance than those who live on a mixed diet. Prof. Forbes, from experiments on
+                                "flesh-eating Englishmen, porridge-eating Scotchmen, and potato-andbread-eating
+                                Irishmen" proved that the Scotchmen and Irishmen were superior in height, weight and
+                                strength to the Englishmen. "The Laplanders, living on flesh, are <pb n="21" id="p23" TEIform="pb"/>
+                                THE MANIFESTO. 21 a diminutive race, while the Finns, who in. habit the same climate and
+                                live chiefly on the products of the soil, are as fine a race as the Swedes and
+                                Norwegians. The difference," says Dr. Lamb, "must be attributed mainly or entirely to
+                                diet." Although at present we may or may not eat flesh as we choose, the time will come
+                                when all must be vegetarians. Already flesh is ten to twenty times more expensive than
+                                wheat, oatmeal, peas, lentils, etc., considering the amount of solid substsnce in each,
+                                and the price of the former is gradually increasing. Land which is cultivated for
+                                grains, fruits, and vegetables, provides employment for several times as many men as
+                                that which is used for raising stocj;; and, as the population gradually becomes more
+                                dense stock-raising for food purposes will decline more and more, and finally become a
+                                thing of the past.—Student Life.</p></div3><div3 type="health" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="What an appetite" TEIform="index"/>WHAT AN APPETITE</head><p TEIform="p">There is no accounting for tastes. No person with a natural appetite can tell why another
+                                likes food which is rank, or partially decayed, nor can bees tell why, when they are
+                                sipping nectar from the flowers, buzzards should be flying overhead looking out for of-
+                                fal and carrion. These are simply matters of taste and nature. So there are men who are
+                                inclined to smut and filth and scandal, and who smile and smirk and grin and gloat over
+                                vice and vileness, and who continually pry and peddle in this line. One can hardly be in
+                                their company for an hour without listening to smutty talk, questionable stories, and
+                                scandalous reports. They gather such things from all quarters. What they cannot gather
+                                they invent. What they hear from others they embellish, and what they have gathered,
+                                invented, and embellished, they peddle. There are men who profess to be ministers of the
+                                gospel who need a conversion that shall give them clean hearts and clean tongues, for so
+                                long as men lack that purity of heart which God bestows by the power of the Holy Spirit
+                                so long will the results of early education, vile surroundings, bad training, exhibit
+                                themselves ; until they are thoroughly and soundly saved, we shall find such persons,
+                                whatever their professions or positions may be, returning to the blackguardism of their
+                                early days like the dog to his vomit, and the sow that was washed to her wallowing in
+                                the mire. — Good Way.</p></div3></div2><div2 type="poem" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Monday, December 31, 1888" TEIform="index"/>MONDAY, DEC. 31, 1888</head><byline TEIform="byline"><persName reg="Whitcher, Mary" TEIform="persName"/>Mary Whitcher</byline><p TEIform="p">And lo ! the year has ended ! And I am left to ask How have my labors tended And how
+                            performed my task? Have I been truly faithful To do the little good, And ever anxious,
+                            prayerful For more, whene'er I could Perform a further labor For Zion and Her cause, With
+                            care for sister, brother, And for Her sacred laws. Doth injury to self-hood Affect mj7
+                            feelings more Than to the cause of Zion And those who've gone before? Let this reflection
+                            prompt me To greater zeal and care For Zion and Her int'rests While self doth disappear. Let
+                            me renew my patience My love for all that's true, My thankfulness and earnestness Dear
+                            Sisters, 'long with you. Canterbury, N. H.</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Coming millennium" TEIform="index"/>COMING MILLENNIUM</head><byline TEIform="byline"><persName reg="Dibble, Chancy" TEIform="persName"/>Chancy Dibble</byline><p TEIform="p">"Come, Lord, in thy own time and pleasure. Send by whom thou wilt. May the King of Glory
+                            descend, seated upon his Throne. May thine elect be caught up, and unbelievers peri-h be-
+                            neath thy feet." Similar to this are the prayers offered up from many a pulpit for ages.
+                            Dees any sensible Christian <pb n="22" id="p24" TEIform="pb"/> 22 THE MANIFESTO. in these 1hvs suppose
+                            that Christ is coming to save a few and sink sinners to perdition? Does the kind Father
+                            propose to usber in the reign of happiness over the endless miseiy of a large portion of his
+                            intelligences? Rather has not C-Jod designed from the beginning to purge out the evil from
+                            every human heart and thereby unite all as one family. Thus are our prayers answered ; "Thy
+                            Kingdom Come, Thy will be done on Earth." Watervliet, N. Y..</p></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Juvenile" TEIform="index"/>Juvenile</head><div3 type="letter" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Enfield, Connecticut, January 1889" TEIform="index"/>Enfield, Conn., Jan. 1889</head><p TEIform="p">Dear Children :—-A Happy New Year. We wish you this, but wishes alone can do very little
+                                toward securing to you the greatest blessing—real happiness, which is the reward for
+                                individual effort. The happiest persons are not those who have the most done for them,
+                                but those who do the most for others. Happy are those who make others happy. Be true and
+                                virtuous. Virtue alone is happiness, happiness is heaven. "So happy and free, so happy
+                                and free The followers of Jesus forever will be." Would you be virtuous? Look to the
+                                virtuous and follow the virtuous. Virtuous lives bring blessings to those who live them,
+                                and blessings to those who follow them. The beginning of the New Year is the time for
+                                correcting the mistakes of the past, and the earnest resolve to avoid them in future.
+                                Good resolves even give hope and encouragement, and happiness comes as you keep these
+                                resolves. In a sincere resolution to win, there is a promise of winning. Perse" viT.inco
+                                overcomes obstacles. Bear this in mind, and by doing your whole duty, enjoy a whole year
+                                of unbroken happiness. The heavenly prize is within your reach, and it is worthy of your
+                                greatest effort. Wrestle for it. Subdue your inborn selfishness. Help each other in all
+                                good work. Love good, for the sake of pure goodness, and shun evil, because evil is sin.
+                                Brighten your records with purity and truth. Build up good characters. Reform your
+                                little selves, and you have begun to reform the world. Avoid deceit. "Be what you seem,
+                                and seem what you should be, children of truth, from all dishonor free." Your Brother,</p><byline TEIform="byline"><persName reg="Orcutt, Daniel" TEIform="persName"/>Daniel Orcutt</byline></div3><div3 type="poem" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Brooklet" TEIform="index"/>THE BROOKLET</head><byline TEIform="byline"><persName reg="Rullhousen, May" TEIform="persName"/>May Rullhausen</byline><p TEIform="p">Down from the heights of the mountain, Flowing without delay, Cometh the beautiful
+                                brooklet, Day after day. Over the stones and the pebbles, Over the green soft moss,
+                                Still in its curious winding, It keepeth its course. Under the cloud and the sunlight,
+                                Under,the tall stately trees, Out in the clear air of heaven, 'Tis free as the breeze.
+                                Passing through vales and through meadows, Rippling along with delight, Singing a song
+                                full of music, Even at night. Dashing o'er rocks, full and bounding, Heaving and foaming
+                                along, Evening and night, day and morning, Happy and strong. And where, O where art thou
+                                going?— "On to the beautiful sea, Where I'll mingle my sparkling waters Lost ever to
+                                thee." —Age 14 years. Mt. Lebanon, N. Y.</p></div3><div3 type="fiction" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Prisoner's study" TEIform="index"/>A PRISONER'S STUDY</head><p TEIform="p"><cit TEIform="cit"><quote TEIform="quote">A prisoner condemned to confinement for life, after a careful study of the
+                                        Scriptures, found them to contain 3,586,489 letters. 773,692 words, 31,173
+                                        verses, 1,183 chapters, and 66 books. The word "and" occurs 46,277 times; the
+                                        word Lord 1.855 times : the word reverend <pb n="23" id="p25" TEIform="pb"/> THE MANIFESTO.
+                                        23 only once, which is in the 9th verse of 111th Psalm. The middle is the 8th
+                                        verse of the 118th Psalm. The 21st verse of the Gth chapter of Ezra contains all
+                                        the letters of the alphabet with the exception of the letter J. The finest
+                                        chapter to read is the 26th chapter of Acts of the Apostles ; the 19th chapter
+                                        II Kings, and the 32d of Isaiah, are alike. The longest verse is the 9th verse
+                                        in the eighth chapter of Esther. The shortest is the 35th of the 11th chapter of
+                                        St. John. The 8th, 15th, 21st, and 31st verses of the 107th Psalm are the same.
+                                        All the verses of the 136th Psalm end alike. There are no words or names of more
+                                        than six syllables. The 117th Psalm is the middle and shortest chapter in the
+                                        Bible. It must have taken him many years of patient, careful study to gather all
+                                        these facts. We hope in such close perusal the Spirit revealed a deeper lesson
+                                        to his heart and made him fully acquainted with its precious precepts. M. J. S.
+                                        in the </quote><bibl default="NO" TEIform="bibl"><index level1="Christian union" TEIform="index"/>Christian Union</bibl></cit></p><byline TEIform="byline"><persName reg="S., M. J." TEIform="persName"/></byline></div3><div3 type="fiction" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="St. Matthew XIII, from Tyndal's testament" TEIform="index"/>ST. MATT. XIII., EROM
+                                TYNDAL'S TESTAMENT</head><p TEIform="p">The same daye wentt Jesus out of the housse, and satt by the see syde, and moche people
+                                resorted unto him, so gretly that he wet and sat in a shyppe, and all the people stode
+                                on the shoore. And he spake many thyngs to them in similituds, sayinge : behold the
+                                sower went forth to sowe, and as he sowed, some fell by the wayes syde, and the fowlls
+                                ca, and devoured it uppe. Some fell on stony grounde where it had nott moche erth, and a
+                                non it spronge uppe, because it had no depth of erth • and when the son was uppe, hit
+                                cauth heet, and for lak of rotynge wyd dred awaye. Some fell amonge thornes, and the
+                                thornes arose, and chooked it. Parte fell in goode grounde, and broght forth good frute
+                                : some an hundred fold, some fifty fold, some thyrty folde. Whosoever hath eares to
+                                heare, let him heare. And hys disciples cam, and sayde to him : Why speakest thou to
+                                them in parables : he answered and saide unto them : Hit is geven onto you to knowe the
+                                secretts of the Kyngdome of he ven, but to them it is nott geven, for whosomever hath,
+                                to him shall hit be gevne : and he shall have aboundance : But whosoevrr hath not: from
+                                him shalbe takyn awaye eve that same that he hath.—Selected</p></div3><div3 type="poem" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Seeds of good and ill" TEIform="index"/>SEEDS 0F GOOD AND ILL
+                            </head><p TEIform="p"><cit TEIform="cit"><quote TEIform="quote">We are sowing, daily sowing, Countless seeds of good
+                                        and ill, Scattered on the level low land, Cast upon the windy hill, Seeds that
+                                        sink in rich, brown furrows, Soft with heaven's gracious rain. Seeds that rest
+                                        upon the surface Of the dry, unyielding plain. Seeds that fall amid the
+                                        stillness Of the lonely mountain glen, Seeds cast out in crowded places, Trodden
+                                        under foot of men. Seeds by idle hearts forgotten, Flung at random in the air,
+                                        Seeds by faithful souls remembered, Sown in tears and love and prayer. Seeds
+                                        that lie unchanged, unquickened, Lifeless on the teeming mould Seeds that live
+                                        and grow and flourish When the sower's hand is cold, By a whisper sow we
+                                        blessing, By a breath we scatter strife, In our words and looks and actions Like
+                                        the seeds of death and life. Thou who knowest all our weakness, Leave us not to
+                                        sow alone, But Thine angels guard the furrows Where the precious grain is sown,
+                                        Till the fields are crowned with glory, Filled with mellow ripened ears, Filled
+                                        with fruit of life eternal From the seed we sow in tears. Check the forward
+                                        thoughts and passion, Stay the hasty heedless hands, Lest the germ of sin and
+                                        sorrow, Mar our fair and pleasant lands. Father, help each weak endeavor, Make
+                                        each feeble effort blest, Till Thine harvest shall be garnered, And we enter
+                                        into rest.</quote><bibl default="NO" TEIform="bibl"><index level1="Catholic" TEIform="index"/>The Catholic.</bibl></cit></p></div3></div2><pb n="24" id="p26" TEIform="pb"/><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Books" TEIform="index"/>Books and Papers</head><div3 type="book notice" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Autobiography of a Shaker" TEIform="index"/>Autobiography of a Shaker
+                            </head><byline TEIform="byline"><persName reg="Evans, F. W." TEIform="persName"/>Elder F.W. Evans</byline><p TEIform="p">Autobiography of a Shaker (Elder, V. W. Evans.) A new and enlarged Edition with portrait.
+                                This work has recently been published in Glasgow, Scotland, and contains some one
+                                hundred and seventy pages. In an appendix to this new edition will be found, articles on
+                                Shaker Communism, Shakerism in London, Enjr.. Shakers as Farmers, etc., etc. Elder
+                                Frederic lias brought together in this work, many very interesting subjects, upon which
+                                one may dwell with increasing pleasure and profit. Price $1.50. Address F.W. Evans, Mt.
+                                Lebanon, N. Y. </p></div3><div3 type="book notice" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Phrenological journal and science of health" TEIform="index"/>
+                                The Phrenological Journal and Science of Health
+                            </head><p TEIform="p">The Phrenological Journal and Science of Health. Dei;. Contents: Wni.
+                                E.Gladstone; Notable People; Adaptation: Dessie W. Fitzgerald; Getting Rested;
+                                Vivativeness ; How to make Home Happy ; The Aryans; Southern California as a Health
+                                Resort; View of the Shady Side of Civilization; Catarrh ; Sanitary Reform; Child
+                                Culture; etc., etc. Fowler and Wells Co., 775 Broadway, N. Y. $1.50 per year. </p></div3><div3 type="book notice" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Hall's journal of health" TEIform="index"/>Hall's
+                                Journal of Health
+                            </head><p TEIform="p">Hall's
+                                Journal of Health. Dec. Contents : Mind Cure Matter; Magnetic Hygiene ; What to Eat; The
+                                Onion ; Good Living and the Brain; Plantains and Bananas ; Salt as a Medicine; Anecdote
+                                of H. W. Beecher; A Good Work; Cuba's two Meals a Day ; Psychometric Power; Calisthenic
+                                Exercises for Girls ; A Soldier Somnambulist; Treatment of Ingrowing Nail; etc., etc.
+                                Office 206 Broadway, N. Y. </p></div3><div3 type="book notice" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Bible and land" TEIform="index"/>The Bible and Land
+                            </head><byline TEIform="byline"><persName reg="Converse, James B." TEIform="persName"/></byline><p TEIform="p">The Bible and Land.—By Jambs B. Converse.—16 mo.—size 5x7
+                                inches. 251 pp.—Neatly bound in cloth—Price $1.00 postpaid.—Published and for sale by
+                                Rev. James B. Converse, MorRISTOWN, TENN. The table of contents of this "eminently
+                                timely" book is as follows :. Chapter 1, The Creator's Title to Land; ch. 2, The
+                                Problem: ch. 3, The Causes of Poverty; ch. 4, Land Values ; ch. 5, Grounds of Ownership;
+                                ch. 6, The Terms of the Original Grant; ch. 7, Biblical Land Grants; ch. 8, The Land
+                                Law? of Moses ; ch. 9, The Law of the Tithe ; ch. 19, The Prophets and Land; ch. 11, The
+                                Bible and Liberty; ch. 12, God's Government and God's Land; ch. 13., The Future of Earth
+                                ; Appendix of Proof Texts. </p></div3><div3 type="book notice" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Convenient calendar and stand" TEIform="index"/>A Convenient Calender and Stand
+                            </head><p TEIform="p">A Convenient Calender and Stand. The most convenient,
+                                valuable, and novel business, table, or desk calendar for 1889, is the Columbia Bicycle
+                                Calendar and Stand issued by the Pope Mfg. Co., of Boston, Mass. The calendar proper is
+                                in the form of a pad of 365 leaves, one for each day. The leaves are 5%x2% inches, a
+                                portion of each is left blank for memoranda, and as the leaves are sewed at the ends,
+                                any entire leaf, as well as the memorandum blank, can be exposed whenever desired. The
+                                pad rests upon a portable stand, and when placed upon the desk or writing table the
+                                entire surface of the date leaf is brought directly before the eye, furnishing date and
+                                memoranda impossible to be overlooked. The upper portion of the stand is made of pressed
+                                pulp, with "Columbia" in raised letters at the top, the whole handsomely gilded, and
+                                practically indestructible. Although this is the fourth year of the Columbia calendar,
+                                the quotations are fresh and new, and are interesting and instructive to the public as
+                                well as to the cycler. A departure is made this year, in that a portion of the
+                                quotations pertain to typewriting and stenography, with occasional reference to the new
+                                Becker typewriter made by the Pope Mfg. Co. The reading matter in no way interferes with
+                                the calendar, and the information contained on the leaves would, if placed in book type,
+                                make a fair sized volume.</p></div3></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Obituaries" TEIform="index"/>Deaths</head><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Randolph, John W." TEIform="index"/>John W. Randolph
+                            </head><p TEIform="p"><persName reg="Randolph, John W." TEIform="persName">John W. Randolph</persName>, at Watervliet, N. Y.,
+                                Nov. 8, 1888. Age 75 yrs.</p></div3><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Webb, Rachel" TEIform="index"/>Rachel Webb
+                            </head><p TEIform="p"><persName reg="Webb, Rachel" TEIform="persName">Rachel Webb</persName>, at Watervliet, N. Y., Dec. 6, 1888.
+                                Age 64 yrs. and 3 mo.</p></div3><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Prentiss, Sylvester" TEIform="index"/>Sylvester Prentiss
+                            </head><p TEIform="p"><persName reg="Prentiss, Sylvester" TEIform="persName">Sylvester Prentiss</persName>, at Watervliet, N. Y.,
+                                Nov. 22, 1888. Age 82 yrs, 2 mo. and 28 days. He had lived in the Community sixty years.
+                                Brother Sylvester was a peacemaker, and loved by all for his kindness and unswerving
+                                integrity to the Cause. His noble example was a safe pattern for all to follow and he
+                                will be held in loving remembrance by his many gospel friends. J. B.</p></div3><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Pretch, Charles" TEIform="index"/>Charles Pretch
+                            </head><p TEIform="p"><persName reg="Pretch, Charles" TEIform="persName">Charles Pretch</persName>, at Watervliet, N. Y. Nov. 24,
+                                1888. Age 72 yrs. and 11 mo.</p></div3><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Buxton, Josiah" TEIform="index"/>Josiah Buxton
+                            </head><p TEIform="p"><persName reg="Buxton, Josiah" TEIform="persName">Josiah Buxton</persName>, at Center Family, Union
+                                Village, Ohio. Dec 12, 1888. Age 58 yrs. 6 mo. and 6 days.</p></div3></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Advertisements" TEIform="index"/>[Advertisements]</head><p TEIform="p">[Advertisements deleted.]</p></div2></div1></div0></body></text></TEI.2>
