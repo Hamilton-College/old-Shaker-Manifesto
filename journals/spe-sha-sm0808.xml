@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI.2 id="spe-sha-sm0808" TEIform="TEI.2"><teiHeader type="text" status="new" TEIform="teiHeader"><fileDesc TEIform="fileDesc"><titleStmt TEIform="titleStmt"><title level="j" TEIform="title">The Shaker Manifesto</title><editor role="editor" TEIform="editor"><persName reg="Lomas, G. A." TEIform="persName"/></editor></titleStmt><extent n="pagination" TEIform="extent">36</extent><publicationStmt TEIform="publicationStmt"><publisher TEIform="publisher">Hamilton College Library</publisher><pubPlace TEIform="pubPlace">Clinton, New York, United States of America</pubPlace></publicationStmt><sourceDesc default="NO" TEIform="sourceDesc"><biblStruct default="NO" TEIform="biblStruct"><monogr TEIform="monogr"><imprint TEIform="imprint"><publisher TEIform="publisher">N. A. Briggs</publisher><pubPlace TEIform="pubPlace">Shaker Village, New Hampshire</pubPlace><biblScope type="volume" TEIform="biblScope">8</biblScope><biblScope type="issue" TEIform="biblScope">8</biblScope><date value="18780801" TEIform="date">August 1878</date><biblScope type="pages" TEIform="biblScope">180-209</biblScope></imprint></monogr></biblStruct></sourceDesc></fileDesc></teiHeader><text TEIform="text"><body TEIform="body"><div0 type="volume" n="8" org="uniform" sample="complete" part="N" TEIform="div0"><div1 type="issue" n="8" org="uniform" sample="complete" part="N" TEIform="div1"><!--                <pb id="p1"/>
+                        <p>Vol. VIII. NO. 8. AUGUST. 60 Cts. per Annum, POST PAID. MANIFESTO ('OFFICIAL MONTHLY.) ~ PUBLISHED BY THE UNITED
+                        SOCIETIES. * OUR HOME AT SHIRLEY, MASS. "GO PREACH THE KINGDOM OF GOD." 1878. PUBLISHED AND PRINTED AT SHAKER
+                        VILLAGE, N. H. N. A. BRIGGS, Publisher. THE SHAKER</p>
+                    <p>CONTENTS. Prospective 181 The Shaker Manifesto :—The Best Children 182 Religion 191 Let the Churches be converted -
+                        182 Shakerism Pre-eminent 193 Prayer 183 Editorial Notes 194 Indians No. 6 183 Correspondence 195 Relaxation vs
+                        Dissipation 185 For the children 197 Self Abnegation 186 Types of Christ 200 Experience of Oassandatia Brewster, of
+                        The Essential 208 Hancock, Mass., ag>xl 8G years 188 Obituary 209 Chemistry of Bread Makinsr 188 TERMS OF
+                        ADVERTISING. For' one inch, one insertion $ 1. 00 " one half column, " $ 3. 00 one " " " $ 6. .00 * page, ". " ¦
+                        $12.00 Continued insertion for three months, 20 per ct. discount. " six " 25 " , " " one year, 33J " "
+                        Subscriptions, Sixty cants, per year. Address, N. A. Briggs, ' Shaker Village, Mer. Co., N. H. Subscription win
+                        begin when order is received.—No back numbers. </p>
+                        --><pb n="180" id="p2" TEIform="pb"/><div2 type="lesson" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Notice" TEIform="index"/>NOTICE</head><byline TEIform="byline"><persName reg="Editor" TEIform="persName"/></byline><p TEIform="p">We hope every one wilf.bear in mind,' when inviting Bro. J...M. Peebles to visit, and to speak to them, to
+                            accompany the invitation with the necessary means to travel in iransitu. He labors for the good of souls. But he
+                            cannoteat souls; nor will these be accepted as railroad fares; and if they could be eaten or pass current, it
+                            would take so many of a certain class for meals and change, .that other food and currency are much more
+                            desirable.</p></div2><div2 type="lesson" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Types of Christ" TEIform="index"/>"TYPES OF CHRIST"</head><byline TEIform="byline"><persName reg="Editor" TEIform="persName"/></byline><p TEIform="p"> While presenting other valuable materia for the enlightenment and encouragement of all traveling Zionward, this
+                            number of "the manifesto may be truly denominated "tub typks of ciirist number." The paper contributed by Elder
+                            Eades is a yaluable one, even if it should not prove positively invaluable. Let the " Types of Christ Number"
+                            have an extensive circulation, and invite the deepest, kindliest thought.</p></div2><pb n="182" id="p3" TEIform="pb"/><div2 type="poem" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Perspective" TEIform="index"/>PROSPECTIVE</head><byline TEIform="byline"><persName reg="Anderson, Martha J." TEIform="persName">MARTHA J. ANDERSON</persName></byline><p TEIform="p">We've left the shells by the seashore Gathered in childhood's glee, The blossoms of youth are withered And
+                            scattered over the lea; And the sands of life are flowing Steadily one by one Like the spiral circling hours ,
+                            That pass from sun to sun. Only a few dark shadows Upon our way will fall, Only a few more sunbeams To duty's
+                            path will call, Ere the feet shall cease from straying, The eye will dim and fade, And the form with life
+                            pulsating In earth be lifeless laid. O the change is coming o'er us! Yet we think not of it now, When the flush
+                            of health is on our cheek, And light plays round our brow, When footsteps tell of vigor, And the heart beats
+                            free from care, And hands in present duty Are strong to do and bear. Yet anon as years roll o'er us, And the
+                            vital tide runs low, When the fires that burned with brightness Emit no fervid glow; Tis then in our quiet
+                            hours, In the calm deep realm of thought New scenes of change and action Before the mind are brought. Though
+                            memories round us gather, With shades of life's ideal, And things we loved and cherished— That seemed so true
+                            and real— Are gliding like phantoms ever To silence and decay, The treasured gain of the spirit Will never pass
+                            away. How broad are the fields of progress That open to our view, With the work of life immortal That's given us
+                            yet to do; And we feel a noble impulse Thrilling the mind and heart, Giving us strength of purpose, To act the
+                            Christian's part. O what is time to the spirit? Eternity just begun; And our footsteps here are few compared To
+                            the race we yet shall run; For mortal man as the flower that fadoa, Or grass that quickly dies Shall from
+                            evolving elements In form superior rise. Rise to behold the glorious dawn Of truth's unfading light, Casting
+                            aside the vail that screens The future from our sight, Reading with open vision then What now mysterious seems;
+                            Waking to life's realities, The substance of our dreams. Viewing in clear portrayal The record we have made
+                            Without a mask to cover Earth deeds of light or shade; <pb n="182" id="p4" TEIform="pb"/> 182 THE SHAKBE MANIFESTO. For back
+                            of the soul's camera Imaged in forms complete The truth is photographing Scenes that we yet shall meet. Then let
+                            us live so truly With honest heart and aim, With purpose pure and lofty, Above gross deeds of shame, That no
+                            vain reputation As counterfeit shall pass ; But character refined shall stand As on a sea of glass. Then will
+                            the future brighten, And the present glad appear, Free from the clouds that gather In sin's dark atmosphere;
+                            Then we shall sing in triumph The song of the ransomed free, As the golden gates are opened To immortality. Aft.
+                            Lebanon, N. Y.</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Children" TEIform="index"/>CHILDREN</head><byline TEIform="byline"><persName reg="Evans, F. W." TEIform="persName">ELDER F. W. EVANS</persName></byline><p TEIform="p">The class of invited guests, to the feast when the first and second appearing of Christ were united in marriage,
+                            received a blessing upon themselves and children. . Those children constituted the second class of invited
+                            guests. They, generally, made Believers. The third class, from the highways and hedges—the debris of
+                            society—were compelled, by poverty and destitution to come into Shaker societies. This class have, almost
+                            universally, gravitated back to the world. A few, of each company of such children, remain as a seed of the
+                            future. In the now opening cycle, a class of adults, similar to the first invited, will be called. They are
+                            growing up to the Gospel-ripening, like a field of grain for harvest. She, who sitteth upon the white cloud of
+                            witnesses, will thrust in her sickle and reap them from earth. Hereafter, when children are taken by Be-
+                            lieversj they should be sound in body, bright in intellect, religiously educated and of good parentage. Brought
+                            up in the way they should go, when they become men and women, they will not depart therefrom—They will be
+                            pillars in the temple of the Lord. Those, who go out, after having had a Gospel privilege, do not lose their
+                            faith, but are ministers of it, to the poor in spirit—Their sounding testimony and witness has gone into all the
+                            world. A Shaker Society is, to such, as Paradise, from whence they are cast out. They have regretful hearts,
+                            and, while wandering in the desert of evil—the wilderness of sin— look, with longing eyes, towards their lost
+                            heaven. Oft come their children, with bended knee and humble heart, to those whom their parents forsook, and, at
+                            times, persecuted. "0 glorious hope of immortal life! Its blessed joys I am sharing, With zeal renewed, in the
+                            upward strife, My spirit for heaven preparing. The Angels of God hover o'er me, While running the heavenly race,
+                            And their love, like a shadow of glory, Rests over this hallowed place"—Where self is sacrificed to truth and
+                            the Spiritual supplants the natural—Children of the Resurrection. Mt. Lebanon, N. Y.</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Let the churches be converted" TEIform="index"/>Let The Churches Be Converted</head><byline TEIform="byline"><persName reg="Andrews, Watson" TEIform="persName">WATSON ANDREWS</persName></byline><p TEIform="p">Improved theories are at the base of all religious progress. What has been done in the improved machinery of
+                            transit, commerce and agriculture, are only comparisons to the new and better modes of thought concerning
+                            religion. The preacher who proclaims the doctrines of even five hundred years ago, unmingled with a larger
+                            amount of modern, progressive thought, has a good deal of the mummy about him; and is so far as he relies upon
+                            the inspirations of the past, unfitted as a living preacher of the present. And there are too many like this.
+                            All around us, and for thousands of years past, the race has needed, but has not realized, present ialvation
+                            from sin. The long-talked of millennium has ever been in the future. War has not ceased, but has improved
+                                pros-<pb n="183" id="p5" TEIform="pb"/> THE SHAKER M_AJSTi:ffvESrrO. 183 pects; outrageous crimes stalk abroad in the
+                            land by daylight, in excess of darker ages. The civil governments have done more for the comfort and progress of
+                            the race, than all the mouldy theologies of the past. These dissipated the Inguisition; emancipated serfs and
+                            slaves; encouraged literature, arts, science and agriculture ; and invariably have had to beat back opposition
+                            from the so-called religious elements, which ever have been tenacious of the pet theory that the world stood
+                            still! Let the world change its theologies; so that men will not be the slaves of lusts, pride, unholy
+                            ambitions, fraud, violence and self-seekers. The religious theologies of thousands of years have not improved
+                            men. Let the churches of today, in the face of the facts, experience the religion of Christianity ; be- come
+                            manumitted from external and internal, worldy passions, and realize, that the Christ with us today, if with us,
+                            is as capable for present salvation from our sins of the flesh as ever in the past. North Union, Ohio.</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Prayer" TEIform="index"/>PRAYER</head><byline TEIform="byline"><persName reg="Orcutt, Daniel" TEIform="persName">DANIEL ORCUTT</persName></byline><p TEIform="p">Prayer is the earnest desire of the heart, ascending to God, the Author of life, and the Giver of all blessings.
+                            Our first thought, in the morning, should be a prayer of thankfulness to God, for His watchful care over us ;
+                            and through the day, our spirits should breathe forth holy desires, "on wings of prayer." And when night veils
+                            the earth, then, too, let us raise our voices in supplication, and commit all our burdens to One, who hath
+                            promised to sustain those who trust in Him. We can never pray too often, "Leave us not in temptation, but
+                            deliver us from evil." "Watch and pray that ye enter not into temptation," was the wise command of our savior.
+                            His whole life, from childhood to the cross, was constant prayer ; and shall we not imitate Him, by putting on
+                            the whole armor of righteousness, which will alone be our safeguard ? Oft may our bark be tempest-tossed, but we
+                            need not fear; He who "doeth all things well," is at the helm, and will guide the faithful, over the sea of
+                            danger, to the desired haven. Have you never watched till you saw the first bright star shine through a dark
+                            cloud? prayer and watchfulness, which is the armor for the battle of life, will surely bring in sight the star
+                            of hope, dispelling the clouds of sorrow and gloom. Enfield, Gt,</p></div2><div2 type="national-news" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Indians, no. 6" TEIform="index"/>INDIANS. No. 6</head><byline TEIform="byline"><persName reg="Prescott, James S." TEIform="persName">JAMES S. PRESCOTT</persName></byline><p TEIform="p">The Indians admit that they have some bad cases in every tribe ; and these bad Indians are made no better by
+                            associating with the lawless whites, but rather made worse, and these would be given up to be punished according
+                            to law, if tried and found guilty without going to war, if the whites would take the proper course in giving
+                            them time and using a suitable degree of moderation. But why we would ask should a whole tribe be
+                            killed,—indiscriminately slaughtered—because of the acts and doings of one bad Indian, or even half a dozen ?
+                            Where is the justice in this? It is a poor rule that will not work both ways. We might ask how would the whites
+                            }ike to have the population of a whole township killed, because of the acts and doings of one bad white man, or
+                            half a dozen border ruffians ?<pb n="184" id="p6" TEIform="pb"/> 184 THE SHAKER Who among the free born citizens of the U. S.
+                            would be willing to take the place of the Indians and be treated as they are treated by the . overpowering
+                            whites? Not one! Therefore, "All things whatsoever ye would that men should do unto you, do ye even so unto
+                            them, for this is the law and the prophets." This is a universal law which meets with a response in every man's
+                            mind, saying, "that's right! do as you would be done by that's my religion !" any religion that does not embrace
+                            this rule, practically, is not worth having. The Indians knoiv that they stand a poor chance to cope with the
+                            white men in war, on account of superiority in numbers, arms, ammunition, and in all the im- provements and
+                            tactics of modern warfare. But, what have the Indians left? The following is from the spirit communication of
+                            Tecumwega, continued : "Four millions of the African race liberated from slavery was indeed one of the noblest
+                            acts you have on the annals of history. But to think that the Indian, a poor ignorant native of the soil, an
+                            inhabitant of the continent when discovered by Columbus, should remain in ignorance, is too much for a red man
+                            to bear or endure. Had you, O white man, or your fore-fathers, taken the same .course with the Indian that
+                            William Penn did, he would stand on a broader and higher platform of society and on a more equal footing with
+                            the white man than he does now, and thereby have saved thousands of lives that the Indians ihave taken in their
+                            wild, savage ""state. % will make to you a short but true statement of William Penn : "Win. Penn is now a
+                            shining Herald of Truth in the Spirit world, and wherever, he meets an Indian spirit, he is highly honored and
+                            esteemed by the same. We call him Father Penn, and look up to him as a great benefactor and spiritual guide to
+                            the Indian, and long will his name be remembered within the Indian circles of the Spirit land, even for rolling
+                            ages to come. "If you wish to prosper in your various occupations and pursuits of earth life, if you wish to
+                            nourish like the beautiful rose of sunny climes, deal justly with all men, whether foreigners or natives, at
+                            home or abroad ; to all ranks, classes, and dispositions. Carry no longer two faces to the Indian, appearing
+                            before his face as his warmest and best friend, and behind his back his bitterest enemy. This will never do
+                            under so noble a Constitution as is yours, where there should be brotherly love throughout the length and
+                            breadth of this grand Republic." Who was William Penn, whose name has been handed down in history as one of the
+                            world's benefactors ? He was an exception among white men—a friend to the Indians. His success among the natives
+                            consisted chiefly in two things : First, he went among them unarmed and ministered to them the spirit of peace,
+                            instead of war, if he made treaties with them, he fulfilled them, if he promised them money, he paid them—he
+                            kept his word, by which he sained the love and confidence of the Indians. Secondly, he made them /eel that they
+                            had rights, and he respected those rights ; that they were his equals before the law ; that if either party
+                            violated the law, or rule of right, they should stand an equal chance at redress for their grievances. If all
+                            men had progressed up to the M^JNTTiriDSTO. <pb n="185" id="p7" TEIform="pb"/> THE SHAKEE 185 moral standard of Wm. Perm, the
+                            whites would have advanced much nearer the millennium than they are now; or, i the United States' Government hac
+                            early adopted his wise and humane policy and continued the same up to this time, it would never have had wai
+                            with the Indians. North Union Ohio.</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Relaxation v. dissipation" TEIform="index"/>RELAXATION vs. DISSIPATION</head><byline TEIform="byline"><persName reg="Avery, G. B." TEIform="persName">ELDER G. B. AVERY</persName></byline><p TEIform="p">All created beings, from least to greatest, need rest,—relaxation from action in the same direction ; human
+                            capacity for toil, burden, suffering, is limited; it cannot eternally bear the strain of continuous and
+                            unremitted action in one and the same direction. Rest, recuperation, is a law of all being, animate and
+                            inanimate. The Indian's bow, always bent, except when propelling the arrow, never springs well. The human limb
+                            always cramped, or strained in the same direction and degree of tension, becomes powerless. Even so the human
+                            mind always strained in the same direction, and to the same degree of tension, becomes imbecile, and insane. The
+                            spirit, also, is subject to the same laws ; it cannot always endure the same degree of exertion, or strain of
+                            either sorrow or joy ; to have a healthy and happy activity and existence, it must have seasons of relaxation ;
+                            its extremes of sensitive feelings of either sorrow or joy must be modified ; if too fitful, quietude ; if too
+                            dull, action. The entire forces of creation demand their night,—their season of repose. But what is rest ? A
+                            poet hath truly said : "A want of occupation is not rest; A mind quite vacant is a mind distressed." Rest, is
+                            not necessarily a cessation from all action ; this, the surgeon's patient well understands, when a limb is
+                            confined for weeks in the same posture and place ; but rest is change of action and condition, releasement from
+                            excessive exertion and conditions modified to the needed change. To the sedentary mechanic, as the shoemaker,
+                            tailor, jeweler, engraver, and seamstress, exercise is rest and recuperation, while to the farmer, the
+                            pedestrian, cessation from action is rest. To the merchant, wearied with the constant din of the transit of
+                            bales and boxes, the clatter of feet and the prattle of tongues, the quiet retirement of the Sabbath, and its
+                            hush of excitements is rest; but, the cloistered men or monk, tethered to the closet, prayer books and kneeling
+                            stool, the busy scenes and transactions of the mechanic, farmers, or merchant's life, or the strolls of the
+                            pedestrian are rest. But, relaxation from the rigorous duties and burdens of life in any or every direction,
+                            does not, necessarily include dissipation ; it does not require that bright human intelligences should stoop
+                            down to indulgences and pleasures which degrade their being to, or below the level of the brute, and load
+                            themselves down with burdens of disease, the fruits of pleasure, more painful, in their consequences, than their
+                            toils for honest subsistence. Because the mind, as well as he body, wearies of excessive toil and aurden, it is
+                            not necessary, in order to secure rest, and recuperation, that its possessor should let go all mental restraint,
+                            and betake one's self to the theatre, the drinking saloon, the gambling M^JNTIITESTO.<pb n="186" id="p8" TEIform="pb"/> 186
+                            THE den, nor to give loose reign to physical passions and appetites for relief. Because the nerves are weary it
+                            is not necessary, nor is it rest, nor recuperation to them to narcotize them with tobacco, stupify them with
+                            opium, nor stimulate them with alcohol nor rubefacients for relief. The age in which we live is notorious for
+                            instability ; feebleness seems an inheritance transmitted from parent to child ; even the educational
+                            institutions seem pandering to this weakness of human condition, and nursing this fickle wight; much of the
+                            mental food—our literature, is light, trashy, ministering to shiftlessness. Loiv, cheap novels,— iidime novels"
+                            load the shelves of news rooms and bar saloons ! This is food for mental dissipation, not mental rest! But, when
+                            the mind is jaded, let it find rest in quietude and the exercise of the muscles, or sweet sleep relieved from
+                            worldly cares. When the spirit is borne down by the strifes and turmoils of life, it may find the most
+                            appropriate and abundant repose, the most sumptuous rest and refreshing recuperation, in turning its energies
+                            upon Divine and heavenly themes, with their sunbeams of an- gelic' smiles, and their panaceas of heavenly love
+                            from the portals of the blessed in the land of souls. Mt. Lebanon, N. Y.</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Self-abnegation" TEIform="index"/>SELF-ABNEGATION</head><byline TEIform="byline"><persName reg="Hampton, O. C." TEIform="persName">O. C. HAMPTON</persName></byline><p TEIform="p">He who can rise to a state of practical self-abnegation, until it has become second nature with him, has arisen
+                            to a very great height in human glory and felicity. If there is any man who is elevated above, and delivered
+                            from, the thralldom and vexatious slavery to external circumstances, and temporary changes, it is he who has
+                            gained the serene height of total self surrender of his own will—affections—yea even intellect and judgment into
+                            wiser hands than his own. And paradoxical as it may seem, this total self-abnegation, must be an act of our own
+                            deliberate choice, arising from our own sincerest judgment of its benefit and utility, or such surrender is
+                            simply an impossibility. No doubt the advocates of individual sovereignty will sneer at this theory, as one
+                            which makes a mere machine of a man, and even at that, subject to the whims and caprices of any and all to whom
+                            he may have surrendered himself, and who profess (at least in our society,) , to have legitimate control of him
+                            as being agents for God, in ultimating his highest individual good. Still, all who will take Jesus Christ's
+                            method of proving the truth of this doctrine, (viz)being a doer of the work, will find a most glorious guerdon
+                            of contentment and peace as the result of this lesson in self discipline. The philosophical grounds , for til is
+                            safe and salutary self-surrender, are to be found in the solid granite of eternal principles. 1. It is a
+                            necessary inference from God's'Goodness Love and Wisdom, that any plan or scheme he might employ for man's
+                            elevation and progress, should be one which would secure the 'greatest amount of blessing to the greatest num-
+                            ber. 2. It is an inexorable law of the universe that the less are to be blessed of the better if blessed at all.
+                            These inferences from God's Love and wisdom are practically demonstrated it appears to SHAKEE
+                                JVXAZNTIT'JSSTO.<pb n="187" id="p9" TEIform="pb"/> THE SHAKER 187 me in the present organization of Shaker Societies, and
+                            their mode of administering the government of the same. And when the intrinsic elements of this administration
+                            become sufficiently diffused, to economize and appropriate all the talent, wisdom and inspiration to be found in
+                            all of the members thereof spiritual media-Prophets, Evangelists, Teachers, Preachers, Mechanics,
+                            Mudgills—everything, it seems as if it would leave nothing more to be desired. But to get down to this hard pan
+                            of self-abnegation once more : There are many worthy and excellent motives urging to the swift travel of all and
+                            each of us into this sublime and heavenly state. 1. It is the next thing to the impossible to be strictly honest
+                            and unselfish without it. I heard our good Elder Hervey L. Eades say many years ago that which I never forgot:
+                            "'If" said he, "something were required of me to do_ by another whether agreeable to my feelings or not, I could
+                            at least retain my integrity and honesty in complying with the demand ; because no wish nor choice in me has
+                            been consulted. But if I proposed to do any certain thing of myself, my own integrity and sincerity would be
+                            very much more questionable even in my own opinion; for how could I tell how far my own sinister interest might
+                            be mingled, like so much strange tire in my offering?" And sure enough, there was the rub. 2. We all need an
+                            immense amount of modesty, humility and general concession, before we shall be fit society for the angels. 3. No
+                            man can exist independently of all organization. He could no more grow and progress independent of the
+                            individual self-sacrifice he has to make of his private will and pleasure to the good of the organization, than
+                            Simeon Stylites, situated upon a pillar 60 feet high and 4 feet in diameter where he spent many years in
+                            complete solitude positively honest and sincere though he may have been, but wofully wanting in Wisdom. 4. When
+                            we are so far subdued, and brought so completely under the influence of self-abnegation as to no longer feel the
+                            agonies of its consuming fires, what is there that can disturb our serenity for a moment ? Nothing will be
+                            unpleasant any more. Men in all ages here and there one—here and there an order have sown the precious seed and
+                            reaped the golden harvests of this divine self-sacrifice. Brahmins, Buddhists, Essenes, Egyptian Hierophants,
+                            Jews and Christians have all acknowledged and practiced this sublime self-surrender at times, even to those they
+                            esteemed their inferiors. How serenely Jesus answered Pilate when questioned thus by the Jewish Ruler : "Know
+                            you not that I have power to put you to death ?" Jesus said, "I know you have that power no more, no less, than
+                            God will see fit to allow you to exercise it." There was the invulnerable foundation of confidence—"Thou art
+                            still the Eternal God, and underneath are the Everlasting Arms." Let come what will, sorrow and adversity ; or
+                            comfort and peace, it is God's plan and he must, he surely will vindicate his cause and in the end justify all
+                            his ways to man—so thought Jesus. His Providence is over all— This boundless universe— And o'en the wormwood and
+                            the gall, The blighting and the curse, Are but His mercies in disguise, The turnings of His hand, From which
+                            salvation shall arise, At His Divine Command. Union Village, 0.</p></div2><pb n="188" id="p10" TEIform="pb"/><div2 type="letter" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Experience of Cassandana Brewster, of Hancock, Mass, aged 86 years" TEIform="index"/>Experience of Cassandana
+                            Brewster, of Hancock, Mass, aged 86 years</head><byline TEIform="byline"><persName reg="Brewster, Cassandana" TEIform="persName"/></byline><p TEIform="p">In answer to many inquiries why my lot was cast among the Shakers, I briefly reply :— When in the tenth year of
+                            my age, my parents became religiously exercised and much awakened to the necessity of finding some way for the
+                            salvation of their souls. After close examination among different Christian denominations, they became satisfied
+                            that the Shakers lived nearest to God and in their lives were the most practical Christians of any people they
+                            had found. In this belief they united with them, taking with them their family, where they finished their days,
+                            having in their lives faithfully and conscientiously maintained their religious faith. I was reared in the
+                            Society a contented and happy child, knowing little of burdens and cares, as they were borne for me. At about
+                            sixteen years of age, there was a general religious revival among our people, the operation of which produced in
+                            me a great change. Although young, I received the burning light of conviction ; and notwithstanding my favorable
+                            situation from society relations, notwithstanding the good influence and kind labors of a Christian people which
+                            gave me protection from sin, yet I found I was human and realized my fallen condition ; I felt I had a work to
+                            do for myself; no others could do it for me, however much they might be able to aid me. I then and there raised
+                            my standard high, and commenced the work in earnest, resolved, that whatever might be the trials I met or the
+                            temptations which beset me, I would firmly stand, live my faith, bid the spirits of darkness depart and make my
+                            house a house of order, allowing no place therein for sin or defilement. This resolution I have faithfully kept.
+                            I have ever been ready for a helping word from my leaders, and faithful brethren and sisters. By following their
+                            example and accepting their precepts, I have gained that victory over the power of evil, in which I can and do
+                            rejoice, with unceasing thanksgiving to God, the giver of all good, for opening a way of salvation for all who
+                            will accept the terms, by mortifying the deeds of the body that the soul may live. In truth I can exclaim,
+                            blessed way of God, I do love it! Blessed cross of Christ, it frees my soul from sin and shame, it clothes me
+                            with peace, love and purity, I do love it! In loving my dear gospel relations and knowing they love me is the
+                            beginning of heaven upon earth and makes me exceedingly happyMay the knowledge of gospel truth be extended; may
+                            the work of love and peace increase until it fills the whole earth, putting an end to all wars, strife and
+                            contention, uprooting the three plants our heavenly Father hath never planted, na-mely:—"The lust of the flesh,
+                            the lust of the eyes, and the pride of life." Then can we all rejoice together in the goodness of God.</p></div2><div2 type="food" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Chemistry of bread-making" TEIform="index"/>Chemistry of Bread-making</head><byline TEIform="byline"><persName reg="Fraser, Daniel" TEIform="persName">DANIEL FRASER</persName></byline><p TEIform="p"> Scientific men have drawn their conclusions from facts within their knowledge, that alkaline salts break up the
+                            coagulating power of the blood, induce a diminished vital cohesion of the textures JVLAJSITF'ZESTO <pb n="189" id="p11" TEIform="pb"/> THE SHAKER formed from it, impair the process of respiration, and lessen the production of
+                            nutritive blood. Ff such is actually the case, then those who use alkaline matter, must find in proportion to
+                            the quantity taken, lassitude and debility, an exhaustion of condition, a desire to rest and lounge, and instead
+                            of being up and doing for the welfare of others they find enough to do in caring for themselves. That such is
+                            actually the case needs no affirmation ; medical men can show cases by the thousand that need their at- tention,
+                            strictly referable to laxity of muscular fibre, and want of strength in the frame-work of the body. Here we have
+                            the facts of ordinary life sustaining all that has been advanced ; hence the disuse of alkaline matter in our
+                            food in compliance, we promise you (the young more especially,) greater strength of bone, firmness of muscle, a
+                            rallying power under fatigue, and a buoyancy of spirits at present unknown. The chemistry of Saleratus and Soda
+                            in human food, and their action on the formation of muscle and bone etc ; have already been dealt with. The
+                            chemical changes that take place by fermentation and by the heat of the oven in baking may now be noticed. Good
+                            flour, good yeast, thorough kneading, and the proper degree of heat in the oven, are the essentials in making
+                            good bread. How to make yeast: Boil with the skins on till well done, enough of potatoes to make a quart when
+                            mashed. When done, peel the potatoes and mash them to fineness and mix with them one pint of flour ; then stir
+                            the whole to an emulsion with the water in which the potatoes were boiled. Cool the product to eighty degrees,
+                            and add half a pint of the best bakers' yeast and a tablespoonful of brown sugar. Set the mixture aside, and
+                            maintain a temperature of eighty degrees till it works well. Of this yeast, take half a pint to seven pounds of
+                            flour, mixed with three pints of water at eighty degrees ; if the weather is cold the flour may be warmed. Knead
+                            till the dough is flaky, then set it aside to rise at eighty degrees. When the dough has risen to nearly the
+                            full size, divide it into loaves and knead again, and set them aside at eighty degrees till the full size is
+                            attained ; then put the loaves in the oven heated to not less than four hundred and fifty degrees. Keep the
+                            loaves covered with paper till the dough is fully t aised ; then remove the papers and permit the browning to
+                            take place. The larger the loaves the higher should be the temperature of the oven. Seven pounds of flour will
+                            make eight loaves of bread twenty ounces each. When the loaves are. taken from the oven, place them in a current
+                            of fresh air till they have cooled off to the temperature of the air. Covering bread fresh from the oven is an
+                            injury to it. The yeast as above, will keep a week in winter ; and from two to four days in summer. Cool it off"
+                            slowly before being set away. Bread made from it, in faithful obedience, will be good. The heat of the oven
+                            renders starch soluble. The raising of bread-stuffs, and the cooking of food are the most important branches of
+                            human industry. Chemistry enters largely into cooking and more especially in bread-making. Every cook should
+                            know something of the nature of chemical action. There are three kinds of fermentation, the first, 1©9 M^NimE
+                            STO. <pb n="190" id="p12" TEIform="pb"/> 19O THE SHAKER, M-AJNTIJEHESTO. develops sweetness, the second, sourness, and the
+                            third, something worse. In making bread, fermentation should be arrested before the sour stage begins. Good
+                            bread is the exception and not the ride in more than half the families of the world. With a little chemical
+                            knowledge, and an eye trained to observe the little changes that occur in the dough and in the oven, good bread
+                            may become the rule. To make good bread, is a higher accomplishment than musical proficiency. Wheat meal with
+                            all the bran in it should be used in preference to superfine flour. In mixing the dough of this meal, it should
+                            not be as stiff" as of fine flour : and when yeast is used, fermentation should be arrested sooner, and the
+                            bread baked in a hotter oven. A great change has taken place in the habits of well-to-do people within the past
+                            twenty years in relation to bread. Now, bread and puddings made of unbolted flour are used to a great extent.
+                            Oat meal has also come much into use. This change is not confined to the East. In one of the Western States, a
+                            Scotch miller had machinery which could turn out one hundred barrels of oatmeal per day. He increased the
+                            capacity of his mill to double that amount. In bolting flour, the bone, muscle, and brain forming elements are
+                            abstracted to a serious amount. As proven by chemical analysis, superfine flour has been robbed of nutritive
+                            value to the amount of one seventh. In other words, one entire wheat crop every seven years is destroyed to suit
+                            tastes and cravings, which have no founda- tion in physiological righteousness. The digestive functions bear
+                            normal relations to the grains just as they are ; but when superfinely ground and bolted, over fermented, poorly
+                            kneaded, half baked and dosed with saleratus—this long continued, the integrity of said functions finally gives
+                            way, breaks up the nervous system, and a host of ailments locate themselves, and are transmitted from parents to
+                            children. Hence the nearer we come to using the grains just as they are, the better. All grinding of grain, and
+                            cooking, should simply be, to render the whole grain more easily digested and assimilated. The subject of
+                            fermentation has engaged the attention of some of the best minds of Germany, France, and England ; and the
+                            conclusion is, that leaven is living rottenness ; and the least degree of fermentation in dough lessens its
+                            nutritive value. And that the whole process of fermentation is wasteful and unclean; microscopic organisms being
+                            introduced and propagated in profusion. To obviate the waste and uncleanness of leaven, various methods of
+                            making bread have been introduced. The Aerated bread is now used to some extent; but machinery is required in
+                            its manufacture, and of course cannot be made by single families. There is a form of unleavened bread coining
+                            into general use in leading families, called "Gems,'' wherever introduced they are pre-eminently acceptable. Dr.
+                            Trail of Hygienic fame, introduced another form of unleavened bread ; both are excellent, the latter is more
+                            strictly in accordance with physiological relationships. Gems are made as follows : Make a batter of unbolted
+                            wheat meal and <pb n="191" id="p13" TEIform="pb"/> THE SHAKER 191 water, thick enough to run from the spoon and no more ;
+                            have the gem pans hot, and just befora filling them, stir up the batter well, mixing with it all the air you
+                            can. Have the oven hot, and in twenty minutes you may have nice gems. The origin of this form of bread, was in
+                            this wise ; Dr. Trail, wishful to have an acceptable form of unleavened bread, found when baked in the ordinary
+                            way it was sodden ; the happy thought struck the experimenter (Charles Hart, of Boston) that if the bottoms of
+                            the baking pans were corrugated the results might be satisfactory, and they were so. The first point in having
+                            good gems is to have the batter of the right consistency. Second, develop the gluten of the meal thoroughly by.
+                            stirring up the batter. Third, have the pans and oven hot. A thin skin speedily incloses the air in the batter,
+                            the expansion of the air with a small portion of steam, swells up the gem. When gems are wanted immediately make
+                            the batter with hot water; if mixed the night before, warm water is not needed. The other form of bread, is made
+                            of wheat meal and water well kneaded, and rolled out to about one fourth of an inch thick, and baked on a hot
+                            (not too hot) surface. This cake is at once highly nutritive, needs a good degree of mastication, and is
+                            actually delicious to a physiologically trained appetite. Appetites can be trained as well as created. ON THE
+                            USE OF COMMON SALT : From what has been advanced of the action of saline matter, it is not too much to say, that
+                            if we used only one tenth of the salt we usually do, it would be better for us. The Spanish race in the South,
+                            have educated their tastes in a certain direction, till Cayenne pepper and garlick are leading articles in their
+                            dietary ; and in families not so far south, where gross tastes prevail, everything eaten must be saline. The
+                            great argument, (or rather no argument) in favor of salt, is, that animals like it; they do, but do they use
+                            salt, with every mouthful of grass they eat? If salt was used at long intervals, its operation would be directed
+                            towards the bowels and be discharged, and be less hurtful than when taken in small doses several times a day.
+                            Those who use but little salt, appreciate the delicate flavor of the various grains, and they will more speedily
+                            recover from internal and external injuries. Mt. Lebanon, N. Y.</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Shaker Manifesto:--the best religion" TEIform="index"/>THE SHAKER MANIFESTO. The Best Religion.</head><byline TEIform="byline"><persName reg="Editor" TEIform="persName"/></byline><p TEIform="p"> That form of religious belief is best, regardless of its denomination, which does most for its adherents, in
+                            moulding them into noblest humanity. All persuasions aim to do this; and that is the best which'most truly
+                            accomplishes this grand desideratum. The poet rhythmically advises graceless bigots to cease fighting about
+                            modes of faith, and asserts, "His can't bo wrong, whose life is in the right;" and could we all agree upon what
+                            system of life is right, or most righteous, then would the era of great, good feeling be inaugurated—the dawn of
+                            the M^JSTrFE STO. <pb n="192" id="p14" TEIform="pb"/> 193 THE millennium universally seen and felt. Still, while much
+                            diversity of opinions exists and is likely to for years to come, there are ideas of what forms the best
+                            character—what makes a human being the best man or woman—upon which we can agree very generally ; and a gener-
+                            ous leaning towards this agreement, and away from ungenerous prejudice and unbrotherly bigotry, would soon bring
+                            heaven to earth, and make us brethren in one universal religion. We hold a relation, by oneness of pro- fession,
+                            with a few millions of Christians. The founder of the system bore a most lovable character and amiable
+                            disposition. So beautiful wras Jesus in life, that all who know of him—even millions upon millions disowning his
+                            leadership— pay willing tributes of respect to his excellent reputation—to the divinity of his humanity. . Now,
+                            man was not made for this system of Christianity ; but this was made for his higher development; and in making a
+                            god of Jesus, instead of an exampier, the greatest mistake ever made by human beings was, and is enacted—from
+                            which mistake may be dated departures from the religion of a universal, loving brotherhood and a multiplication
+                            of sects, all largely professing the name, while but few, very few make even an approach to the pattern. Yet,
+                            the highest religious fervor of the human soul, brings mankind into a oneness of feeling, mutually deciding what
+                            is right and what is wrong ; and thus men say : It is best to be pure as Christ was pure; and peaceable, as
+                            Jesus was for peace ; and just and philanthropic after the Master's pattern ; and beautifully unworldly like the
+                            example set—these are best; not simply because Jesus did so live and love to do, but because every engagement of
+                            these practices makes of us better men and women., While making the profession of Chris- tianity, and adoration
+                            for its founder, could we all so love the faith, and so love Jesus, that we would relinquish every inferior,
+                            passionate inclination, (however natural) to be like Jesus, and to be living illustrations of his faith, then
+                            what noble humanity we should be ! what a universal religion of love to men would possess us ! No quarrels nor
+                            wars—but an eternal peace, a Christian calm and rest. None rich, tyrannical, "overbearing, proud nor high;" none
+                            poor, servile, sick, sorrowful nor sinful; but rather obtain a brotherhood of most virtuous, extensive, and
+                            gigantic proportions. We would, we will lay aside our bigotry, our unchristian prejudices, and admit joyfully,
+                            the best religion is that which makes us love and bless one an- other the most. Leaving the future life out of
+                            the question until we enter it, we would aim to be best in all that is selfsacrificing, noble, pure,
+                            unretaliatory, golden-rule and unworldly in this life. If to live like the angels is desirable, then to separate
+                            ourselves from all unangelic practices is a necessity. We want the best religion ; and we are willing to live
+                            for it at any cost. Thus far, we have believed the Christian system was best; and yet it has cost us many
+                            inferior practices ; but in lieu of these, to put on Christ has been a gain unto an exceeding nobility inasmuch
+                            as we have done so. If there is any better religion than the life of Jesus—the Christ of the gospels— any form
+                            that will make us more just, merciful, loving and peaceful than was SHAJKBR MANIFESTO. <pb n="193" id="p15" TEIform="pb"/>
+                            THE SHAKER MANXF'EIS'X'O. 193 Jesus ; or more so than the Christianity called Shakerism returns to us when fully
+                            and faithfully practiced, we want to know it, for we want the best religion— and to be humanly divine.</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Shakerism Pre-Eminent" TEIform="index"/>SHAKERISM PRE-EMINENT</head><p TEIform="p">A writer asks : "What shall I do to be a Shaker?" While urging her to procure a. copy of "Plain Talks," we would
+                            here ask and answer : What constitutes a Shaker? What is Shakerism? And wherein lies the necessity for either ?
+                            The name "Shaker," was originally given in derision, to a little band of revivalists which was involuntarily
+                            shaken by an irresistible and unknown power. The character of those bearing the name Is virgin in its largest,
+                            purest signification. The profession of those called Shakers is particularly Christian, as it demands, that
+                            being a disciple, means living like Jesus—the Christ. The system of Shakerism is peculiarly religious. The
+                            necessity for it lies in the fact that there is no other system that gives so much soul satisfaction ; none that
+                            establishes more resurrection life— a life most superior—while depriving its participants of nothing that
+                            exalts, improves and makes superiorly blissful our life on the earth. The system of Shakerism is pre-eminent as
+                            a salvator from sin ; and a redemptor unto most pristine purity; because it affects those who adopt it as a
+                            life-practice, that they come in possession of an unusually discreet knowledge of what constitutes sin; and with
+                            a keener vision of, and rare relish for the correlations of heaven and earth ; thus establishing on earth an
+                            avenue, whereby strength from the heavens is procured to put away the last remains of sin, and live in heaven on
+                            earth. It is a system that urges the possibility and certainty of living together as men and wometv—brethren and
+                            sisters— in whom is so much of Christ, that all unheavenly, sensual, sexual lusts may not only be denied, but
+                            spurned with a godly hatred. Thus does Shakerism portend what is possible to be, and what is established on
+                            earth. It discloses to every investigator, a religion, based on the scientific basis of an exchange, by
+                            selfdenial, of the inferior for the superior— a loss of unenduring pleasures,-for pleasures that will never die,
+                            but increase, eternally in the heavens. Inseparably connected with this spiritual basis, is the successful
+                            attempt to establish on earth, communal relations, whereby no physical want needs be felt, but rather, the
+                            security of an abundance of everything that constitutes earthly blessings. The spiritual being supreme director,
+                            has decreed that the consideration of self is Cithe accuser of the brethren" and shall be cast out. With its
+                            outgoing, there follows as the most natural of consequences, a large train of devilish incendiaries, with whose
+                            presence neither peace, purity nor partition of goods upon an equal, brotherly, heavenly basis is possible.
+                            Prominent among these very worldly and grossly inferior proclivities are partiality ; ambition for pre-eminence
+                            in position and in power of rule ; the selfish love of money, with the brief authority its assumption appears to
+                            give; jealousy ; deceit; inequality of sharing burdens and blessings, etc. ; while the new occupant that puts
+                            the house of the soul in order, and insures beyond a doubt, permanent peace and eternal happineee, <pb n="194" id="p16" TEIform="pb"/> 194 THE 8HAKEE MANIFESTO. is the spirit that works, lives and dies— ever ambitious to illustrate
+                            the new gospel rule of "eachfor all—all for each." Even to the intelligent, but worldly minded, the prosecution
+                            of such a scheme, for the attainment of present salvation, and assurance of future redemption, seems Utopian,
+                            and very improbable of success. But such advantage has already attended the Shakers as far as they have
+                            practiced Shakerism, that though acknowledging themselves yet imperfect, to a full attainment of complete heaven
+                            on earth, sufficient is realized to encour- age their prosecution of an apparently perfect system, which they
+                            believe originated in the heavens, and which by a foretaste, they are assured, a full elaboration of the same in
+                            the soul, will result in the completest redemption. Investigation will prove to the sincere seeker after an
+                            exceeding righteousnessperfection—as found in Jesus, that though Shakerism is a working religion, it removes all
+                            dross and results in the purest of life. </p></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Editorials" TEIform="index"/>EDITORIAL NOTES</head><div3 type="editorial" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="General Sherman vs. Jesus" TEIform="index"/>GEN. SHERMAN VS. JESUS</head><byline TEIform="byline"><persName reg="Editor" TEIform="persName"/></byline><p TEIform="p">In a recent speech, Gen. Sherman, testified that his profession as a soldier, was in the interest of peace !
+                                We protest. A much more honorable personage than Gen. Sherman—Jesus Christ— made even louder and stronger
+                                protests than, we now do. His testimony made it right for Jews, heathens and brutal barbarians to fight; but
+                                not for Christians'; "else would my servants fight."</p></div3><div3 type="editorial" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Christianity a failure?" TEIform="index"/>"IS CHRISTIANITY A FAILURE ?"</head><byline TEIform="byline"><persName reg="Editor" TEIform="persName"/></byline><p TEIform="p">That which is called Christianity by the popular churches never has been a success in the line of dispensing
+                                salvation ; and is full as much of a failure today as ever. The introduction of genuine Christianity was "to
+                                save people from sinning;" the immense failure of salvation to the people, finds its cause in that the
+                                people demand to be saved in their sins,—an utter impossibility, even for God to enact. We ask those who
+                                want salvation from sin, to study and copy the life of Jesus, which will prove a veritable "power of God
+                                unto salvation."</p></div3><div3 type="editorial" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Christianity, too exacting" TEIform="index"/>CHRISTIANITY, TOO EXACTING</head><byline TEIform="byline"><persName reg="Editor" TEIform="persName"/></byline><p TEIform="p"> "I pray thee, have me excused from much that Christianity demands ;" has been the appeal of worldly,
+                                pleasure-loving professors of the faith. For these reasons—the exacting demands of Jesus upon all who would
+                                be true disciples—Jesus has been substituted for themselves ; made to bear their cross ; made sufficient for
+                                the life they should live, but do not; caused to be crucified, in the hope that through this crucifixion
+                                they might live and wallow in their sins ; made a god of, in the hopes, that, regardless of their sinful
+                                lives he would' be all powerful to save them from their just punishment. Fellow men and women : These things
+                                ought not to be believed. Stand up and face the consequences ; for so surely as effects follow causes, so
+                                surely will we have our "reward, according as our works have been." Christianity is so exacting, many want
+                                to be excused from bearing the same, full cross that Jesus did ; and in being so excused, they are excused
+                                the salvation from sin, which alone makes Christianity invaluable. But so long as these excuses are indulged
+                                    <pb n="195" id="p17" TEIform="pb"/> TKJEO SHAKER MANIFESTO. in, just so long will there be a multiplicity of
+                                denominations, each proposing equally to shun Shakerism and Christianity, and to obtain all that these
+                                promise without any exertion on their part! Christianity is based upon principles as permanent as God ; and
+                                to escape the just consequence of our doings, by hiding behind the ambush of a meaningless faith, is simply
+                                fallacious. Christianity, though a spiritual system, is no less true as a scientific institution ; and all
+                                science, teaches that as the causes, so will be the effects that follow.</p><p TEIform="p">The Dunkards are making innovations on their past history, by sending out missionaries, and sustaining
+                                salaried officers.</p><p TEIform="p">What is the reason that so little is mentioned by those who praise Jesus, of the modes of life he practiced,
+                                but which are too repugnant to human senses to copy ?</p><p TEIform="p">A writer in the N. Y. Observer contributes a poem, entitled "Live, looking to Jesus !" yet no reference is
+                                therein made of living just like him. From this course the majority pleads : "Please excuse me !" or less
+                                politely: "I wont live like Jesus !" Ingersoll thinks that it is too bad to make so much fuss about original
+                                sin, while so much copy remains on hand. The "All for Christ" expression, very commonly fails to express
+                                full honesty, by omitting "-excepting a good deal of self." The Chinese have a maxim, that he who speaks
+                                most of himself, is the greatest of liars ! The Mohammedans—the genuine ones—look upon Jesus with great
+                                respect. They say "Jesus was good; Mahomet was greater !" Gen. B. F. Butler makes the grand and good
+                                suggestion, to spend the usual $40,000,000, annually wasted on the army of the U. S. in promoting settle-
+                                ments in the West. In a few years, he contends, no army would be needed; and instead of wasting these
+                                millions of mouey, the increase of the country's revenues through the industry of those now assisted by
+                                them, would be returned many-fold. Let us try it.</p></div3></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Correspondence" TEIform="index"/>CORRESPONDENCE</head><div3 type="letter" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Characteristic letter from Brother J. M. Peebles" TEIform="index"/>Characteristic letter from Bro. J. M.
+                                Peebles.</head><p TEIform="p">HE CONFESSES NEGLECT : G. A. Lomas, Dear Bro. If you were not gifted with a rich abundance of good nature,
+                                common sense and charily, I should commence these lines with an apology for my sins of omission. Your
+                                excellent letters received about the time of my arrival in London, from South Africa continue unanswered;
+                                and the reception of papers and pamphlets you forwarded at that time remain unacknowledged ! Can you for-
+                                give such delay—such seeming neglect? While self-denial is so divine, I am sure you will not deny yourself
+                                the luxury of forgiveness. HIS STYLE OF REBUKING : Now that I've got your attention, I propose to stone you.
+                                Stand up and take the missiles manfully; remembering that though "no chastisement for the present seemeth to
+                                be joyous, but grievous, nevertheless afterwards it yieldeth the peaceable fruits of righteousness to those
+                                exercised thereby." THE CAUSE OF HIS REBUKE : I see from The Shaker Manifesto, that in your references to me
+                                you have scattered 1L&gt;5 <pb n="196" id="p18" TEIform="pb"/> all sorts of barbarous prefixes and annexes about my
+                                name; such as "Rev." "Hon." "Dr." etc. It is true that in my more verdant years I was ordained to the
+                                ministry by the laying on of sectarian hands—hands as dry and non-magnetic as chips in the scorching summer
+                                time. But you will agree with me that it is not the most attractive of sights to see the follies of youth
+                                repictured before us! It is equally correct that I was commissioned to fill the Consular position at
+                                Trebizonde in Asiatic Turkey during Gen. Grant's administration. But there was nothing very "honorable" in
+                                that. American politics are anything but honorable or honest. The appointment may have been beneficial hi
+                                opening to me the gates of the East, and introducing me to the Mohammedans, Brahmins and Buddhists of the
+                                Orient. It is also true *that I studied medicine, attended medical lectures, served my time in the
+                                dissecting room and received a diploma. But I studied medicine to know how to avoid talcing it, rather than
+                                how to admimste" it! HIS MEDICAL PREFERENCES : Really I have more faith in dieting, bathing, catnep tea,
+                                sisterly nursing and healinghands controlled by Indian spirits, than all the nasty, pungent medicines ever
+                                compounded by apothecaries and pseudo-saddle-bag bearers! HIS CHOSEN TITLES : Therefore write me down as
+                                plain James M. Peebles—speak of me in social circles as your Brother James—and refer to me when absent as
+                                Bro. James, the Pilgrim, on his way to Zion. HE SOFTENS THE REBUKE : Of course, I understand that in
+                                fastening these handles to my name there is no blame to be attached, because in thus doing, you only copied
+                                them as you found them in the newspapers of Cape Town, South Africa, India, Ceylon, and other eastern lands.
+                                Still they are superfluous, cumbersome, useless, and belong to "the fashion of this world that passeth
+                                away." HE RESEMBLES A "NONDESCRIPT CREATURE:" I sometimes permit reporters and commit- tees to use these
+                                titles because of the good they hope to accomplish. These are of the world. I am sure that Elder F. W. Evans
+                                will grant me some considerable latitudinarianism while locomoting like that nonde- script creature seen in
+                                John's vision, "standing with one foot upon the sea, and the other on the land." ELDER FKEDERICK'S SCRIPTURE
+                                QUOTATIONS : Exactly what the revelator's symbolical vision signifies, /do not know ; but I am sure that
+                                Elder Frederick does. He, as you know, is "mighty in the scriptures;" and also mighty out of them! For, in a
+                                controversy, if no "passage" occurs to him just to his liking, he deliberately makes up one with all the
+                                gravity of an apostle. And then, if subsequently told that "Paul did not say so," he coolly replies : "Well,
+                                he ought to have said so!" WHAT IS ORTHODOX? Are you sure, my dear Bro., that Elder Frederick, yourself, and
+                                Shaker elders generally are soundly "orthodox?" I am fearful that you believe in neither the infallibility
+                                of Pope Leo xiii, nor of King James' version of the Bible ! And then, to make yourselves more uncomely in
+                                the eyes of the evangelical world, you believe in visions, spiritual manifestations, perpetual revelations,
+                                community of property, and a pentecostal church of peace ! What are evangelical Christians going to do with
+                                the Shakers when their day of increase comes? And inasmuch as they will not shoot down their fellow men on
+                                battle field, what will the British Government do with you when you establish Shaker societies n England?
+                                There are waiting souls there now, ripe, and ready to be harvested. * * * * A SORRY CONCLUSION ! And now,
+                                that I am once more on my naive land, after making two circuits of our lanet, I must sorrowfully conclude
+                                this leter by saying, that the superior morality of eathen lands is noticed by every unprejuiced traveler!
+                                May God and good angels less you and all—including your valiant Standard—The Manifesto. Yours in love,</p><byline TEIform="byline"><persName reg="Peebles, J. M." TEIform="persName">J. M. Peebles</persName></byline></div3></div2><div2 type="saying" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Truth" TEIform="index"/>Truth
+                        </head><p TEIform="p">If it is truth what does it matter who says it?</p><byline TEIform="byline"><persName reg="Aurelius, Marcus" TEIform="persName">Marcus Aurelius</persName></byline></div2><pb n="197" id="p19" TEIform="pb"/><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Juvenile" TEIform="index"/>For the Children</head><div3 type="fiction" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Quondam sailor, chapter VII" TEIform="index"/>QUONDAM SAILOR CHAP. VII</head><byline TEIform="byline"><persName reg="Libbey, William G." TEIform="persName"/></byline><p TEIform="p"> I soon learned that Captain Hall wished to take his schooner into the lagoon, and as we had learned the rise
+                                and fall of the tide during the time we had been on the island, we were able to act as pilots in guiding
+                                this little vessel into our island harbor. Going ashore with the captain, and up to our hut where my brother
+                                was mending his shirt, .(the only one he had,) I introduced him to Captain Hall, who cordially shook hands
+                                with him. He was a kind, benevolent man, and we soon learned to love him for his great kindness to us. A
+                                signal was made by my brother at flood tide, being previously agreed upon, and understood by the mate on
+                                board, who brought the schooner safely into the lagoon and anchored her in its smooth waters ; for it was a
+                                beautiful place for a vessel to anchor. Soon after the schooner arrived, we packed up our little all at the
+                                hut and went on board, making it our home while she remained at the island. Our duties were light as there
+                                were four men before the mate, when we went on board. The first work after the sails were furled, was to
+                                prepare the outfit of the company who were to remain on the island to make cocoa-nut oil. There were three
+                                white men, the Frenchman Louie, and two Americans. One of them quite a young man of rather delicate
+                                appearance, and I think well educated. The other was an ingenious mechanic ; who, we learned, had been taken
+                                from the calaboose, by the Consul, on conditions that he would accompany this expedition and fill the place
+                                of blacksmith, carpenter, and whatever other skill this cocoanut oil-making might require. He was indeed a
+                                very skillful man, for with the help of the natives he erected houses in a few days, large enough to
+                                accommodate a party of nearly thirty persons. Their food consisted of fish, cocoa-nuts, birds, shell-fish,
+                                or whatever could be picked up on the island. The vessel they came to the island in had no provisions, yet I
+                                do not think they suffered for want of food. The Parmeto natives were quite as well supplied with food here,
+                                as on their native islands, for as I have before stated they were very much like Fanning's. "VVe found our
+                                food in the schooner very poor; not so good as we had been able to provide for ourselves on our island. It
+                                seems that there were two pipes of bread put on board at Tahiti; one for the officers and crew of the
+                                vessel, the other for the natives, who ate day and night on theirs, until it was all gone; and then slyly
+                                broke into the pipe provided for the ship's crew, and before they were discovered had consumed nearly the
+                                whole. They were in truth wild natives, with whom it is either a feast, or a famine. The porpoises caught as
+                                the vessel came in,—and which were mentioned in a previous chapter,—the natives baked in the ground and had
+                                a very cheerful time eating them. Having eaten an abundance of cocoanuts, I tasted of this meat, but did not
+                                relish it, for the fiber was coarse and dry. After the apparatus for oil-making had been put ashore, we
+                                commenced filling the schooner with cocoa-nuts, which were collected by the natives and taken to the shore
+                                of the lagoon, where they were tied together by starting a strip of the fibrous husk, leaving one end fast
+                                to the nut. In this way the natives made long rafts of them which were towed with the boat along-side, and
+                                were then hoisted up and dropped into the hold of the schooner. Our vessel was ninety tons burden, and we
+                                were a little more than a week filling the hold with nuts. She remained in the lagoon about three weeks,
+                                once narrowly escaping being wrecked in a gale, which dragged her anchors ; yet escaped through the good
+                                management of the Captain and crew, who carried out a kedge anchor in the long boat, and warped the vessel
+                                off the coral, thus saving her. Among the great variety of sea-birds on M-A-NTIPIESTO. 197<pb n="198" id="p20" TEIform="pb"/> 198 THE SHAKER MANIFESTO. this island, there was one land bird, a very beautiful paroquet,
+                                with green glossy plumage, and a very bright scarlet spot on its wing. This little bird appeared to
+                                advantage when flying about in the. tops of the low growing trees: in the bright sunshine, the deep green of
+                                the palm seemed to blend with the plumage of the little bird, while the contrast of the red wings as he
+                                hopped nimbly about, made a small panorama for us "Crusoes" to view. My brother had tried to catch one of
+                                these little birds alive, but was unsuccessful; but when the natives came, they caught one and brought it to
+                                the vessel to the captain and his wife, who were pleased with it, for they had a little daughter who was
+                                quite fond of birds. The little girl was just learning to talk, and would repeat after her mother in her
+                                native tongue ; Manou, Te, Ai. This became a by word on the passage to Tahiti, and when transposed was
+                                something like, "O what a pretty bird !" She was an interesting child and the captain seemed to be very fond
+                                of her. The captain appeared to me like a person who had met with trouble in his relations •with society,
+                                and had left the States and gone to the islands for refuge. He had united his fortune with that of a native
+                                woman, who was a perfect Zantippe, and with whom this refined, well educated man could have no real
+                                sympathy, nor social enjoyment. After remaining at anchor in the lagoon about three weeks, the word was
+                                passed to fit the schooner ready for sea; a great supply of green cocoa-nuts were brought on board by our
+                                kind natives, which was a luxury, as sea provisions were scarce. At last our anchor was weighed, and we ran
+                                safely out through the narrow passage, into the great Pacific ocean. Soon after leaving the island a gust of
+                                wind took my ftiat overboard that had cost me so much time and labor to make, it seemed like a serious loss
+                                to me, as it was all I had one side of the Scotch cap, which was well enough in dry weather; but when it
+                                rained as it frequently did on our passage, and my cap would become so filled with water as to run down my
+                                face, I would take it off and wring it out. repeating the operation as it became necessary; but suffering
+                                all tha while with a severe toothache, it was anything but pleasant, In fact I never was so uha?-d up"
+                                before nor since, as on this passage, for the only means by which I could relieve the terrible pain, was by
+                                heating a sail needle red hot, and have my brother thrust it into the cavity; thus searing the nerve, and
+                                giving temporary relief. If that was not the "Cure Heroic," what could have been? &gt;• Again we had no
+                                change of clothing, and during our watch on deck were frequently drenched, and when we went below there
+                                being no beds, we would wring out our scanty clothing and lie down in a bunk, with no covering but a cotton
+                                cloth, loaned us by two of the natives who formed part of our crew. The great kindness of these two men,
+                                whose names were Charlie and Jack, impressed me deeply; none of out own country, or color, were so attentive
+                                to our necessities as these so-called half civilized men, who acted the Christian's part. When we went on
+                                deck to relieve the watch, if it was cool they would take off their jackets, and urge us to put them on. The
+                                last mentioned individual was very small, and wrinkled in the face, which may have been caused partly by his
+                                laughing so much; he was indeed a very pleasant, cheerful little man, and yet we loved them both, for their
+                                kindness to all on board the little schooner Emerald. One especial act of kindness we Crusoes in disguise
+                                received, was the making of a coarse cotton shirt for each of us, by the wives of the captain, and second
+                                mate. This was done by direction of Captain Hall, who was, as previously said, very kind, benevolent and
+                                just in his dealings with all: of this we had abundant proof, and will relate this one instance. After we
+                                left Fanning's island, he had all the provision on board equally divided, every person sharing alike ; yet
+                                with all the captain's fairness, we were very short of food before we reached the Society Islands. (to be
+                                continued.)</p></div3><div3 type="saying" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Righteousness is not in creeds or solemn faces" TEIform="index"/>Righteousness is not in creeds or solemn faces
+                            </head><p TEIform="p">Righteousness is not in creeds or solemn faces.</p></div3></div2><pb n="199" id="p21" TEIform="pb"/><div2 type="figure" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Shaker Village, Canterbury, Merrimack County, N. H." TEIform="index"/>SHAKER VILLAGE, CANTERBURY, MER. CO., N. H.</head><p TEIform="p">[Figure]</p></div2><pb n="200" id="p22" TEIform="pb"/><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Types of Christ" TEIform="index"/>TYPES OF CHRIST</head><byline TEIform="byline"><persName reg="Eades, H. L." TEIform="persName">ELDER H. L. EADES</persName></byline><p TEIform="p">"But God hath chosen the foolish things of theworld to confound the wise; and God hath chosen the weak tilings of
+                            the world to confound the things which are mighty."—I Cor. i, 27. Notwithstanding the great veneration that
+                            people seem to have for truth, it is still a diffieult pill to swallow when it interferes with any idol of the
+                            human heart, or crosses any cherished or loved opinion. Still the cry is : let us have truth. Our object is, to
+                            endeavour to show that all the types and symbols of the Old Testament scriptures, have their fulfilment in the
+                            Bridegroom and Bride—in Christ's first and second appearing—not such a Bride as some have made from Rev. xxi: 2,
+                            who give this name to the Church; but a real counterpart for the Bridegroom. The apostle does not say that he
+                            saw the Bride coming down from heaven, in the form of a Church, but the "New Jerusalem coming down adorned as a
+                            Bride." But the Bridegroom was a man : the Bride must be a woman—even "a woman clothed with the sun, and the
+                            moon under her feet." (Rev. xii: 1.) Having mentioned the second appearing, we will quote the promise (Heb. ix:
+                            28.) "So Christ was once offered to bear the sins of many; and unto them that look for Him shall He appear the
+                            second time without sin unto salvation," we ¦will further add that, in order to have a second appearance, it is
+                            not necessary that the same identical flesh and bones should return, neither that it should he the saine gender.
+                            In fact it were more apropos that the gender should be different, in order to have co-ordinate counterparts. The
+                            first, the bridegroom ; the second, the bride. This is well exemplified by Christ himself, who said of John the
+                            Baptist: "This is Elias that was to come." The second appearing consists in the re-appearance of the same gift,
+                            spirit, power and substance, for the same purposes ; to execute and carry out the same work. John was the second
+                            coming of Elijah, because he came in the same gift and power of that prophet. And the reappearance in and
+                            manifestation by Ann Lee of the same spirit, testimony, life, power, and wisdom which was exhibited by Christ as
+                            much constitutes His second appearing as that which constituted John the second appearance of Elias. This is
+                            plain. And we here boldly testify that in all the fruits shown forth by Jesus in His anointed capacity did he
+                            reappear, in the anointed Ann. Such, then, manifestly, was His second coming. Thus are the two foundation
+                            pillars established, to whom the Scripture types refer, which we will now proceed to set before you, and compare
+                            with the substance they were designed to represent. It is said in Rev. x: 7, "That in the days of the voice of
+                            the seventh angel, when he should begin to sound, the mystery of God should be finished." To finish a mystery is
+                            to explain it, which is a part of the work now before us. We need not seek, nor have we any need to know, the
+                            precise time of the formation of our planet, nor the origin of primal man; these are hidden from the world, and
+                            we have no revelation disclosing the secret. God hath revealed by Moses, recorded in Gen. i, that in the
+                            beginning he did thus and so, but when that beginning was, no man knoweth. But it is proper that man should
+                            know, when the "old heavens and earth were created that were to pass away," and when "all things were to become
+                            new and all things of God." This can be ascertained by noticing the generations of the heavens and earth,
+                            treated of in the second chapter, which has special reference to man, and is given for our instruction. Here we
+                            may easily arrive at the precise time of the first called or created man from the primal structure, or dust of
+                            animal promiscuity. It is generally admitted that the first chapter, treats mostly of the creation of the
+                            universe, in six periods of time called days, and if it is observed that the second chapter treats of the
+                            generations of the earth with respect to man, we then hold the key to unlock the mystery, and have no difficulty
+                            with the commands given to man in the first chapter, and that given to the first called man in the second
+                            chapter, of Edenic order, with whom we very readily perceive was God's first covenant, called the "old
+                            covenant," which was the type of the new in that man was raised from a lower to a higher condition.<pb n="201" id="p23" TEIform="pb"/> THE SHAKEE MANIFESTO. SOI This was the beginning of God's special dealings with his creature man.
+                            "He breathed into him the breath of (spiritual) life (the inspiration of lives,) and he became a living soul."
+                            Here, it is evident, is the commencement of the types of Christ. The first called man was the first type, and
+                            corresponds completely with the second called man, Christ who is*his antitype. The first "a living soul;" the
+                            second, "a quickening Spirit.'' The first "to multiply and replenish the earth ;" the second to multiply and
+                            replenish the heavens. The first called man was the head of the orderly, natural, Adamic church : the second
+                            called man was the head of the Spiritual church. Cain was the first apostate from the Adamic church, and was the
+                            the type of Judas, the first apostate from the Spiritual Christian Church. The first church arose from the lower
+                            order of the world to that of orderly generation. The second, or spiritual, arose from orderly generation to
+                            that of regeneration. The first, forsook the old, disorderly animal world. The second forsook the orderly,
+                            natural World, for the spiritual. The twain were to become one flesh in the natural order. The twain to become
+                            one spirit in the spiritual order. Having risen above, and forsaken the natural, "father, mother, brother,
+                            sister, houses, lands, and all the contingencies thereunto be- longing. Thus the types agree with their
+                            antitypes, and show clearly, the distinction between the two orders. From our basis, will be perceived that the
+                            first man, Adam, who "was taken from the pre-adamic body to institute a new order of things, was the beginning
+                            of the "old heavens and earth that were to pass away." Having no reference whatever to this planet being, "into
+                            heaps of ashes turned, When Heaven itself the wandering chariot burned," but to the earthly order then created,
+                            at which time all those who came into this order, and embraced this gospel, were "Sons and daughters of God." As
+                            Adam was raised up from among the brethren of the pre-adamic body to establish the old heavens and earth, so
+                            Jesus was "raised up from among the brethren," of the Mosaic body to establish "the new heavens and earth." And
+                            all who embrace this order are the sons and daughters of God, and sing and shout for joy at the establishment of
+                            this new order. Thus far we see the types and antitypes are perfect, and as the first called man was a perfect
+                            type of the second called man, so Eve, the first called woman, was a perfect type of the second called woman. As
+                            the first Eve was taken out of the sleeping body of Adam —from among the disorderly flesh there, to be with the
+                            man Adam one flesh—so the sec- ond Eve was taken out of the sleeping body of the world from among the orderly
+                            flesh there, to be with Christ one spirit. Thus do the types and antitypes agree. A letter from our pen is not
+                            the antitype of the pen, while a printed letter is the antitype of the metal face; their faces must correspond.
+                            So it is with all types and their antitypes ; their faces must agree. Then, if one is understood, the other will
+                            be also. While the first Adam and Eve of the natural order were types of the second Adam and Eve of the
+                            spiritual order, they could not have been types of a pre-existent Christ nor Christ spirit, as this would make
+                            the type come after the antitype, which is impossible. Let us repeat, that the first man, Adam, was made out of
+                            the ground on which pre- adam or Adamkind stood, and was thence called a "living soul." The second was made out
+                            of the ground on which the Mosaic body stood, and was called a "quickening spirit." And the first Eve was taken
+                            from the flesh of the sleeping Adamic body for a help-meet for the first Adam, and was called the "Mother of all
+                            (the) living;" that is, all living the the higher, natural life. The second Eve— Ann Lee—was taken from the
+                            flesh of the sleeping anti-christian body* for a helper for the second Adam, Christ Jesus; and she is called the
+                            Mother of all living the higher, spiritual. Thus we see what becomes of the "wisdom of this world," who have
+                            three male deities, with neither type nor antitype! Such metaphorical expressions as we have noticed are very
+                            common. How often do spiritual leaders inquire what ground we stand on? How often cite to the "hole of the pit
+                            whence we were digged, and the rock whence we were hewn." The simple truth is: God<pb n="202" id="p24" TEIform="pb"/> SOS THE
+                            SHAKER MANIFESTO. made man out of the ground then, as he "digs them out of the pit and hews them out of the
+                            rock, now." "Whoso is wise shall understand these things, and whoso is prudent shall know them," although they
+                            may confound the wisdom of the wise! But it is said : "The Bridegroom hath the Bride," long before Ann Lee had
+                            existence ; and we are asked : How could she fulfill the conditions, who yet had no existence? In answer we
+                            would say, he had her prospectively. Such expressions are frequently in holy writ: "This day I have begotten
+                            thee ;" "Before Abraham was I am;" but which simply means I am before what Abraham was. Joshua said the Lord had
+                            delivered the enemy into his hand, before he commenced the battle. Just so the Bridegroom, Jesus, had the Bride
+                            Ann, prospectively, but was as sure of her as Joshua was that he would conquer the enemy. This is true, although
+                            it be to the "Jews a stumbling block," and to the Greeks "foolishness." It may be.observed that Ann Lee, of
+                            Manchester, England, was the first woman that was baptised and quickened into the spiritual life of Christ, to
+                            rise out of nature's loss and order, to live above these, and proclaim the higher life to the world. Hence she
+                            has the honor of being the Bride, the Lamb's wife." Being ignorant of this fact, some have supposed that the
+                            Bride which the Bridegroom had was a spirit from some foreign world which he had in him ; but it is time that
+                            the mystery of such a moon-struck chimera was disposed of; to admit which, would spoil the agreement of all the
+                            types and their antitypes. When the indisputable truth becomes known, that Christ, in any age of the world, was
+                            no mysterious being, but simply a Godanointed, or which is the same thing, a Godappointed, commissioned agent
+                            for a special purpose, all this chimerical, mysterious chaff will be blown away, no more to disturb a dreaming
+                            world. Abraham and Sarah were types of Jesus and Ann; not only in.their obedience to the Adamic Gospel, but they
+                            were of one stock or race—begotten and born alike} equal as to mode of existence, as man and woman may be heads
+                            of a Family. "Abraham hearkened to the voice of Sarah," But what did this hearkening typify ? It was, that in
+                            the new covenant the man should hearken to the woman, even so it is. In the second appearing, where a "woman
+                            compassed the man," all hearkened to the Bride, Ann. While under the old covenant, the law is, "Thy desire shall
+                            be to thy husband, and he shall rule overthee." Millions find this true to their sorrfew, and see no way of
+                            relief; but there is a way. To all who wish deliverance from such bondage we would say : Leave the
+                            rudimental—come up stairs into the new covenant. Some orthodoxans tell us, in justification of the
+                            saved-by-faith doctrine, that Abraham's faith was "counted to him for righteousness." So it was, because it was
+                            accompanied by good works. "Faith without works is dead;" and who can be saved by a dead faith? They tell us
+                            also, that the offering up of the ram was symbolical of the sacrifice of the "Lamb slain from the foundation of
+                            the world." Now the theological student is considerably advanced when he can tell the difference between a
+                            typical ram and a typical lamb. Then there is some hope of him. If they had told us that the ram offered up was
+                            a symbol,—that the ram that had ruled the world from Adam to Christ had to be slain and burned up—they would
+                            nearer have approached the truth. But Sarah called Abraham her Lord, or head. So Ann called Jesus. Not only so,
+                            they were types in sacrificing that which was most dear to them, typifying, that in the gospel of Christ, that
+                            which was most dear to the natural man and woman must be sacrificed. But you will say : Isaac was not
+                            sacrificed; but the ram was taken in his stead. This is true, and agrees perfectly with the antitype. Isaac was
+                            saved, and Abraham was promised an hundred fold in the seed of IsaacSo it is now. All the Abrahams and Sarahs
+                            that come into the gospel of Christ must offer up their little Isaacs, who will thus be saved: and they shall
+                            receive an "hundred fold of Isaacs and other gospel relations, and in the world to come eternal life." Such is
+                            the promise of Christ—the type and antitype complete. But the ram was put on the sacrificial altar, and was
+                            consumed with fire.<pb n="203" id="p25" TEIform="pb"/> ^HE SHAEEE M^JNnLF'ZES'rO. 2O3 This typified that the animal passions
+                            must be sacrificed, and utterly consumed by the fire of Christ's gospel. Could types and an- titypes be more
+                            complete? The rite of circumcision, typified that in Christ the works of the flesh must be cut off". The mystery
+                            makers contend, that they were types of Christ, because "Isaac was begotten by promise." Isaac was.not begotten
+                            by promise : • He was begotten by Abraham— "Abraham begat Isaac." There is no mystery about it. He and Sarah
+                            propagated children according to the law of generation. Jesus and Ann propagated children according to the law
+                            of re-generation. The first natural; the second spiritual. Thus were Abraham and Sarah the types of Christ in
+                            Jesus and Ann in being, in call and work, whose offspring are' the seed of the "Free Woman;" who are "the weak
+                            things of the world, whom God hath chosen to confound the things which are mighty." Moses and Zipporah were
+                            plain and perfect types of Christ in his first and second appearing. We will repeat what Moses said to the
+                            fathers: "A prophet shall the Lord raise up unto you, of your brethren like unto me. Him shall ye hear in all
+                            things whatsoever he saith. (Actsiii: 22.) Some, in order to keep this mystery from being explained, have left
+                            out or omitted the words "of your brethren" in their writings, and also, where it is said the "sanctifier and
+                            sanctified are all of One," the preposition of has been omitted, lest we should get a peep into the fact that
+                            they were of one stock or race,' and so save one prop to the miraculous story—well knowing, that if they were of
+                            one stock, this would be wiped out. We have no apology to offer for such omissions. The preposition clearly
+                            shows they were of one race—the human. But Moses not only truthfully declared from whence Christ should arise ;
+                            but he was an eminent type of Christ, in that he was called to deliver his people from Egyptian bondage. Some
+                            say Moses was not a perfect type of Christ—an imperfect type is no type at all. But Moses was a perfect type of
+                            Christ. He was begotten by a man, and born of a woman : so was Jesus. He was raised up from among the brethren;
+                            so was Jesus. He was called to deliver his people from Egyptian bondage; Jesus was called to deliver them from
+                            the bondage of sin. Also Zipporah was a type of Ann :• She was raised up from among the Sisters; so was Ann. She
+                            forsook her own people and followed Moses; suffering the toils of the wilderness, while journeying to the
+                            promised land, and became a Mother in Israel. So Ann Lee forsook her own people and followed Christ through the
+                            sufferings and toils of the wilderness of this world for the Kingdom of Heaven's sake, and thus conjoined to him
+                            became the Mother of spiritual Israel. Of animals and things, we may go through the good book and find agreement
+                            in types and symbols throughout. The "two cherubim, covering the mercy seat with their wings, and their faces
+                            one toward another," were excellent types of Christ and Ann. They were wrought gold of beaten work; not only so,
+                            but were out of one piece* So plainly does every type represent the pure, simple truth, that the two foundation
+                            pillars, male and female, in whom they have their fulfillment, were alike and equal in all respects—no more
+                            mystery about the one than the other. The two cherubim were types, in that their "faces . looked toward each
+                            other, and the word of peace was between them both"—were not only pure gold, but were "taken and made of one
+                            piece." Alike in purity, made alike, were alike, all around, all over, inside and outside, and so were the
+                            antitypes, Jesus and Ann, the same life, the same word, the same work, the same everything in the second as in
+                            the first appearing. And on we may go, and find every joint to fit without the sound of the hammer. The two
+                            silver trumpets, the two tables of the Covenant, the two olive trees, the two olive branches, the King and
+                            Queen, the son and daughter, etc., all have their accomplishment in Jesus Christ and Ann Lee, the Bridegroom and
+                            Bride of the new creation of God. We look in vain among the lower-floor Churches and our theological seminaries
+                            to find agreement of the types with their antitypes. With all their learning and worldlX wisdom, they only pile
+                            mystery on mystery : and the further we follow them the more dense the fog grows, until we reach a cloud of
+                            impenetrable darkness.<pb n="204" id="p26" TEIform="pb"/> THE SHAKER "But God hath chosen-the foolish things of the world to
+                            confound the wise, and the weak things to confound the mighty." Thus, under the seventh-sounding angel, this
+                            mystery of God is finished. It would seem that enough has now been said to satisfy the most carping critic of
+                            the falsity of the miraculous statement, and of the far-fetched, foreign Christ theory. It is a rule in
+                            mathematics that when there are unknown quantities to be found, they must be ascertained from quantities which
+                            are known. The same is true in logic— truths may be ascertained by reasoning a posteriori, as well as the
+                            contrary. Types and antitypes come directly under this rule ;• so if we know what the antitype is, from this we
+                            may learn what the type is, and vice versa. Thus when Are see a printed letter we know what the face of the type
+                            was ; or, when we see a type's face we know what the letter will be. The question recurs, Have we known data?
+                            Ans.—We have. Of types we have shown, in person and work. Of the antitypes we have Ann Lee, to whom the female
+                            types pointed, and in whom they have their fulfillment. She is the known quantity, whom Anti-Christ cannot
+                            mystify. We know she came into being by the same law of all her typical females. The two must agree. So, in like
+                            manner, of types we know the law by which they came into being, and from this, the law which brought the
+                            antitype Christ, into being. There is no possibility of dodging this conclusion. And as Elijah was a type of
+                            Christ, and left his mantle behind for Elisha, so it was with his antitype Christ, and so it continues to this
+                            day. "All power to save was committed to the Son, who committed the same to his successors." Jesus testified :
+                            "All that the Father gave me have I given them." And the call now is, to the whole world, of every nation,
+                            tongue, and kindred, to come, accept Christ's term and be saved. To be saved, does not mean to be saved in sin,
+                            but from sin: and all it deathly and damning effects, which can onlj be done by forsaking the world, finding
+                            God'; order of finite agencies, and there confessing, forsaking, and repenting of all sin, and becoming
+                            "crucified to the world and the world crucified to you;" and henceforward, living the life of the Redeemer. We
+                            purpose further to institute a comparison between the modes of the first and second appearing of Christ, showing
+                            the similarity as well as their equality in person and commission. But by way of leader, will remark that, from
+                            what has been previously said, it must be perceived that every succeeding order of God among men-, from the
+                            first record to the present time, the instruments have arisen out of a previous body by a higher unfolding and
+                            increased inspiration of the spirit of God, and hence every such order has superseded the previous one. Witness,
+                            as shown, the creation or call of Adam or Eve from the primal, animal adamic body—the rite of marriage first
+                            instituted— orderly generation enjoined on pain of the displeasure of the Creator. See this order building and
+                            establishing the first old heavens and earth that were to pass away, and shadowing forth the new. See what
+                            gospel was preached and lived, by those who constituted the Adamic church—Seth, Noah, and othersuntil Abraham,
+                            with whom God renewed his Covenant, shadowing forth the Increasing steps in the new and everlasting Covenant.
+                            Circumcision was instituted under the Old Covenant, which is a type of what should take place in the new—that of
+                            cutting off all the fleshly works of generation and becoming "eunuchs for the kingdom of heaven's sake."
+                            Advances were made in the old heaven gospel which shadowed forth the gospel travel in the new, and was practiced
+                            and lived until Moses, when God's covenant was again renewed, with additional sacrifices and self-denial, and
+                            which, being kept, brought renewed blessings. These were enjoined and kept by some, with little modification,
+                            until Christ; with whom the new Covenant was made. The substance now appeared, and the work of forming the new
+                            heavens and earth was begun. The Creation of the world—the new world, which the apostle says, truly, was made by
+                            Him, which we now enjoy with increasing light and power in his second appearing in Ann Lee. Thus we see what
+                            God's uniform law and order are : First, the Adamic arose out of the dust of the pre-adamic body; the Abrahamic
+                            out of the Adamic ; the Mosaic out of the Abrahamic, and the Christian out M. AISTLF'ESTO. SO4=<pb n="205" id="p27" TEIform="pb"/> THE SHAKER 2O5 of the Mosaic, and the second appearing in Ann out of the so-called Christian,
+                            which was fast asleep when she was taken out of that body; and it is snoring yet. We will now call attention to
+                            the history and biography of Jesus, the Christ, and examine the manner of his call, to which we beg especial
+                            attention. It so happens that we have no reliable history concerning him until he was about thirty years old;
+                            precisely what kind of life he lived previously to that time is unknown to history and mankind; nor is it
+                            necessary that we should know it; but John the Baptist doubtless knew all about it, by his confession; as well
+                            as Jane Wardley knew about Ann's. In turning to the New Testament we find the gospels beginning with the call of
+                            God to one John, the son of Zecharias, who was to be the forerunner, to prepare the way for the "man, Christ
+                            Jesus," the son of Joseph. John did not come with a new gospel, but in the power and spirit of Elias, and "was
+                            that Elias," to turn the hearts of the children to the fathers, to revive the spirit of Moses' gospel or law,
+                            from which many had backslidden—to administer the gift of repentance and forgiveness of sins, to all euch as
+                            would honestly confess and forsake them, and return to the lgw. The account reads thus: "The word of God came to
+                            John, the son of Zecharias, in the wilderness ;" hence, it is truly said, "A man sent of God," just as Christ
+                            was—God sent John for one purpose and Christ for another, both being God-commissioned Agents—One to revive an
+                            old institution, the other to create a new one—one to baptize with water, the other with fire. It is further
+                            recorded : "Multitudes came confessing their sins (violations of the law,) and were baptized into the spirit of
+                            repentance." And here is where we get the first reliable account of Jesus, who was among the brethren there, and
+                            who came for the same purpose that the rest did—to acknowledge the gift of God in John, confess and repent, as
+                            it was impossible that he should supersede John without acknowledging and accepting the gift of God in him, who
+                            was as yet before him. From St. John's account it would seem that the Baptist did not knew Jesus to be the
+                            chosen one that was to supersede him, even from his confession, as he said, "I knew him not" (John i: 31.) But
+                            he was pointed out by the descent of the Holy Spirit. Then says John : "I saw and bear record that this is the
+                            Son of God." It would be warping the record, as the Gnostics have done, to say the descending Spirit was the
+                            Christ, for John testified he knew the coming Christ stood among them, before he was pointed out to him • by the
+                            Holy Spirit. Jesus could no more have superseded John, without submission to the order of God in him, than Ann
+                            Lee could have superseded that of James and Jane Wardley, without confessing, acknowledging, and complying with
+                            that order. Thus we may see the first steps that Jesus took towards the priesthood or Christship. was his
+                            childlike humility in bending before the gift of God in John, setting us an example in the very beginning of his
+                            work. We have no more right to dispute Jesus' confession to John than we have to dispute his being baptized by
+                            him unto repentance, of which his soul-melting prayer on the banks of Jordan gives ample proof. It is all plain;
+                            there is no mystery about it. Do any of us think we can get to heaven with less humility than Christ did? If we
+                            do we are wofully mistaken. He is our exemplar, and as he worked out his salvation so must we ; and we shall be
+                            called to take no mortifying step, that our Father and Mother have not taken before us, but these we must take
+                            or never be saved. God will not provide one way for their salvation and another way for ours ; hence they say
+                            follow us. To follow one is to follow the other, for they are one—their example and teaching the same; both
+                            after their anointing, lived free from sin. The reason Jesus was "anointed above his fellows" (mind he had
+                            fellows,) was because he was the best of his class—"loved right- eousness and hated iniquity" more than any of
+                            them. It is written of him thus : "After his temptation, he returned in the power of the Spirit to Galilee, and
+                            thence to Nazareth, where he was brought up; and, as his custom was, he went into the synagogue, and stood up to
+                            read. And there vras delivered unto him the book of Esaias, and when he had opened it he found the place where
+                            it was written : M^JNTIIPISSTO.<pb n="206" id="p28" TEIform="pb"/> 2O6 THE SHAKER 'The spirit of the Lord is upon me to
+                            preach the gospel to the poor, to heal the brokenhearted, to preach deliverance to the captives, to set at
+                            liberty them' that are bound, to preach the, acceptable year of the Lord.' He then closed the Book, gave it to
+                            the minister and sat down." All eyes were fastened on him. An electric flash from a cloudless sky at noonday
+                            would not have shocked them more than the next words he uttered from his seat: "This day is this Scripture
+                            fulfilled in your ears." Thus was announced to an astonished world for the first time that the Christ they had
+                            so long expected was then sitting in their midst! At first they were pleased with the gracious words that
+                            proceeded out of his mouth, but after a few home thrusts, and the affirmation that he was the man to whom the
+                            prophetic word applied, they became enraged, and wanted to kill him. A young man whom they had known, to presume
+                            so much! He was now Jesus, the Christ, the commissioned of God, according to his own declaration. There was no
+                            miraculous dove talking or speaking through him, as the Gnostics have reported. He was now at home among his
+                            brothers and sisters and young acquaintances, and well he knew they would suppose he had faults as well as they;
+                            so he took the start of them, by saying: "You will say unto me this proverb," "Physician, heal thyself." Hut
+                            there was one thing that, perhaps, his relatives did not know, and that was, the physician had healed himself in
+                            the order of God under John. Thus, in short, we see the mode of his first appearing; the second must be like
+                            unto it. Thus it was with Ann Lee, who went through the same ordeal, setting the same example for womankind,
+                            that Jesvjs did for men, since which time the Church has rested on these two pillars, no more to be overthrown.
+                            Thus, the "mystery of God. in the blazing sunlight of this day, is finished." Amen; it is finished. These truths
+                            may set hardly with some who have considered Jesus to be superhuman ; but such must remember that He was one of
+                            the brethren, and not at all ashamed to call them so. But we are told that, although "tempted in all points as
+                            we are, He was without sin; and that He always did the things that pleased His Father." The same may be said of
+                            Ann, who manifested tin' mother in Deity. She was without sin, and always did the things things that pleased her
+                            Mother and Lord after she was commissioned. So it was with Christ; for Jesus became the Christ by virtue of his
+                            appointment. He was not Christ before that time, but simply, as the apostle John said: "Jesus of Nazareth, son
+                            of Joseph." But the anointed man was tempted in all points as we are, for saith the apostle, "We have not an
+                            high priest who is not touched with our infirmities." Now, it is a fact worthy of note, that all temptations
+                            must come through some department of our nature. It is irr possible for any one to be tempted by an external
+                            presentment, unless he has something within him which desires it. The serpent that tempted Eve only showed
+                            something which she desired; and Adam could not have been overcome, only from the fact that he had as strong a
+                            desire for the fruit as Eve had; and his throwing the blame on her was simply cowardly, contemptible, low and
+                            mean. Now, if we know how we are tempted and what tempts us mo,st, we knowT how Christ was tempted and what
+                            tempted him most; but that he successfully resisted all temptations after he became the Christ none will
+                            dispute. This and this alone, is the apostle's declaration, and is true. This adds an hundredfold more luster to
+                            his brow than to admit the Gnostic doctrine, that a Christ came from some unknown world, entered into him and
+                            rendered him impeccable ; or that" God sent an additional spirit, giving him a double entity, the latter to rule
+                            the former. Little is known of Jesus' history previous to his baptism by John; but if we examine the word of the
+                            apostle closely, we find that they thought him not impeccable previous thereto, "In that he died, he died unto
+                            sin once ;" as we also must die. We cannot die to a thing to which we have never been alive. r fie was sis we
+                            are in this world." Do we not know how we are? "He learned obedience by the things he suffered," as we must.
+                            Also Pet^r iv : 1, 2 : "For as much as Christ suffered for us in the flesh (not in our stead,)<pb n="207" id="p29" TEIform="pb"/> the; shaker manifesto. 207 arm yourselves likewise with the same mind, for he that hath suffered
+                            in the flesh hath ceased from sin [as Christ did,] that he no longer should live the rest of his time [as he had
+                            done apart of his time,2 to the lusts of men, hut to the will of God." What sublime pathos in the soul-melting,
+                            out-pouring of the spirit through the prophet Isaiah, in which it is shown that Christ did the work for himself.
+                            "Who is tins that cometh .from Edom, with dyed garments from Bozrah? He that is glorious in his apparel,
+                            traveling in the greatness of his strength?" "Wherefore art thou red in thine apparel, and thy garments like him
+                            that treadeth inthe wine-fat? (His answer is enough to draw tears from a stone.) I have trodden the wine press
+                            alone, and of the people there was none with me : And I looked and there was none to help, therefore my own arm
+                            brought salvation unto me. Isa. Ixiii; 1, 2, 3, 5. It wovdd seem that enough had been said showing the
+                            similarity between the first and second appearing; but people are hard to believe if one stone be left unturned.
+                            It could not be said to be a second appearance if there was any essential contrast, either in the mode, effect,
+                            operation, or ultimate. We have shown that it was unnecessary for the same flesh and bones to reappear, to
+                            constitute a second appearance—but that Christ was manifested, and reappeared in Ann's testimony, her searching
+                            power, her self-denial, tribula- tion, etc.; in fact, all the evidences reappeared in her that appeared in
+                            Jesus. He did not come with the nature of angels, but the seed of Abraham. She appeared likewise, not with the
+                            nature of angels, but with our nature; hence Jesus and Ann are alike in their natures. As there was a forerunner
+                            in the first appearing to prepare the way for Jesus, so there was in the second appearing to prepare the way for
+                            Ann. Previous to the second appearance, antichrist began to be weakened by that memorable division called the
+                            "Reformation;" by which a way was opened for man to contend for his long lost liberty About this time, many
+                            religious revivals broke out in various parts of Europe, particularly in France and Germany. The remarkable
+                            revival which happened about the year 1689, in the province of Dauphiny and Vivarais, in France, excited great
+                            attention The subjects thereof testified that the end of things drew nigh; they preached repentance, stating
+                            that the kingdom t&gt;f God was at hand; that the marriage of the Lamb would soon take place. These
+                            witnesses increased until about the year 170G, when a few of them went over to England, where many were united
+                            to them, and both their numbers and powers of ministration, like the sea, ebbed and flowed for forty years, when
+                            a small number of the most faithful were led by the spirit to unite themselves into a small society near
+                            Manchester, under the ministry of James and Jane Wardley. These were the John Baptists of the second appearing
+                            of Christ, to whom the people came and were baptized into the spirit of repentance, confessing their sins ; and
+                            Ann Lee was among the rest, who came for the same purpose the rest did; and as Jesus confessed to the forerunner
+                            in his day, so likewise Ann Lee confessed to the forerunner of the Second Advent, and came up through that
+                            order, as Jesus did through that of John. So that the forerunners declared her to be, first, a woman "coming
+                            after them, but was preferred before them, for she was before them." Thus it is seen that the second was the
+                            reappearing of the first; hence, as promised, Christ has appeared "the second time without sin unto salvation"
+                            to all who will accept, believe and obey. The little handful continued to increase in light and power until the
+                            year 1770, when by a special manifestation of Divine light the present testimony of salvation and eternal life
+                            was fully revealed to Ann Lee, and by her made known to the society, and thus she rose above them and became the
+                            anointed and acknowedged leader of this faithful band. From this time forth Ann knew herself to be the bride,
+                            the Lamb's wife, being baptized with the same spirit, and by perfect obedience to the light, received from God,
+                            she became conjoined to the bridegroom, and co-worker with him in the regeneration and redemption of the race.
+                            He the father and she the mother in spiritual Israel. Thus we cannot fail to see an absolute sameness and
+                            equality between them and alj the types and symbols that have their fulfill-<pb n="208" id="p30" TEIform="pb"/> SOS SHAKER
+                            ment in them. Thus we hold the truth, that The Christ to which all prophecy pointed, and in whom all the types
+                            and symbols centered, have here their fulfillment. The one the son of a carpenter, the other the daughter of a
+                            blacksmith. And now let us ask : Are these too humble, lowly and mean to be honored with the leadership of God's
+                            people? or shall we, Gnostic-like, look high up among the stars for a greater? It were folly to do so. We trust
+                            it is now seen, that all the types and symbols under the shadowy dispensations of the law and the prophets are
+                            completely fulfilled in the "two anointed Ones" who stand as the first foundation pillars in the new
+                            creation—Jesus Christ and Ann Lee. whose ultimates are the same. The first appearing ultimated in a living body
+                            or Church, which had all things in common. The second appearing ultimated in the same, hence we see in every
+                            particular, from the first shadowing forth—from the first promise of God that a Redeemer should appear, through
+                            all prophecy up to the substance, the first and second the male and female are perfectly equal in type and
+                            symbol, in prophecy and person, in call, in character, in operation, in substance, in effect, in culmination and
+                            in ultimate; equality ! equality !! equality !!! is ineffaceably stamped upon them, never more to be blotted
+                            out. The same spirit now calls that called then; the same doctrine is taught now that was taught then; the same
+                            exhortation is made ; the invitation is given now to all kindred, nations, and tongues that was given then;
+                            "Look unto me and be saved, all ye ends of the earth." The last silver trumpet is now sounding to the
+                            inhabitants of the earth, and may its shrill and piercing note reach every mountain-top, penetrate every forest,
+                            echo in every land and extend over every wide sea, till the whole earth shall know that "now is come salvation
+                            and strength and the kingdom of our God and the power of His Christ." South Union, Ky.</p></div2><div2 type="saying" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="If you don't want to be robbed of your good name, do not have it painted on your umbrella" TEIform="index"/>If you don't want to be robbed of your good name, do not have it painted on your umbrella
+                        </head><p TEIform="p">If you don't want to be robbed of your good name, do not have it painted on your umbrella.</p></div2><div2 type="publication" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="We make a reprint of 'The Essential'...'" TEIform="index"/>We make a reprint of 'The Essential'...
+                        </head><p TEIform="p">We make a reprint of "The Essential" which appeared in the July No., to correct an error of the printers. We
+                            regret the necessity for this apology.</p><byline TEIform="byline"><persName reg="Printers" TEIform="persName">Printers</persName></byline></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Essential [corrected]" TEIform="index"/>THE ESSENTIAL</head><byline TEIform="byline"><persName reg="Bussell, William H." TEIform="persName">WM. H. BUSSELL</persName></byline><p TEIform="p"> The grades and forms of life appear to be innumerable. Doubtless, each has some special significance, though in
+                            many cases, not yet made evident to the human mind. To the Infinite all things are simple, but to the finite
+                            capacity many seem complicated and difficult of solution. Man needs to know Vhat among the wThole are necessary
+                            for hia present welfare, and to feel the assurance that'all things will become clear in the future as his power
+                            to investigate increases. There seems no limit to this power in man. At the present time he contains within him-
+                            self the treasures of all past ages. Those, it is true, have been handed down embedded in a mass of apparent
+                            rubbish, like gold in the midst of various other materials. But however tenacious of their treasure these may
+                            be, they are obliged to yield to the separating forces applied to them, and the valued metal appears at last
+                            free from allitsincumbrances, Truth is essential. Though from age to age it has seemed to be mixed with error,
+                            yet its nature has not been changed thereby. It never was the Divine intention to revea\ all truth at once, only
+                            that which is essential for the time being; its highest forms are reserved for the latest times ; or it would
+                            have been so revealed, and there would have been no need of investigating and inquiring here and there where
+                            truth is to be found; in fact, there would have been in man no faculty for investigation and discovery. Is the
+                            All-Wise anxious in respect to the estimation in which he shall be held by his creatures? If so, he would have
+                            endowed them at once with the proper powers of appreciating himself. But from the beginning the objects of
+                            Divine worship have been, the sun, moon and stars; beasts of various kinds ; men remarkable for their physical
+                            endowments ; creatures of the imagination— gods and goddesses—possessing all the human passions and vices; an
+                            eternal being styled God, yet limited in his attributes and MAJsraPESTO. THIC<pb n="209" id="p31" TEIform="pb"/> THE SHAKER
+                            JVrA.NTF'JCSTO. mode of existence ; and yet another who, according to some theological authorities, ventured to
+                            set himself up as the rival of the last named, thougli but a mere creature ; and last, though not least, an
+                            eternal power concentrating in itself all the evil elements or principles supposed to exist in the universe. It
+                            is not in the human mind to cease thinking. It must continue to think though error is often the result. System
+                            after system of philosophy may be devised by thinking minds and then be discarded, yet they each contain
+                            valuable truths that can never perish. Scientific minds are noted for the theories they devise in order to
+                            explain natural phenomena. Yet from age to age they are making discoveries in the field of truth that more than
+                            compensate for erroneous theories. The medil ums of communication between the inhabitants of earth and other
+                            spheres of existence, styled seers or prophets, by no means give us all truth respecting Avhat they claim either
+                            to see or to hear. But, to say the least, they are in this respect the peers of the philosopher and the
+                            scientist. When these have established unerring methods of arriving at all truth, then the seer and the prophet
+                            may well be dispensed with, for their "occupation will be gone." Till that takes place, the candid mind will not
+                            discard any mode of arriving at truth, even thougli "seducing spirits" may still find room to practice their
+                            arts and impose upon the understanding. The lover of truth and goodness may ask if error and its consequences
+                            are to be perpetuated forever. Doubtless, until all have "ceased to do evil and learned to do well." When they
+                            shall govern their appetites and passions instead of being governed by them ; when they "shall learn war no more
+                            ;" when they shall recognize the fact that "the earth is the Lord's and the fullness thereof," and is not to be
+                            appropriated by a single individuato the exclusion of any other, his equal before God; when they shall
+                            understand, and act in accordance with this understanding, that human beings are temples of the Holy Spirit, to
+                            possess a purity far surpassing that of the inner sanctuary of the ancient temple, then will the consequences of
+                            error and vice cease. Peace instead of war, abundance instead of destitution, health instead of disease, and
+                            virtue instead of vice will be man's inheritance upon the earth. These will come gradually, because man is but a
+                            gradual learner. The most essential thing is that each individual should know himself thoroughly and what is
+                            best adapted to hia particular case. There are general laws applicable to all persons, and there are particular
+                            rules far more numerous than the general. These are all stringent because they are intended to make strictly
+                            upright men and women— "Who know their rights and knowing dare maintain." in spite of.the clamor of appetites
+                            and passions pleading for self indulgence. Who shall know also how to respect the rights of each other in all
+                            the relations of social life and yet make social life infinitely preferable to the solitary's cell. When all
+                            shall have learned to govern themselves in accordance with Divine Love, then those cumbersome machines called
+                            civil government will no longer be needed. Religious parties and theological rules will be superseded by a state
+                            of things in which the individual shall belong completely to the whole and the whole devoted supremely to the
+                            individual. Groveland, N. Y.</p></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Obituaries" TEIform="index"/>OBITUARY</head><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Dewitt, Maria" TEIform="index"/>Maria Dewitt
+                            </head><p TEIform="p"><persName reg="Dewitt, Maria" TEIform="persName">Maria Dewitt</persName>, at Mt. Lebanon, N. Y. June 14, aged 74 years.</p></div3><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Georgeson, Adam" TEIform="index"/>Adam Georgeson
+                            </head><p TEIform="p"><persName reg="Georgeson, Adam" TEIform="persName">Adam Georgeson</persName>, at Canaan, N. Y. June 4, aged 70 years.</p></div3><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Olson, Oloff" TEIform="index"/>Oloff Olson
+                            </head><p TEIform="p"><persName reg="Olson, Oloff" TEIform="persName">Oloff Olson</persName>, at Pleasant Hill, Ky. Apr. 30, aged 30 years.</p></div3><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Downing, Ann" TEIform="index"/>Ann Downing
+                            </head><p TEIform="p"><persName reg="Downing, Ann" TEIform="persName">Ann Downing</persName>, at Pleasant Hill, Ky. May 1, aged 43 years.</p></div3><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Barnett, John" TEIform="index"/>John Barnett
+                            </head><p TEIform="p"><persName TEIform="persName">John Barnett</persName>, at Pleasant Hill, Ky. May 2, aged 75 years.</p></div3><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Goodwin, Ann" TEIform="index"/>Ann Goodwin
+                            </head><p TEIform="p"><persName reg="Goodwin, Ann" TEIform="persName">Ann Goodwin</persName>, at Mt. Lebanon N. Y. June 20, aged 78 years.</p></div3><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Hooper, Dorcas" TEIform="index"/>Darcas Hooper
+                            </head><p TEIform="p">At South Union, Ky. June 27, Dorcas Hooper, aged 74 years.</p></div3></div2><pb id="p32" TEIform="pb"/><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Editorials" TEIform="index"/>Editorial Notes</head><p TEIform="p"> We are using a number of The Bickford Knitting Machines; and they are very satisfactory indeed Being among "the
+                            wonders in this age" of machinery Their utility and expedition in business should be expt rienced by all, at so
+                            small cost. Material for Fences of wood variety is getting scarce. We must soon accept the alternative of no
+                            fences, or rely on the 'metal ones offered us by Washburn, Moen Co. We are at a loss to speak as yet, of the
+                            best Water Wheel ; but we are at no loss to say that the firms ot Leffel &amp; Co. and N. F. Burnham, who
+                            enter into friend. ly competition in our columns,are both most honorable Oftentimes, we are led to regret, that
+                            there are un scrupulous persons, who, realizing the solid benefits oi judicious advertising, will use it most
+                            freely on some useless or worse than useless articles, and soon retire with fortunes of ill-earned gains. But we
+                            can still point to thousands who by a wholesome judicious judgment, have used advertising to their exceeding
+                            profit! and to the most creditable advancement of useful materials. Such, we believe our patrons to be. We have
+                            taken considerable and particular pains to acquaint ourself with Dr. Frazier's remedies, and find from those
+                            using them, only a good report. His Bitters are purely medicinal, and not an intoxicant beverage. Elder James S.
+                            Prescott gives his endorsement of Dr. Frazier's Cough Remedy—and he is good authority. We, find Stinson and Co.
+                            very honorable in their dealing. Try them. We hope "everybody and his neighbor" will send us six cents for a
+                            copy of "Plain Talks;" or ten cents, for two copies post paid. It is a pretty book. Please procure it and
+                            present it to yoar friend. We are able to speak of the various agricultural implements of Wheeler &amp;
+                            Melick Co., and of West' inghouse manufacture. We have tested their Threshers and Powers for years, and found
+                            them unexcelled. We would call especial attention to the new advertisement of N. F. Burnham. As enterprise is
+                            ever praiseworthy when applied as they apply it, let every one lend this firm a token of praise. If any can do
+                            better for the furnish of Dry Goods, etc. than can be done at Wm. M. Whitney &amp; Co., we would be pleased
+                            to hear from such party. Take choice and choose soon from among the most beautiful musical instruments
+                            advertised in our columns. Quite a number of families are the happier to-day for taking our advice, and buying
+                            their Organs and Pianos of - well "read and you will know." D. II. Fonda, the most enterprising of
+                            Druggists, etc. can be relied upon by parties, near by or distant, who are in want of anything in his line,
+                            wholesale and retail. Try him, prove him. Any parties who would learn how we make such good, "gilt-edged''
+                            butter, must read an article entitled "Gilt-Edged Butter Maker."</p></div2><!--
+                    <div2 type="section">
+                        <head>
+                            <index level1="Advertisements"/>[Advertisements]</head>
+                        <p> [advertisements deleted</p>
+                    </div2>
+                    --></div1></div0></body></text></TEI.2>

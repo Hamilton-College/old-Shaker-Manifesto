@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI.2 id="spe-sha-tm1801" TEIform="TEI.2"><teiHeader type="text" status="new" TEIform="teiHeader"><fileDesc TEIform="fileDesc"><titleStmt TEIform="titleStmt"><title level="j" TEIform="title">The Manifesto</title></titleStmt><extent n="pagination" TEIform="extent">28</extent><publicationStmt TEIform="publicationStmt"><publisher TEIform="publisher">Hamilton College Library</publisher><pubPlace TEIform="pubPlace">Clinton, New York, United States of America</pubPlace></publicationStmt><sourceDesc default="NO" TEIform="sourceDesc"><biblStruct default="NO" TEIform="biblStruct"><monogr TEIform="monogr"><imprint TEIform="imprint"><publisher TEIform="publisher">United Societies</publisher><pubPlace TEIform="pubPlace">Shaker Village, New Hampshire</pubPlace><biblScope type="volume" TEIform="biblScope">18</biblScope><biblScope type="issue" TEIform="biblScope">1</biblScope><date value="18880101" TEIform="date">January 1888</date><biblScope type="pages" TEIform="biblScope">1-24</biblScope></imprint></monogr></biblStruct></sourceDesc></fileDesc></teiHeader><text TEIform="text"><body TEIform="body"><div0 type="volume" n="18" org="uniform" sample="complete" part="N" TEIform="div0"><div1 type="issue" n="1" org="uniform" sample="complete" part="N" TEIform="div1">
+                    <!--
+                    <pb id="p1"/>
+                        <p>JANUARY. MANIFESTO. Published by the United Societies, VOL. XVIII. "Blessed are the peace-makers: for they shall be
+                        called the children of God."—Matt, v., 9. Canterbury, N. H., 1888. THE</p>
+    --><pb id="p2" TEIform="pb"/>
+                    <!--
+                    <div2 type="none">
+                        <p>CONTENTS. The Gospel Testimony, 3 The New Year, -% 5 Fighting Negations, • " Form of Worship, 6 Thoughts of the
+                            Absent, 7 Ann Lee, ..... 8 Sabbath Evening, " JL True Story, .... " Elder L. C. Torrey, 9 Louise Guest, ... 10
+                            In Memorium, .-..." The Church of God an Earth, 11 Visit to White Water, " Letter,—D. Eraser, .... 13 " W. G.
+                            H..... 14 H. N. M. .... 15 Retrospection, 17 It Dosen't Pay to Worry, A Healthy Fruit, ...» This world and the
+                            Next, " Editorial,—The New Year, 18 Mastication, 19 Rules for Winter, " Refreshing Drink, ...... 20 Temperance,
+                            -" Let in the Sunlight, Letter,—D. Orcutt, 21 Be not Weary, " Acrostic, " Little Men and Women, " Trust in
+                            God, 22 God's Promises, .... The New Leaf, ...-" Music,—Bright Vision, 23 Books & Papers, 24 Kind
+                            Words, .... » Preparation for Death, " Deaths, -</p>
+                    </div2>
+--><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Advertisements" TEIform="index"/>[Advertisements]</head><p TEIform="p">[Advertisements deleted.]</p></div2><pb n="1" id="p3" TEIform="pb"/><div2 type="publication" org="uniform" sample="complete" part="N" TEIform="div2"><p TEIform="p">THE MANIFESTO. Published by the United Societies, vol. xviii. "Blessed are the
+                            peace-makers: for they shall be called the children of God."—Matt, v., 9. Canterbury, N. H.
+                            1888.</p></div2><pb n="2" id="p4" TEIform="pb"/><pb n="3" id="p5" TEIform="pb"/><div2 type="ann lee" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Gospel testimony of Mother Ann Lee and the Elders, William Lee and James Whittaker, no. 22" TEIform="index"/>The Gospel Testimony of Mother Ann Lee and the Elders, William Lee and
+                            James Whittaker. No. 22</head><byline TEIform="byline">Published expressly for the several Communities of Believers in IS 16.
+                            Re-written by<persName reg="Blinn, Henry C." TEIform="persName"/>Henry C. Blinn</byline><p TEIform="p">Journey from Harvard to Petersham. On the 4th of July, 1783, Mother Ann and the
+                            Elders left the Believers in Harvard and made a journey to Petersham, Mass. They tarried
+                            with the family of David Hammond. Quite a little company of Believers went with them, who
+                            had come from different sections of the country. On the third day after their arrival, a
+                            body of people, who were returning from a funeral, gathered around the house and in an
+                            unpleasant manner seemed determined to enter. It was a very singular proceeding. David
+                            Hammond and others who were standing in the halls of the dwelling prevented their ingress.
+                            Elder James Whittaker observing their riotous spirit read to them the "Billof Rights," which
+                            grants to Christians of every denomination, equal rights and privileges, in the exercise and
+                            enjoyment of their religious profession and worship. He then reasoned with them, for some
+                            time, and endeavored to show them that such proceedings, were unchristian, unlawful, unmanly
+                            and abusive. Others of the Elders also addressed the company and reminded them of the abuse
+                            which the Elders had suffered in Petersham at an earlier date. Mother Ann admitted several
+                            of the company into the house and pointed out to them a narrow passage in the rear of the
+                            chimney, where she said, "They thrust me through that place. It seemed as though they would
+                            press the breath from my body. I was never so abused in all my life." Soon after this the
+                            company withdrew, but to their dishonor, be it said, they returned near the close of the
+                            day, with every indication that they were bent on mischief. Only a few of them were al-
+                            lowed to enter the house. Mother Ann and the Elders passed up stairs, into a chamber. The
+                            mob next attempted to reach the upper windows of the dwelling but were not successful. Some
+                            of the Brethren reproved the mob for their ungodly behavior, but as they seemed to be
+                            determined on acts of wickedness, it did little or no good. Stones and sticks were thrown in
+                            at the windows, and several persons were more or less injured ; yet in the midst of all the
+                                tur<pb n="4" id="p6" TEIform="pb"/> 4 THE MANIFESTO. moil the Believers began to sing a
+                            hymn of praise and prayer. Several were able to testify to their faith in the cross, and
+                            that in all boldness. The evil influence, however, predominated among the mob and they
+                            became very noisy and abusive. One man by the name of Witt, struck Br. Aaron Wood with a
+                            club, so furiously that he fell to the ground, and was unable to move. At that moment some
+                            one cried out, '' You have killed him" and Elder James added, "Mark the man that killed Br.
+                            Aaron. " Instantly the mob began to disperse, and ran in every direction, clambering over
+                            the walls and fences in such confusion that the scene became perfectly ludicrous. The
+                            Believers taking advantage of the hasty retreat gave three cheering shouts which made the
+                            woods echo with joyThere was no more harm that night, but on the following evening the house
+                            was again surrounded by a noisy rabble, who were xnockins, hooting, and yelling like
+                            savages. A pistol was discharged in at the window, apparently with a view to frighten the
+                            Believers, but the singing and speaking proceeded as though nothing had happened. Night
+                            after night these wicked people would gather around the house where the Believers were
+                            holding their meet- ings and create a disturbance by their unpleasant noises and rude
+                            behavior. This continued most of the time while they remained in Petersham. Mother Ann and
+                            the Elders comforted the Brethren and Sisters and counseled them to forget their troubles
+                            and to remember their sorrow no more. At one time Elder William Lee discovered three men, as
+                            they came across the fields, toward the house, and calling to the Brethren, advised them to
+                            take care of their things. "The wicked are coming," said he, "and the wicked will do
+                            wickedly." Mother Ann called several of the Believers, and said to them, "Go quickly and see
+                            what they wnnt. and just as you deal with them, so Christ will deal with you." These men
+                            appeared to have but little sense of the mission upon which they had b-en sent. They came in
+                            great zeal and running as fast as they could, shouting and making a great noise. They were
+                            strangers to the Believers. Suddenly they turned and ran from the house with utmost speed,
+                            and appeared to be very much frightened. The next mission of Mother Ann and the Elders whs
+                            to the town of Cheshire where they arrived July, 18 L 783, and called at the home of Joseph
+                            Burnett. They remained with this family over the Sabbath and held a public .service. Large
+                            numbers came to attend the meeting. All the Elders addressed the assembly, and opened the
+                            gospel testimony with great clearness. At the close of the service several persons came to
+                            the house and used very abusive language toward the Elders, and especially toward Mother
+                            Ann. One of the young sisters remarked, "She is my Mother;" "She is my Mother." This put
+                            them to silence and they left the place very much ashamed of their conduct. After holding
+                            meetings in Cheshire about one week they went to the town of Richmond.</p></div2><div2 type="poem" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Behold! another day is gone..." TEIform="index"/> Behold! another day is
+                            gone... </head><p TEIform="p">Behold! another day is gone, Look back, my soul and see, If every passing
+                            moment's borne A good report of thee.</p><byline TEIform="byline"><persName reg="Calver, A. J." TEIform="persName"/>A.J. Calver</byline></div2><pb n="5" id="p7" TEIform="pb"/><div2 type="poem" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="New year" TEIform="index"/>THE NEW YEAR</head><byline TEIform="byline"><persName reg="Newton, Agnes E." TEIform="persName"/>Agnes E. Newton</byline><p TEIform="p">We've finished the page and turned the leaf To begin another year; We've reviewed
+                            the same, balanced account, Our credit and debt made clear. We've written the lines we
+                            thought to write With earnest and soulful care; When the New Year dawned with snowy page And
+                            our hearts were bowed in prayer. The record is there, never erased, The false nor the true
+                            can be ; 'Tis written we know for more than time, It stands for eternity. Yet we find our
+                            hearts are striving today With purpose still firm and true ; To profit by truths the past
+                            has taught And gladly accept the new. Unchanging the law of perfect growth, The new shall
+                            succeed the old; E'en the blighted fields and barren waste Shall verdure and bloom unfold.
+                            Then welcome the cross and life of Christ, Creating all things anew; We pray that its light,
+                            our souls, may guide And inspire the whole year through. The sorrows or joys the New Year
+                            brings, The Christian heart can meet; Where Christ is enthroned, in vain the storms And
+                            tempests of life may beat. Ah! hidden with Christ, a safe retreat, His mission and law our
+                            guide; The tempter may come but nothing find As we in the Vine abide. Canterbury, N. H.</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Fighting negations" TEIform="index"/>FIGHTING NEGATIONS</head><byline TEIform="byline"><persName reg="Hampton, Oliver C." TEIform="persName"/>Oliver C. Hampton</byline><p TEIform="p">Love and not hate is to save us all, if we ever are saved. It is vastly better to
+                            cultivate a love and interest for a virtue, than to employ our time in parading before us
+                            and hating its opposite. Can't we love Mercy without taking the trouble to bring before our
+                            minds, scenes of appalling cruelty as so many 'b men of straw" and hating them ? Can't we
+                            love purity without the necessity of taxing our imaginations to remember or perhaps even
+                            create images of disgusting sensuality, so that we can hate them and fight them? I should
+                            not wonder if we eventually came to find that a godly man—a Christian, is under no necessity
+                            to hate anything. What are sinful habits, courses, —propensities, anyhow? They are vio-
+                            lated laws. They are ''lines of confusion, and stones of emptiness." Mere negations, to be
+                            substituted sooner or later in every case, by love, wisdom, purity, patience, kindness and
+                            intelligence. Let us love the good and cultivate it and let what we call the evil die a
+                            natural death (if any one thinks it is possessed of vital elements) and let it be relegated
+                            to the limbo of everlasting forgetfulness as soon as possible. In our zeal in hating a
+                            violation of any of God's good laws we are so very prone to hate the violator, that our
+                            hatred is almost sure to consume nearly every bit of our charity. But our blessed Savior and
+                            Mother don't allow that on any consideration whatever. It seems to me a reasonable,
+                            philosophical and even inspirational suggestion that we should cultivate as much love and as
+                            little hatred as possible, aud if guided hereinto by holy and heavenly impulses of wisdom
+                            from above which the beloved Apostle assures us is "first pure, then peaceable" we shall
+                            climb the great ladder toward perfection with much security and peace. Now for a little
+                            experience. When I first set out to be a Shaker the cry was war to the knife against the
+                            "world, flesh and devil." I pitched in and fought in 5 <pb n="6" id="p8" TEIform="pb"/> THE
+                            MANIFESTO. those wars for many years. We shook, vociferated, stamped and in every way,
+                            demonstrated outwardly what was going on inwardly. We used to sing : "The greatest war
+                            beneath the sun Has surely now with us begun, Each soul must fight (?) or surely run And
+                            leave the valiant numbers." And also : "When once we've entered the campaign We need not
+                            think to fly, Our freedom then we have to gain 'Tis conquer then or die. For if we should
+                            the cause desert, Or yield unto the foe, To endless shame we must depart Where all such
+                            cowards go." These warring scenes sometimes seemed to have a strange effect upon me. At such
+                            times the stronger the belligerent demonstration the fulbr of evil I seemed to become and
+                            consequently the farther I felt from the victory. But I was told that it was to be compared
+                            with medicine, which in order to do any good, must first rouse up all the latent elements of
+                            disease, after which it could and would eliminate them from the system. So 1 let it go, and
+                            fought ou. After many years of this military life, I solemnly made a review of my experience
+                            aud found myself appallingly poor and destitute of patience, forgiveness, charity and
+                            unselfishness. I had experienced but a very small portion of divine love by which my spirit
+                            was allured and brought into the wilderness of silence, and spoken comfortably unto. So I
+                            felt very poor and disconsolate after twenty years of military life wherein I had never
+                            missed a single battle. I now began earnestly to love and cultivate all that was good and
+                            wise, high and holy, sweet and unselfish, kind and sympathetic, beautiful and sublime,
+                            poetic and harmonious. I have pursued this plan for many years and gained the unspeakable
+                            riches of peace and righteousness flowing from a quiet practical self-abnegation. I have
+                            gone through terribly exhausting physical labors, fighting for spiritual emancipation. But I
+                            have gained more real travel in prayer and peace and tranquility and love to God and
+                            practical goodness to man, in one year by my later spiritual regime than in many of the
+                            years of my former experience. It may be that all may not be able to receive these sayings
+                            of mine. Yet I am not afraid to exhort all to cultivate in thought, word and practice, all
+                            that is good, holy and heavenly until such a sweet life is a second nature with them, and
+                            forget as fast as possible all that is below this high standard, and I will guarantee all
+                            such a swift, happy and successful travel heavenward. Union Village, 0.</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Four queries about the shakers, no. 1" TEIform="index"/>Four Queries about
+                            the Shakers. No. 1</head><byline TEIform="byline"><persName reg="Dibble, Chancy" TEIform="persName"/>Chancy Dibble</byline><p TEIform="p">Form of Worship. It is supposed by some that we have a variety of monkish forms
+                            to which all must submit, but this soon vanishes from the mind of one who learns bow few are
+                            the ceremonies with us, one side of necessary duties and industries. Our worship is perhaps
+                            the most peculiar part, to which some think we are very much wedded, whereas in reality we
+                            have no faith in any form, farther than it is expressive of emotion and reverence to our
+                            Divine Parents. The form is of no consequence ; all depends upon the purity and sincerity of
+                            6 <pb n="7" id="p9" TEIform="pb"/> THE MANIFESTO. the worshipers. Whether we sit or stand,
+                            kneel, sing, march or dance ; all must proceed from reverence and love, or worship of any
+                            kind becomes formal and lifeless. Our leaders were prompted to this form by aspirations
+                            after the power of salvation from sin. Every motion had its original signification. The
+                            march, that we are ever on the move toward perfection. Our hands are spread, in token that
+                            we are needy and anxious to gather from spiritual sources. We shake with indignation against
+                            the nature of evil in our own hearts. We dance for our victories over the temptations of
+                            life, which so often sink men and women in degradation. The fitness and congeniality of our
+                            worship to all ages and dispositions, is appreciated by such as realize the failing of
+                            lifeless forms to which fashionable churches hold. The congregation seated in their easy
+                            pews, witnessing the performance of some theologian who displays himself, perhaps more than
+                            he displays the gospel ; thus one man does the worshiping while the crowd look on. We do not
+                            wonder that people educated to old forms, should look with surprise at so wide a deviation
+                            as we have made. Dancing upon the Sabbath, according to the blue laws, such should be
+                            imprisoned for desecration of the day. Shaking, why what fools to thus manifest our
+                            indignation agaiust dirty, sinful habits. But is it not right to act out what we honestly
+                            feel? Who in seasons of revival finds fault with the sinner, under conviction, for acting
+                            out that to which the spirit impels him ? On the whole, our worship is not merely a
+                            curiosity, for there is no position that brings us nearer in harmony with spirits. While our
+                            exercises enliven the physical part, the mind is active and receptive, not for tipping
+                            tables or material- ization, but for an overcoming power against sin, which reigns in the
+                            human heart and in Society. Watervliet, N. Y.</p></div2><div2 type="poem" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Thoughts  of the  absent and of our  day and time" TEIform="index"/>Thoughts
+                            of the absent and of our day and time</head><byline TEIform="byline"><persName reg="Whitcher, Mary" TEIform="persName"/>May Whitcher</byline><p TEIform="p">Tis not for the departed That we are called to weep, Or for the honest hearted
+                            Who still their vigils keep. But for an aid in Zion Of equal strength and care Her inmates
+                            can rely on And all the needy share. Something must fill this measure A living pool to
+                            stand, Or Zion lacks the treasure Required at her hand. Some one must hold her order, Obey
+                            her saered truth, Maintain her virgin whiteness, Or who shall know her worth? Where is the
+                            burden falling Where are the hands well staid And where the feet established Through living
+                            faith obeyed? And can we lose our birthright When called the chosen seed, Or shall we hold
+                            our standing Till we are free indeed? The spirit answers in us, We must obey our light, And
+                            walk in true uprightness If we maintain the right. No longer point the pathway But place our
+                            feet therein, And from the morn till evening Sin not, nor lead to sin, Duties are always
+                            with us And those who need our care, And as we give, we're given Increase for all we share.
+                            7 <pb n="8" id="p10" TEIform="pb"/> THE MANIFESTO. 'Tis not a fabled story, But those who
+                            keep the word, They know and feel the glory And power of their God, To walk above earth's
+                            darkness Her groveling and her sin, Above all nature's cravings With spirit pure and clean.
+                            Then keep the standard waving The cro s we'll not bring down But every trial braving Till
+                            ours, the Conqueror's crown. Canterbury, N. H.</p></div2><div2 type="poem" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Ann Lee—the seer" TEIform="index"/>ANN LEE-THE SEER</head><byline TEIform="byline"><persName reg="Smith, Elizabeth Oakes" TEIform="persName"/>Elizabeth Oakes Smith</byline><p TEIform="p">Written for The Manifesto. CassancIras have their fervid visions cried; Unheeded
+                            Sibyls on the unwilling air Have cast their inspirations in despair. Joan of Arc, her simple
+                            flock beside, Wept o'er her country's wrongs, nor dared to hide The Voice that bade her
+                            virgin feet repair Where slaughtering men and ruined cities were; And forth she went, truth
+                            panoplied, and died. And not the less from out the feons roll The Voice by prophet heard and
+                            ancient seer, And chastely o'er Ann Lee's inspired soul, Love, such as angels know, to
+                            angels dear, Enshrined the Gospel of the Higher Life, Symboled by Adam ere he sought a wife.
+                            Hollywood, N. C.</p></div2><div2 type="poem" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Sabbath evening" TEIform="index"/>SABBATH EVENING</head><byline TEIform="byline"><persName reg="Caswell, Mary H." TEIform="persName"/>Mary H. Caswell</byline><p TEIform="p">The Sabbath day was ended, The Bible placed aside ; Full many texts I'd gathered
+                            From this unerring guide Which rested on my spirit As rays of purest light, Revealing to me
+                            clearly My duty in God's sight. Though oft through early childhood, And e'en in wayward
+                            youth, I'd read these sacred lessons, And learned to love their truth; Yet, in the recent
+                            review Of ancient precepts rare, One 'mong the many others Engrossed my special care. 'Twas
+                            uttered by our Savior, Most sweetly, calmly given To his devout disciples To point the way
+                            to Heaven ; See Luk*. Except ye be converted And like a child become, Ye can in no wise
+                            enter The Kingdom as my own. So positive this statement, I ask who can gain-say This truth
+                            divinely spoken A truth that lives to-day? And thus I said 'tis folly, For one to entertain
+                            A hope to reign in glory, Without a righteous claim. Henceforth may angels witness, My
+                            promise which shall be, To seek the Father's Kingdom, Through blest humility. Canterbury, N.
+                            H.</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="True story" TEIform="index"/>A TRUE STORY</head><byline TEIform="byline"><persName reg="Basting, Louis" TEIform="persName"/>Louis Basting</byline><p TEIform="p">Traveling recently through Southern Kentucky we became acquainted with a
+                            gentleman whose probity and integrity is well known throughout that section of the country.
+                            During the course of a lengthy journey on the cars he related the following incident which
+                            we reproduce here for the benefit of readers of The Manifesto. The Society of Believers
+                            located at Pleasant Hill, Ky., has for some years past permitted camp meetings to be held on
+                            its grounds. As a consequence many called for food and lodging and were entertained
+                            according to the ability of the Society. The chief attraction at last year's encampment was
+                            a noted evan- gelist. Among those who availed themselves of the Society's hospitality was
+                            the aforementioned Rev. S. J. Coming 8 <pb n="9" id="p11" TEIform="pb"/> THE MANIFESTO. one
+                            morning into the office with a swaggering sort of manner, cigar in mouth and spitting
+                            tobacco juice on the clean floor he began a general criticism of Believers, their manners,
+                            system and theology. An aged gentleman who was visiting a daughter, who was a member of the
+                            Society at last ventured to check the speaker's volubility, by asking him what particular
+                            point of their theolog/ was objectionable. The answer was' that the celibacy practiced by
+                            Believers was anti-Christian and unscriptural. Then his questioner remarked with some warmth
+                            : "Do you know what you are talking about? Have you read the New Testament? Was not Jesus a
+                            celibate and were not his apostles and disciples celibates? The only question today is, who
+                            of us is ' able to bear that saying. Yes, sir, celibacy is the very Cap sheaf of the
+                            Christian Religion. And as to manners : look at the inscription over the door—Erected in
+                            1839. Now 1 venture to assert, that since that inscription was placed there, no gentleman
+                            has ever come into this house smoking a cigar and spitting on the floor." Mr. J. found it
+                            best not to continue the conversation on these lines, but others who had witnessed the inci"
+                            dent caused it to be related in the papers, and it followed him in his wanderings to
+                            Chicago. There he astonished his audience by coming out with a testimony against the use of
+                            tobacco. Thus was the Reverend's conversion from tobacco brought about. Ought it to stop
+                            there Mt. Lebanon, N. Y. [How nice it would be if others could follow this example of the
+                            Eev. S. J. and astonish the people "by coming out with a testimony against the use of
+                            tobacco."—Ed.]</p></div2><div2 type="poem" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="In memorium: Elder Lemuel C. Torry" TEIform="index"/>IN MEMORIUM. ELDER
+                            LEMUEL C. TORRY</head><byline TEIform="byline">By <persName reg="Doyle, Alfred E." TEIform="persName"/>Alfred E. Doyle</byline><p TEIform="p">Earth to earth and dust to dust For this is Heaven's decree, And nature bows to
+                            pay the debt That makes the spirit free. But we who mourn with keen regret The losof father,
+                            friend and brother See hut the passing glorj' of tbis world And not the rising of another.
+                            Through the valley of the shadow, One by one alone must tread; We call this death, but is it
+                            true That ours are with the dead? Faith and Hope both answer nay, Death is but the gate of
+                            life, To higher planes and broader fields— Of onward upward strife. Our present loss is
+                            future gain, One friend below for one above; It must be so in God's own law, For God Himself
+                            is love. We have this hope and can rejoice In the field well fought and won, And with him
+                            share his well earned joy To hear the sweet " Well done." But we shall miss him, Ah how
+                            sorely, The kindly voice and helping hand; But whispers hope we'll find our own All in a
+                            fairer, better land. What shall we say, for words are weak, To these the children of his
+                            care? The Lord of Heaven is the orphan's God, Take everything to Him in prayer. For He has
+                            promised to kindly temper The wind to the shorn lamb, To bless with-holding or bless in
+                            giving The chastening rod or healing balm. Full well we know, how blest the thought, The
+                            journey he has trod, Though strewn with thorns led safely on To the Harvest Home of God. A
+                            fond farewell, a glad God speed Our father, friend and brother, Not dead but risen, still
+                            let us say— From this life to another. This holy faith, Oh glorious hope, To know whate'er
+                            befall, Of joy or grief in Heaven or earth God's mercies cover all.</p></div2><pb n="10" id="p12" TEIform="pb"/><div2 type="poem" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Tribute to the memory of our beloved sister, Louise Guest" TEIform="index"/>A
+                            Tribute to the Memory of our Beloved Sister LOUISE GUEST</head><byline TEIform="byline"><persName reg="Settles, Mary" TEIform="persName"/>Mary Settles</byline><p TEIform="p">How soon are we called again to review And witness the scene which we all must
+                            pass through, But those who are faithful have nothing to fear When called in that heavenly
+                            world to appear. Death takes of all classes the young and the old, The weak and the feeble,
+                            the stout and the bold, No one can escape it, but all must resign, When called by the voice
+                            of Almighty Divine. Yea, all souls in justice their portion must meet, When called to appear
+                            at the great judgment seat; No one can call back the time they've delayed But each must
+                            appear in the robe they have made. Then let us my dear loving comrades be wise, Resolved to
+                            be winners of that holy prize, Come life, or come death let us stand for the Lord, And die
+                            in the cause and defense of his word. For lo! our sweet moments glide swiftly away, And soon
+                            we'll be called from this frail house of clay, Then let us prepare with bright angels to
+                            dwell, And bid earth's vain glories a lasting farewell. We have the example before us now
+                            placed, Of one who has faithfully finished her race, And gone to explore the bright regions
+                            above There join with the angels in streams of pure love. She offered to God the first
+                            fruits of her life, Renounced this vain world, withiis pleasures and strife Has stood for
+                            the gospel and never looked back, But kept her feet placed on the firm solid Rock. She long
+                            hath stood with us, through tempest and tide And no vain allurements could draw her aside,
+                            She always did speak in support of the truth, And this she has faithfully kept from her
+                            youth. And now like a flower she is pluck'd in her prime, And gone to a fairer and happier
+                            clime, No more to return to dwell with us again But in the bright regions of glory remain.
+                            She now can rejoice from the sorrows of earth, And sing with bright angels in heavenly mirth
+                            And raise the sweet notes of thanksgiving and praise That she stood for the cause to the end
+                            of her days. And O ! that we all may thus finish our days [raise, That when we are call'd
+                            hence, the same notes we may And pour forth our souls in thanksgiving to God That by his
+                            kind mercy and power we have stood. O may we all meet in that heavenly land, United together
+                            forever to stand; Where no earthly troubles can come to annoy, Our happiness, comfort, and
+                            eternal joy. But there in the mansions of bright glory and peace, Our glory will shine with
+                            an endless increase; And there we'll rejoice on that bright happy shore, Where sorrows are
+                            ended and parting's no more. Pleasant Hill, Ky,</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="In memorium: sister, Louise Guest" TEIform="index"/>IN MEMORIUM. SISTER,
+                            LOUISE GUEST</head><byline TEIform="byline"><persName reg="Settles, Mary" TEIform="persName"/>Mary Settles</byline><p TEIform="p">"Leaves have their time to fall; the stars to set, And flowers to wither at the
+                            north wind's breath, But thou Oh Death ! hast for thine own all seasons." When the lovely
+                            autumn was waning, and in the quiet night as the silvery rays of the moon shed a soft and
+                            starry radiance down on the earth wrapping it in splendor, a pure spirit winged its way to
+                            its Maker, returned to the God who gave it. She had no fears of the future. In her youth she
+                            gave her all to God, and his work, renounced the siren pleasures that are so attractive to
+                            the young, and with a firmness, worthy of a soldier she never looked back, but onward and
+                            upward was her motto. Our sister was meek, unobtrusive, quiet in her manners, adorned with
+                            the priceless adorning of humility, faithful in the performance of her duties, kind and
+                            respectful to the aged. We shall miss her when we meet to worship, as her voice was heard in
+                            these sacred halls. We shall miss her in the home circle, in all the walks of life where her
+                            usefulness was well known. Her physical body was worn and weary from the inroads of disease,
+                            and though a patient sufferer, yet she longed to be free, and to go to the home above, to
+                            rejoin nany dear ones who had preceded hr to the home " Over There. " Her good example was
+                            before us, and we shall niiss her ^ad!y, but we rejoice that she is not lost, only gone
+                            before, and in a few brief years we shall bid adieu to things of time, and lay down the
+                            cares of this life and explore the unknown land " Beyond the smiling and the weeping." We
+                            to-day come here to offer a tribute of respect to the departed, to drop a tear to her
+                            memory, and the loving hands have arrayed iier for the silent tomb. Her young friends have
+                            come to do honor to her, and bring their floral tributes, mute offerings to the voiceless
+                            one whose hands are meekly folded over her heart and who now is rejoicing that her spirit
+                            has put on immortality. We will tenderly lay her away beneath the sod with the sky and the
+                            twinkling stars and pale moon, over head, to keep watch over the spot. The birds will sing a
+                                <pb n="11" id="p13" TEIform="pb"/> THE MANIFESTO. 11 requiem, and her spirit will go to
+                            the land of the immortelles. We who survive are reminded that to pome of us the summons may
+                            come ere long, as "we know not the day when the Son of Man cometh." And then I think of one,
+                            Who in her prime and beauty died The fair meek blossom that grew up And faded by my side; In
+                            the cold moist earth we laid her When the forest cast the leaf, And we wept that one so
+                            lovely Should have a life so brief. Yet not unmeet it was That this dear friend of ours, So
+                            gentle and so beautiful Should perish with the flowers. Pleasant Hill, Ky.</p></div2><div2 type="poem" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Church of God on Earth" TEIform="index"/>THE CHURCH OF GOD ON EARTH </head><byline TEIform="byline"><persName reg="Butler, Charles Wm." TEIform="persName"/> Charles Wm. Butler </byline><p TEIform="p"><cit TEIform="cit"><quote TEIform="quote"> O Church of God on earth ! What strong and holy ties Are thine
+                                    by virtue of thy birth And Christian sacrifice ! Hush now the strife of words, Bid
+                                    every war-note cease And deeply sound the music chords That sing the Prince of Peace
+                                    ! O Church of God on eartli! The?gazing world stands by, She marks the signs of
+                                    inner worth And sees the glory nigh! Then speak the truth in love, In faith and
+                                    patience wait, If thou wouldst see the whole world move Within the Church's gate ! O
+                                    Church of God on earth! Give thou no place to wrong! Prove more and more thy
+                                    Heavenly birth And stand sublimely strong1! Build in thy temple high and fair The
+                                    unifying throne! That truth divine, undying there, May glorify its own !</quote><bibl default="NO" TEIform="bibl"><index level1="Selected" TEIform="index"/>Selected</bibl></cit></p></div2><div2 type="lesson" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="All Christians will be at home what they would fain appear abroad..." TEIform="index"/> All Christians will be at home what they would fain appear abroad... </head><p TEIform="p">All Christians will be at home what they would fain appear abroad. They should
+                            ever be what good people honor and what God can bless.</p><byline TEIform="byline">—<persName reg="Baker, A. I." TEIform="persName"/>A. I. Baker</byline></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Correspondence" TEIform="index"/>Correspondence</head><div3 type="letter" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Visit to White Water Village, and to Union Village, Ohio, in the autumn of 1881, by one who was a shaker boy" TEIform="index"/>A visit to White Water Village, and to Union Village, Ohio, in the
+                                Autumn of 1881, by one who was a Shaker Boy.</head><p TEIform="p">Little Rock, Ark. Early on the morning of Sept. 23, 1887, I started with some
+                                friends of our family, having made up my mind to see White Water, a Shaker Village, in
+                                Hamilton Co., Ohio. We arranged to make the journey by carriage, as I wished to see any
+                                familiar spot on the pike from Cincinnati to the Village. There being no railroad nearer
+                                than North Bend of the Ohio River, (some seventeen miles from W. W. V.) when I lived
+                                there, but since that time a railroad has been finished to Harrison six miles from the
+                                Shakers I wished to go the old way, and return by railWe had a delightful ride. Being in
+                                the fall of the year, the forests, and fields appeared so beautifully to me, and of
+                                course, as all boys think, no State is like their own, so I think no State is like Ohio,
+                                especially, Southern Ohio. Every brook, tree, house and even the cattle that I saw
+                                seemed like old friends, and more so as I neared the Village of White Water. We partook
+                                of a fine dinner with an old gentleman and lady, and their adopted daughter, relations
+                                of my iriends who lived on Paddy's Run, a small stream about four miles from the Shaker
+                                Village. I talked of the good people to my friends for all in my mind was the Shakers.
+                                After spending a few hours with our host and hostess, we continued our journey, arriving
+                                about 6, P. M., at another relation of my friends, where we ate su; per, and soon
+                                retired for the night. In the morning, I arose quite early for me, and in company with a
+                                little boy, after breakfast, ascended a high hill, (there are many south of the Shaker
+                                Village,) to take a loving view of my old home, the Shakertown, as the people call it. I
+                                viewed all, saw the Centre Family, the large barn, and other ob- jects in the distance.
+                                O what thoughts filled me after twenty-three or more years have passed since I saw the
+                                old place. How anx<pb n="12" id="p14" TEIform="pb"/> 12 THE MANIFESTO. ious I was to
+                                continue the journey. I never will forget it while memory lasts. I had never seen a
+                                Shaker or a person who had lived with them in all that time, and so very few that knew
+                                anything about them. At last the time came for the start, and another carriage joined
+                                us, of the family who entertained us for the night. As I drove over Dry Fork, a creek
+                                running around the Shaker Village, memories came over me; my heart was full, and is as I
+                                write this letter. We passed the South Family, the old school-house, the graveyard, and
+                                on up to the Office. Here I met Elder Stephen Ball. We stopped and shook hands. I knew
+                                him. We hitched our horses, and went into the Office and were met by sister Julia Ann
+                                Bear. The company remained about half an hour, leaving me to visit my friends. None of
+                                them seemed to know me as I have grown very stout weighing some over two hundred pounds.
+                                I took a walk after dinner, to see the old places. There was some change after
+                                twenty-three years. Visited Howard's Creek, the woods, fish pond, the grave-yard and
+                                here saw many names of those who had fought the fight of faith, and entered into their
+                                reward. Among them, Elder Ezra Sherman, John Easterbrooks, Ebenezer Eice, a good soul as
+                                ever lived, and Josiah Burnham, for many years the trusty man and deacon of the Village.
+                                Many names of the Sisters, bright stars in the army of God, who had finished their
+                                labors and entered into rest. Many whom I once knew had now passed away. During my stay
+                                I ivas very kindly treated Charles Stirr, a young man, who does the business, gave me
+                                much information as to the present state of the Society, and answered all my questions,
+                                which I know were many. I found him polite and entertaining. Stephen Ball also came to
+                                see me, and I enjoyed all their visits. Elder Henry Bear, my good friend and Elder
+                                visited me quite often. He related to me his religious experience; how he became a
+                                Shaker; and I shall never forget his kind words. He has, though he did not speak of it,
+                                gone through the furnace of affliction, and I love him as a gospel father. Julia Ann
+                                Bear, who has charge of the office, was very kind to me and talked freely. Mary Ann
+                                Wheeler was also at the office. With Br. Charles Stirr I visited the laundry, the
+                                stable, the old nursery, the dwelling house, and the meeting room in the old church;
+                                nil, all, so familiar to me. I went up to the North Family and visited Eldress Elizabeth
+                                Sharp, whom I knew; also Elder Charles Faraday, who was a dear friend of mine. We used
+                                to work together in the seed garden. He looked the same but older. We talked of old
+                                times and walked down the road together. I went also to the South Family and saw Eldress
+                                Betsy Gass and John Atchison. They all seemed like relations of mine, but those I knew
+                                in childhood of course were the dearest to me. I also saw Eldress Amanda Rubush, Lucinda
+                                Packer and others of the Center Family. I had quite a visit with Eldress Amanda and
+                                found her a pleasant lady, the only one left of a large family. On the Sunday following
+                                I attended divide worship, and as they stood in their ranks and sung, how I thought of
+                                the time when I had my place among those pure people. Sad thoughts came over me. Some of
+                                the songs I had never heard, but one was sung which I have never forgotten. " O come, I
+                                will lead you, I'll clothe and feed you, And guide you along, by the confluent stream;
+                                Where angels, bright angels, are washing in Jordan, And you shall be free from all
+                                sorrow and pain. I never will leave you, nay never forsake you, Though deep tribulations
+                                and troubles arise; But I will be with you my faithful, dear children, That you may be
+                                able to press for the prize." That was too much, the tears would come in spite of all I
+                                could do to prevent them, but I felt better. Of course I missed the large company of
+                                former years, I missed the exercise in the stepping, the round dance, the shuffling, and
+                                all those beautiful forms of worship I once knew so well and which I think help on the
+                                life of a Believer. I say it, though it may seem strange for a church clergyman to
+                                express such views; I believe that life comes by earnestness, even to earnest laboring
+                                in the dance, shouting, clapping of hands and violent exercises. We read that "the
+                                kingdom of Heaven suffereth (or alloweth) violence, and the violent taketh it by force."
+                                    <pb n="13" id="p15" TEIform="pb"/> THE MANIFESTO. 13 I believe the songs of Zion
+                                will again come to be of the lively nature, and companies of people will seek her
+                                protection, and the dance, the shaking and all the glories will return to her people, to
+                                help them to bear their testimony against sin, and against the world without fear, as
+                                brave soldiers of the cross. The gospel trumpet, I believe, has sounded and is sounding
+                                now, andthe_ time is near, when all slip-shod services will disappear from Zion, and her
+                                beauty and her glory will again be restored. On Monday morning, I bid farewell to the
+                                kind friends and rode to Harrison in a Shaker wagon. Here I took the train for
+                                Cincinnati, well pleased with my visit, and it can never be effaced from my memory.
+                                While at the Hotel I made up my mind that I would visit Union Village, the largest
+                                Society of Shakers in the west, and on Tuesday, following, the 26th of Sept., I took the
+                                narrow guacre to Lebanon, arriving there about 6 P. M. Hired a carriage to drive up to
+                                the Centre Family, and stopped at the Office, where I met tin.: Ministry, three of them
+                                being members of the Society of White Water. During my stay, Elder Oliver Hampton spoke
+                                very kindly to me, and gave me some books. Among them I have the "Book of Testimonies,"
+                                which I have sent to be bound, as I prize it a treasure. Eldress Louisa Farnham, an old
+                                friend of mine, entertained me very kindly, and we held a pleasant conversation. Eldress
+                                Louisa is not much changed and is seemingly as smart as she was twenty-five years ago.
+                                She is a woman of good sound sense, a gift all of us do not have. Such a gift is far
+                                better than great learning. We all love Eldress Louisa Farnham. She was the first
+                                Shakeress I ever knew, and my mother also was fond of her. She was kind to all, and I
+                                hope she will live long to do a good work for the Societies in the West. I also enjoyed
+                                my visit with Elder Oliver, and his words are a goodly treasure in my mind. Eldress
+                                Adeline Wells was very kind and pleasant, as were sisters Ann Maria Myers, Susanna
+                                Armstrong, Brother Ezra Leggett, the Post Master, Brother Gustave in charge of the
+                                office, and Brother Peter Boyd all made my visit very pleasant. I called at the North
+                                Family, and as Eldress Louisa sent me up to see my friends, sister Mary Middleton and
+                                Matilda Butler, I found them and found that Sister Mary was also glad to see me, and
+                                tears came in her eyes when I told her that years ago, I was a Shaker boy, and at that
+                                time she so kindly took care of me and my clothes in the Village at White Water. I am
+                                assured that tears are no sign of weakness as foolish people sometimes think, for the
+                                bravest and best of men, have often shed tears.: Jesus did, and when honest and sincere,
+                                the more they touch the heart. I spent some time talking of days gone by, and I almost
+                                felt as though I was prophesying when I told them of a time coming, of religious
+                                revival. Tn the afternoon I attended the funeral of a sister at the West Family. The
+                                services were without ostentation or show, bat solemn. I rode back to the office, and
+                                left for Lebanon in a buggy with Eldress Adeline and Sister Susanna. We did some
+                                shopping, (or rather I went with them to do some shopping) and felt honored to be seen
+                                with my Shaker friends. Bidding the Sisters good bye, I took the train for Cincinnati.
+                                My visits will always be remembered as a bright oasis in the desert of this life, and
+                                one of the brightest pages in the memory of my soul. I still maintain, if a person is an
+                                honest Shaker, he is to me the "Salt of the earth," and a light in the world. Sincerely
+                                Yours,</p><byline TEIform="byline"><persName reg="Berne, Joseph L." TEIform="persName"/>Joseph L. Berne</byline></div3><div3 type="letter" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Mt. Lebanon, New York, November 1887" TEIform="index"/>Mt. Lebanon, N.
+                                Y., Nov. 1887</head><p TEIform="p">Respected Friend, Prof. G. V:—I learned from a Kansas paper that you are
+                                connected with a form of Social Life embracing "Shaker principles minus celibacy." To
+                                me, the civilizations of the past and present, are the outcome of a definite Force in
+                                humanity. Its products are essentially alike under all conditions. So universally alike,
+                                that the exceptions are phenomenal. Nevertheless, these <pb n="14" id="p16" TEIform="pb"/> 14 THE MANIFESTO. exceptions show, that there is also a force in humanity, which,
+                                when in oper- ation, will bring forth a form of social life which will be communal—g'ods
+                                in common. A few years ago 1 made an analysis of the Force which creates the^e
+                                civilizations. I found that said Force, is composed of two atoms—a woman and a man.
+                                Th:ir leading and creative force, is an affinity to form family relationships. The Motto
+                                of which is, "Me and Mine." The reverse of yours. This Force, is of the animal in man
+                                and woman—all animals marry as they do. The civilizations alluded to rule by force, as
+                                the beasts of the fields do. All nations are true to their origin, and represent
+                                themselves emblematically as wild beasts ; one is a bear, another a lion,&amp;c.
+                                Nations are but aggregations of distinct families. They never coalesce, and the richer
+                                the family, the more distinct it is, and the more intense the emotion '"Me, and Mine."
+                                Were the Genus Homo, in possession of but one set of emotions, as all other animals are,
+                                we could have no conception of having goods in common. The fact that so many aspire to
+                                communal life, is evidence that there is in humanity a higher order of emotions, than
+                                those which refer themselves to animal life in man and woman. Should you be so blest as
+                                to be able to call forth the God-element in your friends, and quicken into life its emo-
+                                tions, then you will have a divine form of social life. Its external manifestation will
+                                be goods in common, and its motto yours "The happiness of each, the first object of
+                                all." Should yourself and friends decline to ignore these animal emotional forces; then
+                                you will be content to refer yourselves to the aforesaid civilizations. And be assured,
+                                that all your efforts to manifest communal life, will be but " As the snow-flake on the
+                                river, A moment white, then melts forever." We are not alone ; the sentiment of living a
+                                life to the total exclusion of all propagative emotions, is prevailing. I am truly your
+                                friend,</p><byline TEIform="byline"><persName reg="Fraser, Daniel" TEIform="persName"/>Daniel Fraser</byline></div3><div3 type="letter" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Portland, Maine, October 1887" TEIform="index"/>Portland, Me., Oct. 1887</head><p TEIform="p">Mr. Editor :—Although I am not a Shaker, yet from what little I have gleaned
+                                from reading I have great respect for the Shaker view in their interpretations of the
+                                teachings of Jesus Christ. Particularly so since the doctrines of the Socialists as
+                                opposed to giant monoplies, have become rife in the land, has the words of Jesus in the
+                                light of Shaker interpretation looked reasonable to me But my object in this writing was
+                                to give a little account of my experience at a religious meeting, one of the
+                                "evangelical" kind, with their monopolized interpretation of Scripture. How long will
+                                Jesus endure the use of his name as sanction to dogmas having no Scriptural foundation
+                                whatever. But the meeting—I felt a desire to attend the Sunday morning prayer meeting of
+                                the Young Men's Christian Association at their rooms by the announced subject, " A word
+                                to moral young men." Having had my idea of about what the drift would be—upon at-
+                                tendance I was not only not disappointed but more lully confirmed in my opposition to
+                                such teachings which while denouncing "morality," indirectly encourages crime. The
+                                nineteenth of Matthew 16—20, formed the basis for the topic of this meeting at which the
+                                first half hour was spent in prayers offered in the name of him who uttered these words.
+                                And then stopping where they did without including the 21st and 22nd verses, and putting
+                                in the mouth of Jesus a meaning which he did not utter or intend to teach, I felt to
+                                ask, how long will Jesus thus be mis<pb n="15" id="p17" TEIform="pb"/> THE MANIFESTO. 15
+                                represented, made to teach what he did not? And I felt to pi ay, that those who were
+                                trying to inculcate their false teachings upon others might have their eyes opened to
+                                the truth. Why did they not read and explain the 21st and 22nd verses, which were
+                                omitted and which contained not only practical morality but pointed the way to a real
+                                following of him who spake them? But no, a twisted contorted theological belief
+                                perverting the words "Kingdom of God " and the essentials for entering therein to a
+                                fancied change in the "new birth"—something mysterious and supernatural, instead of an
+                                actuality, something applicable to daily living. What right had they, morally, to leave
+                                out those two verses :—"Jesus said unto him, If thou wilt be perfect, go and sell that
+                                thou hast, and give to the poor, and thou shalt have treasure in heaven : and come and
+                                follow me. But when the young man heard that saying, he went away sorrowful: for he had
+                                great possessions." Coming right up to the line of the meaning but not far enough to
+                                declare the true intent. Drawing a perverted inference from the first point and omitting
+                                the truth which would have been as destructive to their theories as ever was truth to
+                                falsehood. Thus has, and thus does the great orthodox body prosper to-day and what
+                                continues them in such success with men capable of thinking is what puzzles me. Men look
+                                at things differently it is true, but one thing should be remembered, and that is, that
+                                prejudice governs in the formation of opinions almost always.</p><byline TEIform="byline"><persName reg="H., W. G" TEIform="persName"/>W. G. H.</byline></div3><div3 type="editorial" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Remarks" TEIform="index"/>Remarks</head><p TEIform="p">—It is very true that the several classes of religionists look upon things
+                                very differently, and probably will never see eye to eye till they become of one faith
+                                and one baptism. How any teacher of a religious class can illustrate this remarkable
+                                interview between Jesus and the young man, without including the whole story, and make
+                                it consistent with itself, is to us a puzzle. The young man sustained a good moral
+                                character, and Jesus accepted him so far, and the text says, " loved him." He was also
+                                in possession of some wealth,—"selfishproperty,"—and unless he consscrated this to the
+                                Lord, he could not become a Christian. Jesus, evidently, wanted him to become a dis-
+                                ciple, but with all his uprightness, according to the Mosaic law, Jesus says to him, One
+                                thing thou lackest, "Go thy way, sell whatsoever thou hast [houses or lands, every-
+                                thing you own,] and give to the poor, theu come, take up the cross, and follow me." It
+                                is no wonder that the young man went away filled with sorrow To give away all his
+                                earthly possessions, would reduce him to poverty and yet so long as he retained it he
+                                could not be a follower of Christ.</p><byline TEIform="byline"><persName reg="Editor" TEIform="persName"/>Ed.</byline></div3><div3 type="letter" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Waupaca, Wisconson, September 1887" TEIform="index"/>Waupaca, Wis., Sept.
+                                1887</head><p TEIform="p">Henry C. Blinn, Sir:—In an article in the Oct. No. of the Manifesto, I find
+                                the Elder has said that his " theology did not recognize the Bible as the word of God,
+                                that Jesus was not the Christ, and that the God of Israel was not the God of the
+                                Universe." I had read aloud to a dear friend, all the articles in the Manifesto, thus
+                                far, which she liked much, until I came to the above mentioned words, when she said she
+                                could not accept that, and seemed quite shocked. I have often thought that radical men,
+                                and women too, sometimes make very unqualified remarks even when they are trying to do
+                                good. If the Elder had explained why he believed so, it would probably have been all
+                                right, for I think he is a noble man, and a staunch Christian, although I have never had
+                                the pleasure of meeting him. Perhaps you could explain his meaning in a few words in the
+                                next Manifesto, and oblige your friend and well wisher,</p><byline TEIform="byline"><persName reg="M., H. N." TEIform="persName"/>H. N. M.</byline></div3><div3 type="editorial" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Remarks" TEIform="index"/>Remarks</head><p TEIform="p">—1st. In the writing of articles for publication, people must write from what
+                                they have read, or heard others say, or from what they know by experience. As no two
+                                persons can think and feel exactly alike, at the same time, so it will be reasonable to
+                                conclude that no two will be likely to represent themselves exactly alike on any
+                                particular subject. Some persons almost bewilder us with a multiplicity of words, while
+                                others use so few that we are left to guess what they mean. Some are very speculative in
+                                    <pb n="16" id="p18" TEIform="pb"/> 16 THE MANIFESTO. their illustrations, while
+                                others are laboriously practical. A writer must he followed carefully, if we would
+                                understand fully, the thoughts he presents for inspection. When it is said that the
+                                Bible is not the word of God, the mind of the sensitive Protestant is wounded, as he has
+                                been taught to believe that the Bible from the first of Genesis to the last of
+                                Revelation, is wholly God's inspired word. The best scholars, however, in the Protestant
+                                church do not believe this, hence the revision of the Bible which they have so recently
+                                given to us. A book of God with not less than 150,0C0 errors, certainly needed the care
+                                of some good and wise men. On this subject there is antagonism, even in the Christian
+                                churches. The Catholics say that their Bible is the word of God, and that the Bible of
+                                the Protestants is a spurious record. On the other hand the Protestants call their Bible
+                                the word of God, and that of the Catholic church a book not suitable to be read. This
+                                being the case, we need not wonder if individuals sometimes express an opinion. It does
+                                not hurt the book and need do no harm to the reader if he prays as he reads. We think
+                                you will find it difficult to point out the place where it is recorded that the Bible is
+                                the inspired word of God. The passage that came the nearest to this claim, has been
+                                found to be spurious and as a matter of course corrected in the revision. Read the
+                                sixteenth verse of the third chapter in the second epistle to Timothy. "All scripture is
+                                given by inspiration of God and is profitable for doctrine, &amp;c " This has been
+                                changed to read, All scripture given by inspiration of God is profitable for doctrine,
+                                &amp;c. If the first reading was the Word of God, what shall we say of the last? The
+                                Bible tells its own story, that it suffered from the hands of artful, selfish, de-
+                                signing men who have not hesitated to change the text to advance their own religious
+                                interests. Words, verses and even the half of a chapter that have been for years upon
+                                years, fitted into sermons and lectures to frighten the hearers into one form of
+                                theology and out of another, are now of no force in illustration, and but few would have
+                                patience to hear them repeated. Do you wonder that some persons who hate to I e
+                                deceived, are ready to say that the Bible is not in its every chapter, the Word of God.
+                                2nd. What does the Bible say about Jesus Christ? Who was Jesus? Ans. The son of man. Who
+                                was Christ? Ans. The son of God. When Jesus was commissioned to preach, he was anointed
+                                at the baptism of John, and was then known as Jesus Christ, or Jesus the anointed. It is
+                                of far more importance that we learn to live as he lived, than it is that we should be
+                                over anxious about the name by which he was known. If we say Jesus, or Christ or Jesus
+                                Christ or Christ Jesus, with the mind to depart from all unrighteousness, we shall
+                                probably come pretty near the mark. 3rd. The interrogation put forth by Job would be
+                                quite as pertinent at this day as it was at an earlier date. "Canst thou by searching
+                                find out God? canst thou find out the Almighty unto perfection? Job xi., 7. Finite as we
+                                are, it is in all probability quite impossible for us to know everything, but if we have
+                                learned that the power which rules the Sun, Moon and Stars, as well as our little earth,
+                                is known and feared and loved as our God, Creator of the universe and all that therein
+                                is, then we have a knowledge not to be despised. This same power, evidently ruled when
+                                Adam was in Eden and has ruled heaven and earth from that day to this. Theologians
+                                sometimes ariange their arguments so curiously that you may take from or add to them,
+                                and the change does but little or no harm. At the best, it is generally considered that
+                                the study of theology is of far less value than a life of practical righteousness.</p><byline TEIform="byline"><persName reg="Editor" TEIform="persName"/>Ed.</byline></div3></div2><div2 type="saying" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="A smooth sea never made a skillful mariner..." TEIform="index"/> A smooth sea
+                            never made a skillful mariner... </head><p TEIform="p">A smooth sea never made a skillful mariner; neither do uninterrupted prosperity
+                            and success qualify for usefulness and happiness. The storms of adversity, like the storms
+                            of the ocean, arouse the faculties and excite the invention, prudence, skill and fortitude
+                            of the voyager.</p></div2><pb n="17" id="p19" TEIform="pb"/><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Retrospection" TEIform="index"/>RETROSPECTION</head><byline TEIform="byline"><persName reg="Tatterton, M. J." TEIform="persName"/>M. J. Tatterton</byline><p TEIform="p">Another year has passed into eternity with its sad and pleasant records. Pleasant
+                            as it speaks of victories gained over self and temptations to error. One thing is certain
+                            the New Year finds us one year nearer our Eternal Home the state of perfection or vice
+                            versa. A the beginning of the year it is customary for thoughtful persons to make new
+                            resolutions concerning their conduct in the future ; it is generally regarded as a favorable
+                            opportunity to forsake bad habits and commence the journey of life afresh determined that
+                            the soul shall gain the ascendency over the g-osser elements of our natures. Wa need
+                            firmness and courage to carry out a whole hearted devotion and lo arm the soul with every
+                            advantage possible, to review our past lives, to test our motives, affections and
+                            inclinations. What eye save one which seeth in secret notes the efforts of the soul to walk
+                            with God, or the repentance for follies and sins of the past? There are seasons of soul
+                            refreshing and renewing when baptized iu the love of God the Christian starts anew on the
+                            heavenly journey. God grant that the closing and the beginning, and indeed every day of the
+                            present and coming years may be blest by the abiding presence of the Holy Spirit; which
+                            shall be the means of drawing our hearts from earth to heaven or in other words while
+                            faithfully performing our work on earth, securely placing our soul's treasure, " where no
+                            moth corrupteth or thief approacheth." Canterbury, N. H.</p></div2><div2 type="saying" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Use temporal things..." TEIform="index"/>Use temporal things... </head><p TEIform="p">Use temporal things, but desire eternal.</p></div2><div2 type="lesson" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="It doesn't pay to worry" TEIform="index"/>IT DOESN'T PAY TO WORRY</head><p TEIform="p"><cit TEIform="cit"><quote TEIform="quote">If you would keep a book, and everyday put down the things that
+                                    worry you, and see what becomes of them, it would be a benefit to you. You allow a
+                                    thing to annoy you just as you allow a fly to settle on you and plague you, and you
+                                    lose your temper, and you justify yourself in being thrown off your balance by
+                                    causes which you do not trace out. But if you would see what it was that threw you
+                                    off your balance, and put it down in your little book, and follow it out and see
+                                    what becomes of it, you would see what a fool you were in the matter. The art of
+                                    forgetting is a blessed art, but the art of overlooking is quite as important. And
+                                    if we should take time to write down the origin, progress and outcome of a few of
+                                    our troubles, it would make us ashamed of the fuss we made over them, and we should
+                                    be glad to drop such things and bury them at or.ce in eternal forgetfulness. Life is
+                                    too short to be worn out in petty worries, frettings, hatreds and vexations. Let us
+                                    think only on whatsoever things are pure, and lovely, and gentle, and of good
+                                    report.</quote><bibl default="NO" TEIform="bibl"><index level1="Selected" TEIform="index"/>Selected</bibl></cit></p></div2><div2 type="health" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Healthy fruit" TEIform="index"/>A HEALTHY FRUIT</head><p TEIform="p">A Lazy dyspeptic was bewailing his own misfortunes, and speaking with a friend on
+                            the latter's hearty appearance. "What do you do to make you so healthy and strong?" inquired
+                            the dyspeptic. "Live on fruit alone," answered his friend. "What kind of fruit?" "The fruit
+                            of industry, and I am never troubled with indigestion."—</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="This world and the next" TEIform="index"/>This World and the Next</head><p TEIform="p">—If me n would be at half the pains to provide themselves " treasures in heaven,"
+                            which they are generally at to get estates here on earth, it were impossible for any man to
+                            be d . . . . d. But when we come to earthly matters, we do; when to heavenly, we only
+                            discourse : heaven has our tongues and talk, but the earth our whole man besides.—South.
+                            Every may-be hath a may-not-be.</p></div2><pb n="18" id="p20" TEIform="pb"/><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Editorials" TEIform="index"/>THE MANIFESTO. JANUARY, 1888</head><div3 type="publication" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Office of Publication" TEIform="index"/>Office of Publication</head><p TEIform="p">The Manifesto is published on the first of each month, at Shaker Village,
+                                Mer. Co., N. H. All articles for publication should be addressed to Henry C. Blinn, and
+                                all letters on financial business to A. Y. Cochran. TERMS. One copy per year, postage
+                                paid, .75 " " six months, " .40 Send for specimen copy, free.</p></div3><div3 type="editorial" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="New year" TEIform="index"/>THE NEW YEAR.</head><byline TEIform="byline"><persName reg="Editor" TEIform="persName"/></byline><p TEIform="p">Yv ith this number we enter upon the eighteenth volume of The Manifesto. We
+                                trust it may be to all a new year of peace, prosperity and spiritual growth. Our duty
+                                before God and toward man should be more clearly denned, that our growth in knowledge,
+                                and the order of our lives may move in harmony with each other. It is of much more
+                                consequence to us what we may do and how we may live, than it is for us to be over
+                                anxious about the work of redemption iu other souls. First, be assured that we abide in
+                                the true vine ; that we are living branches, and that we are able to sustain other
+                                branches. Like the sower that went forth to sow ; some of our efforts to do good may not
+                                have met with our anticipated success. The glad tidings to humanity and the doctrine of
+                                good will to man has often been received much after the same manner. We have received
+                                all, however, that a disciple of the divine Teacher could ask. The compensation has been
+                                liberal for the amount of labor expended. Since the publishing of our first paper many
+                                remarkable changes have transpired iu the religious world, and we enjoy the tliought
+                                that our little messen- ger, even in its simplicity, has rendered some aid in moulding a
+                                more liberal spirit among those who are on their pilgrimage to the Holy City. The
+                                Manifesto has ever rejoiced in the prosperity of the upright, and felt assured that
+                                ample compensation would be awarded for every deed of charity and love. If true to our
+                                mission we cannot do otherwise than walk in the path of the Savior of Men. Bear a daily
+                                cross against the elements of the world ; renounce its relations and crucify all its
+                                affections and lusts. Heal the sick. Cast out evil influences. Assist the lame to walk.
+                                Restore sight to the blind, and in the spirit of our God "undo the heavy burdens and let
+                                the op- pressed go free." '-Do unto others as ye would that they should do unto you."
+                                This is the permanent, safe way, and beyond which it would be difficult to pass. In the
+                                future as in the years that have passed before us, The Manifesto will work assiduously
+                                for the growth of righteousness and peace in the earth. For the inflowing of the spirit
+                                of God which is able to establish and to maintain the new heavens and new earth, and for
+                                that increase in divine knowledge, so essential, in the judicious care of the body,—the
+                                temple of God,—that we may be better able to judge correctly for the soul. The kingdom
+                                of heaven, said Jesus, JANUARY <pb n="19" id="p21" TEIform="pb"/> THE MANIFESTO. 19 is
+                                already within you, and the Revelator wrote, "Behold, the tabernacle of God is with men,
+                                and He will dwell with them, and they shall be his people, and God himself shall be with
+                                them and be their God." After this manner let us teach, and so live that God may dwell
+                                in us. Our work is in the interest of freedom ; in breaking the chains that enslave the
+                                body, that makes of the image of God, a beast of burden, and no less, in breaking the
+                                bonds that hold the spirit of man a willing slave to the sins of the world. It is in the
+                                learning and teaching of that form of truth that shall make the soul free in Christ. In
+                                the testimony that brings forward a new life, and makes of every man and of every woman,
+                                a new creature, that they may be known while on the earth, as children of God. With
+                                those of diverse faith, and maintaining other forms of religious life we can have no
+                                time to contend. God is their judge ! It is best for " every man to be fully persuaded
+                                in his own mind," and then to work accordingly ; and with our best exertion, we shall
+                                probably find enough to do at home. Very little, if any good can be accomplished by
+                                controversy, especially as it is said to lead to the gates of h.. 1. It is our duty
+                                through the columns of The Manifesto and in our daily lives, to declare our faith by
+                                works of righteousness, and to establish this confidence in the minds of all men that we
+                                do live in accordance with the doctrine that we publish before the world.</p></div3></div2><div2 type="saying" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Pleasant roads make pleasant drives..." TEIform="index"/> Pleasant roads make
+                            pleasant drives... </head><p TEIform="p">Pleasant roads make pleasant drives. Pleasant thoughts make pleasant lives.</p></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Health" TEIform="index"/>Sanitary</head><div3 type="health" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Necessity of proper mastication" TEIform="index"/>NECESSITY OF PROPER
+                                MASTICATI0N</head><p TEIform="p"> The food is often washed into the stomach with one of various liquids
+                                without mastica- tion, and we may with safety and great propriety add, that unless there
+                                is some change in the food habit of children, our success in the direction of
+                                tooth-preservation will be but limited. Fluids must be restricted at meal time. Solid
+                                food must be substituted for the semi-solid, and the eight or ten minutes usually
+                                occupied in the consumption of a meal must be extended to twenty-five or thirty minutes.
+                                I say constantly to the parents of my young patients : If you want to save this child's
+                                teeth, you must banish drink from the table during meal time; let the children drink all
+                                they want before and after meals, but at meals tlw food should be taken as nearly dry as
+                                possible, and let the child spend half an hour or more in its mastication, utilizing the
+                                natural secretions—not washing down its food with copious draughts without an effort on
+                                the part of the teeth to triturate and prepare it for the subsequent digestive process.
+                                I want to make it clear that, in my estimation, the loss of function is one great cause
+                                of this rapid decay of teeth. The healthy or normal development of the teeth is exactly
+                                in proportion to the stimulus of the resistance that is offered to them in the mas-
+                                tication of food.—Exchange.</p></div3><div3 type="health" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Good rules for winter" TEIform="index"/>GOOD RULES FOR WINTER</head><p TEIform="p">Keep the back, especially between the shoulder blades, well covered; also,
+                                the chest well protected. In sleeping in a cold room establish the habit of breathing
+                                through the nosej and never with the mouth open. Never go to bed with cold or damp feet.
+                                Never omit regular bathing, for unless the skin is in active condition the cold will
+                                close the pores and favor congestion or other diseases. When hoarse speak as little as
+                                possible until the hoarseness is recovered from, else the the voice may be permanently
+                                lost, or difficulties of the throat be produced. <pb n="20" id="p22" TEIform="pb"/> 20
+                                THE MANIFESTO. When going from a warm atmosphere into a cooler one keep the mouth almost
+                                closed so that the air may be warmed by its passage through the nose ere it reaches the
+                                lungs. Never stand still in cold weather, especially after having taken a slight degree
+                                of exercise, and always avoid standing on ice or snow, or where the person is exposed to
+                                cold wind. —Sanitarian.</p></div3><div3 type="health" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Refreshing drink" TEIform="index"/>A Refreshing Drink</head><p TEIform="p"><cit TEIform="cit"><quote TEIform="quote">A drink that is truly refreshing for one suffering from sore
+                                        throat or cold, is made by pouring a quart of boiling water over a carefully
+                                        washed handful of Irish moss. Let it stand until the water is cool, then strain
+                                        through a muslin bag; add sugar and lemcn juice, with a few thin slices of
+                                        lemon, until it is about like a mild lemonade; a little cinnamon is considered
+                                        an addition by some people.</quote><bibl default="NO" TEIform="bibl"><index level1="American queen" TEIform="index"/>American Queen</bibl></cit></p></div3></div2><div2 type="national-news" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Temperance" TEIform="index"/>Temperance</head><p TEIform="p"><cit TEIform="cit"><quote TEIform="quote">About 50,000,000 pages were printed by the Woman's Temperance
+                                    Publication Association last year. " What is whiskey bringing, do you ask? I'll tell
+                                    you; it is bringing men to prison and to the gallows, and it is bringing women and
+                                    children to poverty and want." There never was a truer answer than this. It is
+                                    estimated that it sends to prison every year one hundred thousand men and women.
+                                    Twenty thousand children are sent to the workhouse annually by drink. Three hundred
+                                    murders are caused by intemperance every year. Two hundred thousand children are
+                                    made orphans every year, by this dreadful evil; and sixty-five thousand are killed
+                                    by intemperance every year, in this country.</quote><bibl default="NO" TEIform="bibl"><index level1="Messenger of peace" TEIform="index"/>Messenger of Peace</bibl></cit></p></div2><div2 type="lesson" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="When you hear that a man drinks, it means that he does not know..." TEIform="index"/>When you hear that a man drinks, it means that he does not know... </head><p TEIform="p">When you hear that a man drinks, it means that he does not know when or how much
+                            to drink. Defile not the mouth with impure words.</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Let in the sunlight" TEIform="index"/>LET IN THE SUNLIGHT</head><byline TEIform="byline"><persName reg="De Graw, Hamilton" TEIform="persName"/>Hamilton De Graw</byline><p TEIform="p">How that call already brightens all the hopes of the mind. Let in the sunlight.
+                            To the pale sickly plant striving to grow in the damp mildew lined cellar how refreshing and
+                            invigorating is the sunlight. Watch the gradual change from the faded and colorless tissues
+                            to the deep green and healthy look that has been wrought in its organism through the agency
+                            of the sunlight. As the sun is the material fountain from which flows the life invigorating
+                            elements that make the universe habitable to both animal and vegetable organisms, so from
+                            the fountain of Eternal Truth come those life inspiring forces that illumine the soul of man
+                            and enable him to grow in the spirit. O the wail that comes up out of the subterranean
+                            caverns where souls are pining in darkness. '' Give us the light! Let in the sunlight on our
+                            souls or we perish ! !" Wheu I see souls who should stand upright walking in the image of
+                            their Creator an honor to the truth and a glory on the earth, groveling in the lowest depths
+                            of those appetites and passions that completely shut out the sunlight and make the chambers
+                            of the soul only a fit habitation for bats and lizards, how I wish that some spiritual
+                            earthquake would shatter the walls of the imprisoned soul and open it to God's blessed
+                            sunlight. Refreshing showers are often needed in the spiritual as well as the physical
+                            world, moral convulsions, loud peals of thunder and vivid flashes of lightning to awaken the
+                            dormant sou.1; but after all it would be useless if the sunlight of God's love did not come
+                            to warm and inspire with new life the now quickened soul. Sonyea, N. Y.</p></div2><pb n="21" id="p23" TEIform="pb"/><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Juvenile" TEIform="index"/>Juvenile</head><div3 type="letter" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Enfield, Connecticut, 1888" TEIform="index"/>Enfield, Conn. 1888</head><p TEIform="p">Dear Children :—You stand upon the portals of another New Year. What may
+                                await you in 1888 you know not, but if you follow "the high path of duty," all will be
+                                well. Make this year the best year of your lives, better for yourselves and for others.
+                                Approach nearer to the Christian standard in those virtues that make and adorn Christian
+                                character. How much room there is for improvement, and how grateful you should be for
+                                further opportunities to make a better record. The use you make of your opportunities
+                                decides the question of your gain or loss day by day. It is by seeking for and
+                                appropriating that which is true and pure that you grow in spiritual strength. Make the
+                                most of time. Time that is lost God will require. Time well spent brings abiding joy,
+                                the sweetest and the best. Each hour is a priceless gift. Take care of the hours and the
+                                days will take care of themselves. Don't mind the moment that is past, but the moment
+                                that is present. Save all the moments you can by prudence and industry. The moments pass
+                                by so swiftly, that if they are not applied to a good purpose, the years are left
+                                periodically blank. Each day keep good vows. God will give you strength to live each day
+                                when it comes. Strive to make each day such an one as He would wish you to live. Improve
+                                the to-days and you will have no regret for the yesterdays, no fear for the to-morrows,
+                                but will go onward till j ou have reached the final to ¦ morrow—the to-morrow that will
+                                last through eternity. Your Brother,</p><byline TEIform="byline"><persName reg="Orcutt, Daniel" TEIform="persName"/>Daniel Orcutt</byline></div3><div3 type="article" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Be not weary in well-doing" TEIform="index"/>" Be not weary in
+                                well-doing." Gal. vi , 9</head><p TEIform="p">Why should we weary in doing well if we are striving for something better
+                                than that which we already possess? Were we unwilling to make any effort to do or be
+                                good we should soon find ourselves lacking that firmness and constancy which
+                                characterizes the lives of our older Brethren and Sisters. We must be constant and
+                                earnest if we would gain the true riches promised to those only who are willing to work
+                                unceasingly for the right. Let us be constantly aiming toward that which is highest and
+                                heat, for "in due season we shall reap if we faint not." We can easily perceive that if
+                                the gardener did not care faithfully, each day, for his flowers and fruits, weeds would
+                                grow up very soon and spoil his choicest plants. It is just so with our spiritual
+                                growth, if we neglect to care for the beautiful flowers of Honesty, Truth and Purity,
+                                our lives show it by a gradual development of that which is of the world; then let us
+                                not grow weary in well- doing.</p><byline TEIform="byline"><persName reg="L., J." TEIform="persName"/>J. L. Enfield, N. H.</byline></div3><div3 type="poem" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Acrostic" TEIform="index"/>ACROSTIC</head><p TEIform="p">Prayer and Praise from Psalms, Judge me, 0 Lord; for I have walked in mine
+                                integrity, xxvi., 1. Unto thee, O Lord, do we give thanks, lxv., 1. Let the words of my
+                                mouth, and the meditation of mv heart be acceptable in thy sight, xix., 14. In the Lord
+                                put I my trust, xi., 1. And they that know thy mime will put their trust in thee. ix.,
+                                11. IVIy (rod, my God, why hast thou forsaken me? xxii.,1. AH the paths of the Lord are
+                                mercy and truth, xxv., 10. The Lord is my shepherd 1 shall not want, xxiii., 1. | will
+                                dwell in the house of the Lord forever, xxiii., 6. |_et the heavens rejoice, and let the
+                                earth be glad. xcvi., 11. Draw nigh unto my soul and redeem it. Ixix., 18. And the
+                                heavens shall praise thy wonders, O Lord. lxxxix., S. Deliver me from mine enemies O my
+                                God. xlix., 1. Arise for our help, and redeem us for thy mercies' sake. xliv., 26. Let
+                                those that seek thee rejoice and be glad in thee. lxx., 4. The Lord is my strength and
+                                my shield, xxviii. 7. O Give thanks unto the Lord; for he is good exxxvi., 1.
+                                Nevertheless he regarded their affliction when he heard their cry. cvi., 44. Mt.
+                                Lebanon, N. Y.</p></div3><div3 type="poem" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Little men and women" TEIform="index"/>LITTLE MEN AND WOMEN </head><p TEIform="p"><cit TEIform="cit"><quote TEIform="quote">Can you put the spider's web back in its place, That once has
+                                        been swept away? Can you put the apple again on the bough, That fell at our feet
+                                        to day? <pb n="22" id="p24" TEIform="pb"/> 99 THE MANIFESTO. Can fou put the
+                                        lily-cup back on the stem, And cause it to live and grow? Can you mewl the
+                                        butterfly's broken ¦wing, That was crushed by a cruel blow? Can you put the
+                                        petals back on the rose? If you could, would it smell as sweet? Can you put the
+                                        flour again in the husk, And show me the ripened wheat? You think that these
+                                        questions are trifling, dear, Let me ask you another one : Can a hast}' word
+                                        ever be unsaid, Or an unkind deed undone?</quote><bibl default="NO" TEIform="bibl"><index level1="Woman's journal" TEIform="index"/>Woman's Journal.</bibl></cit></p></div3><div3 type="article" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="True to God" TEIform="index"/>TRUE TO GOD</head><p TEIform="p">Never lower your principles to the world's standard. Never let sin, however
+                                popular it may be, have any sanction or countenance from you, even by a smile. The manly
+                                con- fession of Christ, when his cause is unpopular, is made by himself the condition of
+                                his confessing us before men. If people find out that we are earnestly religious, as
+                                they soon will if the light is shining, let us make hem heartily welcome to the
+                                intelligence. And then, again, in order that the lights may shine without obstruction,
+                                we must be simple and study simplicity. This is by no means so easy as it at first sight
+                                appears; for in this highly artificial and pretentious age, all society is overlaid with
+                                numerous affectations. Detest affectation as the contrary of truth and as hypocrisy on a
+                                small scale, and allow yourselves to be seen freely by those around you in true colors.
+                                There is an affectation of indifference to all things, and a lack of sensibility which
+                                is becoming very prevalent in this age, which is the sworn foe to simplicity of
+                                character. The persons who labor under this moral disorder pretend to have lost their
+                                freshness of interest in everything ; for them, as they would have it be- lieved, there
+                                is no surprise and no enthusiasm. As Christians, we must eschew un- truth in every form
+                                ; we must labor to seem just what we are, neither better nor worse. To be true to God
+                                and to the thought of his presence all day long, and to let self occupy as little as
+                                possible of our thoughts ; to care much for his approval, and comparatively little for
+                                the impression we are making upon others ; to feed the inward light with oil, and then
+                                freely to let it shine—this is the great secret of edifieatio . May he indoctrinate us
+                                into it. and dispose and enable us to illustrate it in our practice.</p><byline TEIform="byline">—<persName reg="Goulburn, [Dr.]" TEIform="persName"/>Dr. Goulburn,
+                                in Sabbath Recorder.</byline></div3><div3 type="saying" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="To me, God has promised..." TEIform="index"/>To me, God has promised... </head><p TEIform="p">To me, God has promised, not the Heaven of the ascetic temper, or the
+                                dogmatic theo- logian, or of the subtle mystic, or of the stern martyr ready alike to
+                                inflict and bear; but a Heaven of purified and permanent affections ; of a book of
+                                knowledge with eter- nal leaves, and unbounded capacities to read it; of those we love
+                                ever around us, never misconceiving us or being harassed by us; of glorious work to do,
+                                and adequate facili- ities to do it; a world of solved problems, as well as of realized
+                                ideals. The many man- sions in my Father's House are many, not in number only, but in
+                                variety.</p><byline TEIform="byline"><persName reg="Greg" TEIform="persName"/>—Greg.</byline></div3><div3 type="poem" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="New leaf" TEIform="index"/>THE NEW LEAF </head><byline TEIform="byline"><persName reg="Hopkins, A. A." TEIform="persName"/>A. A. HOPKINS </byline><p TEIform="p"><cit TEIform="cit"><quote TEIform="quote"> O would our leaves of life were fair With faithful writing
+                                        everywhere ! O would that love shone clear and true Each plan and purpose ever
+                                        through; That zeal did never faint and tire; That hope ne'er waned to low
+                                        desire; That so each New Year's dawn should bring The old year's buds to
+                                        blossoming; And so all plans and hopes should tend Through patient work to
+                                        perfect end !</quote><bibl default="NO" TEIform="bibl"><index level1="Selected" TEIform="index"/>Selected</bibl></cit></p></div3><div3 type="lesson" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Vain expectations" TEIform="index"/>Vain Expectations. </head><p TEIform="p"><cit TEIform="cit"><quote TEIform="quote">If you should see a man digging in a snowdrift with the
+                                        expectation of finding valuable ore, or planting seeds on the rolling billows,
+                                        you would say at once that he was beside himself. But in what respect does this
+                                        man differ from you, while you sow the seeds of idleness and dissipation in your
+                                        youth, and expect the fruits of age will be a good constitution, elevated
+                                        affections, and holy principles?</quote><bibl default="NO" TEIform="bibl"><index level1="Tribune" TEIform="index"/>Tribune</bibl></cit></p></div3><div3 type="saying" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Preserve thyself in chastity if thou wouldst wear the white robes of angelhood" TEIform="index"/>Preserve thyself in chastity if thou wouldst wear the white robes
+                                of angelhood </head><p TEIform="p">Preserve thyself in chastity if thou wouldst wear the white robes of
+                                angelhood.</p><byline TEIform="byline"><persName reg="A., M. J." TEIform="persName"/>M. J. A.</byline></div3></div2><pb n="23" id="p25" TEIform="pb"/><div2 type="hymn" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Bright vision" TEIform="index"/>BRIGHT VISION</head><p TEIform="p">Canterbury, N. H. There's land beyond, I see the height, Press on, my soul, nor
+                            fear the Efc night; A broader truth, a purer love Shall guide thee to those realms above. A
+                            voice from out the "Higher plane" Calls Zion to bap tize again, To live in God in works of
+                            truth, In love which over comes the earth.</p></div2><pb n="24" id="p26" TEIform="pb"/><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Books" TEIform="index"/>Books and Papers</head><div3 type="book notice" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Woman's work" TEIform="index"/>Woman's Work </head><p TEIform="p">Woman's Work is the title of a paper now being published in Athens, Ga., and
+                                edited by Mrs. Ella K. Tenncnt. 50,000 copies of this first No. have bet n scut into
+                                thousands of homes and will be read with anxious interest. It is to be a journal of "
+                                Domestic Economy" and " so free from objectionable features that every line will prove a
+                                benefit" to the reader. A paper that can maintain so high a standard must be a welcome
+                                visitor in every family where a moral or reiigioua education is considered of value.
+                                Woman's Wokk is published monthly at 50 ets. pr. yr. Address T. L. Mitchell, Athens,
+                            Ga.</p></div3><div3 type="book notice" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Heads and faces, and how to study them: A manual of phrenology and physiognomy for the people" TEIform="index"/>Heads and Faces, and how to Study them; A Manual of Phrenology and
+                                Physiognomy for the People </head><byline TEIform="byline"><persName reg="Sizer, Nelson" TEIform="persName"/></byline><p TEIform="p"> Heads and Faces, and how to Study them; A Manual of Phrenology and
+                                Physiognomy for the People, by Prof. Nelson Sizer, Phrenological examiner, and Dr. II.
+                                S. Drayton, Editor of the Phrenological Journal. 200 pages, Oct., 200 illust., paper,
+                                40c.; extra cloth, $1.00. New York, Fowler &amp; Wells Co., Publishers, 775
+                                Broadway. A new edition of this work, making 40,000 copies in about two years, has just
+                                been published. Of all the interesting subjects which men and women study there is none
+                                more interesting or important than the studying of the characters of each other;
+                                therefore, if you want something to read that will interest you more thoroughly than any
+                                book you ever read, send for a copy of Heads and Faces. It will show you how to read
+                                people as you would a book, and to see if they are inclined to be good, upright, honest,
+                                true, kind, charitable, loving, joyous, happy and trustworthy people, such as you would
+                                like to know; or are they by nature untrustworthy, treacherous and cruel, uncharitable
+                                and hardhearted, faultfinding, jealous, domineering people whom you would not want to
+                                have intimate with yourselves or your families ? A knowledge of Human Nature as taught
+                                in this book would save many disappointments in social and business life. It is sent by
+                                mail, postpaid, on receipt of price, as above. </p></div3><div3 type="book notice" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Hall's journal of health" TEIform="index"/> Hall's Journal of Health </head><p TEIform="p"> Hall's Journal of Health. Contents; Dec. 1887. Last Words; Concerning the
+                                Food we Eat; Microbes that endanger Health; Stand up for the new and the True; Schools
+                                in Medicine; A Case of Trance; What of the Potatoe : A Three Time Winner; Progress,
+                                etc., etc. Office 206 Broadway, N. Y. $1. per year. The Phrenological Journal and
+                                Science of Health. Contents: Dec. 1887. H. C. Potter, D. D. Shakespeare and Byron;
+                                Notable People of the Day; Mathematics in Delineating Character; Pleasant Winter
+                                Quarters; Concerning Margaret McKensie; A Girl's Problem; High Cultivation of the Organ
+                                of Memory; A quest in Anthropometry; Penny Dinners in England; Consumption; Phthisic;
+                                Salicylic Acid in Food; Malarial Exposure and Prevention; Notes in Science. Poetry,
+                                etc., etc. Fowler &amp; Wells Co. 775 Broadway, N. Y. $2. a year.</p></div3></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Kind words" TEIform="index"/>Kind Words</head><byline TEIform="byline"><persName reg="Editor" TEIform="persName"/></byline><div3 type="letter" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Pleasant Hill, Kentucky" TEIform="index"/>Pleasant Hill, Ky.</head><p TEIform="p">Beloved Elder Henry ;—I kindly thank you for publishing the "Gospel Testimony
+                                of Mother Ann Lee and the Elders, William Lee and James Whittaker." Their testimony is
+                                the word of God, and the power of Christ to my soul. It will endure forever.</p><byline TEIform="byline"><persName reg="Brown, N." TEIform="persName"/>N. Brown</byline></div3></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Preparation for death" TEIform="index"/>PREPARATION FOR DEATH</head><p TEIform="p"><cit TEIform="cit"><quote TEIform="quote">When you lie down at night, compose your spirits as if you were
+                                    not to wake till the heavens be no more; and when you awake in the morning, consider
+                                    that new day as your last, and live accordingly. Surely that night cometh of which
+                                    you will never see the morning, or that morning of which you will never see the
+                                    night, but which of your mornings or nights will be such you know not. Let the
+                                    mantle of worldly enjoyment hang loosely about you, that it may be easily dropped
+                                    when death comes to carry you into another world. When the corn is forsaking the
+                                    ground, it is ready for the sickle ; when the fruit is ripe, it falls off the tree
+                                    easily. So when a Christian's heart is truly weaned from the world, he is prepared
+                                    for death, and ii will be the more easy for him. A heart disengaged from the world
+                                    is a heavenly one ; and then we are ready for heaven, when our heart is there before
+                                    us.</quote><bibl default="NO" TEIform="bibl"><index level1="Selected" TEIform="index"/>Selected</bibl></cit></p></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Obituaries" TEIform="index"/>Deaths</head><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Guest, Louise" TEIform="index"/>Louise Guest </head><p TEIform="p"><persName reg="Guest, Louise" TEIform="persName">Louise Guest</persName>, at Pleasant
+                                Hill, Ky., Oct. 30, 1887. Age 63 yrs. 7 mo. and 11 days. She is blessed with those who
+                                die in the Lord, they rest from their labors and their works do follow them. N. B.</p></div3><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Torry, Lemuel C." TEIform="index"/>Elder Lemuel C. Torry </head><p TEIform="p"><persName reg="Torry, Lemuel C." TEIform="persName">Elder Lemuel C. Torry</persName>, at
+                                Watervliet, Ohio. Nov 4, 1887. Age 63 yrs. 7 mo. and 22 days.</p></div3><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Wallace, Rachel" TEIform="index"/>Rachel Wallace </head><p TEIform="p"><persName reg="Wallace, Rachel" TEIform="persName">Rachel Wallace</persName>, at South
+                                Family, Union Village, Ohio, Nov. 15, 1887. Age 39 yrs. 2 mo. and 7 days.</p></div3></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Advertisements" TEIform="index"/>[Advertisements]</head><p TEIform="p">[Advertisements deleted.]</p></div2></div1></div0></body></text></TEI.2>

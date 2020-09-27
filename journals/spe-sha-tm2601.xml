@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI.2 id="spe-sha-tm2601" TEIform="TEI.2"><teiHeader type="text" status="new" TEIform="teiHeader"><fileDesc TEIform="fileDesc"><titleStmt TEIform="titleStmt"><title level="j" TEIform="title">The Manifesto</title></titleStmt><extent n="pagination" TEIform="extent">30</extent><publicationStmt TEIform="publicationStmt"><publisher TEIform="publisher">Hamilton College Library</publisher><pubPlace TEIform="pubPlace">Clinton, New York, United States of America</pubPlace></publicationStmt><sourceDesc default="NO" TEIform="sourceDesc"><biblStruct default="NO" TEIform="biblStruct"><monogr TEIform="monogr"><imprint TEIform="imprint"><publisher TEIform="publisher">United Societies</publisher><pubPlace TEIform="pubPlace">Shaker Village, New Hampshire</pubPlace><biblScope type="volume" TEIform="biblScope">26</biblScope><biblScope type="issue" TEIform="biblScope">1</biblScope><date value="18960101" TEIform="date">January 1896</date><biblScope type="pages" TEIform="biblScope">1-24</biblScope></imprint></monogr></biblStruct></sourceDesc></fileDesc></teiHeader><text TEIform="text"><body TEIform="body"><div0 type="volume" n="26" org="uniform" sample="complete" part="N" TEIform="div0"><div1 type="issue" n="1" org="uniform" sample="complete" part="N" TEIform="div1"><!--
+                    <pb id="p1"/>
+                    <p>THE MANIFESTO, Published by the United Societies. VOL. XXVI. "Blessed are the peacemakers: for they shall be called
+                        the children of God." Matt. v. 9. East Canterbury, N. H. 1896. JANUARY. <pb id="p2"/> THE MANIFESTO. CONTENTS. Page.
+                        Smiles of the Father,..... 3 Social Improvement Society, i Duty........-7 Loyalty,....." Autobiography of Chas. D.
+                        Hampton, 9 The Power of Words, ... 10 Baptism,........ 11 Gethseniane,...... 14 Music,—Songs of Cheer, 15 Notes
+                        About Home,..... 17 Exchanges, -....... 23 Deaths,........ " Books & Papers,...... "</p>
+                    <div2 type="section">
+                        <head>
+                            <index level1="Advertisements"/>[Advertisements]</head>
+                        <p>[Advertisements deleted.]</p>
+                    </div2>
+                    <pb n="1" id="p3"/>
+                    <div2 type="none"
+                        <p>THE MANIFESTO. PUBLISHED BY THE UNITED SOGIETIES. VOL. XXVI. Out of Zion shall go forth the law, and the word of
+                            the Lord from Jerusalem."—Isa. ii., 3. East Canterbury,N. H.. 1896.</p>
+                    </div2>
+                    <pb n="2" id="p4"/>
+                    --><pb n="3" id="p5" TEIform="pb"/><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Smiles of the father" TEIform="index"/>SMILES OF THE FATHER</head><byline TEIform="byline">By <persName reg="Perkins, Abraham" TEIform="persName"/>Abraham Perkins</byline><p TEIform="p">TO us as a peculiarly favored people, I realize that the genuine gospel of Christ has "been
+                            revealed and mercifully given, and power abundantly bestowed, giving an exceedingly great
+                            salvation. Our God has been sought and has been found; and to every one whose rnind is
+                            continually stayed on him he has been an everlasting strength. In his law there is no
+                            change; in his character no variableness nor shadow of turning. His word is truth, his
+                            promises reliable and ever put into execution. Obedience to that law is, and ever has been,
+                            our blessing and salvation. Zion has never been left in orphanage. Although for a small
+                            moment the good Lord may hide his face to prove the integrity of souls, his watchful,
+                            protective eye is ever over his elect to uphold and sustain the revelation which has ever
+                            been the ruling and guidmg star of the Shaker Church. Our sky may often be overcast, yet
+                            there has always been a rift in the cloud, through which has beamed degrees and advances of
+                            light which have hitherto been our preservation and rock of safety. Would we find growth of
+                            soul and fruits of the Spirit, whatever the circumstances, what the obstacles and trials,
+                            never give place to discouragement, halting or doubting. Revelation is too palpable,
+                            evidences too great to question the designs of the Almighty or the providences of God in his
+                            care and superintendence which He exercises over his creatures. We may feel our many
+                            imperfections and our great wants. Thus the Spirit convicts and the good Lord deals with us
+                            for salvation, crying—"Ask and it shall be given you; seek and ye shall find; knock and it
+                            shall be opened unto you." Therefore, "Fear not, little flock, for it is your Father's good
+                            pleasure to JANUARY, 1896. <pb n="4" id="p6" TEIform="pb"/> 4 THE MANIFESTO. give you the kingdom." Unto
+                            Zion has the Lord dealt graciously. No people have been so abundantly illuminated and
+                            favored as the present generations. Not alone have the heavens stooped to redeem and
+                            comfort, but the earth has arisen to aid, to help and to magnify the restoration of man.
+                            Rejoice ; increasing glory awaiteth Zion ! East Canterbury, N. H.</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Social improvement society" TEIform="index"/>SOCIAL IMPROVEMENT SOCIETY</head><byline TEIform="byline">(Leading paper by <persName reg="Allen, Catherine" TEIform="persName"/>Catherine Allen.)</byline><p TEIform="p">Question. T~Y"T"HAT is to constitute the "New Heavens and New Earth wherein V V shall dwell
+                            righteousness ? " Answer. Perhaps no people ever supposed themselves to have a more exact
+                            definition of this prophetic passage of Scripture than the body of people called Shakers.
+                            Other religious sects look forward to a second coming of the Lord when the Millennial age
+                            will be ushered in, believing that all the promises of sacred writ will then find glorious
+                            fruition. But those who formulated Shaker theology were confident that Christ had then made
+                            a "Second Appearance" through the person of Ann Lee. Therefore, although Mother Ann and her
+                            co-laborers kept before their follrwers the idea that to them was given the dawning light of
+                            a new dispensation, which in its increasing degrees would be as "glory beyond glory," yet
+                            almost as soon as the society became organized, their zealous disciples taught and wrote in
+                            most emphatic language, that to them a perfect plan of salvation had been revealed in a
+                            gospel which was the ' 'last and final display of God's power and glory to the human race."
+                            It has been written,—"The Bible is a place where each his dogma seeks and each his dogma
+                            finds." In all the books which treat of Shaker theology (those written by Elder F. W. Evans
+                            excepted) the writers have fortified every point of doctrine with Scriptural authority, and
+                            have adjusted the prophetic portions as a closely fitting garment to the gospel work as then
+                            manifested, believing that in it was to be found a clear and full definition, in fact the
+                            fulfillment of the grandest utterances of inspired seers, and as a consequence, without any
+                            intention of bigotry, it was but natural for them, to narrow the meaning of the foregoing
+                            text with other passages of broad signifi- cance to fit the measure of truth which they had
+                            received ; therefore, they interpreted the "New Heavens" to have reference to the new
+                            doctrines and spiritual interests of the Shaker Communities,—the "New Earth" to thenmaterial
+                            possessions and temporal interests. They were assured that in and among them the kingdom of
+                            heaven was established, and of its "increase there would be no end." Holding this idea, <pb n="5" id="p7" TEIform="pb"/> THE MANIFESTO. 5 the}7 worked with superhuman energy, believing without
+                            doubt that every building they erected, however void of any idea of hygiene or beauty, and
+                            especially every acre of land they added to their possessions, was extending tin's
+                            kingdom,—increasing it. To buy land with the hard-earned money of consecrated labor to be
+                            held in the interests of those who were living a virgin life in communal relation, w'as in
+                            their estimation the way in which the earth would be redeemed. Greater intelligence would
+                            have dictated that to till and cultivate the land on scientific principles would be at least
+                            a partial means toward its redemption. Under the delusion of thus redeeming the earth, and
+                            with the idea that they would make rapid accessions to their numbers, they bought up large
+                            tracts of laud,—a fatal error, for to Believers, as to other people, land monopoly has
+                            proved a curse, and the underlying cause of most of their subsequent errors and losses,
+                            materially and spiritually. Still they wrere faithful to the light of their day and we owe
+                            much to their devoted efforts. We look to the motives and cast no censure upon those of
+                            earlier days who, in their misdirected zeal made the mistake, but we ai-e very sorry that in
+                            our own time there are any still so blind, that with the experience of the past before them
+                            they should repeat so great a wrong as to add thousands of acres to an already "land-poor"
+                            people. We fear that the extending of Christ's kingdom has not been their leading motive in
+                            the matter. Elder F. A\r. Evans and Brother Daniel Frazer were brave pioneer reformers in
+                            our ranks. They saw this great evil and lifted their voices against it. They also studied
+                            the relations between the earth and the spiritual orders of human life, and conceived the
+                            "New Heavens" and "New Earth" to have a much broader significance than that which had been
+                            generally accepted by the Society. They taught that the formation of the "New Heavens" began
+                            with the revelation of the principles of the Shaker Church and would increase with its
+                            evolution from cycle to cycle. That the "New Earth" began with the American Republic, and as
+                            the people progressed from one degree of truth to another, it would gradually include every
+                            principle of science pertaining to the natural life of man in government, agriculture,
+                            generation and nutrition. How far their prophetic vision was able to pierce the future we do
+                            not know, but when the word Shaker is omitted from the spiritual, and American from the
+                            earthly order, when in their universal application, principles alone are considered, we have
+                            no objection to that interpretation. The two orders certainly have a relation together as
+                            soul and body. The inception of both occurred at the same period. The history of one is
+                            identical with the other. Land monopoly and its inevitable result, wage slavery has wrought
+                            equal ruin to the spiritual and earthly order. As in one, so in the other has there been a
+                            centralization of power in the hands of the few to the injury and nondevelopment of the
+                            many. Though intended only for good, by an erroneous <pb n="6" id="p8" TEIform="pb"/> 6 THE MANIFESTO.
+                            system of "Protection" the government has blindly robbed the people not only of material
+                            benefits, but of greater blessings, the opportunity to advance the conditions for the
+                            brotherhood of nations, and reciprocate the good thatwould thereby be enhanced. The same
+                            principle of protection manifested in distinctive family interests and fear of opening the
+                            door to the good of the outside world lest evil also should enter, have brought like results
+                            in the spiritual order. To-day the many indications of destruction to both, teach us that
+                            delayed evolution has brought us face to face with revolution. This does not prove that the
+                            fundamental principles of either were not correct and will not eventually find a glorious
+                            expression, but that the developed life of the nation as a whole, made it impossible for
+                            immediate success. During the crisis now upon us in both orders, principles are being
+                            intelligently examined and analyzed; errors are being eliminated, and on firmer and broader
+                            foundations than ever before true democracy in our home and in the earthly government will
+                            be established. In this hope we look beyond the storm clouds of thi present to the glory of
+                            Millennial skies. We see the time, when, beginning at the fountain head of all existence,
+                            just relations will be established between the sexes in the affairs of Church, State and
+                            home. Not till then can we begin to know the possibilities of the human race or estimate the
+                            great loss that has been sustained through the dissipation of the vital force. The
+                            manipulation of occult forces under the psychic powers that have been developed in a few
+                            individuals here and there, aside from the wonderful discoveries in what we term the natural
+                            sciences, show us the dormant, earthburied condition of the race as a whole, and give hints
+                            of the great revolution that will come about in the world of mind and matter just as soon as
+                            the people shall be prepared. Meanwhile every awakened soul should work with intelligence
+                            and energy toward those advanced conditions. In the most literal sense the earth should be
+                            redeemed. Instead of annually depositing in the ocean millions of tons of land-food, it
+                            should be properly decomposed and restored whence it was taken. It is criminal in any people
+                            or nation to rob future generations by rendering the land incapable of human subsistence.
+                            The fertilization and sowing of every acre of land should be governed by a knowledge of its
+                            chemical properties, The rotation of crops and Sabbaths of rest should be observed ;
+                            extensive forest belts should be planted wherever needed to equalize electrical currents and
+                            protect from flood and drought. By artificial irrigation for the present, arid wastes could
+                            be made fruitful and in time would develop their own water supply. In thus complying with
+                            the laws of God in nature, his promise that the crops should be free from mildew and
+                            destructive pests will be fulfilled and the early and later rains will be insured. <pb n="7" id="p9" TEIform="pb"/> THE MANIFESTO. 7 In the affairs of Government we think to abolish interest,
+                            and by means of a tax on land values, cease to rob the people of their God-given inheritance
+                            in the land, will bring about, "Equal opportunities to all, special privileges to none,"—a
+                            far reaching freedom in every domain of existence. No longer repressed, dwarfed and
+                            crippled, the God-life in humanity will assert itself and gradually find expression through
+                            the application of the true laws of being in the earthly and in the spiritual life in
+                            humanity; the spiritual ripening as fruit upon the tree, lifted above the earth, developing
+                            in the sunlight of the upper world, yet always dependent upon the tree and soil (the earthly
+                            order) for nourishment. Will this not be the '-New Heavens and New Earth wherein shall dwell
+                            righteousness ?" Mt. Lebanon, N. Y.</p></div2><div2 type="poem" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Duty" TEIform="index"/>DUTY</head><byline TEIform="byline">By <persName reg="Stephens, Annie R." TEIform="persName"/>Annie R. Stephens</byline><p TEIform="p">A narrow mountain pass my feet must go ; A steep declivity,—a rugged way, My back must ache
+                            with burdens of the day. Stern cragged rocks their darkening presence throw, The mists rise
+                            up from valleys dim and low. O'er thorny paths, through shadows cold and grey,— Still on I
+                            press, nor pause in dread dismay, For it is Duty's path, full well I know. Still will I
+                            climb and, climbing, gain the height; Tho' sandals worn, my feet with peace are shod, While
+                            Hope can see the shining Tabor light, And Love forgets the road my feet have trod, While,
+                            from the Mount of Vision on my sight Gleams the bright, vernal table-lands of God. Mt.
+                            Lebanon, N. Y.</p></div2><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Loyalty" TEIform="index"/>LOYALTY</head><byline TEIform="byline">By <persName reg="Theobald, Frank" TEIform="persName"/>Frank Theobald</byline><p TEIform="p">"TV OYALTY may be defined as fidelity to a principle, home, institution, I J friends or
+                            country. The truly loyal in our home manifest this spirit in their daily lives, by their
+                            just and generous support of the principles which govern the home, and such realize that
+                            they must sacrifice all personal ambitions, all that would tend to lower our moral and
+                            religious standing in society, doing right simply because it is right, this is true loyalty;
+                            for truth is everything and the truth will conquer. <pb n="8" id="p10" TEIform="pb"/> 8 THE MANIFESTO.
+                            This loyalty to principle should be exercised in private as well as in public, at home and
+                            abroad, first by an understanding of the work which we are called to live, and then with an
+                            honesty and loyalty of spirit under all circumstances defend the same. Society can not be
+                            judged rightfully by individual members composing it, for persons ma}' go wrong and be
+                            disloyal to faith and home, but the principles upon which the Society is founded will live
+                            through all time and be cherished by good and faithful souls forever. Our forefathers
+                            possessed this spirit in an uncommon d gree, as sh &gt;wn in their noble,
+                            self-sacrificing struggle for their religious liberty, bearing hardship and
+                            imprisonment,—even giving up their lives in fidelity to principles which to them were of
+                            God, and which meant the right to worship Hun and to dwell with Him in the mansions He has
+                            promised to the faithful The founders of our Church always put duty and the good of their
+                            p3ople before their own personal inclinations and desires. Loyalty in those stormy days cost
+                            more than it does to-day, when the rights of civil and religious liberty are accorded
+                            without question, and we are peacefully allowed to worship God in spirit and in truth,
+                            without molestation or persecution which was so often their portion to bear. Does the same
+                            loyalty of spirit and integrity of purpose in things spiritual, temporal and financial mark
+                            our lives? If so, it gives to us, as to them, the key to success in all that pertains to the
+                            welfare of our Church. Time and circumstances may alter; outward conditions may change, but
+                            loyalty to principles of Godliness and to each other, is the duty of all true followers of
+                            Christ. Loyalty to our country and its republican institutions is the duty of every true
+                            citizen in the land. We have many examples of fidelity in the lives of public men who have
+                            dared to stand for the right, and defend an honest principle before friend or foe alike. The
+                            signing of the Declaration of Independence by our forefathers was an act of loyalty which
+                            has hardly been equalled in the history of our country. Their motto was, "United we stand,
+                            divided we fall." It might have proved their death warrant instead of a declaration of
+                            rights, but their integrity, firmness, courage and a fixed purpose to gain their liberty,
+                            stand before us to-day as a monument of their loyalty, and an example for all true lovers of
+                            their country. In later years we find other worthy examples. In the darkest hour of our
+                            Country's history, when treason and disloyalty beset the Nation's honor on every side, there
+                            was one who shaped its destiny in a great measure, whose faith in God, and freedom for the
+                            human race was paramount to all selfish interest, giving even his own life as a token of his
+                            fidelity and honor. Such was the life and devotion of Abraham Lincoln, who might worthily be
+                            named a Father and Savior to the Nation. No higher monument to his name and the loyal souls
+                            who fought and suffered with him, can be erected, than the remembrance of his noble life in
+                            the hearts of a free and loving people. <pb n="9" id="p11" TEIform="pb"/> THE MANIFESTO. 9 From these
+                            considerations ma}? we be impressed with the spirit of true loyalty, which inspired to such
+                            noble achievements. May we give in honor to the interests of our Zion home, loyal,
+                            consecrated service, equal to these time-honored veterans. Enfield, N. H.</p></div2><div2 type="biography" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Autobiography of Chas. D. Hampton of Union Village, Ohio, no. 1" TEIform="index"/>AUTOBIOGRAPHY OF CHAS. D. HAMPTON OF UNION VILLAGE, O. NO 1.</head><byline TEIform="byline"><persName reg="Hampton, Charles D." TEIform="persName"/></byline><p TEIform="p">1710R some time I have attempted to write of the things that were and now . are, but up to
+                            the present date have resisted for want of an inspiring gift which is always essential. This
+                            establishes confidence and I proceed reasonably certain that as I feel the active, energetic
+                            spirit moving me, something of benefit may be produced. In the thirtieth year of my age,
+                            surrounded by all that could make life desirable, with every stimulus which could excite
+                            genius into action or talents to perseverance; with a good constitution, sound health and a
+                            family around me of increasing interest every day, and all my domestic affinities of the
+                            most pleasing and engaging character; my temporal affairs prosperous, and the means of
+                            enjoying life increasing and also a wide and profitable range of business in my profession.
+                            Encompast by all these advantageous circumstances in a pleasant and wealthy neighborhood, I
+                            became suddenly the subject of an invisible ministration, unsought for and really unwisht. I
+                            had said in my heart, "Go to now," let us be wise and gain wealth, and be honorable among
+                            men, and let our children be among the favored in the land. I was sailing clown through time
+                            in the full "tide of successful experiment." Every day added stimulus to the joys
+                            anticipated good, and every hour riveted tighter, the bands that bound my soul to the god of
+                            this world. It was painful to be disturbed in my speculations and the dread of poverty was
+                            an utter abomination and not to be tolerated for a moment. But the magical wand of the
+                            angel, at first, touched me lightly and sweetly and caused me to love him before I suspected
+                            who he was, and bound my soul in chains before I knew whither he was leading me. His
+                            attentions were assiduous and he placed such subjects before the view of my mind, as were
+                            wisely calculated to enlist my respect and reverence. He seemed to enlarge and expand the
+                            capacity of my mental vision and opened to my view the most alluring prospects of social
+                            union and delight. He seemed to extend the field of my powers of thinking and reasoning in
+                            every possible direction. The political world with all its ruthless scrambling after a
+                            momentary popularity for personal advancement, and individual selfish interest, and the
+                            whole tenor of its ulterior attainments, with its ultimate <pb n="10" id="p12" TEIform="pb"/> 10 THE
+                            MANIFESTO. rewards, were opened to my view with the most astonishing clearness an:l the most
+                            minute perspicuity. The whole Christian world from the time of the Nicene council in A. D.
+                            325 to the present day was laid open to my inspection, as tho laid out on a well-formed
+                            chart, and I was regularly and almost imperceptibly led along down the line of the
+                            ecclesiastical history, to the rise of the witnesses of truth in Fox, Burroughs and the
+                            other distinguished reformers of that age and thence on, down thru the past world of
+                            controversial divinity, thru the various and numerous sects to the day and time in which we
+                            live. The visions opened before my mind like substantial realities, unfolding little by
+                            little, until the whole matter stood out in bold view, plain aud clear as the splendor of
+                            the noonday, and so brilliantly and beautifully delineated that explanation was needless and
+                            comment entirely unnecessary. This pleasant, secret enjoyment of my curious condition
+                            continued for some two or three months, and in fact, until it became the constant theme of
+                            my mind. At this time I was doing a heavy business in the practice of medicine and every
+                            moment except those for examination and prescription for patients, regular attendance was
+                            given to the counsel of my unseen adviser. Thru all these scenes of bright and beautiful
+                            expositions of mental action, I never once dreamed of the presence of any instrument of
+                            assistance to my vision, but simply thought all I saw were the pleasant vagaries of a lively
+                            fancy and an active imagination and was rather delighted than edified or instructed. {To be
+                            continued.)</p></div2><div2 type="poem" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Power of words" TEIform="index"/>THE POWER OF WORDS</head><byline TEIform="byline">By <persName reg="Bowers, Lucy S." TEIform="persName"/>Lucy S. Bowers</byline><p TEIform="p">They flash like stars that light the frosty sky, Like rich imperial diadems they shine. And
+                            like forge fire are mighty to refine. Like serpents' fangs they sting, like weights they
+                            lie, They soothe most tenderly and never die. They can unveil the depths where wrongs
+                            combine, Or point out heavenly heights of truth divine; Yea crush like battle-axes, or like
+                            sorrow sigh. The happy impulse of the mind they thrill; They captivate, enrich, control and
+                            guide; With dignity and power the soul they fill, Sing like a stream, shout like the sea
+                            full tide. To speak good words should be in human will, And perfect utterance be the true
+                            heart's pride. Mt. Lebanon, N. Y.</p></div2><pb n="11" id="p13" TEIform="pb"/><div2 type="article" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Baptism" TEIform="index"/>BAPTISM</head><p TEIform="p">THE origin of baptism as a religious observance was common among the ancient nations. These
+                            lustrations were prevalent among the Egyptians, Greeks and Romans as well as among the Jews.
+                            It was a preparation for divine service and sometimes even for prayer. It was not uncommon
+                            to have a prayer house by the side of a stream for bathing. From the days of Moses, the
+                            confession of sin and the ceremonies of bathing or washing had held a prominent place in
+                            that church. Under the direction of the law it was imperative. Without it they lost their
+                            inheritance. Our first biblical notice of it as a religious ceremony is in Ex. xxix., 4,
+                            where Aaron and his sous were anointed as the priests of God. But John the Baptist was now
+                            to do for the people what they had hitherto been obliged, in many cases to do for
+                            themselves, and on the whole it must have been rather agreeable than otherwise. John's bap-
+                            tism was eminently practical. Sent as a messenger from God, he called the people to an
+                            honest confession of their sins as a preliminary to their privilege of baptism. "Repent,"
+                            said he, "for the kingdom of God is at hand. Make the Lord's path strait." It was a revival
+                            of religious life, a gift of God to draw them from their perpetual back-slidings. To forget
+                            God and to manufacture idols as objects of divine worship, as did Aaron and Jeroboam,
+                            represents a fearful state of ignorance. But the prophet tells us that the blacksmith and
+                            the carpenter and the potter have all been busy in the making of idol gods for the market.
+                            It was a universal departure from the strict discipline of the Law and we do not wonder that
+                            the Baptist urged them to, repent. Through all the manifestations of God's work it has
+                            addressed itself to, man as it at that time found him. The serpents in the halls of Pharaoh
+                            appealed directly to the mind of the king. He understood equally aa well the introduction of
+                            the frogs and the locusts. Had Moses attempted to deliver such a discourse as he did when
+                            the children of Israel asked for meat, we might well imagine the effect it would have
+                            produced. All the prophesies for many years previous to the advent of John the Baptist had
+                            warned the Jews of the fate that awaited them if they did not keep the Law, Jesus on his
+                            arrival did not hesitate to compare them <pb n="12" id="p14" TEIform="pb"/> 12 TEE MANIFESTO. to whited
+                            sepulchres, beautifully ornamented without while within they were full of all uncleanness.
+                            John was not a member of the Mosaic order, nor a convert to the Christian. H± was an
+                            Independent. He combated the prevailing opinion of the times which was, that the performance
+                            of external ceremonies was sufficient to secure a right to the kingdom of
+                            G&gt;&gt;d. His baptism was the revival of a religious interest and the Judeans all
+                            wanted to see him. It was not an introduction into any religious order, for John had none,
+                            and the disciples subsequently re-baptised those who came to them, (Acts, xix., 5.) and as
+                            rigidly insisted that the converts should accept all the ceremonies of the Law. Curiosity
+                            would prompt the people, as it would us, to know what John was doing. His costume of camel's
+                            hair, and the place for baptism may also have stimulated more or less interest. After so
+                            many years have passed, the curiosity has not wholly subsided. Robinson says that at one
+                            time some fifteen hundred people assembled to witness the ceremony, and within a few years
+                            near the city of Manchester, N. H. not less than ten thousand persons were present. Since
+                            the days of the Baptist the subject of baptism has elicited different opinions and sometimes
+                            produced fierce contentions in the circle of its adherents. Those fighting reformers, John
+                            Calvin and Martin Luther indulged in many sharp words on the subject. While one church
+                            maintains that baptism can only be administered by immersion, another church is satisfied
+                            that pouring on water is all that is necessary, and a third is equally satisfied with a few
+                            drops of water sprinkled on the convert. One church says that baptism of water washes away
+                            all sin. Another that it makes us children by spiritual birth and still others that it is
+                            only a symbol of purification. Some churches baptize only adults, while others demand that
+                            even litttle children shall receive the ceremony. One church thinks that the person should
+                            be immersed once, while others insist that it shall be done three times. Really, the baptism
+                            ceremony as now used, is at least a babel of confusion. It is urged that as Jesus was
+                            baptized of John he sanctioned the rite. His acceptance of baptism was quite another thing
+                            from his commanding that it should be used by other persons. He as equally sanctioned
+                            lasciviousness and intemperance at the marriage in Cana, or the use of the sword to cut off
+                            the ears of those who offend us, or the riotous proceedings that often occur as that of the
+                            temple when he drove out the brokers and common traders. <pb n="13" id="p15" TEIform="pb"/> THE
+                            MANIFESTO. 13 Jesus never administered baptism, and there is no evidence that he ever
+                            directed its employment by his disciples while he was upon the earth. "There is nothing to
+                            prove that any of the twelve were ever baptized in the name of the Father, the Son and the
+                            Holy Ghost, or indeed, received any baptism whatever, except such as John the Baptist
+                            probably administered to Andrew, Peter, Philip and John."— Dictionary of Religions
+                            Knowledge. The baptism of Jesus was of the Holy Spirit and of fire, and he asked his
+                            disciples at one time if they were able to receive it. They had been able to receive the
+                            water baptism of John, and unless this was quite a different process to which he alluded, it
+                            would have been a very uncalled-for question. All Judea had been out to Jordan to be
+                            baptized and no doubt were pleased with the privilege. The baptism of Jesus was a baptism
+                            into his life, which was to do the will of God. As the whole life of Jesus the Christ was a
+                            spiritual work, to accept him was to be baptized into him or into the order of his spiritual
+                            life. And certainly his life and testimony was a consuming fire into which all entered, or
+                            into which all were baptized that embraced his gospel work. Two foolish fellows thought they
+                            were able to pass through the ordeal, and also asked the privilege to sit, the one on his
+                            right hand and the other on his left in the kingdom of God, although they evidently had not
+                            the first conception of the work to which Jesus referred. Some of the first disciples of
+                            Jesus had been disciples of John, and in imitation of their master continued the ceremony by
+                            baptizing all who wished to follow Jesus. Paul shows very plainly that he understood the
+                            difference between the baptism of John and that of Jesus. If he ac- cepted the ceremony it
+                            was evidently for the purpose of preventing a collision with those converts who had come out
+                            of the Jewish Church. In one of his letters to the church in Corinth he leaves this emphatic
+                            testimony concerning water baptism, "I thank God that I baptized none of you but Crispus and
+                            Gaius and the household of Stephanus. For the Christ sent me not to baptize, but to preach
+                            the gospel." One of our religiouspapers a few years since, published the remarks of a Jewish
+                            Rabbi on the subject of baptism. "Concerning baptism all are agreed that in ancient times
+                            immersion of the whole body (not the clothes) was necessary for a new member of the Jewish
+                            leligion. And as the baptism was a Jewish ceremony before the time of Jesus, John and the
+                            apostles surely performed it in the same manner as did the eTews. It was not new and no
+                            Pharisee or Sadducee raised any objection against it <pb n="14" id="p16" TEIform="pb"/> 14 THE MANIFESTO.
+                            as they did to many other performances. Hence I can not account for it why the imitators of
+                            John the Baptist and the Apostolic Church, should perform baptism when clad in water-proof
+                            clothes. A real baptizing or bathing of the body and not of the clothes ought to take place,
+                            and hence men should baptize men, and women baptize women. It is obvious, therefore, that no
+                            woman was among the multitude that came to John as is reported in Matt, iii., 5, 6. In the
+                            second century baptism was administered publicly twice a year and if we are to believe the
+                            historian, the church was not always very particular about the free will of the converts.
+                            Multitudes of the Jews were cruelly persecuted and inhumanly dragged into the church to be
+                            baptized by the violence of the clergy. The same method of conversion was practiced in
+                            France and Spain. But those days are passed away, and we may hope never more to return. We
+                            now ask only for the gospel of good news and the baptism of the Holy Spirit which will
+                            cleanse the soul from the sins of the world, and raise it to the heavenly love of the
+                            Christ.</p><byline TEIform="byline"><persName reg="Blinn, H. C." TEIform="persName"/>H. C. Blinn</byline></div2><div2 type="poem" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Gethsemane" TEIform="index"/>GETHSEMANE</head><byline TEIform="byline">By <persName reg="Vinneo, Cora" TEIform="persName"/>Cora Vinneo</byline><p TEIform="p">Theke was a garden where the Savior prayed Id agony of soul. Dark was the night, The stars
+                            refused to shine, the moon to light The deep seclusion where the Master strayed. Alone he
+                            suffered, while his soul was swayed With throes of pain endured for truth and right. Our
+                            minds retire, night hides from us the sight Of God's blest Son by wicked man betrayed. And
+                            O, our Father ! bend thy listening ear When we to our Gethsemane retire, We agonize, we bow
+                            in reverent fear, Or satisfy our longing and desire. And in these hours send angel helpers
+                            near, To lift our stricken souls to regions higher. Mt. Lebanon, N. Y.</p></div2><div2 type="lesson" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="The destructive element in an individual..." TEIform="index"/>
+                            The destructive element in an individual...
+                        </head><p TEIform="p">The destructive element in an individual, conjoined to benevolence and love for humanity,
+                            gives force to carry out the great projects which are so beneficial for the good of mankind. </p><byline TEIform="byline"><persName reg="B., S. J." TEIform="persName"/>S. J. B.</byline></div2><pb n="15" id="p17" TEIform="pb"/><div2 type="hymn" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Songs of cheer" TEIform="index"/>SONGS OF CHEER</head><p TEIform="p">"Finally have compassion one of another, love as brethren.'1''—1 Peter, iii., 8. Mt. Lebanon.
+                            N. Y. 1. We would spread the joy of blessing far and near, 2. Oh, ever is the loving
+                            word the best, We would speak the loving word the heart to cheer, It calms the heart by sin
+                            and want oppressed, Like merry birds of spring, Glad music we will sing, With the murmur
+                            of a prayer, We will still the waves of care, In our happy, happy songs of cheer. And bid
+                            the troubled spirit rest. <pb n="16" id="p18" TEIform="pb"/> 16 THE MANIFESTO. SONGS OF CHEER. Chorus.
+                            Solo. Sing the songs, happy songs of cheer, Sing' the songs happy songs of cheer, Oh, that
+                            no heart was sad, We would make the whole world glad, With our happy, happy song of cheer.
+                            3 Oft have we felt our inner, longing needs, Blest by a power that strengthens, clothes and
+                            feeds, Like fragrant breathing flowers, We will fill the weary hours, With the incense of
+                            our loving deeds. 4 Though darkened shadows fall across the way, The night will soon give
+                            place to smiling day; With the sunshine of our cheer, We will chase the shadows drear, And
+                            echo, echo joy alway.</p></div2><pb n="17" id="p19" TEIform="pb"/><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="The Manifesto. January, 1896. Office of Publication" TEIform="index"/>THE MANIFESTO.
+                            JANUARY, 1896. OFFICE OF PUBLICATION.</head><p TEIform="p">The Manifesto is published by the "United Society of Believers" on the first of each month,
+                            and is the only work issued regularly by the Shaker Community. Its aim is to furnish a plain
+                            and simple statement of the religi jus views of the Order and to inculcate the spirit of
+                            righteousness. Address all communications to Henry C. Blinn, East Canterbury, Mer. Co., N".
+                            H. .7o .40 One copy per year, postage paid " " six months, " "</p></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Society record" TEIform="index"/>NOTES ABOUT HOME</head><div3 type="shaker-report" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Mt. Lebanon, New York" TEIform="index"/>Mt. Lebanon, N. Y.</head><p TEIform="p">North Family. Dec. 1S95. The lights and shadows of autumn have passed and though the
+                                wintry days are upon us, yet in our beautiful home we are sheltered from the bleak
+                                storms of earth in more than an external sense. The warmth of loving hearts and the
+                                light of a hope immortal, give constant cheer and are an incentive to our best efforts
+                                to increase the kingdom of heaven "within and among us." We have many applications to
+                                share of our bounties with the needy. The destitute from adjacent towns, church members
+                                too, pass by their fellow Christians to get more generous supplies from the Shakers who,
+                                they have long since learned, will never turn the needy unaided away. Late rains have
+                                filled the springs, insuring us a comfortable water supply for the winter. Among the
+                                special blessings we have to recount, is the preservation of the village school-house
+                                with its valuable furnishings of books and charts. On Nov. 26, a little past the noon
+                                hour as the teacher, Sister Ada Brown entered the school-room (a little earlier than
+                                usual) she was startled by smoke and flame coming up through the register. Through her
+                                presence of mind in immediately closing doors and windows and throwing on the water at
+                                hand she was able to check the flame and summon assistance barely in time to save the
+                                building. Cause of lire was unprotected wood casing too near the large new furnace.
+                                Repairs have been made with greater security for the future. Through correspondence we
+                                learn of some who appear to be seeking the higher life. May we be prepared to minister
+                                to those who ask, is our prayer. We extend greetings of peace and good-will to all with
+                                best wishes for a happy New Year.</p><byline TEIform="byline"><persName reg="Burger, Sarah J." TEIform="persName"/>Sarah J. Burger</byline></div3><div3 type="shaker-report" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="South family" TEIform="index"/>South Family</head><p TEIform="p">Dec. 1895. All Eight! "When we write right, we do right. When we write to right wrong we
+                                do right. Hence a writer may be a writer of right, or a writer of wrong, and write all
+                                right. These aphorisms teach us to be sure and write right." The drought so much feared
+                                is wholly cancelled by the copious rains of the few past weeks, and again "the rivers
+                                are full and the streams running over."' An old well was discovered recently by
+                                explorers who were searching for new water veins. It was found at a depth of three feet
+                                below the surface, covered with a door which was in perfect preservation. The well has
+                                been in existence for over one hundred and twenty years, and was probably built by the
+                                inhabitants who owned the land long before the Shakers possessed it. This water supplied
+                                an old barn above our buildings, which is also over one hundred years old and is still
+                                in good condition,— sheltering the herds on a thousand hills. The northern part of the
+                                Office has been improved by the addition of a vestibule TERMS. <pb n="18" id="p20" TEIform="pb"/> 18
+                                THE MANIFESTO. 8x15 ft. Elder William Anderson and Br. Conrad Human have, been making
+                                preparations for a berry festival in the future. The past week they have set out over
+                                nine hundred vines of the rasp and blackberry varieties. "May the Lord bless every
+                                plant." We find the "Mount Lebanon Cedar Boughs" highly entertaining. Who can tell how
+                                many Lebanon Cedar Boughs were used in the building of King Solomon's Temple?</p><byline TEIform="byline"><persName reg="DeGraw, Genevieve" TEIform="persName">Genevieve DeGraw</persName></byline></div3><div3 type="shaker-report" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Center family" TEIform="index"/>Center Family</head><p TEIform="p">Dec. 1895. Thkee months have elapsed since there have been any Home Notes from this fami-
+                                ly. There is always enough to write about if some one would apply their time and energy
+                                in that direction. Now you see, dear Editor, I have made an indirect confession of
+                                dereliction of duty. We had a fair crop of pears which brought good returns for labor
+                                expended; no plums worth speaking of, but apple crop quite large, the quality I think
+                                was not so good as in former years. Corn of the sweet variety was an average crop. In
+                                Bro. Alonzo's recent letter to you he made mention of my having been on a tour to the
+                                West and that I might have something to say. It is true, I have made a kind of flying
+                                trip through Ohio, D. C. and Pa., my first stopping-place being Circleville, the center
+                                of a great sweet corn industry, where some thousands of tons are canned annually to
+                                supply the middle and southern markets. I made a short stay in Chillicothe, thence to
+                                Union Tillage, being met at Lebanon, Ohio by Eld. J. R. Slingerland, Edward Ayers and
+                                Eldress Emily Robinson and was soon conveyed to the home of the Believers. The village
+                                is located on elevated land lying between the little and big Miami rivers, one of the
+                                richest portions of the state, but the long drought had spoiled the beauty of the place.
+                                There was nothing green or growing. Dry and withered grass met the eye on every side.
+                                The Brethren had set out a large orchard of apple and peach trees in alternate rows, but
+                                owing to the dry weather they had made but a small growth. I was pleased with the order
+                                and neatness everywhere visible, especially in the well-kept buildings. The Office,
+                                notably, is a very fine house with all modern improvements; it was indeed, quite a
+                                luxury to be so comfortably domiciled. Common corn, I am told, was a large crop this
+                                year, some having eighty bushels to the acre; but wheat was a failure. I traveled almost
+                                the whole length of the state and was seldom out of sight of corn. On my way home, I
+                                took in Washington, D. C. and made a run through most of the public buildings, the
+                                Treasury, War and Navy, the Patent Office and the Fishery Department; also the galleries
+                                of the Senate Chamber and House of Representatives where many hard fought battles have
+                                been waged in behalf of freedom: and yet more need to be fought for justice and right. I
+                                also went into the Corcoran Art Gallery which is said to be one of the finest displays
+                                of the sculptor's art there is in any place in this country. A new building is now being
+                                erected to take the place of the present one, that being too small to meet the pressing
+                                demands of the people. My way led through Philadelphia, and I visited Horticultural Hall
+                                in which was a magnificent display of palm trees, and such a wealth of chrysanthemums I
+                                never before beheld. After visiting friends in the city, I made a hasty journey across
+                                New Jersey into New York, where I made a few calls and hastened toward home, where I
+                                arrived on Tues., Nov. 29, having traveled about 1500 miles. Although it is wearisome to
+                                travel long distances, yet I felt well repaid.</p><byline TEIform="byline"><persName reg="Rayson, Timothy D." TEIform="persName"/>Timothy D. Rayson</byline></div3><div3 type="shaker-report" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Harvard, Massachusetts" TEIform="index"/>Harvard, Mass.</head><p TEIform="p">Dec. 1895. We are now standing upon the twelfth steppingstone that makes up the year's
+                                    eir<pb n="19" id="p21" TEIform="pb"/> THE MANIFESTO. 19 cuit, ready to take another step when
+                                Father Time presents it to us. The past month little has transpired of interest but to
+                                the actors No more burglaries with us, but much work of the kind in towns adjoining, so
+                                much so that it is not safe to leave a room unlocked for five minutes. Winter
+                                preparations completed, and the farmers are busy cutting fuel, fine days, and husking
+                                corn when stormy. Winter is upon us with its pains and pleasures, and we are peacefully
+                                enjoying its comforts with "malice toward none and good-will toward all." Health of
+                                society excellent.</p><byline TEIform="byline"><persName reg="Bullard, Marcia M." TEIform="persName"/>Marcia M. Bullard</byline></div3><div3 type="shaker-report" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Shakers, New York" TEIform="index"/>Shakers, N. Y.</head><p TEIform="p">North .Family. Dec. 1895. We write with the closing month of the year giving us a
+                                pleasant greeting; but time is swiftly passing and the year that has gone can never be
+                                recalled. Onward must be the motto; those who have wisely improved the time that has
+                                been given, happiness is their portion. We notice by The Manifesto, that many of our
+                                gospel kindred have passed on to the spirit land. There is a vacancy by the
+                                hearth-stone, but we shall meet in the morning light, and we trust and believe that they
+                                will minister to their earth kindred in time of need. We would offer a vote of thanks to
+                                the Editor aud printers of The Manifesto, for its neat appearance, and to the contrib-
+                                utors for the presentation of the truth in a manner that has been most acceptable to
+                                intelligent, enquiring minds. November was all that our autumn month could be for the
+                                consummation of the work of the season, with rain to fill out the vacancy that existed
+                                in the creeks and ponds. By the time these Notes appear, the New Year will have been
+                                announced, and may it be one of joy to all of our gospel kindred.</p><byline TEIform="byline"><persName reg="DeGraw, Hamilton" TEIform="persName"/>Hamilton DeGraw</byline></div3><div3 type="shaker-report" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Enfield, New Hampshire" TEIform="index"/>Enfield, N. H.</head><p TEIform="p">Dec. 1895. A happy New Year, and may it prove one vich in blessings to all the readers of
+                                our Manifesto. What glorious as well as ctark records of human experiences, the tablets
+                                of memoiy reveal as year after year rolls on; hkstori; s of obedience to, and violation
+                                of God's commandments. From the commencement of impeachable history down to the present
+                                era of facts, we can trace the line of obedience to divine and civil laws and to
+                                religious faith. As a class of religionists, "We know that man's creed floes not n utter
+                                So long as his deeds .-,,ienk •!:' Go.i, So long as his aim is to scatter The seeds of
+                                right living abroad." Such a life teaches us that obedience to what we know is right, is
+                                the school-master that classifies truth from error; and each generation demands new
+                                methods for unfolding truth. "As the dead boughs pass away, fresher will the living
+                                grow.' The New Year will no doubt give us ample opportunity to respond to the netils of
+                                our fellow-beings-, thus calling into action the divinity of our natures. As we obey the
+                                call; "Feed my lambs," we gild each day's goodness with the gold of sweet consolation,
+                                thus enriching our own and other's lives. We have recently enjoyed the pleasure of
+                                entertaining our venerable Br. Sullivan Wright of East Canterbury. As he related his
+                                varied experiences,—within and without Zion—we were not merely inter- ested but
+                                benefited also; his words of wisdom falling into receptive minds, stimulated to newness
+                                of life and singleness of purpose. He has attained the advanced age of eighty-seven
+                                years, is still hale, hearty and happy, full of godly zeal and soul content. What a
+                                beautiful example of righteousness, and how true that such a life is the most effective
+                                preaching of the gospel of Christ. True, "faith without works is dead." <pb n="20" id="p22" TEIform="pb"/> 20 THE MANIFESTO. May the New Year at its close have credited to our
+                                account a larger and better list of good works. George H. Baxter. The North family at
+                                this place have a herd of some thirty-three cows. Catching the influences that are
+                                abroad in the air among farmers, that there are advantages to be derived from being
+                                polled, they hired a man who, for a mere pittance deprived the whole herd of their
+                                ornamental horns. The operation was performed very expeditiously while the cows were
+                                standing in their usual places in the stable. We learn that no harm, as yet, has
+                                followed this heroic practice, and as the poor creatures are not permitted to speak, we
+                                may never know the whole of the story.</p><byline TEIform="byline"><persName reg="Blinn, H. C." TEIform="persName"/>H. C. Blinn</byline></div3><div3 type="shaker-report" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Shaker Station, Connecticut" TEIform="index"/>Shaker Station, Ct.</head><p TEIform="p">Dec. 1895. "Trust in God ye faithful souls, trust in Him forever." How blessed it is to
+                                feel that we are under the care of Him "who doeth all things well." We delight to think
+                                on God's promises to those who obey Him. Let us cling to Him who is our refuge and
+                                strength, and by the cross make our lives full of joy and brightness and an honor and
+                                glory to Him who has enabled us to be heirs to a kingdom that is eternal in the heavens.
+                                Let us "sow peace and taste its fruitage sweet." Self-denying efforts bring sweet peace
+                                and joy never ending. There is no shield from trouble and sin in a worldly life. Peace
+                                reigns with the pure. First pure then peaceable. Let us be sure we are sowing the seeds
+                                of truth, purity, kindness and love, which will, with good cultivation, grow and yield a
+                                harvest of heavenly treasures." "America's largest bell was lately cast in Cincinnati.
+                                It weighs 30,000 pounds and cost $16,000. The clapper is seven feet long and weighs TOO
+                                pounds. "The deepest lake in the world is Crater lake in Oregon. It is 2,000 feet deep.
+                                From the top of the Crater down to the surface of the lake is 2,010 feet." "The specie
+                                in the Bank of France is stored in 800 barrels." "In Brazil there are said to be 300
+                                dialects and languages spoken by the Indians." "The largest nugget of gold was found in
+                                Australia." ****** * To obtain a good supply of eggs in winter, we must have young hens.
+                                Pullets hatched in April or May will prove most satisfactory. Variety and plenty of
+                                eggmaking material is absolutely necessary. Ground meat, bone, boiled potatoes with
+                                wheat bran make the best morning meal. Whole grain should be the feed after the morning
+                                ration.</p><byline TEIform="byline"><persName reg="Orcutt, Daniel" TEIform="persName"/>Daniel Orcutt</byline></div3><div3 type="shaker-report" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="East Canterbury, New Hampshire" TEIform="index"/>East Canterbury, N. H</head><p TEIform="p">Dec. 1895. Jtjst one word before the year closes We are in harmony with the great body of
+                                humanity that is sending out so many hearty good wishes for the "every body's" and their
+                                relations. The sermon that Santa Glaus preaches every year seems to have a wonderful
+                                effect upon the minds of both old and young. Impatient thro waiting for his December
+                                mission, his words are fully anticipated at an early date and the gifts at his hand are
+                                noted in full, long before he sends his message. Well, the snow has made us a visit, and
+                                the ice is trying to make itself ready for the sleds and skates that are to be on hand
+                                at a moment's warning. The flower gardens look sorrowful. The plants that must be saved,
+                                have been whrskt to a more congenial climate where they can bud and blossom to the very
+                                great pleasure of their careful attendants, while others are left to endure the severe
+                                storms of a long winter. All the birds and bugs and curious little insects have taken
+                                leave of us, to await the return of another spring. As we seem to be rather more closely
+                                confined to a special location than either a bird or a bug, <pb n="21" id="p23" TEIform="pb"/> THE
+                                MANIFESTO. we must study to build around us a home that shall be filled with the
+                                multiplied blessings of "God's holy mountain" so that when the storms are without we may
+                                sing as does the good Christian, '"December is as pleasant as May."</p><byline TEIform="byline"><persName reg="Blinn, H. C." TEIform="persName"/>H. C. Blinn</byline></div3><div3 type="publication" org="uniform" sample="complete" part="N" TEIform="div3"><p TEIform="p">[We place this article in type, agreeably to the wish of the "new compositor," as new
+                                things in this line may add beauty to the page. Please see if it is not an improvement.
+                                Ed.]</p></div3><div3 type="shaker-report" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Alfred, Maine" TEIform="index"/>Alfred, Me.</head><p TEIform="p">Dec. 1895. I am reminded that before this reaches the readers of The Manifesto, a New
+                                Year will have dawned upon us, and the old year will be forever gone. We can not recall
+                                it to change our lives, however much we may wish so to do. Happy is the one who has so
+                                lived through the past year, that he does not wish to recall the past to undo the wrong
+                                committed. Sad is the condition of the man or woman who in looking over the past can
+                                find no gains, no victories; nothing but failures. To such an one I would quote the
+                                words of Father James,—"It is never too late to cry to God. A soul in the belly of hell
+                                can find mercy if he cries to God." He is Almighty and He will save, if we are willing
+                                to be saved. God will never force us into heaven, although he delighteth not in the
+                                death of the sinner, still we read that He is a jealous God. He will not accept a
+                                divided service. If we love God let us serve Him. If we would enjoy heaven, let us cast
+                                from our minds all that is not heavenly and make room in our hearts for the Christ
+                                spirit to dwell. He promised his disciples that where he was, there they should be also.
+                                If we are truly the disciples of Christ, dying as he died unto sin, and living as he
+                                lived unto God, then we may expect to dwell with him. The prudent farmer, or the
+                                merchantman, at the close of the year, looks over his store-house, balances his books,
+                                settles his accounts and estimates his gains or losses. If such careful reckoning is
+                                necessary for the prosperity in temporal affiiirs, how much greater the necessity of a
+                                careful inspection of our spiritual ac counts. May we so live that we shall not be
+                                ashamed to read our life record. Jack Frost has bridged the streams and ponds much to
+                                the delight of the boys. \\Te have a little snow, but not enough for sledding. When we
+                                get more we may be thankful. During these cold days our minds often turn to the sunny
+                                South, and like the birds would like to migrate for the winter. May peace and prosperity
+                                and a deeper baptism of the Holy Spirit attend the inmates of our Zion homes is the New
+                                Year wish of our Alfred friends.</p><byline TEIform="byline"><persName reg="Casey, Fanny" TEIform="persName"/>Fanny Casey</byline></div3><div3 type="shaker-report" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Union Village, Ohio" TEIform="index"/>Union Village, O.</head><p TEIform="p">Dec. 1895. Dear Elder Henry:—I read the Home Notes with so much pleasure that I hope this
+                                feature of The Manifesto, that his such a pleasant variety, and tells so much news,—and
+                                nearly all of it good news — will never be omitted. Of course the spiritual and temporal
+                                have to go together, but as the inward, unmanifest, and spiritual, necessarily includes,
+                                and originates, all that is manifest and temporal, therefore I hope and pray most
+                                fervtntlv, that I may never see the da&gt;, when t! e latter will take precedence of
+                                the former. I must confess that I more than endorse the following excerpt from a writer
+                                at Alfred in the Nov. number of The Manifesto: "The body must have food, clothing and
+                                shelter. This is necessary and proper, but our greatest anxiety an 1 care is, (should
+                                be) for our spiritual welfare. The Spirit mist be fed; and unless we are laying up
+                                heavenly treasures, wi; shall surely famish and die—Spiritually." Well—at last the rain
+                                has begun to fall, and we may hope for a breaking up of our water famine. So we had
+                                cause for thankfulness on last Thursday, Nov. 28, for quite a quantity of water, and a
+                                great many other blessings. We met in response 21 <pb n="22" id="p24" TEIform="pb"/> 22 THE MA NIFES
+                                TO. to the President of the United States and rendered the same. Several of our old
+                                barns have been repaired this summer and autumn, through the untiring persever- ance of
+                                our good and faithful Elder Joseph. You will learn by the public papers, that our North
+                                Union suit has been decided in the Supreme Court in our favor. This ends that wearisome
+                                suit and we are devoutly thankful. Within a space of two or three months, two or three
+                                Brethren and some five or six Sisters, from 46 down to 11 years of age, have joined our
+                                family. This is another cause of great rejoicing among us, and we hope they may all be
+                                able to make their calling and election sure by faithfulness in well-doing. The good
+                                Sisters gave the Brethren an honorable discharge from the dining room once more, as they
+                                have become numerous enough, to man that department. Your humble correspondent just
+                                finished a tour of four weeks in that department. We hope to get water enough to supply
+                                us for the coming year, from our present arrangements: but to make assurance doubly
+                                sure, we are intending to have a well bored next spring, that will place us beyond all
+                                risk of a water famine. About half of our hogs are left to us from the ravages of the
+                                hog cholera, and this is much better than others fared in this west- ern country. I
+                                received your philological papers and will cheerfully reduce them to practice in my
+                                articles for the press, if you wish it. To me it seems a clumsy method in comparison
+                                with the method of supplying a character for every elementary sound in the language. It
+                                is quite a little sacrifice to write on .1x8 paper, but I will have some ready by next
+                                time.</p><byline TEIform="byline"><persName reg="Hampton, Oliver C." TEIform="persName"/>Oliver C. Hampton</byline></div3><div3 type="shaker-report" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="White Water, Ohio" TEIform="index"/>White Water, O.</head><p TEIform="p">Nov. 1895. The Manifesto is a regular and welcome visitor to our home, and no doubt also
+                                to the homes of the United Societies of Believers throughout the land. It is ever filled
+                                with welcome and cheerful notes and news from some of the members of the great sister
+                                and brotherhood of Shakers. In these parts wTe have had a very long dry spell, as the
+                                farmers term it, lasting almost five months without interruption causing many of our
+                                products to fall short. Wheat sown in the early fall has not come up yet for want of
+                                rain, even live stock have had a very hard time. But now the long-wished and prayed-for
+                                rain has come, and for nearly twenty-four hours it has been raining without
+                                interruption, reminding us again of the fact that the supreme Ruler of the universe,
+                                sends us all good and needful things at the proper time, making good these words: "So
+                                long as the earth shall stand, there shall not cease seed-time and harvest;" all we have
+                                to do is to learn to labor and wait. The very fact that it rains and that the sun shines
+                                upon and for all, is a very strong argument in favor of communistic life, in the dispen-
+                                sation of these great blessings. There are no step-children, all share alike. Selfish-
+                                ness has no place in nature, except in the heart of man where, on account of his high
+                                estate, it ought least to be. John (J. Ludivig. Dec. 1895 In looking over the Nov.
+                                number of The Manifesto I find that White Water is not represented, which I think is an
+                                oversight. I like to read the home items to know what our gospel Brethren and Sisters
+                                are doing. It is encouragement given from the right source. Eecently we enjoyed a visit
+                                from two of our Sisters from South Union, and one Brother and four Sisters from
+                                Watervliet, O. which was a source of great pleasure. The dry season which has prevailed
+                                for so long a time, is at last broken. We are now having an abundance of rain. Some
+                                three inches fell at one time. Our crops were injured to some extent by the drouth,
+                                but.still we are thankful. <pb n="23" id="p25" TEIform="pb"/> THE MANIFESTO. 23 Some improvements are
+                                in progress, which take time and money. Our little family numbers nineteen members, and
+                                there are about as many Brothers as Sisters. With this little note I want to wish all
+                                our gospel friends a happy and prosperous New Year.</p><byline TEIform="byline"><persName reg="Parker, L." TEIform="persName"/>L. Parker</byline></div3><div3 type="shaker-report" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Sabbathday Lake, Maine" TEIform="index"/>Sabbathday Lake, Me.</head><p TEIform="p">Dec. 1895. One glance at the calendar shows that the last chapter of the Old Year has
+                                come. The book is about to be closed and a New Year whose pages remain unread is before
+                                us. Will it be too late to repeat with the many "A Merry Christmas to you all?" if so
+                                "Glad and Happy New Year's wishes" may not come amiss at this time. It is interesting to
+                                read the many beautiful sketches of home-life from the different Societies throughout
+                                our land, also the soul-stirring testimonies from the able writers of our monthly, all
+                                of which give pleasure to its readers. We at Sabbathday Lake are astir not- withstanding
+                                the "Summer Visitors" have gone to warmer climes. There seems to be plenty to do. The
+                                Brethren have recently ploughed nine acres of land for another year's cultivation. The
+                                cows are supplying the family with dairy products and the surplus cream is disposed of
+                                at a Butter Factory near by. Sisters are not idle. Some are engaged in household
+                                occupations, others may be found at the loom weaving rugs. So passes out the old year.</p><byline TEIform="byline"><persName reg="Cummings, Ada S." TEIform="persName"/>Ada S. Cummings</byline></div3></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Publication" TEIform="index"/>EXCHANGES.
+                        </head><p TEIform="p"> Holiday book-buyers, this year will find a wealth of tempting and attractive
+                            publications, from the expensively printed anil bound edition de luxe of new or standard
+                            works down to the inexpensive, though attractive, illustrated books for children. An
+                            impartial and comprehensive survey of the whole field of holiday publications will appear in
+                            two issues of The Sunday School Times of December 7 and December 14 respectively. These
+                            articles tell the prospective purchaser what the new books are, what they contain, how much
+                            they cost, and where they can be ob tainert, in addition to an interesting and ctitical
+                            judgment on their relative merits, John D. Wattles &amp; Co., 1031 Walnut St., Phil-
+                            adelphia, Pa. The Pulpit is a nice monthly magazine of some fifty pages, containing the
+                            complete sermons of six or eight of the most "gifted preachers of our age." The October
+                            number contains a sermon by Alexander MacLaren— Baptist. S. S. Mitchell—Presbyterian. Henry
+                            Elliott Mott—Presbyterian. J. "B. Whitford— Methodist. L. A. Sherman, on Spiritualism. Wm
+                            .R. Huntington—Protestant Episcopal. Edited by G. Holzapfel, Fredericksbuug, Pa.
+                            Mackintoshes and Rubber Clothing—¦ large commissions can be earned by retailing to users.
+                            Sample free. Manufacturer, P. O. 1371 New York.</p></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Obituaries" TEIform="index"/>Deaths</head><div3 type="obituary" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Blake, Rhoda" TEIform="index"/>Rhoda Blake
+                            </head><p TEIform="p"><persName reg="Blake, Rhoda" TEIform="persName">Rhoda Blake</persName>, at Center Family, Mt. Lebanon, N.
+                                Y. Dec. 1, 1895. Age 87 years and 2 mo. H. R. A.</p></div3></div2><div2 type="section" org="uniform" sample="complete" part="N" TEIform="div2"><head TEIform="head"><index level1="Books" TEIform="index"/>Books &amp; Papers</head><div3 type="book notice" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Popular monthly" TEIform="index"/>Popular Monthly
+                            </head><p TEIform="p">The Christmas number of Frank Leslie's Popular Monthly is already out, and will hardly be
+                                surpassed in richness and beauty of pictorial illustration, or in seasonable variety of
+                                literary contents, by anything that mayfollow during the holiday season. The opening
+                                article, upon "Heroines and Heroine Worship," affords a vehicle for nearly a score of
+                                exquisite reproductions from the old and modern master-painters. A similar opportunity
+                                is found in the intensely poetic story by A . Cressy Morrison, of "The Man who Resembled
+                                Christ," which in addition is illu-tnited with some original drawings of rare delicacy.
+                                In "The City of Dordrecht," George (J. Unite fairly revels in the picturesque, giving us
+                                eight of his loveliest aquarelle.-.. The great literary feature of the number is
+                                Tolstoi's latest story, "Master and Man," specially translated from the Russian for
+                                Frank Leslie's Popular Monthly, and illustrated by Fogarty. A charming novelty is "A
+                                Daughter of the Samurai," by Teiichi Yamagata, being an up-to-date Japanese love story
+                                written in English by a Japanese author. Amongst other contributions deserving special
+                                mention are "Heroines of Chivalry,"by Mrs. Frank Leslie; "Literary Boston,"by Lillian
+                                Whiting "The St. Nicholas Society," by Wilf P. Pond ; "How the Wixes Joined the Four
+                                hundred." by A. Oakey Hall; and "A Legend of Jeanne d'Arc,"—the latter being a poem by
+                                Francois Coppee. </p></div3><div3 type="book notice" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Pleasant hours for girls and boys" TEIform="index"/>Pleasant Hours for Boys and Girls
+                            </head><p TEIform="p">"How to Win at Football" is one of the interesting features of the
+                                Christmas number of Frank Leslie's Pleasant Hours for Boys and Girls. It is by Wilf. P.
+                                Pond, and gives some good siiggestions for the formation of a football team that would
+                                be almost invincible. Another valuable article is "The Children of Corea," by A. B. de
+                                Guerville; Then there is a Christmas story by Judith Spencer;</p></div3><pb n="24" id="p26" TEIform="pb"/><div3 type="book notice" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Hasting's birthday book" TEIform="index"/>Hasting's  birthday book
+                            </head><p TEIform="p">Hasting's birthday book, other short stories; an illustrated Christmas poem by G. A.
+                                Davis; the continuation in "A l;luek\ Fight," by Euward S. Ellis, and "i hree Little"
+                                Heroines," by Jeannette H. Walworth; the description of a novel game, an 1 a, story for
+                                little folks—all handsomely illustrated. The editor chats entertainingly an i wisely
+                                aoout the new books for boys and girl-,, and there are a number of puzzles. Is a dainty
+                                booklet printed in light blue, salmon-pink and giay tones—a splendid illustration of the
+                                beauties of art applied to printing—The Ladies' Home Jouksal announces some of its
+                                leading literary and artistic features for 1SV6. There will be a series of papers upon
+                                the domestic and social side of Washingtun uy General A. W. Greely, U. S. A.; another
+                                by~Ex-i'resident Harrison, telling of "This Country of Ours;" a third by Mary Anderson
+                                de Mavarro, who writes of her stage experiences, her struggles for recognition and
+                                artistic triumphs, with a supplemental article telling of her life and surroundings
+                                to-day. In a lighter vein, Mary E. Wilkins will present a series of ".Neighborhood
+                                Types" papers, pen pictures of quaint and familiar personages— Ae'.v Enghuuiers; and
+                                Jerome K. Jerome will reflect old England life in a number of "Stories of the
+                                Town"—stories of London—in his inimitable, crisp style. "William the Conqueror," Rudyard
+                                Kipling's most fascinating romance, is also among the features for 1896, and Julia
+                                Magruder's delighting serial, "The Violet," will continue through a considerable poition
+                                of the year. Besides these two popular authors there will be short stories by Bret
+                                Harte, Lilian Bell, Ian Maclaren, Sophie Swett, Frank R. Stockton, Sarah Orne Jewett, R.
+                                0. V. Meyers, Will N. Harben, Caroline Leslie Field, Jane Austen (posthumous) and other
+                                prominent writers. Dr. Parkhurst will write a series of forcible articles for youngmen,
+                                applicable to their daily life, while the girls will be written to by Mrs. A. D. T.
+                                Whitney, and Edith X. Thomas, the gifted poetess, will be represented by her finest
+                                verse and prose. James Whitcomb Riley will contribute a number of poems, varied in theme
+                                and treatment. In its musical offerings the Journal will be unusually replete. Among the
+                                best things promised is a minuet by Paderewski, the famous pianist; a waltz by John
+                                Philip Sousa, the "March King;" compositions by Sir Arthur Sullivan, composer of
+                                '¦Pinafore," "Mikado," etc.; Reginald de Koven, composer of "Robin Hood," "Rob Roy,"
+                                etc.; Edward Jakobowski, Bruno Oscar Klein and others. There will be instructive musical
+                                treatises by Mine. Melba Mme. Blauvelt, Mine. Clementine de Vere Sapio, Mrs. Hamilton
+                                Mott, Miss Maud Powell, Benjamin Davits, Ch-arles Adams, Thomas a'Becket, Frederic
+                                Peakes, George Chadwick and others. Artistically the Journal gives, rich promise, and
+                                during the next year will present •leveral groups of Kate Greenaway's bonhie little
+                                people; Charles Dana Gibson's best work on new lines and gome of Albert Lyneh's newest
+                                creations. W. L. Taylor, W. T. Smed- ley, W. Hamilton Gibson, Alice Barber ¦ tephens,
+                                William Martin Johnson, EricPape, \V. A. Rogers, Reginald Birch, Frank 0. Small, ;;.
+                                West Clinedinst, T. de Thulstrup, A. B. Frost, E. W. Keinble, Irving R. Wiles, Abby K.
+                                Underwood and other artists of such commanding prominence will contribute their h aest
+                                drawings. In its departments the Journal promises to be stronger than ever, and n.ore
+                                comprehensive in its scope of practical in formation. In this direction it will print a
+                                series of Illustrated articles on home building, giving plans and details for the
+                                construe tion of medium-size houses. The Ladies' Home Journal for 1896, in fact, will be
+                                complete, and uniquely so. "The Hasting's Birthday Book." With a well filled library of
+                                beautiful books and even including the great, the ponderous Dictionary and also the
+                                great and much to be desired illustrated Bible, there would still be an unfinished set
+                                of books if the ready reference of the Birthday Book was not to be found at our right
+                                hand. This little book of some four hundred pages has a fund of choice selections and
+                                something well worth remembering for every day in the year, and an ample space for the
+                                inseition of any name with necessary dates that may be wanted to make up a pretty and
+                                interesting little volume. A nice Photograph of the Author accompanies each book and his
+                                venerable and silent presence may have a loving and salutary effect upon all who hold in
+                                remembrance the names of near and dear friends. Published at 47 Cornhill, Boston, Mass.</p></div3><div3 type="book notice" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Phrenological journal and science of health" TEIform="index"/>
+                                The Phrenological Journal and Science of Health
+                            </head><p TEIform="p">The Phrenological Journal and Science of Health for December begins with an illustrated
+                                phrenograph from a personal examination of the famous New York lawyer, Dr. William J.
+                                O'Sullivan, which is not only a close analysis of the gentleman's character, but
+                                contains also information pertaining to the talents required by the legal profession in
+                                general. It will be read with especial interest by all law students as well as practic-
+                                ing attorneys. Mr. George C. Bartlett concludes his tour in Switzerland. "Practical
+                                Psychology," by Dr. H. S. Drayton, is the continuation of a valuable series especially
+                                adapted for teachers and philosophical students. "What Your Palm tells," by Dora M.
+                                Morrell, describes a number of the most important and easily observed signs of character
+                                in the form of the hand. Dr. Beall gives an interesting study of the Duke and Duchess of
+                                Marlborough with two handsome engravings illustrating the art of reading character from
+                                photographs. The novelette, "A Phrenologist's Prediction," by Anna Olcott Commelin, is
+                                concluded. In the department of Child Culture, Prof. Nelson Sizer describes "Precious
+                                Treasures in Earthen Vessels," w7ith several illustrations and valuable advice to
+                                mothers. "A Study in Sociology," "Another Drink Cure," "A Game that Cultivates
+                                Courtesy," are features of the Science of Health Department. In the editorial pages a
+                                prospectus of many new things for the coming year is given. A national phrenological
+                                convention ir&gt; honor of Dr. Gail's centenary is proposed for 1896. Mrs. Charlotte
+                                Fowler Wells announces her forthcoming book of phrenological biography and the editor
+                                pays his respects to phrenologisal skeptics by contrasting two portraits of widely
+                                dissimilar heads. New York: Fowler &amp; Wells Co., 27 East Twenty-first street.
+                                $1.50 per year. </p></div3><div3 type="book notice" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Millenial Kingdom" TEIform="index"/>The Millennial Kingdom
+                            </head><byline TEIform="byline"><persName reg="Redding" TEIform="persName"/></byline><p TEIform="p">
+                                The Millennial Kingdom is an astonishing book which shows that we
+                                Americans, are the Lost Ten Tribes of Israel, and are to rise to high spiritual light
+                                and lead the world in the Millennial Kingdom on earth 1,000 years. Death will cease.
+                                People will live hundreds of years like a tree. (Isaiah lxv., 20, 22.) Its preparation
+                                is causing present commotion. Letters from Jerusalem. Many subjects. Intensely
+                                interesting. 300 pages. Paper bound 50 cts. Cloth, $1.00. Send stamps to Redding
+                                (author) Navarre, Kansas.24 </p><pb id="p27" TEIform="pb"/></div3><div3 type="book notice" org="uniform" sample="complete" part="N" TEIform="div3"><head TEIform="head"><index level1="Journal of hygeio-therapy" TEIform="index"/>The Journal of Hygeio-Therapy
+                            </head><p TEIform="p">The Journal of Hygeio-Therapy. yovtnr ber. Contents. Life Science Papers; Solteir ing
+                                Water; Medical Science: The Science of Phrenology; Prof. Pasteur's Work; A Horticultural
+                                School for Girls; Health Topics, etc. Dr. T. V. Gifforcl &amp; Co., Kokomo, lml. The
+                                Funk &amp; Wagnalls Company celebiated on November 27th, the first anniversary of
+                                the completion of their "Standard Dictionary," by putting to press the SOth thousand of
+                                thii grea't work. This is a very large number of dictionaries to print in a single year.
+                                The publishers' mathematician has figured out that, if these 90,000 sets were piled flat
+                                one upon another, they would reach nearly seven miles in height; and. the printed pages,
+                                if laid end to end, would extend over 40,000 miles, one and three fifths times around
+                                the globe ! But the most significant of the triumphs of the first year of this
+                                remarkable dictionary andthe most gratifying to Americans, is the wonderful reception
+                                given the work by the most exacting of the linguistic critics in England. Especially is
+                                this so when we remember how reluctant, naturally enough, the English are to look to a
+                                foreign country for a dictionary of their own tongue. It is something extraordinary for
+                                an American work of this kind to elicit words of such enthusiastic praise as those
+                                uttered by such scholars of the Oxford University as Professor Sayceand Max Muller, and
+                                well-known scholars of other English universities and such journalistic critics as those
+                                of the London Standard, Saturday Review, Notes and Queries, Nature, London Times,
+                                Westminster Review Atlitnaum, Mark-Lane Express, Scotsman, Liverpool Post, St. Jame's
+                                Budget. The latter closes his critical review with the following superlative
+                                indorsement: "To say that it is perfect in form and scope is not extravagance of praise,
+                                and to say that it is the most valuable dictionary of the Eng lish language is but to
+                                repeat the obvious. The Standard Dictionary should be the pride of literary America, as
+                                it is the admiration of literary England." May the triumphs of the second year of this
+                                Dictionary equal those of the first; they could not well exceed them! Another feature of
+                                this first anniversary of the publication of the Standard Dictionary was the forwarding,
+                                from the Pennsylvania depot for Michigan, of a big freight car loaded wholly with
+                                Standard Dictionaries. Large letters on muslin across the sides of the car told the
+                                public of the contents. Editorial rooms of the Standard Dictionary. To the Editor:—A
+                                very grave "wrong is being perpetrated against the American public by a reprinter of one
+                                of the English competitors of the Funk &amp; "Wagnalls Standard Dictionary—a wrong
+                                that cannot be excused by the exigencies of commercial rivalry. As is well known, in all
+                                unabridged dictionaries it is necessary to give the definitions of certain indelicate
+                                words. Eighteen of these words (selected out of a vocabulary of over 300,000 terms in
+                                the Standard) have been collated and printed with their definitions by the reprinter of
+                                this English dictionary, and circulars containing them are being distributed among
+                                teacheiT, school trustees, and parents all through this country, stirring up a iilthy
+                                agitation that will end, unless irowmd down by the public prtss and other leaders of
+                                public opinion, in setting people of prurient minds and childien everywhere to
+                                ransacking dictionarits ior this class of words. One of these publications contains such
+                                outrageously unjust comments as the following: "About two years ago the publishing house
+                                of Funk &amp; Wagnalls brought into the world a monstrosity entitled the Standarn
+                                Dictionary of the English Language." "So far as relates to its collection of obscene,
+                                filthy, blasphemous, slang, and profane words, it has no cc untupart in dictionaries of
+                                the English Language." It is but iair to the press and scholars of England to say that
+                                the English critics have in no way seconded this unfair as- sault, but are unanimous in
+                                the most unqualified indorsement of the American work, the Standard Dictionary,
+                                expressing in many ways the same opinion as that of the St. James's Budget [weekly
+                                edition of the St. James's Gazette,] London, which said: "To say that it is perfect in
+                                form and scope is not extiavaganee of praise, and to say that it is the most valuable
+                                Dictionary of the English language is hut to repeat the obvious. The Standaid Dictionaiy
+                                should be the pride of literary America as it is the admiration of literary England."
+                                The utter insincerity of this attack on the Standard is seen in the fact that nearly
+                                every one of these 18 words is in the English work which is published by this reprinter,
+                                and it contains other words so grossly indelicate and withal so rarely used as to have
+                                heen txeludtd from the Standard and from nearly all the other dictionaries. Fiitten out
+                                of the eighteen words (and others of the same class) are, and properly so, in the
+                                Century Dictionary, and they are to be found, with scarcely an exception, in every other
+                                reputable unabridged dictionary, and this class of words is invariably recorded in the
+                                lead- ing dictionaries of all languages. Since this gross attack has been made wehave
+                                submitted to Charles A. Dana and to a number of well-known educators the question
+                                whether we committed an error in admitting into the Standard this class of words. The
+                                answer has been without an exception, "You did not." The fact is, extraordinary care was
+                                used by the editors of the Standard "to protect the language." Of the more than 500,000
+                                words collected by the hundreds <pb id="p28" TEIform="pb"/> of readers employed to search all books
+                                of merit from Chaucer's time to the present, over 200,000 were excluded wholly from the
+                                vocabulary; hence there was no need and no effort to pad the vocabulary. The rules of
+                                exclusion and inclusion were most carefully made and rigidly enforced. A most perplexing
+                                problem from beginning to end was how to reduce the vocabulary, not how to enlarge it.
+                                Compression was carried by many devices to the extremest degree. The editors who passed
+                                upon the admission of words numbered over one hundred of the best known writers and
+                                scholars in America and England. To accuse such men of "fllthiness" is to do a wrong of
+                                the gravest degree. It is the business of a dictionary to record words, not to create,
+                                nor fco destroy them; to a.iswer inquirers concerning the spelling, pronunciation, and
+                                meaning of all words that are used to any considerable exttsnt, not to obliterate those
+                                it does not fancy. Whether a word has a right fco exist or not, the final arbiter is the
+                                people, not fie dictionary. The dictionary, as says Trench, should be the inventory of
+                                the language, and, as says the Encyclopedia Britannica under the term DICTIONARY, it
+                                "should include all of the words of the language .... A complete and Standard Dictionary
+                                should make no choice. Words obsolete and newly coined barbarous, vulgar, and aifected,
+                                temporary, provincial, and local, belonging to peculiar classes, professions, pursuits,
+                                and trades, should all find their place,—the only question being as to the evidence of
+                                their existence,—not indeed, all received with equal honor and regard, but with their
+                                characteristics and defects duly not- ed and painted out." Improper or indelicata words,
+                                when it was found necessary to admit them into the Standard, were blacklisted as low,
+                                vulgar, slang, and printed in small type. It did not saem to the editors that an
+                                unabridged dictionary could go further without justly incurring blame. To collect from
+                                such a work words of the class referred to and publish them is as great an outrage as to
+                                collect from the Bible tha many indelicate words and passa^es to be found there, or
+                                those from Shakespeare (some of these 18 words are found both in the Bible and in
+                                Shakespeare,) and then to print and scatter abroad the collection, saying: "See what a
+                                foul book is the Bible; see what an obscene and blasphemous work is Shakes- peare." The
+                                publication and distribution of th.353 circulars is a gross assault upon public decency.
+                                An agent who attempts to exhibit such a printed circular surely should not be listened
+                                to for a moment; he is a public enemy, and should be turned from every decent door. The
+                                old story will be remembered of a woman accosting Samuel Johnson, shortly after his
+                                dictionary had been p wished, with, "Doctor Johnson, I am so uorry that you put in your
+                                dictionary tl\e naughty words." "Madam", retorted the Doctor, "I am sorry that you have
+                                been looking for them." Respectfully, I. K. Funk. OUR HOLIDAY NUMBER Will reach our
+                                readers in time for our "Holiday Greeting," as well as for your holiday purchases. Word
+                                and Works is always on time, like Mr. Hick's storm predictions. Our advertisers have
+                                caught the spirit, and are offering "timely" Christmas and N"ew Year's gifts in our
+                                columns. Our agents who are working for "premiums," will be delighted to find our
+                                "Premium List" in this number. (January, 1896.) Help yourselves, friends, and help
+                                others at the same time. The holidays are harvest days also. Agents who are looking for
+                                "snaps" will find one in canvassing for "Our Family, Its Record to Greatness and Honor,"
+                                by Rev. Irl R. Hicks, editor of Word and Works. Get up early and work late. Keep at it
+                                all winter, and make money and friends, as you never did before. From this same
+                                Publishing Co. of Word and Works, comes "The Rev. Irl R. Hicks Almanac for 1898. In
+                                common with all other Almanacs, the reader will find full information for e'very month,
+                                in the rising and setting of the sun and also the varied changes of the moon which
+                                becomes so interesting to many minds. The diagrams of the storms and weather forecasts
+                                for each month, is a novel feature and will be studied with deep interest by all who are
+                                so fortunate as to obtain a copy. Following the table of contents we have, The Evolution
+                                of Storms. The Air and the Barometer, 111. Hints on the Telescope, 111. The Monthly
+                                Heavens, 111. Cyclones and Tornadoes, 111. etc. etc. The Word and Works Publishing Co.
+                                St. Louis, Mo. 2201 Locust St.</p></div3></div2><!--
+                    <div2 type="section">
+                        <head>
+                            <index level1="Advertisements"/>[Advertisements]</head>
+                        <p>[Advertisements deleted.]</p>
+                    </div2>
+                    --></div1></div0></body></text></TEI.2>
