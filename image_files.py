@@ -30,43 +30,92 @@ def run():
 def naming(file, counter):
 	string_out = "INSERT INTO authors (id, regauthor, author) VALUES (" + file[10:14]
 	if counter < 10:
-		string_out += "00" + str(counter) + ","
+		string_out += "00" + str(counter) + ", "
 	elif counter < 100:
-		string_out += "0" + str(counter) + ","
+		string_out += "0" + str(counter) + ", "
 	else:
-		string_out += str(counter) + ","
+		string_out += str(counter) + ", "
 	return string_out
+
+def remover(str1):
+	while "\n" in str1:
+		str1 = str1.replace("\n", " ")
+	while "\r" in str1:
+		str1 = str1.replace("\r", " ")
+	while "\r\n" in str1:
+		str1 = str1.replace("\r\n", " ")
+	while "\t" in str1:
+		str1 = str1.replace("\t", " ")
+	while "\"" in str1:
+		str1 = str1.replace("\"", "'")
+	while "  " in str1:
+    		str1 = str1.replace("  ", " ")
+	return str1
+
+def persname(text1):
+	string_out = "\""
+	article = 0
+	for i in range(0, len(text1)):
+		if article == 0 and text1[i:i + 4] == "reg=":
+			article = 4
+		elif article == 4 and text1[i] == "\"":
+			article = 5
+		elif article == 5 and text1[i] == "\"":
+			break
+		elif article == 5:
+			string_out += text1[i]
+	string_out += "\", "
+	COUNTER = 0
+
+	for i in range(len(text1)-1, -1, -1):
+		if text1[i] == ">":
+			break
+		else:
+			COUNTER += 1
+
+	string_out += "\"" + remover(text1[len(text1)-COUNTER:]) + "\""
+	return(string_out)
 
 def extract_text(text, file):
 	counter = 0
-	text_file  = "SQL_insert.txt"
-	article = 10
+	text_file  = "SQL.txt"
+	f = open(text_file, "a")
+	article = 0
 	text1 =  ""
+	auth = False
 	for i in range(0, len(text)):
-		if article == 10:
+		if article == 0:
 			string_out = naming(file, counter)
-			reg = ""
-			auth = ""
-		if text[i:i+5] == "type=":
-			article = 0
-		elif article == 0 and text[i:i+9] == "<persName":
 			article = 1
-		elif article == 1 and text[i:i+4] == "reg=":
+			text1 = ""
+			auth = False
+		if article == 1 and text[i:i+5] == "type=":
 			article = 2
-			count = 0
-			while text[i+4+count] != " ":
-				string_out += text[i+4+count]
-		elif text[i:i+3] == "<p ":
-			article = 4
-		elif article == 4 and text[i] == ">":
-			article = 5
-		elif text[i:i+3] == "<p>":
-			article = 5
-		elif article == 5 and text[i:i+4] == "</p>":
-			article = 10
-			counter += 1
-		elif article == 5:
+		elif article == 2 and text[i:i+9] == "<persName":
+			article = 3
+		elif article == 3 and (text[i:i+11] == "</persName>" or text[i:i+9] == "</byline>"):
+			article = 7
+			string_out += persname(text1)
+			auth = True
+		elif article == 3:
 			text1 += text[i]
+		elif text[i:i+3] == "<p ":
+			article = 70
+		elif article == 70 and text[i] == ">":
+			article = 8
+		elif text[i:i+3] == "<p>":
+			article = 8
+		elif article == 8 and text[i:i+4] == "</p>":
+			article = 0
+			counter += 1
+			if auth:
+				string_out += ");" + "\n"
+				f.write(string_out)
+			else:
+				string_out += "\"None\", \"None\");"+ "\n"
+				f.write(string_out)
+			print(string_out)
+	f.close()
 
 
 
