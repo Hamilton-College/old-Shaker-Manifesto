@@ -30,22 +30,26 @@
                 <input type="submit" value="search">
             </form>
         </div>
-        <br><br><br>
+        <br><br><br><br><br>
         <p>Search results related to "{{enteredText}}" will be displayed here</p>
         
         {%if topics%}
             <p>The specific topics include: {{topics}}</p> <br><br>
         {%endif%}
+
         <p>Results:</p>
         {%if query%} <!-- If we don't want advanced search to work this way, we can call query something else since it's using a different function anyway -->
             {% for i in query%}
-                <p>- Article {{i}}</p>
+                {%if i%}
+                    <p>- Article {{i}}</p>
+                {%endif%}
             {%endfor%}
         {%endif%}
 
 
-        
-        
+    </div>
+    <div class= "footer">
+        <p>©2020 Hamilton College</p>
     </div>
 </body>
 </html>

@@ -2,11 +2,24 @@ body{
     margin: 0;
     padding: 0;
     background: #eedfa1;
+    /* font: trebuchet; */
+    font-family: Verdana, Helvetica, sans-serif;
+
     /* background-image: url("../Images/shakerHouse.PNG"); */
     /* background-position: center; */
     /* background-size: 100% ; */
     /* background-repeat: round; */
 
+}
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    min-height: 800px;
+}
+.footer{
+    text-align: center;
 }
 
 #wrapper {
@@ -31,8 +44,10 @@ body{
     /* margin-left: 85%; */
     float: right;
     /* margin-right: 0%; */
-    color: blue;
+    color: dodgerblue;
     display: inline;
+    font-family: Verdana, Helvetica, sans-serif;
+
 } 
 .HamiltonLogo {
     display: inline-block;
@@ -59,47 +74,65 @@ body{
     margin-right: 40%;
     /* width: 50%; */
   }
+
 .searchBar{
     position: absolute;
     top: 67%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #FAFAD2;
-    height: 40px;
-    border-radius: 40px;
+    /* background: #FAFAD2; */
+    /* height: 40px; */
+    /* border-radius: 40px; */
     padding: 5px;
+    border: 1px solid green;
+
 
 }
 .resultsSearchBar{
-    position: fixed;
+    position: absolute; /*change to fixed */
     /* top: 67%; */
     /* margin-left: auto;
     margin-right: auto; */
     /* transform: translate(-50%, -50%); */
     background: #FAFAD2;
-    height: 40px;
+    /* height: 40px; */
     /* border-radius: 40px; */
     padding: 5px;
     
     display: block;
-    margin-top: 0px;
+    /* margin-top: 0px; */
     /* margin-bottom: ; */
     margin-left: auto;
     margin-right: auto;
 
 }
 
-.searchButton{
+#searchButton{
     /* color: aquamarine; */
-    background-image: "Shaker Mani";
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: burlywood;
-    display: flex;
+    /* background-image: "Shaker Mani"; */
+    /* float: right; */
+    /* width: 40px; */
+    /* height: 40px; */
+    /* border-radius: 50%; */
+    /* background: burlywood; */
+    /* display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid green; 
+
+    position: relative;
+    display: inline-block; */
+
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: #FAFAD2; */
+    /* height: 40px; */
+    /* border-radius: 40px; */
+    padding: 5px;
+    border: 1px solid green;
+
 
 }
 .searchText{
@@ -191,7 +224,9 @@ body{
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-
+*{
+    box-sizing: border-box;
+}
 .autocomplete {
     /*the container must be positioned relative:*/
     position: relative;
@@ -210,6 +245,8 @@ width: 100%;
 input[type=submit] {
 background-color: DodgerBlue;
 color: #fff;
+position: relative;
+display: inline-block;
 }
 .autocomplete-items {
 position: absolute;

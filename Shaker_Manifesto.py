@@ -11,7 +11,7 @@ app = Flask(__name__, template_folder=template_dir, static_folder=static_dir )
 app.config["MYSQL_HOST"] = "localhost"
 app.config["MYSQL_USER"] = "root"
 app.config["MYSQL_PASSWORD"] = "Shakers!"
-app.config["MYSQL_DB"] = "sample-db"
+app.config["MYSQL_DB"] = "shaker"
 
 mysql = MySQL(app)
 
@@ -29,7 +29,7 @@ def basicSearch():
 
         query = request.form["query"] # name in brackets matches the name of the post form in the HTML
         enteredText = query
-        queryString = f"SELECT articleid from article where author = '{query}';"
+        queryString = f"SELECT id FROM authors WHERE author LIKE '%{query}%';" # add author to select
         print(queryString)
         curr = mysql.connection.cursor()
         curr.execute(queryString)
