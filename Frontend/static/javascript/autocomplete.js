@@ -1,7 +1,7 @@
 function AutoComplete() {
-
+    // console.log("autocomplete")
     // var inp = document.getElementById("search_term")
-    var inp = document.getElementsByTagName("input")[0]
+    var inp = document.getElementById("MySearchTerm")
     // console.log(inp)
 
     /*the autocomplete function takes two arguments,

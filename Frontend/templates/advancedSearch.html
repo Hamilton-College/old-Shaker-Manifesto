@@ -6,7 +6,7 @@
     <title>The Shaker Manifesto</title>
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="../static/css/style.css">
-    
+
 </head>
 <body>
     <div class="container"> <!--This container here is keeping the text and logo from going to the edges -->
@@ -19,7 +19,7 @@
             <div id="second">
                 <h2> <a class="advancedSearch" href = "/"> Basic Search </a></h2>
             </div>
-            
+
         </div>
         <br>
         <br>
@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="dropbtn" disabled>Collections</button> 
+                    <button class="dropbtn" disabled>Collections</button>
                     <div class="dropdown-content">
                         <input type="checkbox" id="vehicle1" name="checkbox" value="Collections">
                         <label for="vehicle1"> Collections</label><br>
@@ -121,9 +121,14 @@
             <div class="searchBar">
                 <input id="MySearchTerm" type="text", name="query", onkeydown="AutoComplete()">
                 <input type="submit" value="search">
-                <script type="text/javascript" src="../static/javascript/AutoComplete.js" defer> </script>
             </div>
         </form>
+        <script type="text/javascript" src="../static/javascript/AutoComplete.js" defer> </script>
+        <!-- <script>
+        function test(){
+          console.log("testing")
+        }
+        </script> -->
 
         <!-- <div class="searchBar">
             <form action= "#" method="POST" >
@@ -132,7 +137,7 @@
             </form>
             <script type="text/javascript" src="../static/javascript/AutoComplete.js" defer> </script>
         </div> -->
-                
+
         <!-- <div class="searchBar">
             <form method="POST">
                 <input class="searchText" type="submit" name="query" placeholder="Search">
@@ -141,12 +146,12 @@
 
         </div> -->
         <!-- <div class="searchBar">
-            <form action= "#" method="POST"> 
+            <form action= "#" method="POST">
                 <input type="text", name="name">
                 <input type="submit" value="search">
             </form>
         </div> -->
-        
+
     </div>
     <div class= "footer">
         <p>©2020 Hamilton College</p>
