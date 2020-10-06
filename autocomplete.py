@@ -1,5 +1,4 @@
 from fast_autocomplete import AutoComplete
-from flask import request
 
 AUTOCOMPLETE = None
 
