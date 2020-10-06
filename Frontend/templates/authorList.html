@@ -31,12 +31,8 @@
             </form>
         </div>
         <br><br><br><br><br>
-        <p>Search results relating to "{{enteredText}}" will be displayed here</p>
+        <p>Search results for the author: "{{name}}"</p>
         
-        {%if topics%}
-            <p>The specific type is: {{topics}}</p> <br><br>
-        {%endif%}
-
         <p>Results:</p>
         {%if query%} <!-- If we don't want advanced search to work this way, we can call query something else since it's using a different function anyway -->
             {% for a,b,c in query%}

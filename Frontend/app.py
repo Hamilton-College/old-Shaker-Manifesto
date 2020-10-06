@@ -39,14 +39,14 @@ def basicSearch():
 
 # ADVANCED SEARCH
 
-@app.route("/advancedSearch.html", methods=["POST", "GET"]) # From advanced search
+@app.route("/articleType.html", methods=["POST", "GET"]) # From advanced search
 def displayAdvanced():
     print("Start")
     if(request.method == "GET"):
-        return render_template("advancedSearch.html")
+        return render_template("articleType.html")
     else: # POST
         if(not request.form["query"] and not request.form.getlist("checkbox")): # if no boxes checked and nothing entered
-            return render_template("advancedSearch.html")
+            return render_template("articleType.html")
         elif(request.form.getlist("checkbox")): # If we have a box checked
             # print("Boxes checked:", request.form.getlist("checkbox"))
             topics = request.form.getlist("checkbox")
@@ -66,7 +66,7 @@ def displayAdvanced():
             return redirect(url_for("basicResults2", topics = topics)) # put in the function of the url you want to go to
         else:
             print("Here: ",topics, query)
-            return render_template("advancedSearch.html")
+            return render_template("articleType.html")
 
 # RESULTS
 

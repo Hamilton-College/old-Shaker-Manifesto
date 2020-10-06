@@ -25,32 +25,29 @@
         <br>
         <div class="resultsSearchBar">
             <!-- # we want the hash to be something else -->
-            <form action= "resultsPage.html" method="GET"> 
+            <form action= "#" method="POST"> 
                 <input type="text", name="query">
                 <input type="submit" value="search">
             </form>
         </div>
         <br><br><br><br><br>
-        <p>Search results relating to "{{enteredText}}" will be displayed here</p>
-        
-        {%if topics%}
-            <p>The specific type is: {{topics}}</p> <br><br>
+
+        <p>Authors whose name beginnings with the letter "{{letter}}"</p>
+        <p>Results:</p>
+        {%if query and query != "()"%} <!-- If we don't want advanced search to work this way, we can call query something else since it's using a different function anyway -->
+            {% for a,b in query%} <!-- a is first name, b is last -->
+                {%if a and b%}
+                <div class="articleResults">
+                    <form action="/authorNames.html" method="POST">
+                        <button type="submit" value="{{a}} {{b}}" name = "name">{{a}} {{b}}</button>
+                    </form>
+                </div>
+                {%endif%}
+            {%endfor%}
+        {% else %}
+                <p>There are no authors beginning with the letter "{{letter}}"</p>
         {%endif%}
 
-        <p>Results:</p>
-        {%if query%} <!-- If we don't want advanced search to work this way, we can call query something else since it's using a different function anyway -->
-            {% for a,b,c in query%}
-                <div class="articleResults">
-                {%if a%}
-                    <p>Article {{a}}</p>
-                {%if b or c%}
-                    <p> - Author: {{b}} {{c}}</p> <br>
-                
-                {%endif%}
-                {%endif%}
-                </div>
-            {%endfor%}
-        {%endif%}
 
 
     </div>

@@ -3,6 +3,7 @@ from flask import Flask, request, render_template, redirect, url_for
 from flask_mysqldb import MySQL
 from autocomplete import search, AUTOCOMPLETE
 from functools import reduce
+import re
 
 template_dir = os.path.abspath("./Frontend/templates")
 static_dir = os.path.abspath("./Frontend/static")
@@ -28,12 +29,12 @@ def basicSearch():
             return render_template("index.html") # maybe display a flash message here
 
         query = request.form["query"] # name in brackets matches the name of the post form in the HTML
-        enteredText = query
-        queryString = f"SELECT id FROM authors WHERE author LIKE '%{query}%';" # add author to select
+        enteredText = query # This is so we can say, "search results related to:"
+        queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{query}%' order by regauthor;" # add author to select
         print(queryString)
         curr = mysql.connection.cursor()
         curr.execute(queryString)
-        fetchdata = curr.fetchall()
+        fetchdata = curr.fetchall() # is have the values returned by the query 
         curr.close()
 
         # return render_template("resultsPage.html", query=query) # query(left) is the name of the variable we put in the html.
@@ -41,83 +42,216 @@ def basicSearch():
 
 
 
-# ADVANCED SEARCH
+# ARTICLE TYPE SEARCH
 
-@app.route("/advancedSearch.html", methods=["POST", "GET"]) # From advanced search
-def displayAdvanced():
+@app.route("/articleType.html", methods=["POST", "GET"]) # From advanced search
+def displayTypes():
     print("Start")
     if(request.method == "GET"):
-        return render_template("advancedSearch.html")
+        return render_template("articleType.html")
     else: # POST
         if(not request.form["query"] and not request.form.getlist("checkbox")): # if no boxes checked and nothing entered
-            return render_template("advancedSearch.html")
+            return render_template("articleType.html")
         elif(request.form.getlist("checkbox")): # If we have a box checked
             # print("Boxes checked:", request.form.getlist("checkbox"))
             topics = request.form.getlist("checkbox")
         else: # if no checkboxes checked, and just text entered
             topics = None
             # print("topics:", topics)
+
         query = request.form["query"] # name matches the name of the post form in the HTML
-        query = query.upper()
-        print("query:", query)
-            # return render_template("resultsPage.html", query=query) # query(left) is the name of the variable in results.html. Right var is the one here.
+        enteredText = query
+        print("HERE")
+
         if(query and topics):
-            return redirect(url_for("advancedResults", query=query, topics = topics)) # put in the function of the url you want to go to
+            return redirect(url_for("advancedResults", queryAd=query, topics = topics, enteredText = enteredText)) # put in the name of function of the url you want to go to
         elif(not topics):
-            print("why?")
-            return redirect(url_for("basicResults1", query = query)) # put in the function of the url you want to go to
+            queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{query}%' order by regauthor;" # add author to select
+            print(queryString)
+            curr = mysql.connection.cursor()
+            curr.execute(queryString)
+            fetchdata = curr.fetchall()
+            curr.close()
+            return redirect(url_for("basicResults1", query = fetchdata, enteredText = enteredText)) # Query with no type. Perhaps we should force them to select a type
         elif(not query):
-            return redirect(url_for("basicResults2", topics = topics)) # put in the function of the url you want to go to
-        else:
+            return redirect(url_for("basicResults2", topics = topics)) # all articles related to a certain article type
+        else: # Don't have anything selected, stay on page
             print("Here: ",topics, query)
-            return render_template("advancedSearch.html")
+            return render_template("articleType.html")
+
+# AUTHOR SEARCH
+@app.route("/author.html", methods=["POST", "GET"]) # From advanced search
+def displayAuthors(): # display landing page
+    if(request.method == "GET"):
+        return render_template("author.html")
+    else: # POST
+        # curr = mysql.connection.cursor()
+        # curr.execute(queryString)
+        # fetchdata = curr.fetchall()
+        # curr.close()
+        if(request.form.get("letter")):
+            letter = request.form["letter"]
+            queryString = f"SELECT regauthor FROM authors WHERE regauthor LIKE '%, {letter}%' order by regauthor;" # add author to select
+            curr = mysql.connection.cursor()
+            curr.execute(queryString)
+            fetchdata = curr.fetchall()
+            curr.close()
+            print(fetchdata)
+            return redirect(url_for("letterOfAuthors", letter = letter, query=fetchdata)) 
+        else: # name was entered
+            name = request.form["query"]
+            if(" " in name): # this means first and last name entered or multiple names
+                nameList = name.split()
+                if(len(nameList) == 2):
+                    queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' order by regauthor;"
+                elif(len(nameList) == 3):
+                    queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' && regauthor like '%{nameList[2]}%' order by regauthor;"
+            else:     
+                queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{name}%' order by regauthor;" # add author to select
+            curr = mysql.connection.cursor()
+            curr.execute(queryString)
+            fetchdata = curr.fetchall()
+            # print("data: ", type(fetchdata)) # tuple
+            curr.close()
+            return redirect(url_for("authorResults", letterOrName = name, query=fetchdata)) # put in the function of the url you want to go to
+# AUTHOR FIRST LETTER
+@app.route("/author.html/<letter>-<query>", methods=["POST", "GET"]) 
+def letterOfAuthors(letter, query): # This gives us all the authors of the specified letter
+    print(letter, query)
+    if(query != "()"):
+        query = query.replace("(", "")
+        query = query.replace(",)", "")
+        query = query.replace(")", "")
+        print(query)
+        query = re.split("', |\", |,,", query)
+        print(query)
+        for i in range(len(query)):
+            query[i] = query[i].split(",")
+
+        print(query)
+
+        for i in range(len(query)):
+            query[i][0] = query[i][0][1:]
+            temp = query[i][-1] 
+            query[i][-1] = query[i][0]
+            query[i][0] = temp
+        query[-1][0] = query[-1][0][:-1]
+        print(query)
+    return render_template("/authorNames.html", letter = letter, query=query) # this needs to go to a different page (i.e. not authorList). Just one with all the names of a particular letter
+
+# AUTHOR NAMES
+@app.route("/authorNames.html", methods=["POST", "GET"]) # From advanced search
+def displayNames(): # display author names
+    if(request.method == "GET"):
+        return render_template("authorNames.html") # it should never bet accessed through a get, so maybe we default it to home page
+    else: # POST
+        name = request.form["name"]
+        print(name)
+        nameList = name.split()
+        print(nameList)
+        if(len(nameList) == 2):
+            queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' order by regauthor;"
+        elif(len(nameList) == 3):
+            queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' && regauthor like '%{nameList[2]}%' order by regauthor;"
+        else:     
+            queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{name}%' order by regauthor;" # add author to select
+        curr = mysql.connection.cursor()
+        curr.execute(queryString)
+        fetchdata = curr.fetchall()
+        curr.close()
+        return redirect(url_for("authorResults", letterOrName = name, query=fetchdata)) # put in the function of the url you want to go to
+# VOLUME & ISSUE SEARCH
+@app.route("/volumeIssue.html", methods=["POST", "GET"]) # From advanced search
+def displayVolumes():
+    return render_template("volumeIssue.html")
+
 
 # RESULTS
 
-# def results(query=None, topics=None, topicOrQuery=None): # this input str var will eventually get converted into a SQL query to be ran against the database to return results.
-#     # if(request.method == "GET"):
-#     if(topicOrQuery):
-#         if(topicOrQuery.isalnum()):
-#             query = topicOrQuery
-#         else:
-#             topics = topicOrQuery
-
-#     print(query)
-#     print("topics:", topics) # when we don't have a query the hyphen stays. So we'll have to strip it later on
-#     return render_template("resultsPage.html", query=query, topics=topics)
-@app.route("/resultsPage/<query>-<enteredText>", methods=["POST", "GET"]) # since we redirected it, it expects to see <query> and <topics> in the URL
-def basicResults1(enteredText, query=None): # this input str var will eventually get converted into a SQL query to be ran against the database to return results.
-    # this is to figure out if it's a topic or query
-    print(type(query))
-    query = query.split("),")
-    for i in range(len(query)):
-        j = 0
-        while(j < len(query[i])):
-            if(query[i][j].isalnum() == False):
-                query[i] = query[i].replace(query[i][j], "", 1)
-            else:
-                j += 1
+@app.route("/resultsPage/<query>-<enteredText>", methods=["POST", "GET"]) 
+def basicResults1(query, enteredText): 
     print(query)
-    return render_template("resultsPage.html", query=query, enteredText=enteredText)#, topics=topics)
 
-@app.route("/resultsPage/<topics>", methods=["POST", "GET"]) # since we redirected it, it expects to see <query> and <topics> in the URL
-def basicResults2(topics=None): # this input str var will eventually get converted into a SQL query to be ran against the database to return results.
-    # this is to figure out if it's a topic or query
+    query = query.replace("(", "")
+    query = query.replace(")", "")
+    # query = query.split("',")
+
+    query = re.split("', |\",", query)
+    print(query)
+
+    # query[-1] = query[-1].replace(query[-1][-1][-1], "", 1)
+    for i in range(len(query)):
+        query[i] = query[i].split(",")
+
+    print(query)
+    for i in range(len(query)):
+        query[i][1] = query[i][1][2:]
+        temp = query[i][-2] 
+        query[i][-2] = query[i][-1]
+        query[i][-1] = temp
+    
+    query[-1][1] = query[-1][1][:-1]
+
+    print(query)
+    return render_template("resultsPage.html", query=query, enteredText=enteredText)# we're just using enteredText to display it
+
+@app.route("/resultsPage/<topics>", methods=["POST", "GET"]) 
+def basicResults2(topics=None): # all articles related to a certain topic
 
     return render_template("resultsPage.html", topics=topics)
 
-@app.route("/resultsPage/<query>-<topics>", methods=["POST", "GET"]) # since we redirected it, it expects to see <query> and <topics> in the URL
-def advancedResults(query=None, topics=None, topicOrQuery=None): # this input str var will eventually get converted into a SQL query to be ran against the database to return results.
+@app.route("/resultsPage/<queryAd>-<topics>-<enteredText>", methods=["POST", "GET"]) # since we redirected it, it expects to see <query> and <topics> in the URL
+def advancedResults(queryAd, topics, enteredText): # this input str var will eventually get converted into a SQL query to be ran against the database to return results.
     # if(request.method == "GET"):
-    if(topicOrQuery):
-        if(topicOrQuery.isalnum()):
-            query = topicOrQuery
-        else:
-            topics = topicOrQuery
+    queryAd = None
 
-    print(query)
     print("topics:", topics) # when we don't have a query the hyphen stays. So we'll have to strip it later on
-    return render_template("resultsPage.html", query=query, topics=topics)
+    return render_template("resultsPage.html", queryAd=queryAd, topics=topics, enteredText=enteredText)
+
+# AUTHOR RESULTS
+
+@app.route("/authorList/<letterOrName>-<query>", methods=["POST", "GET"])
+def authorResults(letterOrName, query): # query right now is the data retrieved from the sql query
+    if(len(letterOrName) == 1): # then it's a letter
+        query = query.replace("(", "")
+        query = query.replace(")", "")
+        query = re.split("', |\",", query)
+        # print(query)
+        for i in range(len(query)):
+            query[i] = query[i].split(",")
+        # print(query)
+        for i in range(len(query)):
+            query[i][1] = query[i][1][2:]
+            temp = query[i][-2] 
+            query[i][-2] = query[i][-1]
+            query[i][-1] = temp
+        query[-1][1] = query[-1][1][:-1]
+        # print(query)
+        return #render_template("authorList.html", authorNames=query) # this needs to go to a different page (i.e. not authorList). Just one with all the names of a particular letter
+    else: # name typed in
+        print(query)
+        query = query.replace("(", "")
+        query = query.replace(")", "")
+        if(query[-1] == ","): # there's a comma at the end of the names of people with only one article
+            query = query[:-1]
+        print(query)
+        query = re.split("', |\",", query)
+        print(query)
+        for i in range(len(query)):
+            query[i] = query[i].split(",")
+        print(query)
+        for i in range(len(query)):
+            query[i][1] = query[i][1][2:]
+            temp = query[i][-2] 
+            query[i][-2] = query[i][-1]
+            query[i][-1] = temp
+        print(query)
+        query[-1][1] = query[-1][1][:-1]
+        print(query)
+        print(type(query))
+        return render_template("authorList.html", name=letterOrName, query=query)
+
+
 
 @app.route("/autocomplete", methods=["POST", "GET"])
 def autocomplete():
