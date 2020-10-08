@@ -1,29 +1,54 @@
-Div2:
-type:
-section
-article
-national-news - National News
-letter - Correspondence
-hymn - 	Hymns
-humor - Humor
-ann lee - Mother Ann Lee
-aphorism - Sayings
-lesson - Moral/religious lessons
-poem - Poetry
+‘publication’	-> Publication
+‘shaker-press’	-> Shakers in the Press
+‘biography’	-> Biographies
+‘editorial’	-> Editorials
+‘hymn’ 		-> Hymns
+‘food’ 		-> Food
+‘ann lee’ 	-> Mother Ann Lee
+‘humor’ 	-> Humor
+‘recipe’ 	-> Recipes
+‘shaker-history’-> Shaker History
+‘history’ 	-> Historical Events
+‘science’	-> Science
+‘music’		-> Music
+‘quote’		-> Quotes from other sources
+‘equipment’ 	-> Equipment
+‘livestock’	-> Livestock
+‘fiction’	-> Fiction
+‘story’		-> Story - NEW
+‘figure’	-> Illustrations
+‘note’		-> Notes about The Manifesto
+‘lecture’	-> Lectures
+‘dance’		-> Dance
 
-Div3:
-type:
-food - Food
-recipe - Recipes
-health
-crops
-house - Health and Sanitation
-book notice - Book and Journals
-shaker-report - Shaker Community Reports
-none
-obituary
-editorial
-poem - Poetry
-letter - Correspondence
-publication
-fiction
+SPELLING DIFF
+‘farming’, ‘the communications fo farmers...’		-> Farming
+‘section’, ‘sectio’, ‘sections’
+‘article’, ‘artcle’, “article’“
+‘poem’, ‘poerm’, ‘1883’					-> Poetry / poem
+‘saying’,‘aphorism’, ‘sayings’ 				-> Sayings / saying
+‘letter’, ‘lette’ 					-> Correspondence / letter
+‘lesson’, ‘lessons’ 					-> Moral/religious lessons / lesson
+‘book notice’, ‘book-notice’, ‘books’ 			-> Book and Journals / book
+‘health’, ‘healthe’					-> Health and Sanitation
+‘obituary’, ‘death notices’, ‘deaths’, ‘obituaries’	-> Death Notices
+‘national-news’, ‘nationalnews’				-> National News
+‘world-news’, ‘worldnews’, ‘world news’, ‘world=news’	-> World News
+‘instructions’, ‘instruction’				-> Instructions
+‘shaker-report’, ‘shaker-reportt’, ‘shaker-reports’
+‘ashaker-report’, ‘shaker report’ 			-> Shaker Community Reports
+‘none’, ‘xxx’, ‘acvice’, ‘advertizement’		-> Others
+‘house’, ‘home’						-> House \ house
+‘plant’, 'crops'					-> Crops \ crops
+
+
+????
+‘engaged in thy duty, fear no danger’,
+‘labor and forethought’, 1
+‘done’, 1
+‘new’, 1
+‘type’, 3
+‘text’
+
+INSERT INTO articles (id, issue, regauthor, author) VALUES (1311029, 1311, "None", "None");
+INSERT INTO issues (id, volume, issue, title, editor, pages, publisher, pubplace, date, year, month) VALUES (1311, 11, 13,, "None",....);
