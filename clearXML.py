@@ -88,6 +88,7 @@ def clean_text(filename):
                         ord('a') <= ord(c) and ord(c) <= ord('z'):
                     word += c
                 elif word and word[-1] != ' ' and c in [' ', '\t', '\n', '\r', '.', ',', '-']:
+                    print(c)
                     word += ' '
             for w in word.split():
                 l.append(w.strip())
@@ -102,14 +103,14 @@ def main():
                 print("Cleaning file: " + filename)
                 cleanXML(str(os.path.join(sys.argv[2], filename)), sys.argv[3])
     elif len(sys.argv) == 2:
-        # filename = sys.argv[1]
-        # print("Cleaning file: " + filename)
-        # cleanXML(filename)
+        filename = sys.argv[1]
+        print("Cleaning file: " + filename)
+        cleanXML(filename)
 
         # f = open(sys.argv[1])
         # print(*sorted(list(set([line.strip() for line in f]))), sep='\n')
 
-        clean_text(sys.argv[1])
+        # clean_text(sys.argv[1])
     elif len(sys.argv) == 3 and sys.argv[1] == '-c':
         s = set()
         for filename in os.listdir(sys.argv[2]):
