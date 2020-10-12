@@ -31,22 +31,23 @@
             </form>
         </div>
         <br><br><br><br><br>
-        <p>Search results for the author: "{{name}}"</p>
+        <p>Search results for the author:{{name}}</p>
         
         <p>Results:</p>
-        {%if query%} <!-- If we don't want advanced search to work this way, we can call query something else since it's using a different function anyway -->
-            {% for a,b,c in query%}
-                <div class="articleResults">
-                {%if a%}
-                    <p>Article {{a}}</p>
-                {%if b or c%}
-                    <p> - Author: {{b}} {{c}}</p> <br>
-                
-                {%endif%}
-                {%endif%}
-                </div>
-            {%endfor%}
-        {%endif%}
+
+        {% for key, val in articleDict.items() %}
+            <div class="articleResults"> <!-- i don't think we really need to do this if a suff -->
+                <p>Article {{key}}</p>
+            
+                {% set authors = [] %}
+                {% for i in val|reverse %}
+                    {{ authors.append(i) or "" }}
+                {% endfor %}
+                <p> - Author: {{authors|join(" ")}}</p> <br>
+            </div>
+        {% endfor %}
+
+        
 
 
     </div>

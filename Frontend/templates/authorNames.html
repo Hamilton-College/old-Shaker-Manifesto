@@ -34,19 +34,24 @@
 
         <p>Authors whose name beginnings with the letter "{{letter}}"</p>
         <p>Results:</p>
-        {%if query and query != "()"%} <!-- If we don't want advanced search to work this way, we can call query something else since it's using a different function anyway -->
-            {% for a,b in query%} <!-- a is first name, b is last -->
-                {%if a and b%}
+        
+            
+        {% if query and query != "()" %} <!-- If we don't want advanced search to work this way, we can call query something else since it's using a different function anyway -->
+            {% for i in query %} <!-- a is first name, b is last -->
+                {% set nameList = [] %}
+                {% for j in i %}
+                    {{nameList.append(j) or ""}} <!-- the or "" makes it so that nothing prints instead of none-->
+                {% endfor %}
+                {% set name = nameList|join(" ") %}
                 <div class="articleResults">
                     <form action="/authorNames.html" method="POST">
-                        <button type="submit" value="{{a}} {{b}}" name = "name">{{a}} {{b}}</button>
+                        <button class="btn-link" type="submit" value="{{name}}" name = "name"> {{name}} </button>
                     </form>
                 </div>
-                {%endif%}
-            {%endfor%}
+            {% endfor %}
         {% else %}
                 <p>There are no authors beginning with the letter "{{letter}}"</p>
-        {%endif%}
+        {% endif %}
 
 
 

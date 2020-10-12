@@ -4,6 +4,7 @@ from flask_mysqldb import MySQL
 from autocomplete import search, AUTOCOMPLETE
 from functools import reduce
 import re
+import ast
 
 template_dir = os.path.abspath("./Frontend/templates")
 static_dir = os.path.abspath("./Frontend/static")
@@ -89,9 +90,9 @@ def displayAuthors(): # display landing page
         # curr.execute(queryString)
         # fetchdata = curr.fetchall()
         # curr.close()
-        if(request.form.get("letter")):
+        if(request.form.get("letter")): # letter button is clicked
             letter = request.form["letter"]
-            queryString = f"SELECT regauthor FROM authors WHERE regauthor LIKE '%, {letter}%' order by regauthor;" # add author to select
+            queryString = f"SELECT regauthor FROM authors WHERE regauthor LIKE '%, {letter}%' group by regauthor;" # add author to select
             curr = mysql.connection.cursor()
             curr.execute(queryString)
             fetchdata = curr.fetchall()
@@ -117,27 +118,60 @@ def displayAuthors(): # display landing page
 # AUTHOR FIRST LETTER
 @app.route("/author.html/<letter>-<query>", methods=["POST", "GET"]) 
 def letterOfAuthors(letter, query): # This gives us all the authors of the specified letter
+    multipleNames = False
     print(letter, query)
     if(query != "()"):
         query = query.replace("(", "")
         query = query.replace(",)", "")
-        query = query.replace(")", "")
+        query = query.replace(")", "") # this gets rid of the last )
         print(query)
-        query = re.split("', |\", |,,", query)
+        if(";" in query):
+            multipleNames = True
+        query = re.split("', |\", |,, |;", query)
         print(query)
+
+        if(multipleNames == True):
+            ind = 0
+            while(ind < len(query)):
+                if(query[ind][query[ind].index(",")+2] != letter): # look to the other function
+                    query.pop(ind) # get rid of the co-authors from list
+                else:
+                    ind += 1
+
+        
         for i in range(len(query)):
             query[i] = query[i].split(",")
-
+            
         print(query)
+        
+        # if(multipleNames == True):
+        #     for i in range(len(query)):
+        #         query[i][1] = query[i][1][1:] # when we have multiple authors, because we split on ;, we don't have the leading '
+        #         temp = query[i][-2] 
+        #         query[i][-2] = query[i][-1]
+        #         query[i][-1] = temp
+        #     print(query)
+        #     newQuery = []
+        #     for i in query:
+        #         for j in i:
+        #             newQuery.append(j)
+        #     query = newQuery
+        #     print(query)
+        #     for i in range(2,len(query)-1,2):
+        #         query[i] = query[i]+", "
 
         for i in range(len(query)):
-            query[i][0] = query[i][0][1:]
-            temp = query[i][-1] 
-            query[i][-1] = query[i][0]
-            query[i][0] = temp
+                query[i][0] = query[i][0][1:]
+                temp = query[i][-1] 
+                query[i][-1] = query[i][0]
+                query[i][0] = temp
         query[-1][0] = query[-1][0][:-1]
         print(query)
-    return render_template("/authorNames.html", letter = letter, query=query) # this needs to go to a different page (i.e. not authorList). Just one with all the names of a particular letter
+        # get rid of duplicates
+       
+        query = set(tuple(i) for i in query)
+        query = list(query)
+    return render_template("/authorNames.html", letter = letter, query=query) 
 
 # AUTHOR NAMES
 @app.route("/authorNames.html", methods=["POST", "GET"]) # From advanced search
@@ -146,13 +180,19 @@ def displayNames(): # display author names
         return render_template("authorNames.html") # it should never bet accessed through a get, so maybe we default it to home page
     else: # POST
         name = request.form["name"]
-        print(name)
+        print("Name Displayed: ", name)
+        # if article written by multiple people:
+        # if(";" in name):
+        #     nameList = name.split(";") #COME BACK TO THIS
+        #article written by one person
         nameList = name.split()
         print(nameList)
         if(len(nameList) == 2):
-            queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' order by regauthor;"
+            queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%, {nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' order by regauthor;"
         elif(len(nameList) == 3):
-            queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' && regauthor like '%{nameList[2]}%' order by regauthor;"
+            queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%, {nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' && regauthor LIKE '%{nameList[2]}%' order by regauthor;"
+        elif(len(nameList) == 4):
+            queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%, {nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' && regauthor LIKE '%{nameList[2]}%' && regauthor LIKE '{nameList[3]}%' order by regauthor;"
         else:     
             queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{name}%' order by regauthor;" # add author to select
         curr = mysql.connection.cursor()
@@ -212,7 +252,7 @@ def advancedResults(queryAd, topics, enteredText): # this input str var will eve
 
 @app.route("/authorList/<letterOrName>-<query>", methods=["POST", "GET"])
 def authorResults(letterOrName, query): # query right now is the data retrieved from the sql query
-    if(len(letterOrName) == 1): # then it's a letter
+    if(len(letterOrName) == 1): # then it's a letter. When is this ever the case?
         query = query.replace("(", "")
         query = query.replace(")", "")
         query = re.split("', |\",", query)
@@ -229,27 +269,69 @@ def authorResults(letterOrName, query): # query right now is the data retrieved 
         # print(query)
         return #render_template("authorList.html", authorNames=query) # this needs to go to a different page (i.e. not authorList). Just one with all the names of a particular letter
     else: # name typed in
-        print(query)
-        query = query.replace("(", "")
-        query = query.replace(")", "")
-        if(query[-1] == ","): # there's a comma at the end of the names of people with only one article
-            query = query[:-1]
-        print(query)
-        query = re.split("', |\",", query)
-        print(query)
-        for i in range(len(query)):
-            query[i] = query[i].split(",")
-        print(query)
-        for i in range(len(query)):
-            query[i][1] = query[i][1][2:]
-            temp = query[i][-2] 
-            query[i][-2] = query[i][-1]
-            query[i][-1] = temp
-        print(query)
-        query[-1][1] = query[-1][1][:-1]
-        print(query)
+        multipleNames = False
+        print("start", query)
+        query = ast.literal_eval(query)
+        query = list(query)
+        articleDict = {} # key = article ID : val = author(s)
+        print("Here: ", query[0], query[0][0]) 
+        for a, b in query:
+            b = re.split(",|;", b)
+            if(len(b) > 2):
+                for i in reversed(range(2, len(b)-1, 2)):
+                    b[i] = b[i]+","
+            # b = b.split(",")
+            # if(";" in b):
+            #     b = b.split(";")
+            # b = b.replace(",", "")
+            articleDict[a] = b
+
+        
+
+        # query = query.replace("(", "")
+        # query = query.replace(")", "")
+        # query = query.replace(";", ",")
+        # query = query.replace("\'", "") # get rid of extra quotes
+        # if(query[-1] == ","): # there's a comma at the end of the names of people with only one article
+        #     query = query[:-1]
+        # print(query)
+        # if(";" in query):
+        #     multipleNames = True
+        # query = re.split("\', |\",|;", query)
+        # print(query)
+        # if(multipleNames == True): #This is only the case when a specific person is the co-author of just 1 article 
+        #     query[0] = query[0][:query[0].index("\'")] + query[0][query[0].index("\'")+1:] # this gets rid of the leading quote
+        #     query[-1] = query[-1][:query[-1].index("\'")] + query[-1][query[-1].index("\'")+1:] # this gets rid of the ending quote
+        # print(query)
+        # for i in range(len(query)):
+        #     query[i] = query[i].split(",")
+        # print(query)
+        # if(multipleNames == True):
+        #     for i in range(len(query)):
+        #         query[i][1] = query[i][1][1:] # when we have multiple authors, because we split on ;, we don't have the leading '
+        #         temp = query[i][-2] 
+        #         query[i][-2] = query[i][-1]
+        #         query[i][-1] = temp
+        #     print(query)
+        #     newQuery = []
+        #     for i in query:
+        #         for j in i:
+        #             newQuery.append(j)
+        #     query = newQuery
+        #     print(query)
+        #     for i in range(2,len(query)-1,2):
+        #         query[i] = query[i]+", "
+        # else:
+        #     for i in range(len(query)):
+        #         query[i][1] = query[i][1][2:]
+        #         temp = query[i][-2] 
+        #         query[i][-2] = query[i][-1]
+        #         query[i][-1] = temp
+        #     print(query)
+        #     query[-1][1] = query[-1][1][:-1]
+        print(articleDict)
         print(type(query))
-        return render_template("authorList.html", name=letterOrName, query=query)
+        return render_template("authorList.html", name=letterOrName, articleDict=articleDict) # return all articles written by an author
 
 
 

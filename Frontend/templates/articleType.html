@@ -1,18 +1,18 @@
 {% extends "base.html" %}
 
 {% block basicSearch %}
-<h2> <a class="simpleSearch" href = "/"> Basic Search </a></h2>
+<h2> <a class="advancedSearch" href = "/"> Basic Search </a></h2>
 {% endblock %}
 
 {% block content %}
 
-<div class="searchBar">
+<!-- <div class="searchBar">
     <form action= "#" method="POST" autocomplete=off>
         <input id="MySearchTerm" type="text", name="query", onkeydown="AutoComplete()">
         <input type="submit" value="search">
     </form>
     <script type="text/javascript" src="../static/javascript/AutoComplete.js" defer> </script>
-</div>
+</div> -->
 
 
 <form method="POST" action="#" autocomplete=off>
@@ -95,11 +95,12 @@
                 <label for="vehicle3"> Dance</label><br>
             </div>
         </div>
-    </div>
+    </div> 
     <div class="searchBar">
+        <!-- <div class="searchBar"> -->
         <input id="MySearchTerm" type="text", name="query", onkeydown="AutoComplete()">
-        <input type="submit" value="search">
-    </div>
+        <input type="submit" value="search" class="searchButton">
 </form>
 <script type="text/javascript" src="../static/javascript/AutoComplete.js" defer> </script>
+</div>
 {% endblock %}

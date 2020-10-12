@@ -88,7 +88,7 @@ body{
     width: 180px;
     height: 240px;
     /* float: left; */
-    top: 2%;
+    top: 0%;
     /* margin-right: 2%; */
     right: 0px;
     position: absolute;
@@ -147,12 +147,43 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     background: #FAFAD2;
+    /* max-width: 500px; */
+    width: 400px;
+    height: 65px;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    /* justify-content: space-between; */
+    /* border: 1px solid green; */
+    /* overflow: hidden; */
+}
+
+#MySearchTerm{
+    /* position: absolute; */
+    width: 300px;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* background: #FAFAD2; */
     /* height: 40px; */
     /* border-radius: 40px; */
-    padding: 5px;
-    /* border: 1px solid green; */
+    /* padding: 5px; */
+    border: 2px solid rgb(54, 129, 241);
 
 
+}
+.searchButton{
+    display: inline;
+    background: #ffec00;
+    width: 20%;
+    border-radius: 5px;
+    /* position: relative; */
+    /* cursor: pointer; */
+    overflow: hidden;
 }
 .resultsSearchBar{
     position: absolute; /*change to fixed */
@@ -344,7 +375,7 @@ input[type=submit] {
 }
 
 .articleResults{
-    color: blue;
+    color: rgb(0, 110, 253);
     border-bottom: 1px solid #d4d4d4;
     border-top: 1px solid #d4d4d4;
 }
@@ -352,4 +383,19 @@ input[type=submit] {
 .alphabet{
     text-align: center;
     
+}
+.btn-link {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: rgb(47, 127, 233);
+    padding: 0;
+    text-decoration: underline;
+    font-family: inherit;
+    font-size: 14pt;
+}
+.volumeAndIssue {
+    text-align: center;
+    font-style: italic;
 }
