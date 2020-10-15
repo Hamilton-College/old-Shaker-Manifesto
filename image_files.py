@@ -1,4 +1,5 @@
 import os
+import sys
 
 # Get the list of all files and directories
 # in the root directory
@@ -37,7 +38,7 @@ def naming(file, counter):
 		string_out += str(counter) + ", "
 	return string_out
 
-def author_remover(str1):
+def space_remover(str1):
 	while "\n" in str1:
 		str1 = str1.replace("\n", " ")
 	while "\r" in str1:
@@ -157,8 +158,42 @@ def extract_text(text, file):
 	f.close()
 	return listing111, listing333
 
+def div_type(text):
+	article = 1
+	string_out = ""
+	counter = 0
+	# Loops through text to catch all types in a div tag
+	for i in range(0, len(text)):
+		if counter > 0:
+			counter -= 1
+		elif article == 1 and text[i:i + 6] == "type=\"":
+			article = 21
+			counter = 5
+		elif article == 21 and text[i] == "\"":
+			break
+		elif article == 21:
+			string_out += text[i].lower()
+	return string_out
+
+def ind_info(text):
+	article = 1
+	string_out = ""
+	counter = 0
+	# Loops through text to catch all types in a div tag
+	for i in range(0, len(text)):
+		if counter > 0:
+			counter -= 1
+		elif article == 1 and text[i:i+8] == "level1=\"":
+			article = 21
+			counter = 7
+		elif article == 21 and text[i] == "\"":
+			break
+		elif article == 21:
+			string_out += text[i]
+	return string_out
+
 def run1():
-	path = os.getcwd() +  "/journals"
+	path = os.getcwd() + "/journals"
 	dir_list = os.listdir(path)
 	listing222 = []
 	listing444 = []
@@ -194,72 +229,15 @@ def run111():
 def find_tag(text):
 	text = text.lower()
 	tags = ["div2", "div3", "div4", "div5", "byline", "p", "index", "persname",
-		"dateline", "head", "cit", "bibl", "quote", "pb", "pb/"]
+		"dateline", "head", "cit", "bibl", "quote", "pb", "pb/", "!--"]
 	for i in range(0, len(text)):
 		if text[i] == " " or text[i] == ">":
 			text = text[:i]
 			break
 	if text not in tags and text[1:] not in tags:
 		print("ISSUE", text)
-		return
+		return ""
 	return text
-
-def list_to_str_articles(list):
-	return
-
-def create_article():
-	return
-
-def output_articles(text, file):
-	levelers = ["div2", "div3", "div4", "div5"]
-	tags =[]
-	level = 0
-	level1 = []
-	level2 = []
-	level3 = []
-	level4 = []
-	quote = []
-	dateline = []
-	bibl = []
-	sp = 0
-	cp = 0
-	para =[]
-	skipper = 0
-	state = 0
-	closed = False
-	articles = []
-	for i in range(0, len(text)):
-		if skipper > 0:
-			skipper -= 1
-		elif text[i] == "<":
-			tag = find_tag(text[i+1:i+10])
-			skipper = len(tag)
-			if tag[0] == "/":
-				if tag[1:] in levelers:
-					if not closed:
-						articles.append(create_article())
-						closed = True
-			elif tag == "pb":
-				cp += 1
-				found = False
-				for j in range(0, 100):
-					if text[i+1+j:i+5+j] == "id=\"p":
-						if int(text[i+5+j]) != cp:
-							print("NOT EQUAL", cp, int(text[i+5+j]))
-			elif tag == "pb/":
-				cp = cp
-
-
-
-def body_read(text, file, output):
-	buffer = ""
-	for i in range(0, len(text)):
-		if text[i:i + 7] == "<div1>":
-			buffer = text[i+7:]
-	output_list = output_articles(buffer, file)
-	#output_str = list_to_str_articles(output_list)
-	#output.write(output_str)
-	return
 
 def between(filetext, index):
 	stage = 0
@@ -273,73 +251,258 @@ def between(filetext, index):
 			buffer += filetext[index+i]
 	return buffer
 
-def output_issues(text, file):
-	stage = 0
-	listing = []
-	listing.append(int(file[10:14]))
-	listing.append(int(file[10:12]))
-	listing.append(int(file[12:14]))
+def list_to_str_articles(list):
+	return
+
+def out_list(listing):
+	return
+
+def create_text_file(counter, file, text):
+	count = ""
+	if counter < 10:
+		count = "00" + str(counter)
+	elif counter < 100:
+		count = "0" + str(counter)
+	elif counter < 1000:
+		count = str(counter)
+	text_name = file[10:14] + count + ".txt"
+	complete_name = os.path.join(os.getcwd() + "/textfiles/", text_name)
+	text_file = open(complete_name, "a")
+	text_file.truncate(0)
+	text_file.write(space_remover(text))
+	text_file.close()
+	return
+
+def read_pers(text):
+	return ""
+
+
+def create_article(level2, level3, level4, level5, level, counter, file):
+	print("CREATED AN ARTICLE!!!")
+	level2[2] = space_remover(level2[2])
+	level2[12] = space_remover(level2[12])
+	level3[2] = space_remover(level3[2])
+	level3[12] = space_remover(level3[12])
+	level4[2] = space_remover(level4[2])
+	level4[12] = space_remover(level4[12])
+	level5[2] = space_remover(level5[2])
+	level5[12] = space_remover(level5[12])
+	if level == 2:
+		create_text_file(counter, file, level2[12])
+	elif level == 3:
+		create_text_file(counter, file, level3[12])
+	elif level == 4 or level == 5:
+		create_text_file(counter, file, level4[12])
+	elif level == 5:
+		create_text_file(counter, file, level5[12])
+	#print(level2)
+	#print(level3)
+	#print(level4)
+	#print(level5)
+	return []
+
+def output_articles(text, file):
+	# found tags order
+	tags =[]
+	# depth of div
+	level1 = 0
+	# div types
+	# [type - 0, head-index-tag - 1, head-text - 2, authors-tag(sep by colon)- 3, author - text - 4
+	# list of dateline-tag - 5, list  of dateline - text-6, list of names tag -7, list of name text - 8
+	# list of bibliography-tag- 9, list of bibliography-text 10,
+	# list of quote - 11, text - 12, sp - 13, cp - 14]
+	level2 = ["", "", "", "", "", [], [], [], [], [], [], [], "", 0, 0]
+	level3 = ["", "", "", "", "", [], [], [], [], [], [], [], "", 0, 0]
+	level4 = ["", "", "", "", "", [], [], [], [], [], [], [], "", 0, 0]
+	level5 = ["", "", "", "", "", [], [], [], [], [], [], [], "", 0, 0]
+	level = level2
+
+	quotebuff = ""
+	biblbuff = ""
+	namebuff = ""
+	datebuff = ""
+
+	# start page
+	sp = 0
+	# current page
+	cp = 0
+	#num of char to skip
+	skipper = 0
+	# skip until closing
+	skipper1 = ""
+
+	# 1, read byline, waiting for author (persname)
+	# 2, reading heading/title, waiting for index
+	# 3, reading quote
+	# 4, reading bibl
+	# 5, reading regular text
+	# 6 , reading date
+	stage = [0]
+	articles = []
+	counter = 0
+	comment = False
+	closing = False
 	for i in range(0, len(text)):
-		if text[i:i+10] == "<fileDesc " and stage == 0:
-			stage = 1
-		elif text[i:i+7] == "<title " and stage == 1:
-			stage = 2
-			listing.append(between(text, i+7))
-		elif text[i:i+7] == "<editor" and stage == 2:
-			listing.append("Lomas, G. A.")
-			stage = 3
-		elif text[i:i+7] == "<extent" and stage == 3:
-			stage = 4
-			listing.append(int(between(text, i+7)))
-		elif text[i:i+7] == "<extent" and stage == 2:
-			listing.append("None")
-			stage = 4
-			listing.append(int(between(text, i+7)))
-		elif text[i:i+11] == "<sourceDesc" and stage == 4:
-			stage = 5
-		elif text[i:i+10] == "<publisher" and stage == 5:
-			stage = 6
-			listing.append(between(text, i+10))
-		elif text[i:i+9] == "<pubPlace" and stage == 6:
-			stage = 7
-			listing.append(between(text, i+9))
-		elif text[i:i+5] == "<date" and stage == 7:
-			stage = 8
-			listing.append(between(text, i+9))
-		elif text[i:i+7] == "value=\"" and stage == 8:
-			listing.append(int(text[i+7:i+11]))
-			listing.append(int(text[i + 11:i + 13]))
-	return listing
+		if comment:
+			if text[i:i+3] == "-->":
+				comment = False
+				closing = True
+		elif text[i] == "<" and not closing:
+			tag = find_tag(text[i+1:i+12])
+			tags.append(tag)
+			skipper = len(tag)
+			if skipper == 0: return
+			level[12] += " "
+			closing = True
+			if tag[0] == "/":
+				if tag[1:] == "div2":
+					level[14] = cp
+					articles.append(create_article(level2, level3, level4, level5, level1, counter, file))
+					level2 = ["", "", "", "", "", [], [], [], [], [], [],[], "", 0, 0]
+					level = level2
+					level1 = 2
+					counter += 1
+				elif tag[1:] == "div3":
+					level[14] = cp
+					articles.append(create_article(level2, level3, level4, level5, level1, counter, file))
+					level3 = ["", "", "", "", "", [], [], [], [], [], [],[], "", 0, 0]
+					level = level2
+					level1 = 2
+					counter += 1
+				elif tag[1:] == "div4":
+					level[14] = cp
+					articles.append(create_article(level2, level3, level4, level5, level1, counter, file))
+					level4 = ["", "", "", "", "", [], [], [], [], [], [],[], "", 0, 0]
+					level = level3
+					level1 = 3
+					counter += 1
+				elif tag[1:] == "div5":
+					level[14] = cp
+					articles.append(create_article(level2, level3, level4, level5, level1, counter, file))
+					level5 = ["", "", "", "", "", [], [], [], [], [], [],[], "", 0, 0]
+					level = level4
+					level1 = 4
+					counter += 1
+				elif tag[1:] == "byline":
+					print(stage, text[i])
+					print("byline")
+					stage.pop(-1)
+				elif tag[1:] == "head":
+					print(stage, text[i])
+					print("head")
+					stage.pop(-1)
+				elif tag[1:] == "p":
+					print(stage, text[i:i+25])
+					print("p")
+					stage.pop(-1)
+				elif tag[1:] == "quote":
+					level[11].append(space_remover(quotebuff))
+					print(stage, text[i])
+					print("quote")
+					stage.pop(-1)
+				elif tag[1:] == "bibl":
+					level[10].append(space_remover(biblbuff))
+					print(stage, text[i])
+					print("bibl")
+					stage.pop(-1)
+				elif tag[1:] == "dateline":
+					level[6].append(datebuff)
+					print(stage, text[i])
+					print("date")
+					stage.pop(-1)
+				elif tag[1:] == "persname":
+					if stage[-1] == 7:
+						stage.pop(-1)
+						level[8].append(namebuff)
+				elif tag[1:] == "cit":
+					stage = stage
+			elif tag == "div2":
+				level = level2
+				level[0] = div_type(text[i:i+500])
+				level[13] = cp
+				level1 = 2
+			elif tag == "div3":
+				level2 = level
+				level = level3
+				level[0] = div_type(text[i:i + 500])
+				level[13] = cp
+				level1 = 3
+			elif tag == "div4":
+				level3 = level
+				level = level4
+				level[0] = div_type(text[i:i + 500])
+				level[13] = cp
+				level1 = 4
+			elif tag == "div5":
+				level = level5
+				level[0] = div_type(text[i:i + 500])
+				level[13] = cp
+				level1 = 5
+			elif tag == "!--":
+				print("COMMENT")
+				comment = True
+			elif tag == "byline":
+				stage.append(1)
+			elif tag == "head":
+				stage.append(2)
+			elif tag == "p":
+				stage.append(5)
+			elif tag == "quote":
+				stage.append(3)
+			elif tag == "bibl":
+				stage.append(4)
+			elif tag == "dateline":
+				stage.append(6)
+			elif tag == "persname":
+				if not (stage[-1] == 1):
+					stage.append(7)
+					level[7].append(read_pers(text[i:i + 500]))
+				else:
+					level[3] += read_pers(text[i:i + 500])
+			elif tag == "index":
+				ind = ind_info(text[i+1:i+160])
+			elif tag == "pb":
+				cp += 1
+				found = False
+				for j in range(0, 100):
+					if text[i+1+j:i+5+j] == "id=\"p":
+						if int(text[i+5+j]) != cp:
+							print("NOT EQUAL", cp, int(text[i+5+j]))
+			elif tag == "pb/":
+				cp = cp + 1
+			elif tag == "cit":
+				cp = cp
+		elif closing and text[i] == ">":
+			closing = False
+		elif not closing:
+			if stage[-1] == 1:
+				level[4] += text[i]
+			elif stage[-1] == 2:
+				level[2] += text[i]
+			elif stage[-1] == 3:
+				quotebuff += text[i]
+			elif stage[-1] == 4:
+				biblbuff += text[i]
+			elif stage[-1] == 6:
+				datebuff += text[i]
+			elif stage[-1] == 7:
+				namebuff += text[i]
+			#elif stage[-1] == 0:
+				#print("STAGE RAN OUT OF STAGES :(", stage)
+			level[12] += text[i]
 
-def list_to_str_issues(listing):
-	buffer = "INSERT INTO issues (id, volume, issue, title, editor, pages, publisher, pubplace, date, year, month) VALUES ("
-	for i in range(0, len(listing)-1):
-		if type(listing[i]) == int:
-			buffer += str(listing[i])
-		else:
-			buffer += "\"" + listing[i] + "\""
-		buffer += ", "
-	buffer += str(listing[-1]) + ")" + "\n"
-	return buffer
 
-def header_read(text, file, output):
+def body_read(text, file, output):
 	buffer = ""
 	for i in range(0, len(text)):
-		if text[i:i+7] == "</div1>":
-			buffer = text[0:i]
-	output_list = output_issues(buffer, file)
-	output_str = list_to_str_issues(output_list)
-	output.write(output_str)
+		if text[i:i + 5] == "<div2" or text[i:i + 4] == "<!--":
+			buffer = text[i:]
+			break
+	output_list = output_articles(buffer, file)
+	#output_str = list_to_str_articles(output_list)
+	#output.write(output_str)
+	return
 
-def issues_reader(files_list, path):
-	issues_name = "SQL_issues.txt"
-	issues_file = open(issues_name, "a")
-	issues_file.truncate(0)
-	for file in files_list:
-		lol = open(path + "/" + file)
-		if file[0:3] == "spe":
-			file_text = lol.read()
-			header_read(file_text, file, issues_file)
 
 def body_reader(files_list, path):
 	articles_name = "SQL_articles.txt"
@@ -351,12 +514,10 @@ def body_reader(files_list, path):
 			print(file)
 			file_text = lol.read()
 			body_read(file_text, file, articles_file)
-			break
 
 def main():
 	path = os.getcwd() + "/journals"
 	files_list = os.listdir(path)
-	#issues_reader(files_list, path)
 	body_reader(files_list, path)
 	print("made it")
 

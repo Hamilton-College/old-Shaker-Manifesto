@@ -50,5 +50,5 @@ SPELLING DIFF
 ‘type’, 3
 ‘text’
 
-INSERT INTO articles (id, issue, regauthor, author) VALUES (1311029, 1311, "None", "None");
+INSERT INTO articles (id, issue, title, regauthor, author, topic1, topic2, section_topic1, section_topic2, quote, bibl) VALUES (1311029, 1311, "None", "None");
 INSERT INTO issues (id, volume, issue, title, editor, pages, publisher, pubplace, date, year, month) VALUES (1311, 11, 13,, "None",....);

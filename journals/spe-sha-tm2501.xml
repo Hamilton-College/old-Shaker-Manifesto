@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+x<?xml version="1.0" encoding="UTF-8"?>
 <TEI.2 id="spe-sha-tm2501" TEIform="TEI.2"><teiHeader type="text" status="new" TEIform="teiHeader"><fileDesc TEIform="fileDesc"><titleStmt TEIform="titleStmt"><title level="j" TEIform="title">The Manifesto</title></titleStmt><extent n="pagination" TEIform="extent">28</extent><publicationStmt TEIform="publicationStmt"><publisher TEIform="publisher">Hamilton College Library</publisher><pubPlace TEIform="pubPlace">Clinton, New York, United States of America</pubPlace></publicationStmt><sourceDesc default="NO" TEIform="sourceDesc"><biblStruct default="NO" TEIform="biblStruct"><monogr TEIform="monogr"><imprint TEIform="imprint"><publisher TEIform="publisher">United Societies</publisher><pubPlace TEIform="pubPlace">Shaker Village, New Hampshire</pubPlace><biblScope type="volume" TEIform="biblScope">25</biblScope><biblScope type="issue" TEIform="biblScope">1</biblScope><date value="18950101" TEIform="date">January 1895</date><biblScope type="pages" TEIform="biblScope">1-24</biblScope></imprint></monogr></biblStruct></sourceDesc></fileDesc></teiHeader><text TEIform="text"><body TEIform="body"><div0 type="volume" n="25" org="uniform" sample="complete" part="N" TEIform="div0"><div1 type="issue" n="1" org="uniform" sample="complete" part="N" TEIform="div1"><!--
                         <pb id="p1"/>
                     
@@ -11,7 +11,7 @@
                         <p>[Advertisements deleted.]</p>
                     </div2>
                     <pb n="1" id="p3"/>
-                    <div2 type="none"
+                    <div2 type="none">
                         <p>THE MANIFESTO PUBLISHED BY THE UNITED SOCIETIES. VOL. XXV. 'Seek te first the kingdom of god and his
                             righteousness."—Matt, vi., 33. East Canterbury, N. H., 1895.</p>
                     </div2>
