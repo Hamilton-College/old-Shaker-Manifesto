@@ -1,0 +1,1 @@
+Cooking does not render diseased... Cooking does not render diseased or putrefying meat wholesome.
