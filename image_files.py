@@ -231,7 +231,7 @@ def find_tag(text):
 	tags = ["div2", "div3", "div4", "div5", "byline", "p", "index", "persname",
 		"dateline", "head", "cit", "bibl", "quote", "pb", "pb/", "!--"]
 	for i in range(0, len(text)):
-		if text[i] == " " or text[i] == ">":
+		if text[i] == " " or text[i] == ">" or text[i] == "\n":
 			text = text[:i]
 			break
 	if text not in tags and text[1:] not in tags:
@@ -278,7 +278,6 @@ def read_pers(text):
 
 
 def create_article(level2, level3, level4, level5, level, counter, file):
-	print("CREATED AN ARTICLE!!!")
 	level2[2] = space_remover(level2[2])
 	level2[12] = space_remover(level2[12])
 	level3[2] = space_remover(level3[2])
@@ -294,11 +293,12 @@ def create_article(level2, level3, level4, level5, level, counter, file):
 	elif level == 4 or level == 5:
 		create_text_file(counter, file, level4[12])
 	elif level == 5:
+
 		create_text_file(counter, file, level5[12])
-	#print(level2)
-	#print(level3)
-	#print(level4)
-	#print(level5)
+		print(level2)
+		print(level3)
+		print(level4)
+		print(level5)
 	return []
 
 def output_articles(text, file):
@@ -384,31 +384,19 @@ def output_articles(text, file):
 					level1 = 4
 					counter += 1
 				elif tag[1:] == "byline":
-					print(stage, text[i])
-					print("byline")
 					stage.pop(-1)
 				elif tag[1:] == "head":
-					print(stage, text[i])
-					print("head")
 					stage.pop(-1)
 				elif tag[1:] == "p":
-					print(stage, text[i:i+25])
-					print("p")
 					stage.pop(-1)
 				elif tag[1:] == "quote":
 					level[11].append(space_remover(quotebuff))
-					print(stage, text[i])
-					print("quote")
 					stage.pop(-1)
 				elif tag[1:] == "bibl":
 					level[10].append(space_remover(biblbuff))
-					print(stage, text[i])
-					print("bibl")
 					stage.pop(-1)
 				elif tag[1:] == "dateline":
 					level[6].append(datebuff)
-					print(stage, text[i])
-					print("date")
 					stage.pop(-1)
 				elif tag[1:] == "persname":
 					if stage[-1] == 7:
@@ -439,7 +427,6 @@ def output_articles(text, file):
 				level[13] = cp
 				level1 = 5
 			elif tag == "!--":
-				print("COMMENT")
 				comment = True
 			elif tag == "byline":
 				stage.append(1)
