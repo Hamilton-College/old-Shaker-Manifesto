@@ -3,7 +3,7 @@ import sys
 
 # Get the list of all files and directories
 # in the root directory
-#
+
 def run():
 	lol = []
 	for x in range(0, 31):
@@ -26,7 +26,6 @@ def run():
 			lol[x] = []
 	print("Files and directories in '", path, "' :")
 	print(lol)
-	#print(dir_list)
 
 def naming(file, counter):
 	string_out = "INSERT INTO authors (id, type, regauthor, author) VALUES (" + file[10:14]
@@ -37,6 +36,40 @@ def naming(file, counter):
 	else:
 		string_out += str(counter) + ", "
 	return string_out
+
+def run1():
+	path = os.getcwd() + "/journals"
+	dir_list = os.listdir(path)
+	listing222 = []
+	listing444 = []
+	for file in dir_list:
+		lol = open(path + "/" + file)
+		print(file)
+		if file[0:3] == "spe":
+			text = lol.read()
+			listing111, listing333 = extract_text(text, file)
+			for i in listing111:
+				if i not in listing222:
+					listing222.append(i)
+			for i in listing333:
+				if i not in listing444:
+					listing444.append(i)
+	print(listing222)
+	print(listing444)
+
+def run111():
+	path = os.getcwd() + "/journals"
+	dir_list = os.listdir(path)
+	listing222 = []
+	for file in dir_list:
+		lol = open(path + "/" + file)
+		print(file)
+		if file[0:3] == "spe":
+			texting3 = lol.read()
+			text_file = "journals.txt"
+			f = open(text_file, "a")
+			f.write(texting3)
+	f.close()
 
 def space_remover(str1):
 	while "\n" in str1:
@@ -192,48 +225,42 @@ def ind_info(text):
 			string_out += text[i]
 	return string_out
 
-def run1():
-	path = os.getcwd() + "/journals"
-	dir_list = os.listdir(path)
-	listing222 = []
-	listing444 = []
-	for file in dir_list:
-		lol = open(path + "/" + file)
-		print(file)
-		if file[0:3] == "spe":
-			text = lol.read()
-			listing111, listing333 = extract_text(text, file)
-			for i in listing111:
-				if i not in listing222:
-					listing222.append(i)
-			for i in listing333:
-				if i not in listing444:
-					listing444.append(i)
-	print(listing222)
-	print(listing444)
-
-def run111():
-	path = os.getcwd() + "/journals"
-	dir_list = os.listdir(path)
-	listing222 = []
-	for file in dir_list:
-		lol = open(path + "/" + file)
-		print(file)
-		if file[0:3] == "spe":
-			texting3 = lol.read()
-			text_file = "journals.txt"
-			f = open(text_file, "a")
-			f.write(texting3)
-	f.close()
+def space_remover(str1):
+	while "\n" in str1:
+		str1 = str1.replace("\n", " ")
+	while "\r" in str1:
+		str1 = str1.replace("\r", " ")
+	while "\r\n" in str1:
+		str1 = str1.replace("\r\n", " ")
+	while "\t" in str1:
+		str1 = str1.replace("\t", " ")
+	while "\"" in str1:
+		str1 = str1.replace("\"", "'")
+	while "  " in str1:
+		str1 = str1.replace("  ", " ")
+	if len(str1) != 0:
+		while str1[0] == " ":
+			str1 = str1[1:]
+			if len(str1) == 0:
+				break
+	if len(str1) != 0:
+		while str1[-1] == " ":
+			str1 = str1[:-1]
+			if len(str1) == 0:
+				break
+	return str1
 
 def find_tag(text):
 	text = text.lower()
 	tags = ["div2", "div3", "div4", "div5", "byline", "p", "index", "persname",
 		"dateline", "head", "cit", "bibl", "quote", "pb", "pb/", "!--"]
+	if text[0:3] == "!--":
+		return text[0:3]
 	for i in range(0, len(text)):
 		if text[i] == " " or text[i] == ">" or text[i] == "\n":
 			text = text[:i]
 			break
+
 	if text not in tags and text[1:] not in tags:
 		print("ISSUE", text)
 		return ""
@@ -342,6 +369,7 @@ def output_articles(text, file):
 	counter = 0
 	comment = False
 	closing = False
+
 	for i in range(0, len(text)):
 		if comment:
 			if text[i:i+3] == "-->":
@@ -474,8 +502,8 @@ def output_articles(text, file):
 				datebuff += text[i]
 			elif stage[-1] == 7:
 				namebuff += text[i]
-			#elif stage[-1] == 0:
-				#print("STAGE RAN OUT OF STAGES :(", stage)
+			elif stage[-1] == 0:
+				print("STAGE RAN OUT OF STAGES :(", stage)
 			level[12] += text[i]
 
 
