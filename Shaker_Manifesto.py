@@ -185,14 +185,38 @@ def displayNames(): # display author names
         # if(";" in name):
         #     nameList = name.split(";") #COME BACK TO THIS
         #article written by one person
-        nameList = name.split()
+        nameList = name.split() # this doesn't work so great if we have a person with two first names
         print(nameList)
         if(len(nameList) == 2):
-            queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%, {nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' order by regauthor;"
+            queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%, {nameList[0]}%' && regauthor LIKE '{nameList[1]}%' order by regauthor;"
+            curr = mysql.connection.cursor()
+            curr.execute(queryString)
+            fetchdata = curr.fetchall()
+            if(not fetchdata): # if we have nothing after that query, that means that the author has written an author with other people
+                queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%, {nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' order by regauthor;"
+                curr = mysql.connection.cursor()
+                curr.execute(queryString)
+                fetchdata = curr.fetchall()
         elif(len(nameList) == 3):
-            queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%, {nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' && regauthor LIKE '%{nameList[2]}%' order by regauthor;"
+            queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%, {nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' && regauthor LIKE '{nameList[2]}%' order by regauthor;" # I think something happens when I don't have % in front of the last namelist
+            curr = mysql.connection.cursor()
+            curr.execute(queryString)
+            fetchdata = curr.fetchall()
+            if(not fetchdata):
+                queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%, {nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' && regauthor LIKE '%{nameList[2]}%' order by regauthor;" # I think something happens when I don't have % in front of the last namelist
+                curr = mysql.connection.cursor()
+                curr.execute(queryString)
+                fetchdata = curr.fetchall()
         elif(len(nameList) == 4):
             queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%, {nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' && regauthor LIKE '%{nameList[2]}%' && regauthor LIKE '{nameList[3]}%' order by regauthor;"
+            curr = mysql.connection.cursor()
+            curr.execute(queryString)
+            fetchdata = curr.fetchall()
+            if(not fetchdata):
+                queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%, {nameList[0]}%' && regauthor LIKE '%{nameList[1]}%' && regauthor LIKE '%{nameList[2]}%' && regauthor LIKE '%{nameList[3]}%' order by regauthor;"
+                curr = mysql.connection.cursor()
+                curr.execute(queryString)
+                fetchdata = curr.fetchall()
         else:     
             queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{name}%' order by regauthor;" # add author to select
         curr = mysql.connection.cursor()
