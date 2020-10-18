@@ -1,0 +1,2 @@
+FLASK_APP=shakerManifesto.py
+FLASK_ENV=development
