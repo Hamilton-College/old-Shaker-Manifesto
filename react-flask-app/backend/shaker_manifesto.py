@@ -1,28 +1,32 @@
 import os
 from flask import Flask, request, render_template, redirect, url_for
 from flask_mysqldb import MySQL
-from autocomplete import search, AUTOCOMPLETE
+# from autocomplete import search, AUTOCOMPLETE
 from functools import reduce
 import re
 import ast
 
-template_dir = os.path.abspath("./Frontend/templates")
+template_dir = os.path.abspath("./Frontend/templates") # change THESE
 static_dir = os.path.abspath("./Frontend/static")
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir )
 
-app.config["MYSQL_HOST"] = "localhost"
-app.config["MYSQL_USER"] = "root"
-app.config["MYSQL_PASSWORD"] = "root"
-app.config["MYSQL_DB"] = "shaker"
+# app.config["MYSQL_HOST"] = "localhost"
+# app.config["MYSQL_USER"] = "root"
+# app.config["MYSQL_PASSWORD"] = "root"
+# app.config["MYSQL_DB"] = "shaker"
 
-mysql = MySQL(app)
+# mysql = MySQL(app)
 
 # BASIC SEARCH
 
 # POST is to send/change data.
-@app.route("/", methods=["POST", "GET"])
+
+@app.route("/basicSearch", methods=["POST", "GET"])
 def basicSearch():
-    return ("hello, world")
+    return render_template("index.html", test = "hi, there")
+    # return {"userId": 1, 
+    # "title": "Flask React App.", 
+    # "completed": False}
 #     return render_template("index.html", token = "hello, world")
 #     # print(app.root_path)
 #     # if(request.method == "GET"):
@@ -369,4 +373,4 @@ def basicSearch():
 
 
 # if __name__ == "__main__":
-#     app.run(debug=True, use_reloader = False)
+    # app.run(debug=True, use_reloader = False)
