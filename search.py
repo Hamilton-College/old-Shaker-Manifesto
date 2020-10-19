@@ -1,7 +1,7 @@
 from suffix_trees import STree
 import sys, re, os, json, pickle, time
 
-DIRECTORY_NAME=".\Volume01\\"
+DIRECTORY_NAME=".\\Volume01\\"
 SUFFIX_TREE=None
 SUFFIX_DICT=None
 
@@ -26,18 +26,33 @@ def create_tree(dic_name, debug=False):
                             index += 1
         return (STree.STree(total), total_dict)
 
+# INPUT: list with elements (article id, index)
+# OUTPUT: list with elements (article id, index, occurances)
+#           each article id is now unique
+def simplify_results(results):
+    results.sort()
+    simplified = [[*results[0], 0]]
+    for i in range(len(results)):
+        if simplified[-1][0] == results[i][0]:
+            simplified[-1][2] += 1
+        else:
+            simplified.append([*results[i], 1])
+    return simplified
+
 def search(inp, articleIDs=[]):
     assert(inp)
     global SUFFIX_TREE, SUFFIX_DICT
     if not SUFFIX_TREE:
-        SUFFIX_TREE, SUFFIX_DICT = create_tree(DIRECTORY_NAME)
+        SUFFIX_TREE, SUFFIX_DICT = create_tree(DIRECTORY_NAME, True)
     if results := SUFFIX_TREE.find_all(inp.lower()):
-        previews = previewlist(DIRECTORY_NAME, [("{:02d}{:02d}{:03d}.txt".format(*SUFFIX_DICT[i][:3]), SUFFIX_DICT[i][3]) for i in sorted(results)], inp.lower())
-        return_list = list(zip([int("{:02d}{:02d}{:03d}".format(*SUFFIX_DICT[i][:3])) for i in sorted(results)], previews))
+        l = simplify_results([(int("{:02d}{:02d}{:03d}".format(*SUFFIX_DICT[i][:3])), SUFFIX_DICT[i][3]) for i in sorted(results)])
+        previews = previewlist(DIRECTORY_NAME, [ ("{:07d}.txt".format(elem[0]), elem[1]) for elem in l], inp.lower())
+        # previews = previewlist(DIRECTORY_NAME, [("{:02d}{:02d}{:03d}.txt".format(*SUFFIX_DICT[i][:3]), SUFFIX_DICT[i][3]) for i in sorted(results)], inp.lower())
+        return_list = [(l[i][0], previews[i], l[i][2]) for i in range(len(previews))]
+        # return_list = list(zip([int("{:02d}{:02d}{:03d}".format(*SUFFIX_DICT[i][:3])) for i in sorted(results)], previews))
         if articleIDs:
             return list(filter(lambda n: n[0] in articleIDs, return_list))
         return return_list
-
 
 
 def preview(file, index, s):
