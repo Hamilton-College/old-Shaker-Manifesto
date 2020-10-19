@@ -1,5 +1,5 @@
 import os
-from flask import Flask, request, render_template, redirect, url_for
+from flask import Flask, request, render_template, redirect, url_for, jsonify
 from flask_mysqldb import MySQL
 # from autocomplete import search, AUTOCOMPLETE
 from functools import reduce
@@ -24,37 +24,50 @@ CORS(app)
 # BASIC SEARCH
 
 # POST is to send/change data.
-
-@app.route("/", methods=["POST", "GET"])
+@app.route("/", methods=["POST", "GET"]) #both paths work
+# @app.route("/basicSearch", methods=["POST", "GET"])
 def basicSearch():
-    return render_template("index.html", flask_token = "hi, there")
-    
-    
-#     # print(app.root_path)
-#     # if(request.method == "GET"):
-#     #     return render_template("index.html")
-#     # else: # POST
-#     #     if(not request.form["query"]):
-#     #         return render_template("index.html") # maybe display a flash message here
+    # return render_template("index.html", flask_token = "hi, there")
+    if(request.method == "GET"):
+        return render_template("index.html")
+    else: # POST
+        if(not request.form["query"]):
+            return render_template("index.html") # maybe display a flash message here
 
-#     #     query = request.form["query"] # name in brackets matches the name of the post form in the HTML
-#     #     enteredText = query # This is so we can say, "search results related to:"
-#     #     queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{query}%' order by regauthor;" # add author to select
-#     #     print(queryString)
-#     #     curr = mysql.connection.cursor()
-#     #     curr.execute(queryString)
-#     #     fetchdata = curr.fetchall() # is have the values returned by the query 
-#     #     curr.close()
+        query = request.form["query"] # name in brackets matches the name of the post form in the HTML
+        # query = request.json
+        print(query)
+        if query:
+            query = query.upper()
+            print(query)
+            # return jsonify(query)
+            return render_template("index.html", flask_token = query) # maybe display a flash message here
 
-#     #     # return render_template("resultsPage.html", query=query) # query(left) is the name of the variable we put in the html.
-#     #     return redirect(url_for("basicResults1", query=fetchdata, enteredText = enteredText)) # put in the function of the url you want to go to
 
+        return "Nothing found"
+
+        # enteredText = query # This is so we can say, "search results related to:"
+        # queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{query}%' order by regauthor;" # add author to select
+        # print(queryString)
+        # curr = mysql.connection.cursor()
+        # curr.execute(queryString)
+        # fetchdata = curr.fetchall() # is have the values returned by the query 
+        # curr.close()
+
+        # # return render_template("resultsPage.html", query=query) # query(left) is the name of the variable we put in the html.
+        # return redirect(url_for("basicResults1", query=fetchdata, enteredText = enteredText)) # put in the function of the url you want to go to
+        # return redirect(url_for("basicResults1", query=query)) # put in the function of the url you want to go to. L is there, R is here
+
+# @app.route("/resultsPage/<query>", methods=["POST", "GET"]) 
+# def basicResults1(query): 
+#     return render_template("resultsPage.html", query=query)
 
 
 # # ARTICLE TYPE SEARCH
 
-# @app.route("/articleType.html", methods=["POST", "GET"]) # From advanced search
-# def displayTypes():
+@app.route("/articleType.html", methods=["POST", "GET"]) # From advanced search
+def displayTypes():
+    return render_template("index.html")
 #     print("Start")
 #     if(request.method == "GET"):
 #         return render_template("articleType.html")
