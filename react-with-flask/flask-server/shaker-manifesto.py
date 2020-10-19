@@ -5,10 +5,14 @@ from flask_mysqldb import MySQL
 from functools import reduce
 import re
 import ast
+import sys
+print(sys.path)
+from flask_cors import CORS
 
 template_dir = os.path.abspath("./Frontend/templates") # change THESE
 static_dir = os.path.abspath("./Frontend/static")
-app = Flask(__name__, template_folder=template_dir, static_folder=static_dir )
+app = Flask(__name__) #, template_folder=template_dir, static_folder=static_dir )
+CORS(app)
 
 # app.config["MYSQL_HOST"] = "localhost"
 # app.config["MYSQL_USER"] = "root"
@@ -25,10 +29,7 @@ app = Flask(__name__, template_folder=template_dir, static_folder=static_dir )
 def basicSearch():
     return render_template("index.html", flask_token = "hi, there")
     
-    # return {"userId": 1, 
-    # "title": "Flask React App.", 
-    # "completed": False}
-#     return render_template("index.html", token = "hello, world")
+    
 #     # print(app.root_path)
 #     # if(request.method == "GET"):
 #     #     return render_template("index.html")
@@ -373,5 +374,5 @@ def basicSearch():
 
 
 
-# if __name__ == "__main__":
-    # app.run(debug=True, use_reloader = False)
+if __name__ == "__main__":
+    app.run(debug=True, use_reloader = False)
