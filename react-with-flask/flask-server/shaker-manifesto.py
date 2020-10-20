@@ -5,8 +5,6 @@ from flask_mysqldb import MySQL
 from functools import reduce
 import re
 import ast
-import sys
-print(sys.path)
 from flask_cors import CORS
 
 template_dir = os.path.abspath("./Frontend/templates") # change THESE
@@ -14,12 +12,12 @@ static_dir = os.path.abspath("./Frontend/static")
 app = Flask(__name__) #, template_folder=template_dir, static_folder=static_dir )
 CORS(app)
 
-# app.config["MYSQL_HOST"] = "localhost"
-# app.config["MYSQL_USER"] = "root"
-# app.config["MYSQL_PASSWORD"] = "root"
-# app.config["MYSQL_DB"] = "shaker"
+app.config["MYSQL_HOST"] = "localhost"
+app.config["MYSQL_USER"] = "root"
+app.config["MYSQL_PASSWORD"] = "root"
+app.config["MYSQL_DB"] = "shaker"
 
-# mysql = MySQL(app)
+mysql = MySQL(app)
 
 # BASIC SEARCH
 
@@ -31,20 +29,21 @@ def basicSearch():
     if(request.method == "GET"):
         return render_template("index.html")
     else: # POST
-        if(not request.form["query"]):
+        if(request.form.get("query") == False):
             return render_template("index.html") # maybe display a flash message here
 
-        query = request.form["query"] # name in brackets matches the name of the post form in the HTML
-        # query = request.json
-        print(query)
-        if query:
-            query = query.upper()
-            print(query)
-            # return jsonify(query)
-            return render_template("index.html", flask_token = query) # maybe display a flash message here
+        enteredText = request.form["query"] # name in brackets matches the name of the post form in the HTML
+        # return jsonify(query)
+        query = enteredText
+        queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{query}%' order by regauthor;" # add author to select
+        curr = mysql.connection.cursor()
+        curr.execute(queryString)
+        fetchdata = curr.fetchall() # is have the values returned by the query
+        curr.close()
+        print(type(fetchdata))
+        return redirect(url_for("basicResults1", values=fetchdata, enteredText = enteredText)) # put in the function of the url you want to go to
+        # return render_template("index.html", flask_token = query) # maybe display a flash message here
 
-
-        return "Nothing found"
 
         # enteredText = query # This is so we can say, "search results related to:"
         # queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{query}%' order by regauthor;" # add author to select
@@ -65,9 +64,28 @@ def basicSearch():
 
 # # ARTICLE TYPE SEARCH
 
-@app.route("/articleType.html", methods=["POST", "GET"]) # From advanced search
+@app.route("/ArticleType", methods=["POST", "GET"]) # From advanced search
 def displayTypes():
     return render_template("index.html")
+
+@app.route("/Author", methods=["POST", "GET"]) # From advanced search
+def displayAuthors():
+    return render_template("index.html")
+
+@app.route("/VolumeIssue", methods=["POST", "GET"]) # From advanced search
+def displayVolumes():
+    return render_template("index.html")
+
+# @app.route("/Results/<values>-<enteredText>", methods=["POST", "GET"]) # From advanced search
+# def displayResults(values, enteredText):
+    # print(values)
+    # return render_template("index.html", flask_token = values, searchedText = enteredText)
+
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def index(path):
+    return "You want path: %s" % path
+    # return app.send_static_file("index.html")
 #     print("Start")
 #     if(request.method == "GET"):
 #         return render_template("articleType.html")
@@ -253,32 +271,32 @@ def displayTypes():
 
 # # RESULTS
 
-# @app.route("/resultsPage/<query>-<enteredText>", methods=["POST", "GET"]) 
-# def basicResults1(query, enteredText): 
-#     print(query)
+@app.route("/Results/<values>-<enteredText>", methods=["POST", "GET"]) 
+def basicResults1(values, enteredText): 
+    print(values)
 
-#     query = query.replace("(", "")
-#     query = query.replace(")", "")
-#     # query = query.split("',")
+    values = values.replace("(", "")
+    values = values.replace(")", "")
+    # values = values.split("',")
 
-#     query = re.split("', |\",", query)
-#     print(query)
+    values = re.split("', |\",", values)
+    print(values)
 
-#     # query[-1] = query[-1].replace(query[-1][-1][-1], "", 1)
-#     for i in range(len(query)):
-#         query[i] = query[i].split(",")
+    # values[-1] = values[-1].replace(values[-1][-1][-1], "", 1)
+    for i in range(len(values)):
+        values[i] = values[i].split(",")
 
-#     print(query)
-#     for i in range(len(query)):
-#         query[i][1] = query[i][1][2:]
-#         temp = query[i][-2] 
-#         query[i][-2] = query[i][-1]
-#         query[i][-1] = temp
+    print(values)
+    for i in range(len(values)):
+        values[i][1] = values[i][1][2:]
+        temp = values[i][-2] 
+        values[i][-2] = values[i][-1]
+        values[i][-1] = temp
     
-#     query[-1][1] = query[-1][1][:-1]
+    values[-1][1] = values[-1][1][:-1]
 
-#     print(query)
-#     return render_template("resultsPage.html", query=query, enteredText=enteredText)# we're just using enteredText to display it
+    print(values)
+    return render_template("index.html", flask_token = values, searchedText = enteredText)# we're just using enteredText to display it
 
 # @app.route("/resultsPage/<topics>", methods=["POST", "GET"]) 
 # def basicResults2(topics=None): # all articles related to a certain topic
@@ -388,4 +406,4 @@ def displayTypes():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, use_reloader = False)
+    app.run(debug=True, use_reloader = True)
