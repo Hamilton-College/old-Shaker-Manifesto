@@ -25,9 +25,58 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
-    <script> window.token="{{flask_token}}"</script>
+
+    <script> 
+      var decodeEntities = (function() {
+        // this prevents any overhead from creating the object each time
+        var element = document.createElement('div');
+      
+        function decodeHTMLEntities (str) {
+          if(str && typeof str === 'string') {
+            // strip script/html tags
+            str = str.replace(/<script[^>]*>([\S\s]*?)<\/script>/gmi, '');
+            str = str.replace(/<\/?\w(?:[^"'>]|"[^"]*"|'[^']*')*>/gmi, '');
+            element.innerHTML = str;
+            str = element.textContent;
+            element.textContent = '';
+          }
+          return str;
+        }
+        return decodeHTMLEntities;
+      })();
+      var text = decodeEntities("{{enteredText}}")
+      window.enteredText = text
+    </script>
+    <script> window.name="{{name}}"</script>
+
+    <script> window.token1='{{flask_token|default("")|tojson}}'</script>
     <script> window.token2="{{searchedText}}"</script>
 
+
+    <!-- <script> window.enteredText="{{enteredText}}"</script> -->
+    <!-- <script>
+      function stripEndQuotes(s){
+        console.log(s)
+        var t=s.length;
+        if (s.charAt(0)=='"') s=s.substring(1,t--);
+        if (s.charAt(--t)=='"') s=s.substring(0,t);
+        console.log(s)
+
+        return s;
+      }
+      var str="{{articleDict}}";
+      window.articleDict=stripEndQuotes(str);
+    </script> -->
+    <script> window.articleDict='{{articleDict|default("")|tojson}}'</script>
+    <!-- <script type="text/javascript">
+      function test_func(articleDict) {
+          console.log(articleDict);
+          return 
+      }
+      test_func("{{articleDict|safe}}")
+    </script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- This imports jquery, which is a library that gives us access to many methods -->
 
   </head>
   <body>

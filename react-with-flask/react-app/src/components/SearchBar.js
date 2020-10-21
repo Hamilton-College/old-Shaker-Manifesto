@@ -25,15 +25,15 @@ class SearchBar extends Component {
         fetch("/", {
             method:"POST",
             headers:{
-                "content_type":"application/json",
+                "content_type":"application/json", // tells the app that we're going to pass over a json object
             },
             body:JSON.stringify(this.state.value)
             }
         ).then(response => { //do
     
-        return response.json()
+        return response.json() // this is another promise so we have to do ".then" after
       })
-      .then(json => { // if err
+      .then(json => {
     
       this.setState({search: event.target.value})
       })
