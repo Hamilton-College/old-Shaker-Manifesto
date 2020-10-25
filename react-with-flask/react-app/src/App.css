@@ -96,6 +96,8 @@ body{
   /* margin-right: 2%; */
   right: 0px;
   position: absolute;
+  /* border: 1px solid green; */
+
 }
 #first {
   /* width: 200px; */
@@ -400,6 +402,9 @@ input[type=submit] {
   text-decoration: underline;
   font-family: inherit;
   font-size: 14pt;
+  /* color: rgb(0, 110, 253); */
+  /* border-bottom: 1px solid #d4d4d4; */
+  /* border-top: 1px solid #d4d4d4; */
 }
 .volumeAndIssue {
   text-align: center;

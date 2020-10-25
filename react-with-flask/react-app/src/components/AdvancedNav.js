@@ -3,14 +3,18 @@ import '../App.css';
 
 function AdvancedNav() {
     return (
-      <nav className="advancedWrapper">
-            <button className="dropbtnA">Advanced Search</button>
-            <ul className="dropdown-contentA">
-                <li>Article Type</li>
-                <li>Author</li>
-                <li>Volume & Issue</li>
-            </ul>
-        </nav>
+    // <div className ="container">
+    <div className="advancedWrapper">
+        <div className="dropdownA">
+          <button className="dropbtnA">Advanced Search</button>
+          <div className="dropdown-contentA">
+            <a href="ArticleType">Article Type</a>
+            <a href="Author">Author</a>
+            <a href="VolumeIssue">Volume & Issue</a>
+          </div>
+        </div>
+    </div>
+    // </div>
     )
 }
 

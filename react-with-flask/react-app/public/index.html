@@ -44,36 +44,43 @@
         }
         return decodeHTMLEntities;
       })();
-      var text = decodeEntities("{{enteredText}}")
-      window.enteredText = text
+      // var text = decodeEntities("{{enteredText}}")
+      // window.enteredText = text
     </script>
     <script> window.name="{{name}}"</script>
 
-    <script> window.token1='{{flask_token|default("")|tojson}}'</script>
+    <script> window.enteredText='{{enteredText|default("")|tojson}}'</script> <!-- We need the default because we are not passing the var on every page  -->
+
+    <script> window.token1='{{flask_token|default("")|tojson}}'</script> <!-- We need the default because we are not passing the var on every page  -->
     <script> window.token2="{{searchedText}}"</script>
+    <script> window.firstLetter='{{firstLetter|default("")|tojson}}'</script>
 
-
-    <!-- <script> window.enteredText="{{enteredText}}"</script> -->
-    <!-- <script>
-      function stripEndQuotes(s){
+    <script>
+      function convert(s){ // This converts lists(and more) to a json object
         console.log(s)
-        var t=s.length;
-        if (s.charAt(0)=='"') s=s.substring(1,t--);
-        if (s.charAt(--t)=='"') s=s.substring(0,t);
-        console.log(s)
-
-        return s;
+        console.log(typeof s)
+        var obj = JSON.parse(s);
+        console.log(typeof obj)
+        return obj;
       }
-      var str="{{articleDict}}";
-      window.articleDict=stripEndQuotes(str);
-    </script> -->
-    <script> window.articleDict='{{articleDict|default("")|tojson}}'</script>
+      var str = '{{articlesList|default("")|tojson}}'
+      window.articlesList=convert(str);
+
+      var str2 = '{{namesOfLetter|default("")|tojson}}' // list of authors of a particular letter
+      window.namesOfLetter = convert(str2)
+
+      // var str3 = '{{firstLetter|safe}}' // list of authors of a particular letter
+      // window.firstLetter = convert(str3)
+    </script>
+  
+    <!-- <script> window.articlesList='{{articlesList|default("")|tojson}}'</script> -->
+    
     <!-- <script type="text/javascript">
-      function test_func(articleDict) {
-          console.log(articleDict);
+      function test_func(articlesList) {
+          console.log(articlesList);
           return 
       }
-      test_func("{{articleDict|safe}}")
+      test_func("{{articlesList|safe}}")
     </script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- This imports jquery, which is a library that gives us access to many methods -->

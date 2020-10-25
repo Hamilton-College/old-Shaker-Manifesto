@@ -3,6 +3,7 @@ import '../App.css';
 import shakerLogo from '../images/shaker-manifesto-logo.PNG';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
 import SearchBar from './SearchBar';
+import AdvancedNav from './AdvancedNav';
 
 function Author() {
   return (
@@ -20,6 +21,7 @@ function Author() {
             <a href="VolumeIssue">Volume & Issue</a>
           </div>
         </div>
+        <h2> <a class="advancedSearch" href = "/"> Basic Search </a></h2>
       </div>
 
     <br/><br/> <br/><br/> <br/>

@@ -9,6 +9,7 @@ import Author from './components/Author';
 import VolumeIssue from './components/VolumeIssue';
 import Results from './components/Results';
 import AuthorList from './components/AuthorList';
+import AuthorNames from './components/AuthorNames';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 
@@ -22,9 +23,10 @@ function App() {
             <Route path="/" exact component={Home} />
             <Route path="/ArticleType" component={ArticleType}/>
             <Route path="/AuthorList" component={AuthorList}/>
-            <Route path="/Author" component={Author}/>
+            <Route path="/Author" exact component={Author}/>
             <Route path="/VolumeIssue" component={VolumeIssue}/>
             <Route path="/Results" component={Results}/>
+            <Route path="/AuthorNames" component={AuthorNames}/>
           </Switch>
         
       </Router>
