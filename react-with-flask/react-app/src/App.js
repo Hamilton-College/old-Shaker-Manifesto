@@ -57,7 +57,7 @@ const Home = () => (
 
     <br/><br/> <br/><br/> <br/>
       <img src={shakerLogo} alt="Shaker logo"width="600" height="150" className = "ShakerLogo"/>
-      
+      <p>BIG Test</p>
       <div class="searchBar">
         <SearchBar />
       </div>   
