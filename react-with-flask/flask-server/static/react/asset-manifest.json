@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/react/css/main.96b77780.chunk.css",
+    "main.js": "/static/react/js/main.691d3988.chunk.js",
+    "main.js.map": "/static/react/js/main.691d3988.chunk.js.map",
+    "runtime-main.js": "/static/react/js/runtime-main.3a44c33a.js",
+    "runtime-main.js.map": "/static/react/js/runtime-main.3a44c33a.js.map",
+    "js/2.1e4af50b.chunk.js": "/static/react/js/2.1e4af50b.chunk.js",
+    "js/2.1e4af50b.chunk.js.map": "/static/react/js/2.1e4af50b.chunk.js.map",
+    "../../templates/index.html": "/static/react/../../templates/index.html",
+    "css/main.96b77780.chunk.css.map": "/static/react/css/main.96b77780.chunk.css.map",
+    "js/2.1e4af50b.chunk.js.LICENSE.txt": "/static/react/js/2.1e4af50b.chunk.js.LICENSE.txt",
+    "media/hamilton-lib-logo.PNG": "/static/react/media/hamilton-lib-logo.060b4d70.PNG",
+    "media/shaker-manifesto-logo.PNG": "/static/react/media/shaker-manifesto-logo.869c7494.PNG",
+    "precache-manifest.73817796797ac255347355c8441633b4.js": "/static/react/precache-manifest.73817796797ac255347355c8441633b4.js",
+    "service-worker.js": "/static/react/service-worker.js"
+  },
+  "entrypoints": [
+    "js/runtime-main.3a44c33a.js",
+    "js/2.1e4af50b.chunk.js",
+    "css/main.96b77780.chunk.css",
+    "js/main.691d3988.chunk.js"
+  ]
+}
