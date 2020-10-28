@@ -246,7 +246,6 @@ def create_article(level2, level3, level4, level5, level, counter, file):
 	# list of dateline-tag - 5, list  of dateline - text-6, list of names tag -7, list of name text - 8
 	# list of bibliography-tag- 9, list of bibliography-text 10,
 	# list of quote - 11, text - 12, sp - 13, cp - 14, text? - 15]
-
 def output_articles(text, file):
 	# found tags order
 	tags =[]
