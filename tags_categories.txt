@@ -1,54 +1,132 @@
-‘publication’	-> Publication
-‘shaker-press’	-> Shakers in the Press
-‘biography’	-> Biographies
-‘editorial’	-> Editorials
-‘hymn’ 		-> Hymns
-‘food’ 		-> Food
-‘ann lee’ 	-> Mother Ann Lee
-‘humor’ 	-> Humor
-‘recipe’ 	-> Recipes
-‘shaker-history’-> Shaker History
-‘history’ 	-> Historical Events
-‘science’	-> Science
-‘music’		-> Music
-‘quote’		-> Quotes from other sources
+Farm, Food, Health, Home, and Family (9)
+
 ‘equipment’ 	-> Equipment
 ‘livestock’	-> Livestock
-‘fiction’	-> Fiction
-‘story’		-> Story - NEW
-‘figure’	-> Illustrations
-‘note’		-> Notes about The Manifesto
-‘lecture’	-> Lectures
+‘recipe’ 	-> Recipes
+‘food’ 		-> Food
+
+News and Events (6)
+
+‘shaker-press’	-> Shakers in the Press
+‘shaker-history’-> Shaker History
+‘history’ 	-> Historical Events
+
+Music, Dance, Literature, and Culture (10)
+
+‘music’		-> Music
 ‘dance’		-> Dance
+‘hymn’ 		-> Hymns
+‘humor’ 	-> Humor
+‘fiction’	-> Fiction
+‘story’		-> Story
+‘figure’	-> Illustrations
+
+Knowledge and Beliefs (4)
+
+‘lecture’	-> Lecture
+‘science’	-> Science
+
+Other (9)
+
+‘publication’	-> Publication
+‘biography’	-> Biographies
+‘ann lee’ 	-> Mother Ann Lee
+‘quote’		-> Quotes from other sources
 
 SPELLING DIFF
-‘farming’, ‘the communications fo farmers...’		-> Farming
-‘section’, ‘sectio’, ‘sections’
-‘article’, ‘artcle’, “article’“
-‘poem’, ‘poerm’, ‘1883’					-> Poetry / poem
-‘saying’,‘aphorism’, ‘sayings’ 				-> Sayings / saying
-‘letter’, ‘lette’ 					-> Correspondence / letter
-‘lesson’, ‘lessons’ 					-> Moral/religious lessons / lesson
-‘book notice’, ‘book-notice’, ‘books’ 			-> Book and Journals / book
-‘health’, ‘healthe’					-> Health and Sanitation
-‘obituary’, ‘death notices’, ‘deaths’, ‘obituaries’	-> Death Notices
-‘national-news’, ‘nationalnews’				-> National News
-‘world-news’, ‘worldnews’, ‘world news’, ‘world=news’	-> World News
-‘instructions’, ‘instruction’				-> Instructions
+
+‘farming’, ‘the communications fo farmers...’, 'agriculture'	-> Farming / farming
+‘plant’, 'crops'						-> Crops / crops
+‘health’, ‘healthe’					-> Health and Sanitation / health
+‘house’, ‘home’						-> House / house
+'juvenile',  'for the children',			-> Juvenile / juvenile
+
+
+‘national-news’, ‘nationalnews’				-> National News / national-news
+‘world-news’, ‘worldnews’, ‘world news’, ‘world=news’	-> World News / world-news
 ‘shaker-report’, ‘shaker-reportt’, ‘shaker-reports’
-‘ashaker-report’, ‘shaker report’ 			-> Shaker Community Reports
-‘none’, ‘xxx’, ‘acvice’, ‘advertizement’		-> Others
-‘house’, ‘home’						-> House \ house
-‘plant’, 'crops'					-> Crops \ crops
+‘ashaker-report’, ‘shaker report’, 'society record'	-> Shaker Community Reports / shaker-report
 
 
-????
-‘engaged in thy duty, fear no danger’,
-‘labor and forethought’, 1
-‘done’, 1
-‘new’, 1
-‘type’, 3
-‘text’
+‘poem’, ‘poerm’, ‘1883’,  'poetry'			-> Poetry / poem
+‘saying’,‘aphorism’, ‘sayings’ 				-> Sayings / saying
+‘book notice’, ‘book-notice’, ‘books’ 			-> Books and Journals / book
 
-INSERT INTO articles (id, issue, title, regauthor, author, topic1, topic2, section_topic1, section_topic2, quote, bibl) VALUES (1311029, 1311, "None", "None");
+‘lesson’, ‘lessons’, 'bible class',			-> Moral/religious lessons / lesson
+‘instructions’, ‘instruction’				-> Instructions / instruction
+
+‘obituary’, ‘death notices’, ‘deaths’, ‘obituaries’	-> Death Notices / obituary
+‘editorial’, editorials					-> Editorials / editorial
+‘letter’, ‘lette’, 'corresondence',  'correspondences',
+'correspondence', 'corresponce', 'letters'		-> Correspondence/Letter / letter
+‘note’, 'notes'						-> Notes about The Manifesto / note
+‘none’, ‘xxx’, ‘acvice’, ‘advertizement’... all
+‘article’, ‘artcle’, “article’“				-> Others / other
+
+‘section’, ‘sectio’, ‘sections’				-> Not a final topic...
+
+
+
+, 'society record',
+ 'bible class',
+ 'agriculture',
+
+INSERT INTO articles (id, issue_id, topics, title_tag, title_text, author_tag, author_text, , quote, bibl) VALUES (1311029, 1311, "None", "None");
 INSERT INTO issues (id, volume, issue, title, editor, pages, publisher, pubplace, date, year, month) VALUES (1311, 11, 13,, "None",....);
+
+
+{
+‘text’ 			: "other",
+‘engaged in thy duty, fear no danger’ : "other",
+‘labor and forethought’ : "other",
+‘done’ 			: "other",
+‘new’ 			: "other",
+‘type’ 			: "other",
+‘none’ 			: "other",
+‘xxx’ 			: "other",
+‘acvice’ 		: "other",
+‘advertizement 		: "other",
+‘article’		: "other",
+‘artcle’		: "other",
+“article’“		: "other",
+‘house’ 		: "house",
+‘home’ 			: "house",
+‘plant’ 		: "crop"
+'crops'			: "crop",
+‘shaker-report’ 	: "shaker-report",
+‘shaker-reportt’ 	: "shaker-report",
+‘shaker-reports’ 	: "shaker-report",
+‘ashaker-report’ 	: "shaker-report",
+‘shaker report’ 	: "shaker-report",
+‘instructions’ 		: "instruction"
+‘instruction’ 		: "instruction"
+‘world-news’ 		: ‘world-news’,
+‘worldnews’ 		: ‘world-news’,
+‘world news’ 		: ‘world-news’,
+‘world=news’ 		: ‘world-news’,
+‘national-news’ 	: ‘national-news’,
+‘nationalnews’ 		: ‘national-news’,
+‘obituary’ 		: ‘obituary’,
+‘death notices’ 	: ‘obituary’,
+‘deaths’ 		: ‘obituary’,
+‘obituaries’ 		: ‘obituary’,
+‘health’ 		: ‘health’,
+‘healthe’ 		: ‘health’,
+‘book notice’ 		: 'book',
+‘book-notice’ 		: 'book',
+‘books’ 		: 'book',
+‘letter’ 		: 'letter',
+‘lette’ 		: 'letter',
+‘saying’		: 'saying',
+‘aphorism’		: 'saying',
+‘sayings’ 		: 'saying',
+‘poem’			: 'poem',
+‘poerm’			: 'poem',
+‘1883’			: 'poem',
+‘farming’		: 'farming',
+‘the communications fo farmers...’	: 'farming',
+‘section’		: 'section',
+‘sectio’		: 'section',
+‘sections’		: 'section'
+}
+
