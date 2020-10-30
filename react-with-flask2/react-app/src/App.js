@@ -11,6 +11,7 @@ import Results from './components/Results';
 import AuthorList from './components/AuthorList';
 import AuthorNames from './components/AuthorNames';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import AutoComplete2 from './components/autocomplete2';
 
 
 function App() {
@@ -48,17 +49,21 @@ const Home = () => (
       <div className="dropdownA">
         <button className="dropbtnA">Advanced Search</button>
         <div className="dropdown-contentA">
-          <a href="ArticleType">Article Type</a>
-          <a href="Author">Author</a>
-          <a href="VolumeIssue">Volume & Issue</a>
+          <a href="/ArticleType">Article Type</a>
+          <a href="/Author">Author</a>
+          <a href="/VolumeIssue">Volume & Issue</a>
         </div>
       </div>
     </div>
 
       <br/><br/> <br/><br/> <br/>
       <img src={shakerLogo} alt="Shaker logo"width="600" height="150" className = "ShakerLogo"/>
-      <div class="searchBar">
+      <div className="searchBar">
         <SearchBar />
+        {/* <form action= "#" method="POST" autocomplete="off"> */}
+          {/* <input id="MySearchTerm" type="text" name="query" onkeydown="AutoComplete()"/> */}
+          {/* <input type="submit" value="search" class="searchButton"/> */}
+        {/* </form> */}
       </div>   
       
     </div>

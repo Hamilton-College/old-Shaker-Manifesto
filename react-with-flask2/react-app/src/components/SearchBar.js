@@ -22,26 +22,26 @@ class SearchBar extends Component {
     }
     handleSubmit = (event) =>{
         // alert(`${this.state.search}`)
-        fetch("/", {
+        fetch("#", {
             method:"POST",
             headers:{
-                "content_type":"application/json", // tells the app that we're going to pass over a json object
+                "Accept" : "application/json",
+                "contentType":"application/json", // tells the app that we're going to pass over a json object
             },
             body:JSON.stringify(this.state.value)
             }
         ).then(response => { //do
-    
+            console.log(JSON.stringify(this.state.value))
         return response.json() // this is another promise so we have to do ".then" after
       })
       .then(json => {
-    
       this.setState({search: event.target.value})
       })
     }
     render() {
         const {search} = this.state // now we don't have to type this.state when we want to edit the search property
         return(
-            <form onSubmit={this.handleSubmit} action = "/" method="POST">
+            <form onSubmit={this.handleSubmit} action = "#" method="POST">
                 <div>
                 <input
                     id = "MySearchTerm" 
@@ -56,3 +56,5 @@ class SearchBar extends Component {
     }
 }
 export default SearchBar
+
+

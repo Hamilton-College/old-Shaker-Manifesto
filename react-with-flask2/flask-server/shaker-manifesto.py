@@ -2,7 +2,7 @@ import os
 import json
 from flask import Flask, request, render_template, redirect, url_for, jsonify
 from flask_mysqldb import MySQL
-# from autocomplete import search, AUTOCOMPLETE
+from autocomplete import search, AUTOCOMPLETE
 from functools import reduce
 import re
 import ast
@@ -33,7 +33,10 @@ def basicSearch():
         if(request.form.get("query") == False):
             return render_template("index.html") # maybe display a flash message here
 
+        print("Right before we get query")
         enteredText = request.form["query"] # name in brackets matches the name of the post form in the HTML
+        # enteredText = request.get_json()
+        print(enteredText, type(enteredText))
         # return jsonify(query)
         # query = enteredText
         # queryString = f"SELECT id, regauthor FROM authors WHERE regauthor LIKE '%{query}%' order by regauthor;" # add author to select
@@ -104,8 +107,10 @@ def displayTypes():
 @app.route("/Author", methods=["POST", "GET"]) # From advanced search
 def displayAuthors(): # display landing page
     if(request.method == "GET"):
+        print("just arrived on Author")
         return render_template("index.html")
     else: # POST
+        print("Did a post on Author")
         if(request.form.get("letter")): # letter button is clicked
             letter = request.form["letter"]
             queryString = f"SELECT regauthor FROM authors WHERE regauthor LIKE '%, {letter}%' group by regauthor;" # add author to select
@@ -117,6 +122,9 @@ def displayAuthors(): # display landing page
             return redirect(url_for("letterOfAuthors", letter = letter, query=fetchdata)) 
         else: # name was entered
             name = request.form["query"]
+            # name = request.get_json(force=True)
+            # name = request.json
+            print("entered val: ", name)
             if(" " in name): # this means first and last name entered or multiple names
                 nameList = name.split()
                 if(len(nameList) == 2):
@@ -256,7 +264,7 @@ def displayNames(): # display author names. When user clicks on an author's name
 
 
 # VOLUME & ISSUE SEARCH
-@app.route("/volumeIssue", methods=["POST", "GET"]) # From advanced search
+@app.route("/VolumeIssue", methods=["POST", "GET"]) # From advanced search
 def displayVolumes():
     return render_template("index.html")
 
@@ -400,10 +408,11 @@ def authorResults(letterOrName = None, query = None): # query right now is the d
 
 
 
-# @app.route("/autocomplete", methods=["POST", "GET"])
-# def autocomplete():
-#     return reduce(lambda x, y: str(x) + ',' + str(y),
-#             [item for sublist in search(request.form["word"]) for item in sublist])
+@app.route("/autocomplete", methods=["POST", "GET"])
+def autocomplete():
+    print("here")
+    return reduce(lambda x, y: str(x) + ',' + str(y),
+            [item for sublist in search(request.form["word"]) for item in sublist]) # this is what produces the list of options
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
