@@ -18,14 +18,14 @@ def xml_traverse(root, names):
         xml_traverse(elem, names)
 
 def create_dict(s, filename):
-    f = open(filename)
+    f = open(filename, encoding="utf8")
     for line in f:
         for word in line.split():
             s.add(word.lower())
 
     f.close()
 
-    w = open(SAVE_LOC, "a")
+    w = open(SAVE_LOC, "a", encoding="utf8")
     for word in list(s):
         w.write(word)
         w.write("\n")
@@ -33,7 +33,7 @@ def create_dict(s, filename):
 
 def clean_text(filename):
     l = []
-    with open(filename) as f:
+    with open(filename, encoding="utf8") as f:
         for line in f.readlines():
             word = ""
             for c in line:
@@ -44,7 +44,7 @@ def clean_text(filename):
                     word += ' '
             for w in word.split():
                 l.append(w.strip())
-    with open(SAVE_LOC, "w+") as output:
+    with open(SAVE_LOC, "w+", encoding="utf8") as output:
         for l in sorted(list(set(l))):
             output.write(l)
             output.write('\n')
