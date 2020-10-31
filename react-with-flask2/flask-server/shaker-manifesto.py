@@ -279,12 +279,14 @@ def basicResults1(values=None, results=None):
     print("vals:",values)
     results = ast.literal_eval(results)
     print(results)
-    for i in range(len(results)):
-        results[i] = list(results[i])
+    # for i in range(len(results)):
+    #     results[i] = list(results[i])
     for i in range(len(results)):
         results[i][1] = results[i][1].replace("\'", "")
         results[i][1] = results[i][1].replace('"', "")
         results[i][1] = results[i][1].replace("\\", "")
+        results[i][1] = results[i][1].replace("<!b>", "</b>")
+
     # results = results.strip('][').split(', ')
     print(type(results), results)
     print(type(results[0][1]))

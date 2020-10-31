@@ -35,6 +35,7 @@ function Results() { //This is the Result component
     {articleItem.map((item, index) => (
                 <div key={index}>
                     <h3>{item[0]}</h3>
+                    <div dangerouslySetInnerHTML={{__html: item[1] }}></div>
                     <p>{item[1]}</p>
                     <p>{item[2]}</p>
                 </div>
