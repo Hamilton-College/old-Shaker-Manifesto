@@ -40,7 +40,8 @@ def simplify_results(results):
             simplified.append([*results[i], 1])
     return simplified
 
-def search(inp, articleIDs=[]):
+def articleSearch(inp, articleIDs=[]):
+    print("in articleSearch")
     assert(inp)
     global SUFFIX_TREE, SUFFIX_DICT
     if not SUFFIX_TREE:
@@ -86,7 +87,7 @@ def main():
         st, d = create_tree(sys.argv[1])
         while (inp:= input("::>")) != "exit":
             if inp:
-                if results := search(inp.lower()):
+                if results := articleSearch(inp.lower()):
                     for result in results:
                         print("{}: {}".format(*result))
                 else:
