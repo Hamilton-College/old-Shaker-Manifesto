@@ -15,11 +15,12 @@ function ArticleType() {
           <div className="dropdownA">
             <button className="dropbtnA">Advanced Search</button>
             <div className="dropdown-contentA">
-              <a href="ArticleType">Article Type</a>
-              <a href="Author">Author</a>
-              <a href="VolumeIssue">Volume & Issue</a>
+              <a href="/ArticleType">Article Type</a>
+              <a href="/Author">Author</a>
+              <a href="/VolumeIssue">Volume & Issue</a>
             </div>
           </div>
+          <h2> <a class="advancedSearch" href = "/"> Basic Search </a></h2>
         </div>
 
       <br/><br/> <br/><br/> <br/>

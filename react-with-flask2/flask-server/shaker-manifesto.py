@@ -18,7 +18,7 @@ app.config["MYSQL_HOST"] = "localhost"
 app.config["MYSQL_USER"] = "root"
 app.config["MYSQL_PASSWORD"] = "root"
 app.config["MYSQL_DB"] = "shaker"
-
+#articles.sql
 mysql = MySQL(app)
 
 # BASIC SEARCH
@@ -48,6 +48,8 @@ def basicSearch():
         # print(type(fetchdata))
         # return redirect(url_for("basicResults1", values=fetchdata, enteredText = enteredText)) # put in the function of the url you want to go to
         artRes = articleSearch(enteredText)
+        if(artRes == None):
+            artRes = "None"
         print("article Results", artRes)
         return redirect(url_for("basicResults1", values=enteredText, results = artRes)) # put in the function of the url you want to go to
         # return render_template("index.html", flask_token = enteredText) # maybe display a flash message here
@@ -277,19 +279,18 @@ def displayVolumes():
 @app.route("/Results/<values>~<results>", methods=["POST", "GET"]) 
 def basicResults1(values=None, results=None): 
     print("vals:",values)
-    results = ast.literal_eval(results)
-    print(results)
-    # for i in range(len(results)):
-    #     results[i] = list(results[i])
-    for i in range(len(results)):
-        results[i][1] = results[i][1].replace("\'", "")
-        results[i][1] = results[i][1].replace('"', "")
-        results[i][1] = results[i][1].replace("\\", "")
-        results[i][1] = results[i][1].replace("<!b>", "</b>")
+    if(results != "None"):
+        results = ast.literal_eval(results)
+    # print(results)
+        for i in range(len(results)):
+            results[i][1] = results[i][1].replace("\'", "")
+            results[i][1] = results[i][1].replace('"', "")
+            results[i][1] = results[i][1].replace("\\", "")
+            results[i][1] = results[i][1].replace("<!b>", "</b>")
 
     # results = results.strip('][').split(', ')
-    print(type(results), results)
-    print(type(results[0][1]))
+        print(type(results), results)
+        print(type(results[0][1]))
     # print(results[1])
     
     # if(values != "()"):
