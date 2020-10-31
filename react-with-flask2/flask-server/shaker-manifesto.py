@@ -278,6 +278,7 @@ def displayVolumes():
 def basicResults1(values=None, results=None): 
     print("vals:",values)
     results = ast.literal_eval(results)
+    print(results)
     for i in range(len(results)):
         results[i] = list(results[i])
     for i in range(len(results)):

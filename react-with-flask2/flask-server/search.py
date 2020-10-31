@@ -65,9 +65,9 @@ def preview(file, index, s):
         if i in f.find(s):
             r += "<b>"
             b = i
-        if b and and i > b + len(s) and p[i] == ' ':
+        if b and i > b + len(s) and p[i] == ' ':
             b = 0
-            r += "</b>"
+            r += "<b>"
         if p[i] == '\\':
             r += '\\'
         r += p[i]
