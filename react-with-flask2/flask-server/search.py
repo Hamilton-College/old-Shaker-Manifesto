@@ -63,11 +63,11 @@ def preview(file, index, s):
     b = False
     for i in range(len(p)):
         if i in f.find(s):
-            r += "^"
+            r += "<b>"
             b = i
         if b and i > b + len(s) and p[i] == ' ':
             b = 0
-            r += "*"
+            r += "<!b>"
         r += p[i]
     return r
 
