@@ -4,7 +4,7 @@ AUTOCOMPLETE = None
 
 def init():
     names = None
-    with open("../../shaker_dictionary.txt") as file:
+    with open("../../shaker_dictionary.txt", encoding="uft8") as file:
         names = file.readlines()
 
     words = dict(zip(names, [dict()] * len(names)))

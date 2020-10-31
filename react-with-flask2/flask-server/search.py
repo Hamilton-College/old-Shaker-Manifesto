@@ -40,7 +40,8 @@ def simplify_results(results):
             simplified.append([*results[i], 1])
     return simplified
 
-def search(inp, articleIDs=[]):
+def articleSearch(inp, articleIDs=[]):
+    print("in articleSearch")
     assert(inp)
     global SUFFIX_TREE, SUFFIX_DICT
     if not SUFFIX_TREE:
@@ -56,10 +57,28 @@ def search(inp, articleIDs=[]):
         return return_list
 
 
+# def preview(file, index, s):
+#     start = index - 100 if index - 100 > 0 else 0
+#     file.seek(start)
+#     return re.sub("({})".format(s), r'<b>\1</b>', str(file.read(200)), flags=re.I)
+
 def preview(file, index, s):
     start = index - 100 if index - 100 > 0 else 0
     file.seek(start)
-    return re.sub("({})".format(s), r'<b>\1</b>', str(file.read(200)), flags=re.I)
+    p = str(file.read(200))
+    f = FuzzyTree(p)
+    r = ""
+    b = False
+    for i in range(len(p)):
+        if i in f.find(s):
+            r += "<b>"
+            b = True
+        if b and p[i] == ' ':
+            b = False
+            r += "<b>"
+        r += p[i]
+    return r
+
 
 def previewlist(dictname, locations, searchstring):
     assert(dictname)
@@ -76,7 +95,7 @@ def main():
         st, d = create_tree(sys.argv[1])
         while (inp:= input("::>")) != "exit":
             if inp:
-                if results := search(inp.lower()):
+                if results := articleSearch(inp.lower()):
                     for result in results:
                         print("{}: {}".format(*result))
                 else:

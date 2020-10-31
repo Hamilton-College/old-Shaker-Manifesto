@@ -2,6 +2,7 @@ import os
 import json
 from flask import Flask, request, render_template, redirect, url_for, jsonify
 from flask_mysqldb import MySQL
+from search import *
 from autocomplete import search, AUTOCOMPLETE
 from functools import reduce
 import re
@@ -46,7 +47,9 @@ def basicSearch():
         # curr.close()
         # print(type(fetchdata))
         # return redirect(url_for("basicResults1", values=fetchdata, enteredText = enteredText)) # put in the function of the url you want to go to
-        return redirect(url_for("basicResults1", values=enteredText, enteredText = enteredText)) # put in the function of the url you want to go to
+        artRes = articleSearch(enteredText)
+        print("article Results", artRes)
+        return redirect(url_for("basicResults1", values=enteredText, results = artRes)) # put in the function of the url you want to go to
         # return render_template("index.html", flask_token = enteredText) # maybe display a flash message here
 
 
@@ -271,9 +274,21 @@ def displayVolumes():
 
 # RESULTS
 
-@app.route("/Results/<values>-<enteredText>", methods=["POST", "GET"]) 
-def basicResults1(values, enteredText): 
-    print(type(values))
+@app.route("/Results/<values>~<results>", methods=["POST", "GET"]) 
+def basicResults1(values=None, results=None): 
+    print("vals:",values)
+    results = ast.literal_eval(results)
+    for i in range(len(results)):
+        results[i] = list(results[i])
+    for i in range(len(results)):
+        results[i][1] = results[i][1].replace("\'", "")
+        results[i][1] = results[i][1].replace('"', "")
+        results[i][1] = results[i][1].replace("\\", "")
+    # results = results.strip('][').split(', ')
+    print(type(results), results)
+    print(type(results[0][1]))
+    # print(results[1])
+    
     # if(values != "()"):
     #     values = values.replace("(", "")
     #     values = values.replace(")", "")
@@ -297,7 +312,7 @@ def basicResults1(values, enteredText):
 
     #     print(values)
     #     print(jsonify(values))
-    return render_template("index.html", flask_token = values, searchedText = enteredText)# we're just using enteredText to display it
+    return render_template("index.html", enteredTerm = values, results =results)# we're just using enteredText to display it
     # return values
 # @app.route("/resultsPage/<topics>", methods=["POST", "GET"]) 
 # def basicResults2(topics=None): # all articles related to a certain topic
@@ -411,8 +426,10 @@ def authorResults(letterOrName = None, query = None): # query right now is the d
 @app.route("/autocomplete", methods=["POST", "GET"])
 def autocomplete():
     print("here")
+    searchTerm = request.form["query"]
+    print("entered" + searchTerm)
     return reduce(lambda x, y: str(x) + ',' + str(y),
-            [item for sublist in search(request.form["word"]) for item in sublist]) # this is what produces the list of options
+            [item for sublist in search(request.form["query"]) for item in sublist]) # this is what produces the list of options
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')

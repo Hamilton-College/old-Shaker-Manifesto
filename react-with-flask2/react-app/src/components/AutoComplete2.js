@@ -159,11 +159,18 @@ class AutoComplete2 extends Component {
     handleSubmit = (e) => {
         // console.log(typeof JSON.parse(data))
         // console.log(data)
+        // axios.post("/", this.state.text.value).then(response => {
+        //                 console.log(response)
+        //             })
+        //             .catch(error => {
+        //                 console.log(error)
+        //             })
         fetch("#", {
             method:"POST",
             headers:{
                 "Accept" : "application/json",
                 "content_type":"application/json", // tells the app that we're going to pass over a json object
+                "Authorization" : "query"
             },
             body:JSON.stringify(this.state.text.value)//this.state.value)
             }
