@@ -2,7 +2,7 @@ from suffix_trees import STree
 from SMTree import FuzzyTree
 import sys, re, os, json, pickle, time
 
-DIRECTORY_NAME=".\\Volume01\\"
+DIRECTORY_NAME=os.path.join(".", "Volume01")
 SUFFIX_TREE=None
 SUFFIX_DICT=None
 
@@ -49,18 +49,10 @@ def articleSearch(inp, articleIDs=[]):
     if results := SUFFIX_TREE.find(inp.lower()):
         l = simplify_results([(int("{:02d}{:02d}{:03d}".format(*SUFFIX_DICT[i][:3])), SUFFIX_DICT[i][3]) for i in sorted(results)])
         previews = previewlist(DIRECTORY_NAME, [ ("{:07d}.txt".format(elem[0]), elem[1]) for elem in l], inp.lower())
-        # previews = previewlist(DIRECTORY_NAME, [("{:02d}{:02d}{:03d}.txt".format(*SUFFIX_DICT[i][:3]), SUFFIX_DICT[i][3]) for i in sorted(results)], inp.lower())
         return_list = [(l[i][0], previews[i], l[i][2]) for i in range(len(previews))]
-        # return_list = list(zip([int("{:02d}{:02d}{:03d}".format(*SUFFIX_DICT[i][:3])) for i in sorted(results)], previews))
         if articleIDs:
             return list(filter(lambda n: n[0] in articleIDs, return_list))
         return return_list
-
-
-# def preview(file, index, s):
-#     start = index - 100 if index - 100 > 0 else 0
-#     file.seek(start)
-#     return re.sub("({})".format(s), r'<b>\1</b>', str(file.read(200)), flags=re.I)
 
 def preview(file, index, s):
     start = index - 100 if index - 100 > 0 else 0
@@ -72,10 +64,12 @@ def preview(file, index, s):
     for i in range(len(p)):
         if i in f.find(s):
             r += "<b>"
-            b = True
-        if b and p[i] == ' ':
-            b = False
-            r += "<b>"
+            b = i
+        if b and and i > b + len(s) and p[i] == ' ':
+            b = 0
+            r += "</b>"
+        if p[i] == '\\':
+            r += '\\'
         r += p[i]
     return r
 
