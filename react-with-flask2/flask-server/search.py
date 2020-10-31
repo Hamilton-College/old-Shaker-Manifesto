@@ -49,7 +49,7 @@ def articleSearch(inp, articleIDs=[]):
     if results := SUFFIX_TREE.find(inp.lower()):
         l = simplify_results([(int("{:02d}{:02d}{:03d}".format(*SUFFIX_DICT[i][:3])), SUFFIX_DICT[i][3]) for i in sorted(results)])
         previews = previewlist(DIRECTORY_NAME, [ ("{:07d}.txt".format(elem[0]), elem[1]) for elem in l], inp.lower())
-        return_list = [(l[i][0], previews[i], l[i][2]) for i in range(len(previews))]
+        return_list = [[l[i][0], previews[i], l[i][2]] for i in range(len(previews))]
         if articleIDs:
             return list(filter(lambda n: n[0] in articleIDs, return_list))
         return return_list
