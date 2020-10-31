@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 
 // This is a component that will be displayed in app.js
 
@@ -16,32 +17,57 @@ class SearchBar extends Component {
         }
     }
     handleSearchChange = (event) => {
-        this.setState({
-            search: event.target.value // sets the "search" state property to whatever has been typed
-        })
-    }
+        // axios.post("/autocomplete", this.state.value).then(response => {
+        //     console.log("Mira:", response)
+        //     console.log(response.data)
+        //     // console.log(event.target.value)
+        // })
+        // .catch(error => {
+        //     console.log(error)
+        // })
+
+        // this.setState({
+        //     search: event.target.value // sets the "search" state property to whatever has been typed
+        // })
+        // if(this.state.value.length > 0){
+        // fetch("/autocomplete", {
+        //     method:"POST",
+        //     headers:{
+        //         "Accept" : "application/json",
+        //         "contentType":"application/json", // tells the app that we're going to pass over a json object
+        //     },
+        //     body:JSON.stringify(this.state.value)
+        //     }
+        // ).then(response => { //do
+        //     console.log(JSON.stringify(this.state.value))
+        // return response.json() // this is another promise so we have to do ".then" after
+        // })
+        // .then(json => {
+        this.setState({search: event.target.value})
+        }
+    // }
     handleSubmit = (event) =>{
         // alert(`${this.state.search}`)
-        fetch("/", {
+        fetch("#", {
             method:"POST",
             headers:{
-                "content_type":"application/json", // tells the app that we're going to pass over a json object
+                "Accept" : "application/json",
+                "contentType":"application/json", // tells the app that we're going to pass over a json object
             },
             body:JSON.stringify(this.state.value)
             }
         ).then(response => { //do
-    
+            console.log(JSON.stringify(this.state.value))
         return response.json() // this is another promise so we have to do ".then" after
       })
       .then(json => {
-    
       this.setState({search: event.target.value})
       })
     }
     render() {
         const {search} = this.state // now we don't have to type this.state when we want to edit the search property
         return(
-            <form onSubmit={this.handleSubmit} action = "/" method="POST">
+            <form onSubmit={this.handleSubmit} action = "#" method="POST">
                 <div>
                 <input
                     id = "MySearchTerm" 
@@ -56,3 +82,5 @@ class SearchBar extends Component {
     }
 }
 export default SearchBar
+
+

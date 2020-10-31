@@ -11,10 +11,13 @@ function Results() { //This is the Result component
   return (
     <div className="container">
         
-        <p>Showing results for: {window.token1}</p>
-        <div class="searchBar">
+        <p>Showing results for: {window.enteredTerm}</p>
+        {/* <div class="searchBar">
             <SearchBar />
-        </div> 
+        </div>  */}
+        <p>{testVar}</p>
+        <br/>
+        {testVar}
         <div className="advancedWrapper">
             <div className="dropdownA">
             <button className="dropbtnA">Advanced Search</button>
@@ -28,7 +31,14 @@ function Results() { //This is the Result component
         </div>
         
     {/* <div>{varTitle}</div> */}
-    <p>{window.token2}</p>
+    {/* {window.results} */}
+    {articleItem.map((item, index) => (
+                <div key={index}>
+                    <h3>{item[0]}</h3>
+                    <p>{item[1]}</p>
+                    <p>{item[2]}</p>
+                </div>
+            ))}
     {/* <htmlDecode input = {window.token}/> */}
 
     {/* <p>{text}</p> */}
@@ -36,6 +46,10 @@ function Results() { //This is the Result component
     </div>
 
   );
+
 }
+var articleItem = window.results
+var testVar = "Hello <b>there</b>"
+
 
 export default Results;

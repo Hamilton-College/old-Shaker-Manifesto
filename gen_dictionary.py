@@ -17,48 +17,33 @@ def xml_traverse(root, names):
             names.append(elem.attrib.get("reg"))
         xml_traverse(elem, names)
 
-def create_dict(s, filename):
-    f = open(filename)
-    for line in f:
-        for word in line.split():
-            s.add(word.lower())
+def create_dictionary(directory):
+    s = set()
+    for filename in os.listdir(directory):
+        if filename.endswith(".txt"):
+            print("---Processing {}---".format(filename))
+            with open(os.path.join(directory, filename), encoding="utf8") as f:
+                file = f.read()
+                for w in file.split():
+                    if w.isascii():
+                        w = re.sub("[-.,\"?\\\\/()!#$;:%&{}=0-9'*+|~\[\]^_]", "", w)
+                        s.add(w.lower())
 
-    f.close()
+    s.discard("") #remove empty string
+    for c in "qwertyuiopasdfghjklzxcvbnm": #removes single letter results
+        s.discard(c)
+    t = s.copy()
+    for w in t:
+        if w + "s" in s:
+            s.discard(w + "s")
 
-    w = open(SAVE_LOC, "a")
-    for word in list(s):
-        w.write(word)
-        w.write("\n")
-    w.close()
-
-def clean_text(filename):
-    l = []
-    with open(filename) as f:
-        for line in f.readlines():
-            word = ""
-            for c in line:
-                if ord('A') <= ord(c) and ord(c) <= ord('Z') or\
-                        ord('a') <= ord(c) and ord(c) <= ord('z'):
-                    word += c
-                elif word and word[-1] != ' ' and c in [' ', '\t', '\n', '\r', '.', ',', '-', '\"', "?"]:
-                    word += ' '
-            for w in word.split():
-                l.append(w.strip())
     with open(SAVE_LOC, "w+") as output:
-        for l in sorted(list(set(l))):
-            output.write(l)
-            output.write('\n')
+        for l in sorted(list(s)):
+            output.write(l + "\n")
 
 def main():
     if len(sys.argv) == 2:
-        open("temp.txt", "w+").close() #cleans contents of existing dictionary
-        s = set()
-        for filename in os.listdir(sys.argv[1]):
-            if filename.endswith(".txt"):
-                print("Processing: " + filename)
-                create_dict(s, str(os.path.join(sys.argv[1], filename)))
-        clean_text(SAVE_LOC)
-        os.remove("temp.txt")
+        create_dictionary(sys.argv[1])
     elif len(sys.argv) == 3 and sys.argv[1] == '-n':
         n = get_xml_names(sys.argv[2])
         print(n)

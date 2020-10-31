@@ -49,9 +49,8 @@
     <script> window.name="{{name}}"</script>
 
     <script> window.enteredText='{{enteredText|default("")|tojson}}'</script> <!-- We need the default because we are not passing the var on every page  -->
-
-    <script> window.token1='{{flask_token|default("")|tojson}}'</script> <!-- We need the default because we are not passing the var on every page  -->
-    <script> window.token2="{{searchedText}}"</script>
+    <!-- <script> window.results='{{results|default("")|tojson}}'</script> -->
+    <script> window.enteredTerm='{{enteredTerm|default("")|tojson}}'</script> <!-- We need the default because we are not passing the var on every page  -->
     <script> window.firstLetter='{{firstLetter|default("")|tojson}}'</script>
 
     <script>
@@ -65,9 +64,11 @@
       var str = '{{articlesList|default("")|tojson}}'
       window.articlesList=convert(str);
 
-      var str2 = '{{namesOfLetter|default("")|tojson}}' // list of authors of a particular letter
-      window.namesOfLetter = convert(str2)
+      var list1 = '{{namesOfLetter|default("")|tojson}}' // list of authors of a particular letter
+      window.namesOfLetter = convert(list1)
 
+      var list2 = '{{results|default("")|tojson}}'
+      window.results= convert(list2)
       // var str3 = '{{firstLetter|safe}}' // list of authors of a particular letter
       // window.firstLetter = convert(str3)
     </script>
