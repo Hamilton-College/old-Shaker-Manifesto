@@ -127,3 +127,12 @@ all = ["equipment", "livestock", "recipe", "food", "shaker-press", "shaker-histo
 "dance", "hymn", "humor", "fiction", "story", "figure", "lecture", "science", "publication",
 "biography", "ann lee", "quote", "letter", "note", "editorial", "obituary", "instruction", "lesson", "book", "saying",
 "poem", "shaker-report", "world-news", "national-news", "juvenile", "house", "other", "health", "farming", "crops"]
+
+ cp /Users/samuelvigneault/Desktop/articles.sql /Users/samuelvigneault/PycharmProjects/Shaker-Manifesto1/
+
+ mysqldump -u root  -p shaker >  /Users/samuelvigneault/Desktop/articles.sql
+
+ source /Users/samuelvigneault/PycharmProjects/Shaker-Manifesto1/articles_command.txt
+
+create table articles (id int, issue_id int, topics varchar(200), title varchar(500), author_tag varchar(500), author_text varchar(1000), PRIMARY KEY (ID));
+
