@@ -63,6 +63,8 @@ SPELLING DIFF
 ‘none’, ‘xxx’, ‘acvice’, ‘advertizement’... all
 ‘article’, ‘artcle’, “article’“				-> Others / other
 
+
+
 ‘section’, ‘sectio’, ‘sections’				-> Not a final topic...
 
 
@@ -75,58 +77,53 @@ INSERT INTO articles (id, issue_id, topics, title_tag, title_text, author_tag, a
 INSERT INTO issues (id, volume, issue, title, editor, pages, publisher, pubplace, date, year, month) VALUES (1311, 11, 13,, "None",....);
 
 
-{
-‘text’ 			: "other",
-‘engaged in thy duty, fear no danger’ : "other",
-‘labor and forethought’ : "other",
-‘done’ 			: "other",
-‘new’ 			: "other",
-‘type’ 			: "other",
-‘none’ 			: "other",
-‘xxx’ 			: "other",
-‘acvice’ 		: "other",
-‘advertizement 		: "other",
-‘article’		: "other",
-‘artcle’		: "other",
-“article’“		: "other",
-‘house’ 		: "house",
-‘home’ 			: "house",
-‘plant’ 		: "crop"
-'crops'			: "crop",
-‘shaker-report’ 	: "shaker-report",
-‘shaker-reportt’ 	: "shaker-report",
-‘shaker-reports’ 	: "shaker-report",
-‘ashaker-report’ 	: "shaker-report",
-‘shaker report’ 	: "shaker-report",
-‘instructions’ 		: "instruction"
-‘instruction’ 		: "instruction"
-‘world-news’ 		: ‘world-news’,
-‘worldnews’ 		: ‘world-news’,
-‘world news’ 		: ‘world-news’,
-‘world=news’ 		: ‘world-news’,
-‘national-news’ 	: ‘national-news’,
-‘nationalnews’ 		: ‘national-news’,
-‘obituary’ 		: ‘obituary’,
-‘death notices’ 	: ‘obituary’,
-‘deaths’ 		: ‘obituary’,
-‘obituaries’ 		: ‘obituary’,
-‘health’ 		: ‘health’,
-‘healthe’ 		: ‘health’,
-‘book notice’ 		: 'book',
-‘book-notice’ 		: 'book',
-‘books’ 		: 'book',
-‘letter’ 		: 'letter',
-‘lette’ 		: 'letter',
-‘saying’		: 'saying',
-‘aphorism’		: 'saying',
-‘sayings’ 		: 'saying',
-‘poem’			: 'poem',
-‘poerm’			: 'poem',
-‘1883’			: 'poem',
-‘farming’		: 'farming',
-‘the communications fo farmers...’	: 'farming',
-‘section’		: 'section',
-‘sectio’		: 'section',
-‘sections’		: 'section'
-}
+dictio = {"plant":"crops",
+		"the commications fo farmers...":"farming",
+		"healthe":"health",
+		"text":"other",
+		"home":"house",
+		"for the children":"juvenile",
+		"nationalnews":"national-news",
+		"nationalnews":"national-news",
+		"worldnews":"world-news",
+		"world news":"world-news",
+		"world=news":"world-news",
+		"shaker-reportt":"shaker-report",
+		"shaker-reports":"shaker-report",
+		"ashaker-report":"shaker-report",
+		"shaker report":"shaker-report",
+		"society record":"shaker-report",
+		"poerm":"poem",
+		"1883":"poem",
+		"poetry":"poem",
+		"aphorism":"saying",
+		"sayings":"saying",
+		"book notice":"book",
+		"book-notice":"book",
+		"books":"book",
+		"lessons":"lesson",
+		"bible class":"lesson",
+		"instructions":"instruction",
+		"death notices":"obituary",
+		"deaths":"obituary",
+		"obituaries":"obituary",
+		"editorials":"editorial",
+		"lette":"letter",
+		"corresondence":"letter",
+		"correspondences":"letter",
+		"correspondence":"letter",
+		"corresponce":"letter",
+		"letters":"letter",
+		"notes":"note",
+		"sectio":"section",
+		"sections":"section"}
 
+
+singles = ["equipment", "livestock", "recipe", "food", "shaker-press", "shaker-history", "history", "music",
+"dance", "hymn", "humor", "fiction", "story", "figure", "lecture", "science", "publication",
+"biography", "ann lee", "quote"]
+
+all = ["equipment", "livestock", "recipe", "food", "shaker-press", "shaker-history", "history", "music",
+"dance", "hymn", "humor", "fiction", "story", "figure", "lecture", "science", "publication",
+"biography", "ann lee", "quote", "letter", "note", "editorial", "obituary", "instruction", "lesson", "book", "saying",
+"poem", "shaker-report", "world-news", "national-news", "juvenile", "house", "other", "health", "farming", "crops"]

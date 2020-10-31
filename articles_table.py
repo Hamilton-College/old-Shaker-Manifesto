@@ -48,7 +48,7 @@ def read_pers(text):
 			counter -= 1
 		elif article == 1 and text[i:i + 5] == "reg=\"":
 			article = 21
-			counter = 7
+			counter = 4
 		elif article == 21 and text[i] == "\"":
 			break
 		elif article == 21:
@@ -106,20 +106,31 @@ def between(filetext, index):
 			buffer += filetext[index+i]
 	return buffer
 
+def title(str1, str2):
+	if str1 == str2:
+		return str1
+	if str1.lower() == str2.lower():
+		return str1
+	if str1 == "":
+		return str2
+	if str2 == "":
+		return str1
+	return str1
 
 def list_to_str_articles1(list1, key):
-	str1 = "("
+	str1 = "INSERT INTO articles (id, issue_id, topics, title, author_tag, author_text) VALUES "
+	str1 += "("
 	str1 += key + ", "
 	str1 += key[0:4] + ", "
-	#str1 += "\"" + list1[9] + "\", "
-	str1 += "\"" + key + "\", "
-	str1 += "\"" + key + "\", "
-	return
+	str1 += "\"" + list1[0] + "\", "
+	str1 += "\"" + title(list1[1], list1[2]) + "\", "
+	str1 += "\"" + list1[3] + "\", "
+	str1 += "\"" + list1[4] + "\"); \n"
+	f = open("articles_command.txt", "a")
+	f.write(str1)
+	f.close()
+	return str1
 
-def list_to_str_articles4(list1, list2, list3, list4):
-	str1 = ""
-
-	return
 
 def out_list(listing):
 	return
@@ -144,8 +155,8 @@ def create_text_file(key, text):
 	return
 
 def checker(lister):
-	#if len(lister[10]) > 1:
-	#	print("HUGE ISSUES - DATE", len(lister[10]))
+	if len(lister[10]) > 1:
+		print("HUGE ISSUES - DATE", len(lister[10]))
 	return
 
 def diction(str1, level1):
@@ -189,56 +200,72 @@ def diction(str1, level1):
 		"notes":"note",
 		"sectio":"section",
 		"sections":"section"}
-	listing1 = ["equipment", "livestock", "recipe", "food", "shaker-press", "shaker-history", "history", "music",
-		  "dance", "hymn", "humor", "fiction", "story", "figure", "lecture", "science", "publication",
-		  "biography", "ann lee", "quote"]
-	all_list = listing1
-	all_list.append("other")
-	for x in dictio:
-		if dictio[x] not in all_list:
-			all_list.append(dictio[x])
-	all_list.remove("section")
-	if original:
-		if str1 in dictio:
-			if dictio[str1] == "section":
-				return diction(level1, "")
-			else:
-				return dictio[str1]
-		elif str1 == "section":
+	all = ["equipment", "livestock", "recipe", "food", "shaker-press", "shaker-history", "history", "music",
+	       "dance", "hymn", "humor", "fiction", "story", "figure", "lecture", "science", "publication",
+	       "biography", "ann lee", "quote", "letter", "note", "editorial", "obituary", "instruction", "lesson",
+	       "book", "saying", "poem", "shaker-report", "world-news", "national-news", "juvenile", "house", "other",
+	       "health","farming", "crops"]
+	if str1 in dictio:
+		if dictio[str1] == "section":
+			return diction(level1, "")
+		else:
+			return dictio[str1]
+	elif str1 == "section":
+		return diction(level1, "")
+	elif str1 in all:
+		return str1
+	return "other"
 
-		elif str1 in listing1:
-			return str1
+def cleaner(str1):
+	lol = str1.split(';')
+	lol = list(dict.fromkeys(lol))
+	while "other" in lol:
+		lol.remove("other")
+	if len(lol) == 0:
 		return "other"
-
+	if len(lol) == 1:
+		return lol[0]
+	if len(lol) == 2:
+		return lol[0] + ";" + lol[1]
+	if len(lol) == 3:
+		return lol[0] + ";" + lol[1] + ";" + lol[2]
 
 def create_article(level2, level3, level4, level5, level, counter, file):
 	key = key_creator(counter, file)
 	lol = [level2, level3, level4, level5]
 	for i in lol:
+		i[1] = space_remover(i[1])
 		i[2] = space_remover(i[2])
+		i[3] = space_remover(i[3])
+		i[4] = space_remover(i[4])
 		i[12] = space_remover(i[12])
-		i[0] = dictio(i[0], i[1])
+		i[0] = diction(i[0], i[1].lower())
 		checker(i)
 	if level == 2:
 		if level2[15] > 0:
-			create_text_file(key, level2[12])
+			#create_text_file(key, level2[12])
+			#print(level2[0])
 			return list_to_str_articles1(level2, key)
-		else: return ""
 	elif level == 3:
 		if level3[15] > 0:
-			level3[0] += ":" + level2[0]
-			create_text_file(key, level3[12])
+			level3[0] += ";" + level2[0]
+			level3[0] = cleaner(level3[0])
+			#print(level3[0])
+			#create_text_file(key, level3[12])
 			return list_to_str_articles1(level3, key)
 	elif level == 4:
 		if level4[15] > 0:
-			level4[0] += ":" + level3[0] + ":" + level2[0]
-			create_text_file(key, level4[12])
+			level4[0] += ";" + level3[0] + ";" + level2[0]
+			level4[0] = cleaner(level4[0])
+			#print(level4[0])
+			#create_text_file(key, level4[12])
 			return list_to_str_articles1(level4, key)
 	elif level == 5:
-
 		if level5[15] > 0:
-			level5[0] += ":" + level4[0] + ":" + level3[0] + ":" + level2[0]
-			create_text_file(key, level4[12])
+			level5[0] += ";" + level4[0] + ";" + level3[0] + ";" + level2[0]
+			level5[0] = cleaner(level5[0])
+			#print(level5[0])
+			#create_text_file(key, level4[12])
 			return list_to_str_articles1(level4, key)
 	return ""
 
@@ -402,7 +429,7 @@ def body_read(text, file, output):
 	#print(output_list)
 	#output_str = list_to_str_articles(output_list)
 	#output.write(output_str)
-	return mylist
+	#return mylist
 
 
 def body_reader(files_list, path):
@@ -416,12 +443,15 @@ def body_reader(files_list, path):
 			print(file)
 			file_text = lol.read()
 			lolol = body_read(file_text, file, articles_file)
-			for i in lolol:
-				if i not in section:
-					section.append(i)
+			#for i in lolol:
+			#	if i not in section:
+				#	section.append(i)
 	print(section)
 
 def main():
+	f = open("articles_command.txt", "a")
+	f.truncate(0)
+	f.close()
 	path = os.getcwd() + "/journals"
 	files_list = os.listdir(path)
 	body_reader(files_list, path)
