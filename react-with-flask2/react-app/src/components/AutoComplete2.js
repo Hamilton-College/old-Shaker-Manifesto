@@ -170,9 +170,8 @@ class AutoComplete2 extends Component {
             headers:{
                 "Accept" : "application/json",
                 "content_type":"application/json", // tells the app that we're going to pass over a json object
-                "Authorization" : "query"
             },
-            body:JSON.stringify(this.state.text.value)//this.state.value)
+            body:JSON.stringify(e)//this.state.text.value)
             }
         ).then(response => { //do
             return response.json() // this is another promise so we have to do ".then" after

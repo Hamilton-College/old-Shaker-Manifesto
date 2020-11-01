@@ -9,6 +9,8 @@ import Author from './components/Author';
 import VolumeIssue from './components/VolumeIssue';
 import Results from './components/Results';
 import AuthorList from './components/AuthorList';
+import TopicResults from './components/TopicResults';
+import TopicWordResults from './components/TopicWordResults';
 import AuthorNames from './components/AuthorNames';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import AutoComplete2 from './components/autocomplete2';
@@ -28,6 +30,8 @@ function App() {
             <Route path="/VolumeIssue" component={VolumeIssue}/>
             <Route path="/Results" component={Results}/>
             <Route path="/AuthorNames" component={AuthorNames}/>
+            <Route path="/TopicResults" component={TopicResults}/>
+            <Route path="/TopicWordResults" component={TopicWordResults}/>
           </Switch>
         
       </Router>
