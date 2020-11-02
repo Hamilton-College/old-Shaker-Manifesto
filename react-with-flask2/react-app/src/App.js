@@ -44,7 +44,6 @@ function App() {
 }
 //This is just another component. Our landing page
 const Home = () => (
-  <div id = "home">
   <div className="container">
     <div id="first">
       <img src={hamiltonLogo} alt="Hamilton logo"width="145" height="60" className = "HamiltonLogo" />
@@ -63,15 +62,14 @@ const Home = () => (
 
       <br/><br/> <br/><br/> <br/>
       <img src={shakerLogo} alt="Shaker logo"width="600" height="150" className = "ShakerLogo"/>
-      <div className="searchBar">
+      {/* <div className="searchBar"> */}
         <SearchBar />
         {/* <form action= "#" method="POST" autocomplete="off"> */}
           {/* <input id="MySearchTerm" type="text" name="query" onkeydown="AutoComplete()"/> */}
           {/* <input type="submit" value="search" class="searchButton"/> */}
         {/* </form> */}
-      </div>   
+      {/* </div>    */}
       
-    </div>
     </div>
 )
 

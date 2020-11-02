@@ -100,7 +100,6 @@ def displayTypes():
                 artResults = "None"
             return redirect(url_for("topicWordResults", topic = topic, word = searchWord, results = artResults))
 
-            # search function with the list of article ids
         elif(request.form.get("checkbox")): # just a box checked, nothing typed
             topic = request.form.get("checkbox")
             queryString = f"SELECT title, author_tag FROM articles WHERE topics LIKE '{topic}' order by author_tag;" 
@@ -112,8 +111,14 @@ def displayTypes():
             return redirect(url_for("topicResults", topic = topic, results = fetchdata))
 
         else: # if no checkboxes checked, and just text entered. work like basic
-            topics = None
-            # print("topics:", topics)
+            enteredText = request.form["query"] # name in brackets matches the name of the post form in the HTML
+            print(enteredText, type(enteredText))
+            artRes = articleSearch(enteredText)
+            if(artRes == None):
+                artRes = "None"
+            print("article Results", artRes)
+            return redirect(url_for("basicResults1", values=enteredText, results = artRes)) # put in the function of the url you want to go to
+
 
         # enteredText = request.form["query"] # name matches the name of the post form in the HTML
         # print("HERE")

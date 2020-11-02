@@ -11,6 +11,7 @@ class SearchBar extends Component {
     constructor(props){
         super(props)
         this.state = {
+            suggestions: [],
             search: "" // initialize state property to empty. 
                         // "search" gets supplied as the value for the "value" element of the form input
                         // whenever there is a change, that new value gets taken care of by "handleSearchChange"
@@ -19,11 +20,62 @@ class SearchBar extends Component {
         }
     }
 
-    componentDidUpdate() {
-        const varString = this.state.search
-        const homeSearchPage = document.getElementById("searchHome")
+    // componentDidUpdate() {
+    //     const varString = this.state.search
+    //     // const homeSearchPage = document.getElementById("searchHome")
+
+    //     console.log(varString)
+    //     fetch("/autocomplete", {
+    //         method:"POST",
+    //         headers:{
+    //             "Accept" : "application/json",
+    //             "content_type":"application/json", // tells the app that we're going to pass over a json object
+    //         },
+    //         body:JSON.stringify({"txt":varString})//varString}// JSON.stringify(varString)//{txt: String(JSON.stringify(this.state.value)).toString()}//JSON.stringify(this.state.value)
+    //         }).then(response => { //do
+    //         return response.json() // this is another promise so we have to do ".then" after
+    //       })
+    //       .then(array => {
+    //         console.log(array)
+    //         this.setState({suggestions: array})
+    //         console.log("my suggestions", this.suggestions)
+    //         // homeSearchPage.innerHTML = listOfWords(array)
+    //     })
+    //         // function listOfWords(array) {
+    //         //     const autowords = array.map(array => `<li>${array}</li>`).join("\n");
+    //         //     return `<ul>${autowords}</ul>`
+    //         // }
+    //     }
+        suggestionSelected(value) {
+            this.setState(() => ({
+                search: value,
+                suggestions: [],
+            }))
+        }
+        renderSuggestions() {
+            const { suggestions } = this.state;
+            if(suggestions.length === 0) {
+                return null;
+            }
+            // const suggestions2 = suggestions.slice(0,10) //this limits the autocomplete suggestions to 10. We can change this
+            return (
+                <ul>
+                {/* <p>Here are the suggs: {suggestions}</p> */}
+                {suggestions.map((item) => <li onClick={() => this.suggestionSelected(item)}> {item} </li>)}
+                </ul>
+            )
+        }
+
+    handleSearchChange = (e) => {
+        // const value = e.target.value
+        // this.setState({search: value})
+        const varString = e.target.value//this.state.search
+        this.setState({search: varString})
+
+        // const homeSearchPage = document.getElementById("searchHome")
 
         console.log(varString)
+        // console.log(this.state.search.value)
         fetch("/autocomplete", {
             method:"POST",
             headers:{
@@ -35,17 +87,18 @@ class SearchBar extends Component {
             return response.json() // this is another promise so we have to do ".then" after
           })
           .then(array => {
-            console.log(array)
-            homeSearchPage.innerHTML = listOfWords(array)
+            // console.log(array)
+            this.setState({suggestions: array})
+            console.log("my suggestions", this.state.suggestions)
+            // homeSearchPage.innerHTML = listOfWords(array)
         })
-            function listOfWords(array) {
-                const autowords = array.map(array => `<li>${array}</li>`).join("\n");
-                return `<ul>${autowords}</ul>`
-            }
+            // function listOfWords(array) {
+            //     const autowords = array.map(array => `<li>${array}</li>`).join("\n");
+            //     return `<ul>${autowords}</ul>`
+            // }
         }
 
-    handleSearchChange = (e) => {
-        this.setState({search: e.target.value})
+        
         // console.log(e)
         // console.log(typeof e)
 
@@ -99,7 +152,6 @@ class SearchBar extends Component {
         //   .then(data => {util.inspect(data);// .json returns a response, so now we can do whatever we want with our data 
         //   this.setState({search: e.target.value})
         //   })
-        }
     handleSubmit = (e) =>{
         // alert(`${this.state.search}`)
         fetch("#", {
@@ -121,21 +173,25 @@ class SearchBar extends Component {
     render() {
         const {search} = this.state // now we don't have to type this.state when we want to edit the search property
         return(
-            <div>
-            <form onSubmit={this.handleSubmit} action = "#" method="POST" autoComplete="off">
+            <div className="AutoCompleteText">
+            <form onSubmit={this.handleSubmit} action = "#" method="POST" >
                 <div>
                 <input
                     id = "MySearchTerm" 
                     type = "text" 
                     name = "query"
                     value={search} 
-                    onChange={this.handleSearchChange}/> 
+                    onChange={this.handleSearchChange}
+                    autoComplete="off"/> 
                 </div>
+                {this.renderSuggestions()}
+
                 <button type="submit" className="searchButton">Search</button>
             </form>
-            <div id="searchHome">
+            {/* <div id="searchHome"> */}
             {/* The autocomplete options is going in here */}
-            </div>
+
+            {/* </div> */}
             </div>
         )
     }
