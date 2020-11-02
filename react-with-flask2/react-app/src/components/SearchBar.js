@@ -46,25 +46,25 @@ class SearchBar extends Component {
     //         //     return `<ul>${autowords}</ul>`
     //         // }
     //     }
-        suggestionSelected(value) {
-            this.setState(() => ({
-                search: value,
-                suggestions: [],
-            }))
+    suggestionSelected(value) {
+        this.setState(() => ({
+            search: value,
+            suggestions: [],
+        }))
+    }
+    renderSuggestions() {
+        const { suggestions } = this.state;
+        if(suggestions.length === 0) {
+            return null;
         }
-        renderSuggestions() {
-            const { suggestions } = this.state;
-            if(suggestions.length === 0) {
-                return null;
-            }
-            // const suggestions2 = suggestions.slice(0,10) //this limits the autocomplete suggestions to 10. We can change this
-            return (
-                <ul>
-                {/* <p>Here are the suggs: {suggestions}</p> */}
-                {suggestions.map((item) => <li onClick={() => this.suggestionSelected(item)}> {item} </li>)}
-                </ul>
-            )
-        }
+        // const suggestions2 = suggestions.slice(0,10) //this limits the autocomplete suggestions to 10. We can change this
+        return (
+            <ul>
+            {/* <p>Here are the suggs: {suggestions}</p> */}
+            {suggestions.map((item) => <li onClick={() => this.suggestionSelected(item)}> {item} </li>)}
+            </ul>
+        )
+    }
 
     handleSearchChange = (e) => {
         // const value = e.target.value
@@ -188,10 +188,7 @@ class SearchBar extends Component {
 
                 <button type="submit" className="searchButton">Search</button>
             </form>
-            {/* <div id="searchHome"> */}
-            {/* The autocomplete options is going in here */}
-
-            {/* </div> */}
+           
             </div>
         )
     }

@@ -12,9 +12,9 @@ class TopicSearchBar extends Component {
     constructor(props){
         super(props)
         this.state = {
-            checkbox: false,
+            checkbox: "",
             suggestions: [],
-            text: ""
+            search: ""
         };
     }
 
@@ -27,46 +27,9 @@ class TopicSearchBar extends Component {
 
     }
 
-    handleSubmit = (e) => {
-        // console.log(typeof JSON.parse(data))
-        // console.log(data)
-        // axios.post("/", this.state.text.value).then(response => {
-        //                 console.log(response)
-        //             })
-        //             .catch(error => {
-        //                 console.log(error)
-        //             })
-        fetch("#", {
-            method:"POST",
-            headers:{
-                "Accept" : "application/json",
-                "content_type":"application/json", // tells the app that we're going to pass over a json object
-            },
-            body:JSON.stringify(e)//this.state.value)
-            }
-        ).then(response => { //do
-            return response.json() // this is another promise so we have to do ".then" after
-          })
-          .then(json => {
-          this.setState({search: e.target.value})
-          })
-    }
-
-    onTextChanged = (e) => {
-        const { items } = this.props;
-        const value = e.target.value;
-        let suggestions = [];
-        let bully = true;
-        if(value.length > 0) {
-            const regex = new RegExp(`^${value}`, 'i');
-            suggestions = items.sort().filter(v => regex.test(v));
-        }
-        this.setState(() => ({ suggestions, text: value }));
-    }
-
     suggestionSelected(value) {
         this.setState(() => ({
-            text: value,
+            search: value,
             suggestions: [],
         }))
     }
@@ -76,16 +39,68 @@ class TopicSearchBar extends Component {
         if(suggestions.length === 0) {
             return null;
         }
-        const suggestions2 = suggestions.slice(0,10) //this limits the autocomplete suggestions to 10. We can change this
+        // const suggestions2 = suggestions.slice(0,10) //this limits the autocomplete suggestions to 10. We can change this
         return (
             <ul>
-            {suggestions2.map((item) => <li onClick={() => this.suggestionSelected(item)}> {item} </li>)}
+            {/* <p>Here are the suggs: {suggestions}</p> */}
+            {suggestions.map((item) => <li onClick={() => this.suggestionSelected(item)}> {item} </li>)}
             </ul>
         )
     }
 
+    handleSearchChange = (e) => {
+        // const value = e.target.value
+        // this.setState({search: value})
+        const varString = e.target.value//this.state.search
+        this.setState({search: varString})
+
+        // const homeSearchPage = document.getElementById("searchHome")
+
+        console.log(varString)
+        // console.log(this.state.search.value)
+        fetch("/autocomplete", {
+            method:"POST",
+            headers:{
+                "Accept" : "application/json",
+                "content_type":"application/json", // tells the app that we're going to pass over a json object
+            },
+            body:JSON.stringify({"txt":varString})//varString}// JSON.stringify(varString)//{txt: String(JSON.stringify(this.state.value)).toString()}//JSON.stringify(this.state.value)
+            }).then(response => { //do
+            return response.json() // this is another promise so we have to do ".then" after
+          })
+          .then(array => {
+            // console.log(array)
+            this.setState({suggestions: array})
+            console.log("my suggestions", this.state.suggestions)
+            // homeSearchPage.innerHTML = listOfWords(array)
+        })
+            // function listOfWords(array) {
+            //     const autowords = array.map(array => `<li>${array}</li>`).join("\n");
+            //     return `<ul>${autowords}</ul>`
+            // }
+        }
+
+    handleSubmit = (e) =>{
+        // alert(`${this.state.search}`)
+        fetch("#", {
+            method:"POST",
+            headers:{
+                "Accept" : "application/json",
+                "contentType":"application/json", // tells the app that we're going to pass over a json object
+            },
+            body:JSON.stringify(e)
+            }
+        ).then(response => { //do
+            console.log(JSON.stringify(this.state.value))
+        return response.json() // this is another promise so we have to do ".then" after
+      })
+      .then(json => {
+      this.setState({search: e.target.value})
+      })
+    }
+
     render () {
-        const { text } = this.state;
+        const { search } = this.state;
         return (
                 <form onSubmit={this.handleSubmit} action = "#" method="POST">
                 <div>
@@ -93,29 +108,29 @@ class TopicSearchBar extends Component {
                     <div className="dropdown">
                         <button className="dropbtn">Literature</button>
                         <div className="dropdown-content">
-                            <input type="radio" onChange={this.handleCheckbox} checked = {this.state.checkbox} id="vehicle1" name="checkbox" value="editorial"/>
+                            <input type="radio" onChange={this.handleCheckbox.bind(this)} checked = {this.state.checkbox} id="vehicle1" name="checkbox" value="editorial"/>
                             <label for="vehicle1"> Editorials</label><br/>
-                            <input type="radio" onChange={this.handleCheckbox} checked = {this.state.checkbox} id="vehicle2" name="checkbox" value="poem"/>
+                            <input type="radio" onChange={this.handleCheckbox.bind(this)} checked = {this.state.checkbox} id="vehicle2" name="checkbox" value="poem"/>
                             <label for="vehicle2"> Poetry</label><br/>
-                            <input type="radio" onChange={this.handleCheckbox} checked = {this.state.checkbox} id="vehicle3" name="checkbox" value="letter"/> 
+                            <input type="radio" onChange={this.handleCheckbox.bind(this)} checked = {this.state.checkbox} id="vehicle3" name="checkbox" value="letter"/> 
                             <label for="vehicle3"> Letter</label><br/>
-                            <input type="radio" onChange={this.handleCheckbox} checked = {this.state.checkbox} id="vehicle4" name="checkbox" value="biography"/> 
+                            <input type="radio" onChange={this.handleCheckbox.bind(this)} checked = {this.state.checkbox} id="vehicle4" name="checkbox" value="biography"/> 
                             <label for="vehicle4"> Biography</label><br/> 
-                            <input type="radio" onChange={this.handleCheckbox} checked = {this.state.checkbox} id="vehicle5" name="checkbox" value="quote"/>
+                            <input type="radio" onChange={this.handleCheckbox.bind(this)} checked = {this.state.checkbox} id="vehicle5" name="checkbox" value="quote"/>
                             <label for="vehicle5"> Quote</label><br/>
-                            <input type="radio" onChange={this.handleCheckbox} checked = {this.state.checkbox} id="vehicle6" name="checkbox" value="fiction"/>
+                            <input type="radio" onChange={this.handleCheckbox.bind(this)} checked = {this.state.checkbox} id="vehicle6" name="checkbox" value="fiction"/>
                             <label for="vehicle6"> Fiction</label><br/>
-                            <input type="radio" onChange={this.handleCheckbox} checked = {this.state.checkbox} id="vehicle7" name="checkbox" value="note"/> 
+                            <input type="radio" onChange={this.handleCheckbox.bind(this)} checked = {this.state.checkbox} id="vehicle7" name="checkbox" value="note"/> 
                             <label for="vehicle7"> Notes</label><br/>
-                            <input type="radio" onChange={this.handleCheckbox} checked = {this.state.checkbox} id="vehicle8" name="checkbox" value="story"/> 
+                            <input type="radio" onChange={this.handleCheckbox.bind(this)} checked = {this.state.checkbox} id="vehicle8" name="checkbox" value="story"/> 
                             <label for="vehicle8"> Story</label><br/> 
-                            <input type="radio" onChange={this.handleCheckbox} checked = {this.state.checkbox} id="vehicle9" name="checkbox" value="publication"/> 
+                            <input type="radio" onChange={this.handleCheckbox.bind(this)} checked = {this.state.checkbox} id="vehicle9" name="checkbox" value="publication"/> 
                             <label for="vehicle9"> Publication</label><br/>
-                            <input type="radio" onChange={this.handleCheckbox} checked = {this.state.checkbox} id="vehicle10" name="checkbox" value="book"/> 
+                            <input type="radio" onChange={this.handleCheckbox.bind(this)} checked = {this.state.checkbox} id="vehicle10" name="checkbox" value="book"/> 
                             <label for="vehicle10"> Book</label><br/> 
                         </div>
                     </div>
-                    {/* <div className="dropdown">
+                    <div className="dropdown">
                         <button className="dropbtn">News & Events</button>
                         <div className="dropdown-content">
                             <input type="radio" onChange={this.handleCheckbox.bind(this)} checked = {this.state.checkbox} id="vehicle1" name="checkbox" value="shaker-history"/>
@@ -190,14 +205,21 @@ class TopicSearchBar extends Component {
                             <input type="radio" onChange={this.handleCheckbox.bind(this)} checked = {this.state.checkbox} id="vehicle8" name="checkbox" value="other"/>
                             <label for="vehicle8"> Other</label><br/>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
                 </div>
 
                     <div className = "AutoCompleteText">
-                        <input value={text} onChange= {this.onTextChanged} type ="text" name = "query" autoComplete="off"/>
-                        {this.renderSuggestions()}
-                        <button type="submit" className="searchButton">Search</button>
+                    <input
+                        id = "MySearchTerm" 
+                        type = "text" 
+                        name = "query"
+                        value={search} 
+                        onChange={this.handleSearchChange}
+                        autoComplete="off"
+                    /> 
+                    {this.renderSuggestions()}
+                    <button type="submit" className="searchButton">Search</button>
                     </div>
 
                 </form>
