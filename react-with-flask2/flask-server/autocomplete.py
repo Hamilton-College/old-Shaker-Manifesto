@@ -4,7 +4,7 @@ AUTOCOMPLETE = None
 
 def init():
     names = None
-    with open("../../shaker_dictionary.txt", encoding="uft8") as file:
+    with open("../../shaker_dictionary.txt", encoding="utf8") as file:
         names = file.readlines()
 
     words = dict(zip(names, [dict()] * len(names)))
@@ -12,6 +12,7 @@ def init():
 
 
 def search(s):
+    print("in autocomplete.py")
     global AUTOCOMPLETE
     if AUTOCOMPLETE is None:
         AUTOCOMPLETE = init()

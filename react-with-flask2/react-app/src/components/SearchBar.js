@@ -19,10 +19,35 @@ class SearchBar extends Component {
         }
     }
 
+    componentDidUpdate() {
+        const varString = this.state.search
+        const homeSearchPage = document.getElementById("searchHome")
+
+        console.log(varString)
+        fetch("/autocomplete", {
+            method:"POST",
+            headers:{
+                "Accept" : "application/json",
+                "content_type":"application/json", // tells the app that we're going to pass over a json object
+            },
+            body:JSON.stringify({"txt":varString})//varString}// JSON.stringify(varString)//{txt: String(JSON.stringify(this.state.value)).toString()}//JSON.stringify(this.state.value)
+            }).then(response => { //do
+            return response.json() // this is another promise so we have to do ".then" after
+          })
+          .then(array => {
+            console.log(array)
+            homeSearchPage.innerHTML = listOfWords(array)
+        })
+            function listOfWords(array) {
+                const autowords = array.map(array => `<li>${array}</li>`).join("\n");
+                return `<ul>${autowords}</ul>`
+            }
+        }
+
     handleSearchChange = (e) => {
         this.setState({search: e.target.value})
-        console.log(e)
-        console.log(typeof e)
+        // console.log(e)
+        // console.log(typeof e)
 
         // const getCircularReplacer = () => {
         //     console.log("inside getCircRep")
@@ -46,14 +71,14 @@ class SearchBar extends Component {
         //     console.log(e.target.value)
         // })
 
-        fetch("/autocomplete", {
-            method:"POST",
-            headers:{
-                "Accept" : "application/json",
-                "content_type":"application/json", // tells the app that we're going to pass over a json object
-            },
-            body: {txt:JSON.stringify(this.state.value)}//JSON.stringify(this.state.value)
-            })
+        // fetch("/autocomplete", {
+        //     method:"POST",
+        //     headers:{
+        //         "Accept" : "application/json",
+        //         "content_type":"application/json", // tells the app that we're going to pass over a json object
+        //     },
+        //     body: {txt: String(JSON.stringify(this.state.value)).toString()}//JSON.stringify(this.state.value)
+        //     })
         
         // var util = require('util')
 
@@ -96,7 +121,8 @@ class SearchBar extends Component {
     render() {
         const {search} = this.state // now we don't have to type this.state when we want to edit the search property
         return(
-            <form onSubmit={this.handleSubmit} action = "#" method="POST">
+            <div>
+            <form onSubmit={this.handleSubmit} action = "#" method="POST" autoComplete="off">
                 <div>
                 <input
                     id = "MySearchTerm" 
@@ -107,6 +133,10 @@ class SearchBar extends Component {
                 </div>
                 <button type="submit" className="searchButton">Search</button>
             </form>
+            <div id="searchHome">
+            {/* The autocomplete options is going in here */}
+            </div>
+            </div>
         )
     }
 }

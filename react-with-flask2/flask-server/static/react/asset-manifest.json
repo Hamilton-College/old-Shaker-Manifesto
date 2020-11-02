@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/static/react/css/main.04b74d96.chunk.css",
-    "main.js": "/static/react/js/main.891f2c09.chunk.js",
-    "main.js.map": "/static/react/js/main.891f2c09.chunk.js.map",
+    "main.js": "/static/react/js/main.2bc2bfce.chunk.js",
+    "main.js.map": "/static/react/js/main.2bc2bfce.chunk.js.map",
     "runtime-main.js": "/static/react/js/runtime-main.6edcfee7.js",
     "runtime-main.js.map": "/static/react/js/runtime-main.6edcfee7.js.map",
     "css/2.d99397f9.chunk.css": "/static/react/css/2.d99397f9.chunk.css",
-    "js/2.948690b2.chunk.js": "/static/react/js/2.948690b2.chunk.js",
-    "js/2.948690b2.chunk.js.map": "/static/react/js/2.948690b2.chunk.js.map",
+    "js/2.72feac41.chunk.js": "/static/react/js/2.72feac41.chunk.js",
+    "js/2.72feac41.chunk.js.map": "/static/react/js/2.72feac41.chunk.js.map",
     "../../templates/index.html": "/static/react/../../templates/index.html",
     "css/2.d99397f9.chunk.css.map": "/static/react/css/2.d99397f9.chunk.css.map",
     "css/main.04b74d96.chunk.css.map": "/static/react/css/main.04b74d96.chunk.css.map",
-    "js/2.948690b2.chunk.js.LICENSE.txt": "/static/react/js/2.948690b2.chunk.js.LICENSE.txt",
+    "js/2.72feac41.chunk.js.LICENSE.txt": "/static/react/js/2.72feac41.chunk.js.LICENSE.txt",
     "media/hamilton-lib-logo.f0c779ea.PNG": "/static/react/media/hamilton-lib-logo.f0c779ea.PNG",
     "media/shaker-manifesto-logo.bd7262a1.PNG": "/static/react/media/shaker-manifesto-logo.bd7262a1.PNG"
   },
   "entrypoints": [
     "js/runtime-main.6edcfee7.js",
     "css/2.d99397f9.chunk.css",
-    "js/2.948690b2.chunk.js",
+    "js/2.72feac41.chunk.js",
     "css/main.04b74d96.chunk.css",
-    "js/main.891f2c09.chunk.js"
+    "js/main.2bc2bfce.chunk.js"
   ]
 }

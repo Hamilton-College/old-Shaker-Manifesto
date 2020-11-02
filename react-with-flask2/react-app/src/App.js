@@ -44,6 +44,7 @@ function App() {
 }
 //This is just another component. Our landing page
 const Home = () => (
+  <div id = "home">
   <div className="container">
     <div id="first">
       <img src={hamiltonLogo} alt="Hamilton logo"width="145" height="60" className = "HamiltonLogo" />
@@ -70,6 +71,7 @@ const Home = () => (
         {/* </form> */}
       </div>   
       
+    </div>
     </div>
 )
 
