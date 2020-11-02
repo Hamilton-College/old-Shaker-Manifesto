@@ -57,7 +57,7 @@ def articleSearch(inp, articleIDs=[]):
 def preview(file, index, s):
     start = index - 100 if index - 100 > 0 else 0
     file.seek(start)
-    p = file.read(200)
+    p = str(file.read(200))
     f = FuzzyTree(p)
     r = ""
     b = False
@@ -79,7 +79,7 @@ def previewlist(dictname, locations, searchstring):
     assert(searchstring)
     results = []
     for filename, index in locations:
-        with open(os.path.join(dictname, filename), "r", encoding="utf8") as file:
+        with open(os.path.join(dictname, filename), "rb") as file:
             results.append("...{}...".format(preview(file, index, searchstring)))
     return results
 
