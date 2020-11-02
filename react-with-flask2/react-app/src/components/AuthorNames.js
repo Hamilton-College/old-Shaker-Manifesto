@@ -21,8 +21,8 @@ function AuthorNames() {
                 <a href="VolumeIssue">Volume & Issue</a>
             </div>
             </div>
-        </div>
         <h2> <a class="advancedSearch" href = "/"> Basic Search </a></h2>
+        </div>
 
         <br/><br/> <br/><br/> <br/>
         <img src={shakerLogo} alt="Shaker logo"width="600" height="150" className = "ShakerLogo"/>

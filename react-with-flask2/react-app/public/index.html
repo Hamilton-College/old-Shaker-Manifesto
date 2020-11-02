@@ -49,9 +49,12 @@
     <script> window.name="{{name}}"</script>
 
     <script> window.enteredText='{{enteredText|default("")|tojson}}'</script> <!-- We need the default because we are not passing the var on every page  -->
-    <!-- <script> window.results='{{results|default("")|tojson}}'</script> -->
+    <script> window.selectedTopic='{{topic|default("")|tojson}}'</script>
     <script> window.enteredTerm='{{enteredTerm|default("")|tojson}}'</script> <!-- We need the default because we are not passing the var on every page  -->
     <script> window.firstLetter='{{firstLetter|default("")|tojson}}'</script>
+    <script> window.topicWord='{{topicWord|default("")|tojson}}'</script>
+    <script> window.topic='{{topic|default("")|tojson}}'</script>
+
 
     <script>
       function convert(s){ // This converts lists(and more) to a json object
@@ -69,6 +72,13 @@
 
       var list2 = '{{results|default("")|tojson}}'
       window.results= convert(list2)
+
+      var list3 = '{{topicResults|default("")|tojson}}'
+      window.topicResults= convert(list3)
+
+      var list4 = '{{topicWordResults|default("")|tojson}}'
+      window.topicWordResults= convert(list4)
+
       // var str3 = '{{firstLetter|safe}}' // list of authors of a particular letter
       // window.firstLetter = convert(str3)
     </script>
@@ -82,6 +92,8 @@
       }
       test_func("{{articlesList|safe}}")
     </script> -->
+    <script src="//ajax.googleapis.com/ajax/libs/dojo/1.14.1/dojo/dojo.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- This imports jquery, which is a library that gives us access to many methods -->
 

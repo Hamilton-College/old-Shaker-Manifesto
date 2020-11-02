@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 
+
 // This is a component that will be displayed in app.js
 
 class SearchBar extends Component {
     // to convert this into a react, component, 
     // we need to give it a component state
+    
     constructor(props){
         super(props)
         this.state = {
@@ -16,37 +18,64 @@ class SearchBar extends Component {
                         // Now that the state has been set (again), the new value(string) gets set as the "value" elemt 
         }
     }
-    handleSearchChange = (event) => {
-        // axios.post("/autocomplete", this.state.value).then(response => {
+
+    handleSearchChange = (e) => {
+        this.setState({search: e.target.value})
+        console.log(e)
+        console.log(typeof e)
+
+        // const getCircularReplacer = () => {
+        //     console.log("inside getCircRep")
+        //     const seen = new WeakSet();
+        //     return (item) => {
+        //       if (typeof item === "object" && item !== null) {
+        //         if (seen.has(item)) {
+        //           return;
+        //         }
+        //         console.log(typeof item, item)
+        //         seen.add(item);
+        //       }
+        //       return item;
+        //     };
+        //   };
+        // const fetchPromise = axios.post("/autocomplete", e);
+        // fetchPromise.then(response => {console.log(response);})
+        // .then(response => {
         //     console.log("Mira:", response)
         //     console.log(response.data)
-        //     // console.log(event.target.value)
-        // })
-        // .catch(error => {
-        //     console.log(error)
+        //     console.log(e.target.value)
         // })
 
-        // this.setState({
-        //     search: event.target.value // sets the "search" state property to whatever has been typed
+        fetch("/autocomplete", {
+            method:"POST",
+            headers:{
+                "Accept" : "application/json",
+                "content_type":"application/json", // tells the app that we're going to pass over a json object
+            },
+            body: {txt:JSON.stringify(this.state.value)}//JSON.stringify(this.state.value)
+            })
+        
+        // var util = require('util')
+
+        
+
+        // const fetchPromise = axios.post("/autocomplete", e);
+        // fetchPromise.then(response => {console.log(response);})
+        // .then(response => {
+        //     console.log("Mira:", response)
+        //     console.log(response.data)
+        //     console.log(e.target.value)
         // })
-        // if(this.state.value.length > 0){
-        // fetch("/autocomplete", {
-        //     method:"POST",
-        //     headers:{
-        //         "Accept" : "application/json",
-        //         "contentType":"application/json", // tells the app that we're going to pass over a json object
-        //     },
-        //     body:JSON.stringify(this.state.value)
-        //     }
-        // ).then(response => { //do
-        //     console.log(JSON.stringify(this.state.value))
-        // return response.json() // this is another promise so we have to do ".then" after
-        // })
-        // .then(json => {
-        this.setState({search: event.target.value})
+
+        // .then(response => { //do
+        //     console.log("hello")
+        //     return response.json() // get response object in json form. Response object is what is returned as a result of an api call
+        //   }) 
+        //   .then(data => {util.inspect(data);// .json returns a response, so now we can do whatever we want with our data 
+        //   this.setState({search: e.target.value})
+        //   })
         }
-    // }
-    handleSubmit = (event) =>{
+    handleSubmit = (e) =>{
         // alert(`${this.state.search}`)
         fetch("#", {
             method:"POST",
@@ -54,14 +83,14 @@ class SearchBar extends Component {
                 "Accept" : "application/json",
                 "contentType":"application/json", // tells the app that we're going to pass over a json object
             },
-            body:JSON.stringify(this.state.value)
+            body:JSON.stringify(e)
             }
         ).then(response => { //do
             console.log(JSON.stringify(this.state.value))
         return response.json() // this is another promise so we have to do ".then" after
       })
       .then(json => {
-      this.setState({search: event.target.value})
+      this.setState({search: e.target.value})
       })
     }
     render() {
