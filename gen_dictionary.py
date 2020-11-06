@@ -22,12 +22,16 @@ def create_dictionary(directory):
     for filename in os.listdir(directory):
         if filename.endswith(".txt"):
             print("---Processing {}---".format(filename))
-            with open(os.path.join(directory, filename), encoding="utf8") as f:
-                file = f.read()
+            with open(os.path.join(directory, filename), "rb") as f:
+                file = f.read().decode("utf8", errors="ignore")
                 for w in file.split():
-                    if w.isascii():
-                        w = re.sub("[-.,\"?\\\\/()!#$;:%&{}=0-9'*+|~\[\]^_]", "", w)
-                        s.add(w.lower())
+                    s.add(re.sub("[-.,\"?\\\\/()!#$;:%&{}=0-9'*+|~\[\]^_]", "", w).lower())
+            # with open(os.path.join(directory, filename), encoding="utf8") as f:
+            #     file = f.read()
+            #     for w in file.split():
+            #         if w.isascii():
+            #             w = re.sub("[-.,\"?\\\\/()!#$;:%&{}=0-9'*+|~\[\]^_]", "", w)
+            #             s.add(w.lower())
 
     s.discard("") #remove empty string
     for c in "qwertyuiopasdfghjklzxcvbnm": #removes single letter results
@@ -37,7 +41,7 @@ def create_dictionary(directory):
         if w + "s" in s:
             s.discard(w + "s")
 
-    with open(SAVE_LOC, "w+") as output:
+    with open(SAVE_LOC, "w+", encoding="utf8") as output:
         for l in sorted(list(s)):
             output.write(l + "\n")
 
