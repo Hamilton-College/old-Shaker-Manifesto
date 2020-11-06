@@ -148,13 +148,17 @@ body{
 }
 
 .searchBar{ /*we can get rid of this altogether if it doesn't work. this is just the background */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* width: 40%; */
+  /* border: 1px solid grey; */
+  /* box-shadow: 0 0 0 1px rgb(204, 199, 199), 0 2px 4px 1px rgb(190, 188, 188); */
   background: #FAFAD2;
   /* max-width: 500px; */
-  width: 400px;
+  margin: 0 auto;
+  width: 200px;
   height: 65px;
   padding: 5px;
   border-radius: 5px;
@@ -166,10 +170,12 @@ body{
 
 #MySearchTerm{
   /* position: absolute; */
-  width: 300px;
+  width: 98%;
   padding: 15px 20px;
   border-radius: 5px;
   font-weight: bold;
+  /* justify-content: center; */
+  align-items: center; /* this isn't working*/
   /* position: absolute;
   top: 50%;
   left: 50%;
@@ -184,8 +190,8 @@ body{
 }
 .searchButton{
   display: inline;
-  background: #ffec00;
-  width: 20%;
+  background: rgb(128, 196, 192);
+  width: 80px;
   height: 40px;
   border-radius: 5px;
   /* position: relative; */
@@ -261,21 +267,26 @@ body{
   font-size: 16px;
   border: none;
   width: auto;
-  right: 50%;
+  margin: 0 auto;
+  /* right: 50%; */
   /* position: sticky; */
 }
 
 #dropdownWrapper{
 
-  width: 756px;
-  margin: 0 auto;
+  width: 60%;
+  margin: 0 auto; /* this centers it*/
   border: 1px solid green;
   /* overflow: hidden; */
   background-color: cadetblue;
 }
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* position: relative; */
   display: inline-block;
   /* border: 1px solid green; */
   width: auto;
@@ -412,12 +423,23 @@ input[type=submit] {
 }
 
 .AutoCompleteText{
-  width: 100%;
+  width: 30%; 
   border: 1px solid grey;
   box-shadow: 0 0 0 1px rgb(204, 199, 199), 0 2px 4px 1px rgb(190, 188, 188);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  color: black
+  color: black;
+  background: #FAFAD2;
+  /* max-width: 500px; */
+  margin: auto;
+  /* width: 200px; */
+  /* height: 65px; */
+  padding: 5px;
+  border-radius: 5px;
+  /* display: inline-block; */
+  /* justify-content: space-between; */
+  /* border: 1px solid green; */
+  /* overflow: hidden; */
 }
 
 .AutoCompleteText input {

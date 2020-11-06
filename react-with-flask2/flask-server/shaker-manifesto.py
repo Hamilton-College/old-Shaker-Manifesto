@@ -86,7 +86,7 @@ def displayTypes():
             # print("Boxes checked:", request.form.getlist("checkbox"))
             searchWord = request.form.get("query")
             topic = request.form.get("checkbox")
-            queryString = f"SELECT id FROM articles WHERE topics LIKE '{topic}' order by author_tag;" 
+            queryString = f"SELECT id FROM articles WHERE topics LIKE '%{topic}%' order by author_tag;" 
             curr = mysql.connection.cursor()
             curr.execute(queryString)
             fetchdata = curr.fetchall()
@@ -102,7 +102,7 @@ def displayTypes():
 
         elif(request.form.get("checkbox")): # just a box checked, nothing typed
             topic = request.form.get("checkbox")
-            queryString = f"SELECT title, author_tag FROM articles WHERE topics LIKE '{topic}' order by author_tag;" 
+            queryString = f"SELECT title, author_tag FROM articles WHERE topics LIKE '%{topic}%' order by author_tag;" 
             curr = mysql.connection.cursor()
             curr.execute(queryString)
             fetchdata = curr.fetchall()
