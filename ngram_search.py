@@ -11,8 +11,8 @@ class Result:
         self.term = term
         self.thresh = thresh
         self.raw_index = raw_index
-        self.vol = 0
-        self.issue = 0
+        self.vol = -1
+        self.issue = -1
         self.article = -1
         self.index = 0
         self.preview = None
@@ -45,8 +45,8 @@ class Result:
         self.vol, self.issue, self.article, self.index = dict[self.raw_index]
 
     def filename(self):
-        assert(self.vol)
-        assert(self.issue)
+        assert(self.vol != -1)
+        assert(self.issue != -1)
         assert(self.article != -1)
         return os.path.join(DIRECTORY_NAME,
             "{:02d}{:02d}{:03d}.txt".format(self.vol, self.issue, self.article))
