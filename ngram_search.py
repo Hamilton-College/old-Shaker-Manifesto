@@ -5,6 +5,7 @@ import sys, re, os, json, pickle
 DIRECTORY_NAME=os.path.join(".", "react-with-flask2", "flask-server", "Volume01")
 SUFFIX_TREE=None
 SUFFIX_DICT=None
+PAGE_LIMIT=20
 
 class Result:
     def __init__(self, term, thresh, raw_index, dict):
@@ -110,13 +111,13 @@ def search(tree, dict, ngram, string, ids=[], thresh=0.5):
     results = []
     for w in ngram.search(string, threshold=thresh):
         results.extend([Result(*w, e, dict) for e in tree.find_all(w[0])])
-    print(res := [(r.id(), r.getPreview()) for r in simplify_results(results)])
-    return res
+    if results:
+        return ([(r.id(), r.getPreview()) for r in (results := simplify_results(results))[:PAGE_LIMIT]], results[PAGE_LIMIT:])
 
 def main():
     t, d, n = load(DIRECTORY_NAME, debug=True)
-    while inp := input("::> "):
-        for r in search(t, d, n, inp):
+    while (inp := input("::> ")) != "exit":
+        for r in search(t, d, n, inp)[0]:
             print(r)
 
 if __name__ == "__main__":
