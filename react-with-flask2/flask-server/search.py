@@ -57,7 +57,7 @@ def articleSearch(inp, articleIDs=[]):
 def preview(file, index, s):
     start = index - 100 if index - 100 > 0 else 0
     file.seek(start)
-    p = str(file.read(200))
+    p = file.read(200).decode("utf8", errors="ignore")
     f = FuzzyTree(p)
     r = ""
     b = False
