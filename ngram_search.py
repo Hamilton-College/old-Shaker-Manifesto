@@ -1,11 +1,9 @@
 from ngram import NGram
 from suffix_trees import STree
-import sys, re, os, json, pickle
+import sys, re, os, json, pickle, time
 
 DIRECTORY_NAME=os.path.join(".", "react-with-flask2", "flask-server", "Volume01")
-SUFFIX_TREE=None
-SUFFIX_DICT=None
-PAGE_LIMIT=20
+PAGE_LIMIT=15
 
 class Result:
     def __init__(self, term, thresh, raw_index, dict):
@@ -69,68 +67,85 @@ class Result:
                                 file.read(200).decode("utf8", errors="ignore"),
                                 flags=re.I)
 
-def load(dic_name, debug=False):
-    total = ""
-    tindex = 0
-    total_dict = {}
-    n = set()
-    v, i, a, ind = (0, 0, 0, 0)
-    r = re.compile("(\d\d)(\d\d)(\d\d\d).txt")
-    for filename in sorted(os.listdir(dic_name)):
-        index = 0
-        if filename.endswith(".txt"):
-            if debug:
-                print("Processing {}".format(filename))
-            v, i, a = map(int, r.match(filename).groups())
-            with open(os.path.join(dic_name, filename), "rb") as file:
-                for w in file.read().decode("utf8", errors="ignore").lower().split():
-                    n.add(w)
-                    for c in w:
-                        total += c
-                        total_dict[tindex] = (v, i, a, ind)
-                        tindex += 1
-                        index += 1
-    return (STree.STree(total), total_dict, NGram(n))
+class SM_Search:
+    def __init__(self):
+        self._tree = None
+        self._index_dict = None
+        self._ngram = None
+        self._remain = None
+        self._load(DIRECTORY_NAME)
 
-def simplify_results(results):
-    results.sort(key=Result.getRawIndex)
-    simplified = [results[0]]
-    for i in range(len(results)):
-        if (s:= simplified[-1]).id() == (r := results[i]).id():
-            if s.getTerm() == r.getTerm():
-                s.occur += 1
-            elif s.getThresh() < r.getThresh(): #r is closer to original term
-                simplified.pop()
-                simplified.append(r)
-        else: #no simplification
-            simplified.append(results[i])
-    simplified.sort(key=Result.getThresh)
-    return simplified
+    def _load(self, dic_name, debug=False):
+        total = ""
+        tindex = 0
+        total_dict = {}
+        n = set()
+        v, i, a, ind = (0, 0, 0, 0)
+        r = re.compile("(\d\d)(\d\d)(\d\d\d).txt")
+        for filename in sorted(os.listdir(dic_name)):
+            index = 0
+            if filename.endswith(".txt"):
+                if debug:
+                    print("Processing {}".format(filename))
+                v, i, a = map(int, r.match(filename).groups())
+                with open(os.path.join(dic_name, filename), "rb") as file:
+                    for w in file.read().decode("utf8", errors="ignore").lower().split():
+                        n.add(w)
+                        for c in w:
+                            total += c
+                            total_dict[tindex] = (v, i, a, ind)
+                            tindex += 1
+                            index += 1
 
-def expand(results):
-    return [(r.id(), r.getPreview()) for r in results]
+        self._tree = STree.STree(total)
+        self._index_dict = total_dict
+        self._ngram = NGram(n)
 
-def search(tree, dict, ngram, string, ids=[], thresh=0.5):
-    results = []
-    for w in ngram.search(string, threshold=thresh):
-        results.extend([Result(*w, e, dict) for e in tree.find_all(w[0])])
-    if results:
-        results = simplify_results(results)
-        return [expand(results[:PAGE_LIMIT]), results[PAGE_LIMIT:]]
-    return []
+    def _simplify_results(self, results):
+        results.sort(key=Result.getRawIndex)
+        simplified = [results[0]]
+        for i in range(len(results)):
+            if (s:= simplified[-1]).id() == (r := results[i]).id():
+                if s.getTerm() == r.getTerm():
+                    s.occur += 1
+                elif s.getThresh() < r.getThresh(): #r is closer to original term
+                    simplified.pop()
+                    simplified.append(r)
+            else: #no simplification
+                simplified.append(results[i])
+        simplified.sort(key=Result.getThresh)
+        return simplified
+
+    def generate_results(self):
+        if self._remain:
+            r = [(r.id(), r.getPreview()) for r in self._remain[:PAGE_LIMIT]]
+            self._remain = self._remain[PAGE_LIMIT:]
+            return r
+
+    def search(self, string, ids=[], thresh=0.5):
+        results = []
+        for w in self._ngram.search(string, threshold=thresh):
+            results.extend([Result(*w, e, self._index_dict) for e in self._tree.find_all(w[0])])
+        if results:
+            results = self._simplify_results(results)
+            self._remain = results
+            return self.generate_results()
+        return []
 
 def main():
-    t, d, n = load(DIRECTORY_NAME, debug=True)
-    remain = []
+    tic = time.perf_counter()
+    s = SM_Search()
+    print(time.perf_counter() - tic)
     while (inp := input("::> ")) != "exit":
+        tic = time.perf_counter()
         if inp:
-            result, remain = seaerch(t, d, n, inp)
-            for r in results:
+            result = s.search(inp)
+            for r in result:
                 print(r)
-        elif remain:
-            for r in expand(remain[:PAGE_LIMIT]):
+        elif result := s.generate_results():
+            for r in result:
                 print(r)
-            remain = remain[PAGE_LIMIT:]
+        print(time.perf_counter() - tic)
 
 if __name__ == "__main__":
     main()
