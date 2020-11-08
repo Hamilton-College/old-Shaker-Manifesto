@@ -107,18 +107,30 @@ def simplify_results(results):
     simplified.sort(key=Result.getThresh)
     return simplified
 
+def expand(results):
+    return [(r.id(), r.getPreview()) for r in results]
+
 def search(tree, dict, ngram, string, ids=[], thresh=0.5):
     results = []
     for w in ngram.search(string, threshold=thresh):
         results.extend([Result(*w, e, dict) for e in tree.find_all(w[0])])
     if results:
-        return ([(r.id(), r.getPreview()) for r in (results := simplify_results(results))[:PAGE_LIMIT]], results[PAGE_LIMIT:])
+        results = simplify_results(results)
+        return [expand(results[:PAGE_LIMIT]), results[PAGE_LIMIT:]]
+    return []
 
 def main():
     t, d, n = load(DIRECTORY_NAME, debug=True)
+    remain = []
     while (inp := input("::> ")) != "exit":
-        for r in search(t, d, n, inp)[0]:
-            print(r)
+        if inp:
+            result, remain = seaerch(t, d, n, inp)
+            for r in results:
+                print(r)
+        elif remain:
+            for r in expand(remain[:PAGE_LIMIT]):
+                print(r)
+            remain = remain[PAGE_LIMIT:]
 
 if __name__ == "__main__":
     main()
