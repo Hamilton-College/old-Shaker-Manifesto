@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import shakerLogo from '../images/shaker-manifesto-logo.PNG';
+import shakerLogo from '../images/shaker-manifesto-logo2.PNG';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
 // This is a component that will be displayed in app.js
 

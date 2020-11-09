@@ -1,9 +1,10 @@
 body{
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
   background: #eedfa1;
   /* font: trebuchet; */
   font-family: Verdana, Helvetica, sans-serif;
+  /* border: 1px solid black; */
 
   /* background-image: url("../Images/shakerHouse.PNG"); */
   /* background-position: center; */
@@ -11,115 +12,52 @@ body{
   /* background-repeat: round; */
 
 }
+li { 
+  margin-right: 25px; 
+}
+
+.pClass { 
+  text-align: center; 
+  /* border: 1px solid black; */
+
+}
+
 .container{
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
+  /* width: 100%; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* border: 1px solid red; */
+
+  /* position: relative; */
   min-height: 800px;
 }
 .footer{
-  /* text-align: center; */
+  text-align: center;
+  width: 20px;
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0px;
 }
 
-/* Dropdown Button */
-.dropbtnA {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdownA {
-  position: relative;
-  display: inline-block;
-  /* width: 162px; */
-  float: right;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-contentA {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-contentA a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-contentA a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdownA:hover .dropdown-contentA {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdownA:hover .dropbtnA {background-color: #3e8e41;}
-
-#wrapper {
-  width: auto;
-  /* border: 1px solid black; */
-  overflow: hidden; /* will contain if #first is longer than #second */
-}
-#first {
-  /* width: 200px; */
-  float:left; 
-  /* border: 1px solid red; */
-}
-#second {
-  width: 180px;
-  float: right;
-  /* margin-right: 2%; */
-  /* border: 1px solid green; */
-  overflow: hidden; /*if you don't want #second to wrap below #first*/
-}
-
-.advancedWrapper {
-  width: 180px;
-  height: 240px;
-  /* float: left; */
-  top: 0%;
-  /* margin-right: 2%; */
-  right: 0px;
-  position: absolute;
-  /* border: 1px solid green; */
+#current a{
+  color: navy;
+  text-decoration: underline;  
+  font-weight: bold;
 
 }
-#first {
-  /* width: 200px; */
-  float:left; 
-  /* border: 1px solid red; */
-}
-#second {
-  width: 180px;
-  float: right;
-  /* margin-right: 2%; */
-  /* border: 1px solid green; */
-  overflow: hidden; /*if you don't want #second to wrap below #first*/
-}
-.advancedSearch, .simpleSearch{
-  /* margin-left: 85%; */
-  float: right;
-  /* margin-right: 0%; */
-  color: dodgerblue;
-  display: inline-block;
-  font-family: Verdana, Helvetica, sans-serif;
 
-} 
+
+.normal {
+  background: #ccc;
+  color: red;
+}
+.active {
+  background: #fbfb09;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 .HamiltonLogo {
   display: inline-block;
   /* border: 1px solid green; */
@@ -167,10 +105,31 @@ body{
   border: 1px solid green;
   /* overflow: hidden; */
 }
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 #MySearchTerm{
   /* position: absolute; */
-  width: 98%;
+  width: 100%;
   padding: 15px 20px;
   border-radius: 5px;
   font-weight: bold;
@@ -186,18 +145,18 @@ body{
   /* padding: 5px; */
   border: 2px solid rgb(54, 129, 241);
 
-
 }
+
 .searchButton{
   display: inline;
   background: rgb(128, 196, 192);
   width: 80px;
-  height: 40px;
+  height: 63px;
   border-radius: 5px;
-  /* position: relative; */
+  position: absolute;
   /* cursor: pointer; */
   overflow: hidden;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 
 }
 .resultsSearchBar{
@@ -261,7 +220,7 @@ body{
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #4CAF50;
+  /* background-color: #4CAF50; */
   color: white;
   padding: 16px;
   font-size: 16px;
@@ -274,11 +233,11 @@ body{
 
 #dropdownWrapper{
 
-  width: 60%;
+  width: 610px;
   margin: 0 auto; /* this centers it*/
-  border: 1px solid green;
+  /* border: 1px solid green; */
   /* overflow: hidden; */
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
 }
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
@@ -287,6 +246,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%); */
   /* position: relative; */
+  background-color: cadetblue;
   display: inline-block;
   /* border: 1px solid green; */
   width: auto;
@@ -296,31 +256,13 @@ body{
 
 }
 
-.dropdown1 {
-  width: 80px;
-  position: relative;
-  display: inline-block;
-  /* margin-left: 50%; */
-  /* margin-right: 50%; */
-  border: 1px solid green;
-}
-
-.dropdown2 {
-  width: 80px;
-  position: relative;
-  display: inline-block;
-  /* margin-left: 50%; */
-  /* margin-right: 50%; */
-  border: 1px solid green;
-
-}
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
   width: auto;
-  min-width: 210px;
+  min-width: 170px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -340,7 +282,7 @@ body{
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+.dropdown:hover .dropbtn {background-color: rgb(54, 129, 241);}
 
 *{
   box-sizing: border-box;
@@ -403,6 +345,21 @@ input[type=submit] {
   text-align: center;
   
 }
+.article-link {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  color: rgb(47, 127, 233);
+  padding: 0;
+  text-decoration: underline;
+  font-family: inherit;
+  font-size: 14pt;
+  /* color: rgb(0, 110, 253); */
+  /* border-bottom: 1px solid #7e7e78; */
+  /* border-top: 1px solid #7e7e78; */
+}
+
 .btn-link {
   border: none;
   outline: none;
@@ -431,12 +388,17 @@ input[type=submit] {
   color: black;
   background: #FAFAD2;
   /* max-width: 500px; */
-  margin: auto;
+  /* margin: 0 auto; */
+  /* margin-top: 100px; */
+  /* margin-bottom: 100px; */
+  margin-right: 2px;
+  margin-left: 350px;
+
   /* width: 200px; */
   /* height: 65px; */
   padding: 5px;
   border-radius: 5px;
-  /* display: inline-block; */
+  display: inline-block;
   /* justify-content: space-between; */
   /* border: 1px solid green; */
   /* overflow: hidden; */

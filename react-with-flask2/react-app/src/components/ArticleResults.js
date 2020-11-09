@@ -2,9 +2,12 @@ import React from 'react';
 import '../App.css';
 import shakerLogo from '../images/shaker-manifesto-logo2.PNG';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
+import SearchBar from './SearchBar'
+import AdvancedNav from './AdvancedNav'
 
 
-function VolumeIssue() {
+function ArticleResults() { //This is the Result component
+
   return (
     <div>
       <nav className="navbar fixed-top navbar-expand-sm navbar-light"  style={{"background-color": '#e3f2fd'}}>
@@ -17,13 +20,13 @@ function VolumeIssue() {
               <li className="nav-item">
                 <a href="/#" className="nav-link"> Basic Search</a>
               </li>
-              <li id="nav-item">
+              <li className="nav-item">
                 <a href="/ArticleType" className="nav-link">Article Type</a>
               </li>
               <li className="nav-item">
                 <a href="/Author" className="nav-link">Author</a>
               </li>
-              <li className="current">
+              <li className="nav-item">
                 <a href="/VolumeIssue" className="nav-link">Volume & Issue</a>
               </li>
             </ul>
@@ -33,10 +36,16 @@ function VolumeIssue() {
     <br/><br/> <br/>
 
     <div className="container">
-      <p>Volume and Issue</p>
-    </div>
-    </div>
-  );
-}
 
-export default VolumeIssue;
+      <p>Results will be displayed here</p>
+      
+
+    </div>
+    </div>
+
+  );
+
+}
+// var articleItem = window.results
+
+export default ArticleResults;

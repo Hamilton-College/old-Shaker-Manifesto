@@ -12,8 +12,8 @@ class TopicSearchBar extends Component {
     constructor(props){
         super(props)
         this.state = {
-            checkbox: "",
-            label: "",
+            checkbox: null,
+            label: "None",
             suggestions: [],
             search: ""
         };
@@ -25,7 +25,7 @@ class TopicSearchBar extends Component {
         // console.log(this.state.checkbox.checked)
         this.setState({checkbox: e.target.value})
         this.setState({label: e.target.id})
-        console.log(this.state.checkbox)
+        console.log(this.state.label)
 
     }
 
@@ -98,11 +98,17 @@ class TopicSearchBar extends Component {
       })
       .then(json => {
       this.setState({search: e.target.value})
+      this.setState({checkbox: null})
+      console.log("HERE",this.state.checkbox)
+
       })
     }
 
     render () {
         const { search, checkbox, label } = this.state;
+        window.addEventListener('unload', function(event) {
+            document.getElementById("radio-group").reset();
+           }, false);
         return (
             
                 <form onSubmit={this.handleSubmit} action = "#" method="POST">
@@ -214,17 +220,21 @@ class TopicSearchBar extends Component {
                 </div>
                     <br/> 
                     <br/>
+                    
+                    <div className="pClass">
                     <p>Current topic is: {label}</p>
+                    </div>
                     <br/>
                     <div className = "AutoCompleteText">
-                    <input
-                        id = "MySearchTerm" 
-                        type = "text" 
-                        name = "query"
-                        value={search} 
-                        onChange={this.handleSearchChange}
-                        autoComplete="off"
-                    /> 
+                        <input
+                            placeholder="What are you looking for?"
+                            id = "MySearchTerm" 
+                            type = "text" 
+                            name = "query"
+                            value={search} 
+                            onChange={this.handleSearchChange}
+                            autoComplete="off"
+                        /> 
                     {this.renderSuggestions()}
                     </div>
                     <button type="submit" className="searchButton">Search</button>

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import shakerLogo from '../images/shaker-manifesto-logo.PNG';
+import shakerLogo from '../images/shaker-manifesto-logo2.PNG';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
 import SearchBar from './SearchBar';
 import AdvancedNav from './AdvancedNav';
@@ -12,29 +12,39 @@ import ListOfAuthors from '../AutoComplete-lists/ListOfAuthors';
 
 function Author() {
   return (
-    <div className="container">
-      <div id="first">
-      <img src={hamiltonLogo} alt="Hamilton logo"width="145" height="60" className = "HamiltonLogo" />
-      </div>
-
-      <div className="advancedWrapper">
-        <div className="dropdownA">
-          <button className="dropbtnA">Advanced Search</button>
-          <div className="dropdown-contentA">
-            <a href="/ArticleType">Article Type</a>
-            <a href="/Author">Author</a>
-            <a href="/VolumeIssue">Volume & Issue</a>
+    <div>
+      <nav className="navbar fixed-top navbar-expand-sm navbar-light"  style={{"background-color": '#e3f2fd'}}>
+        <img src={hamiltonLogo} alt="Hamilton logo" width="140" height="60" className = "navbar-brand" />
+          <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarMenu">
+            <ul className="navbar-nav ml-auto"> 
+              <li className="nav-item">
+                <a href="/#" className="nav-link"> Basic Search</a>
+              </li>
+              <li className="nav-item">
+                <a href="/ArticleType" className="nav-link">Article Type</a>
+              </li>
+              <li id="current">
+                <a href="/Author" className="nav-link">Author</a>
+              </li>
+              <li className="nav-item">
+                <a href="/VolumeIssue" className="nav-link">Volume & Issue</a>
+              </li>
+            </ul>
           </div>
-        </div>
-        <h2> <a class="advancedSearch" href = "/"> Basic Search </a></h2>
-      </div>
-
-      <br/><br/> <br/><br/> <br/>
+      </nav>
+      <div className="container">
+    <br/><br/> <br/>
+    <br/><br/> <br/>
       <img src={shakerLogo} alt="Shaker logo"width="600" height="150" className = "ShakerLogo"/>
       
       {/* <div class="searchBar">
         <SearchBar />
       </div>    */}
+      <br/>
+      <br/>
       <div class="alphabet">
       <form action="#" method="POST">
           <button type="submit" value="A" name = "letter">A</button>
@@ -66,15 +76,8 @@ function Author() {
       </form> 
 
       </div>
-      <div className="well">
-        {/* <form action= "#" method="POST"> */}
-        {/* var Typeahead = require('react-typeahead').Typeahead; */}
-          {/* <Typeahead
-            options={['John', 'Paul', 'George', 'Ringo', "Billy", "Will"]}
-            maxVisible={5}
-            name = "query" 
-          /> */}
-          <div className="AutoComplete-Component">
+      <div>
+        <br/>
           <AutoComplete2 items = {ListOfAuthors}/>
           </div>
           {/* <input id="MySearchTerm" data-provide="typeahead" autocomplete="off" type="text" name="query"/> */}
@@ -85,6 +88,10 @@ function Author() {
         {/* <script type="text/javascript" src="../static/javascript/autocomplete.js" defer> </script> */}
       </div>
     </div>
+
+
+
+
 
             
   );

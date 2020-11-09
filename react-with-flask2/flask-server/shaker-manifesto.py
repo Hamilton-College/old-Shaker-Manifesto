@@ -364,6 +364,19 @@ def topicResults(topic=None, results =None): # all articles related to a certain
     
     return render_template("index.html", topic=topic, topicResults=results)
 
+@app.route("/ArticleResults", methods=["POST", "GET"]) 
+def articleResults(): # Open the text and image file of the article
+    
+    # print("start", type(results), results)
+    # results = ast.literal_eval(results)
+    # results = list(results)
+    # results = [list(i) for i in results]
+    # print("new: ", results)
+    # for i in range(len(query)):
+    #     query[i][1]=re.split(", |;", query[i][1])
+    
+    return render_template("index.html")
+
 @app.route("/TopicWordResults/<topic>~<word>~<results>", methods=["POST", "GET"]) 
 def topicWordResults(topic=None, word=None, results=None): # all articles related to a certain topic
     

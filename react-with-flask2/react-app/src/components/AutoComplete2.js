@@ -213,13 +213,34 @@ class AutoComplete2 extends Component {
     render () {
         const { text } = this.state;
         return (
+            <div>
+            <form onSubmit={this.handleSubmit} action = "#" method="POST" >
+            <div className="AutoCompleteText">
+                <input value={text} id="MySearchTerm" onChange= {this.onTextChanged} type ="text" name = "query" autoComplete="off" placeholder="Whom are you looking for?"/>
+
+                {/* <input
+                    placeholder="Search"
+                    id = "MySearchTerm" 
+                    type = "text" 
+                    name = "query"
+                    value={search} 
+                    onChange={this.handleSearchChange}
+                    autoComplete="off"/>  */}
+                {this.renderSuggestions()}
+            </div>
+            {/* <button type="submit"><i className="fa fa-search"></i>Search</button> */}
+            <button type="submit" className="searchButton">Search</button>
+            </form>
+
+{/*            
+            </div>
             <div className = "AutoCompleteText">
                 <form onSubmit={this.handleSubmit} action = "#" method="POST">
                     <input value={text} onChange= {this.onTextChanged} type ="text" name = "query" autoComplete="off"/>
                     {this.renderSuggestions()}
 
                     <button type="submit" className="searchButton">Search</button>
-                </form>
+                </form> */}
             </div>
         )
     }
