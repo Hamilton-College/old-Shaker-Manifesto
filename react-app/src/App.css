@@ -1,0 +1,556 @@
+body{
+  /* margin: 0; */
+  /* padding: 0; */
+  background: #eedfa1;
+  /* opacity: 0.8; */
+  /* font: trebuchet; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  /* border: 1px solid black; */
+
+  /* background-image: url("../Images/shakerHouse.PNG"); */
+  /* background-position: center; */
+  /* background-size: 100% ; */
+  /* background-repeat: round; */
+
+}
+li { 
+  margin-right: 25px; 
+}
+
+.pClass { 
+  text-align: center; 
+  /* border: 1px solid black; */
+
+}
+
+.container{
+  /* width: 100%; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* border: 1px solid red; */
+
+  /* position: relative; */
+  min-height: 800px;
+}
+.footer{
+  text-align: center;
+  width: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  /* position: absolute; */
+  bottom: 0px;
+}
+
+.pageButton{
+  display: inline-block;
+}
+
+#current a{
+  color:rgb(128, 196, 192);
+  text-decoration: underline;  
+  /* font-weight: bold; */
+  font-size: 19px;
+
+}
+.nav-item a{
+  color: whitesmoke !important;
+  font-size: 19px;
+}
+
+.normal {
+  background: #ccc;
+  color: red;
+}
+.active {
+  background: #fbfb09;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.HamiltonLogo {
+  display: inline-block;
+  /* border: 1px solid green; */
+  /* float: left; */
+  /* width: 50%; */
+}
+
+.ShakerLogo {
+  display: inline;
+  /* margin-top: 0px; */
+  /* margin-bottom: ; */
+  /* border: 1px solid green; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  left: 26.5%;
+  position: absolute;
+  width: 600px;
+  height: 150px;
+}
+
+.pageNumber {
+  display: inline;
+  float: right;
+}
+.textAboveAlphabet{
+  text-align:center;
+  margin:auto;
+}
+.textContainer{
+  margin: auto;
+  background-color: #f1f1e4;
+  border: 5px solid #003153;
+  width: 50%;
+  height: 80%;
+  border-radius: 5px;
+
+}
+.articleText{
+  font-family: 'Lato', sans-serif;
+
+}
+
+
+.lomasL{
+  display: inline;
+  /* margin-top: 0px; */
+  /* margin-bottom: ; */
+  margin-left: 0px;
+  /* margin-right: auto; */
+  display: absolute;
+  /* width: 600px; */
+  /* height: 150px; */
+  /* border: 1px solid green; */
+
+}
+.lomasR{
+  display: inline;
+  margin-top: 30px;
+  /* margin-bottom: ; */
+  /* margin-left: 585px; */
+  /* margin-right: auto; */
+  /* position: absolute; */
+  float: right;
+  /* border: 1px solid green; */
+}
+
+.ShakerLogoResults {
+  display: block;
+  margin-top: 0px;
+  /* margin-bottom: ; */
+  margin-left: auto;
+  margin-right: 40%;
+  /* width: 50%; */
+}
+
+.searchBar{ /*we can get rid of this altogether if it doesn't work. this is just the background */
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* width: 40%; */
+  /* border: 1px solid grey; */
+  /* box-shadow: 0 0 0 1px rgb(204, 199, 199), 0 2px 4px 1px rgb(190, 188, 188); */
+  background: #FAFAD2;
+  /* max-width: 500px; */
+  margin: 0 auto;
+  width: 200px;
+  height: 65px;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  /* justify-content: space-between; */
+  border: 1px solid green;
+  /* overflow: hidden; */
+}
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#MySearchTerm{
+  /* position: absolute; */
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  /* justify-content: center; */
+  align-items: center; /* this isn't working*/
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* background: #FAFAD2; */
+  /* height: 40px; */
+  /* border-radius: 40px; */
+  /* padding: 5px; */
+  border: 2px solid #003153;
+
+}
+
+.searchButton{
+  display: inline;
+  background:#003153; /*prussian blue */
+  color: whitesmoke;
+  width: 80px;
+  height: 52px;
+  border-radius: 5px;
+  font-size: 19px;
+  left: 62%;
+  /* transform: translateX(-50%); */
+  position: absolute;
+  /* margin-top: 6px; */
+  top: 358px;
+  /* cursor: pointer; */
+  overflow: hidden;
+  /* border: 1px solid green; */
+
+}
+
+.searchButton2{
+  display: inline;
+  background:#003153; /*prussian blue */
+  color: whitesmoke;
+  width: 80px;
+  height: 52px;
+  border-radius: 5px;
+  font-size: 19px;
+  left: 62%;
+  /* transform: translateX(-50%); */
+  position: absolute;
+  margin-top: 6px;
+  /* bottom: 158px; */
+  /* cursor: pointer; */
+  overflow: hidden;
+  /* border: 1px solid green; */
+
+}
+.resultsSearchBar{
+  position: absolute; /*change to fixed */
+  /* top: 67%; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* transform: translate(-50%, -50%); */
+  background: #FAFAD2;
+  /* height: 40px; */
+  /* border-radius: 40px; */
+  padding: 5px;
+  
+  display: block;
+  /* margin-top: 0px; */
+  /* margin-bottom: ; */
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#searchButton{
+  /* color: aquamarine; */
+  /* background-image: "Shaker Mani"; */
+  /* float: right; */
+  /* width: 40px; */
+  /* height: 40px; */
+  /* border-radius: 50%; */
+  /* background: burlywood; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green; 
+  position: relative;
+  display: inline-block; */
+
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background: #FAFAD2; */
+  /* height: 40px; */
+  /* border-radius: 40px; */
+  padding: 5px;
+  border: 1px solid green;
+
+
+}
+.searchText{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: black;
+  font-size:16px;
+  transition: 0.4s;
+  line-height:40px;
+  width: 240px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  /* background-color: #4CAF50; */
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  width: auto;
+  margin: 0 auto;
+  /* right: 50%; */
+  /* position: sticky; */
+}
+
+#dropdownWrapper{
+
+  width: 536px;
+  margin: 0 auto; /* this centers it*/
+  /* border: 1px solid green; */
+  /* overflow: hidden; */
+  /* background-color: cadetblue; */
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* position: relative; */
+  background-color: #003153;
+  display: inline-block;
+  /* border: 1px solid green; */
+  width: auto;
+  /* right: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: auto;
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgb(54, 129, 241);}
+
+*{
+  box-sizing: border-box;
+}
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+/*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+/*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+.articleResults{
+  color: rgb(0, 110, 253);
+  border-bottom: 1px solid #d4d4d4;
+  border-top: 1px solid #d4d4d4;
+}
+
+.alphabet{
+  text-align: center;
+  
+}
+.article-link {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  color: rgb(47, 127, 233);
+  padding: 0;
+  text-decoration: underline;
+  font-family: inherit;
+  font-size: 14pt;
+  /* color: rgb(0, 110, 253); */
+  /* border-bottom: 1px solid #7e7e78; */
+  /* border-top: 1px solid #7e7e78; */
+}
+
+.btn-link {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  color: rgb(47, 127, 233);
+  padding: 0;
+  text-decoration: underline;
+  font-family: inherit;
+  font-size: 14pt;
+  /* color: rgb(0, 110, 253); */
+  /* border-bottom: 1px solid #d4d4d4; */
+  /* border-top: 1px solid #d4d4d4; */
+}
+.volumeAndIssue {
+  text-align: center;
+  font-style: italic;
+}
+
+.AutoCompleteText{
+  width: 30%; 
+  border: 1px solid grey;
+  box-shadow: 0 0 0 1px rgb(204, 199, 199), 0 2px 4px 1px rgb(190, 188, 188);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: black;
+  background: #FAFAD2;
+  top: 350px;
+  /* max-width: 500px; */
+  /* margin-top: 100px; */
+  position: absolute;
+  left: 47%;
+  transform: translateX(-50%);
+  /* display: table; */
+  /* margin-top: 100px; */
+  /* margin-bottom: 100px; */
+  /* margin-right: 2px; */
+  /* margin-left: 350px; */
+  /* text-align: center; */
+  /* width: 200px; */
+  /* height: 65px; */
+  padding: 5px;
+  border-radius: 5px;
+  /* display: inline-block; */
+  /* justify-content: space-between; */
+  /* border: 1px solid green; */
+  /* overflow: hidden; */
+}
+
+.AutoCompleteText2{
+  width: 30%; 
+  border: 1px solid grey;
+  box-shadow: 0 0 0 1px rgb(204, 199, 199), 0 2px 4px 1px rgb(190, 188, 188);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: black;
+  background: #FAFAD2;
+  /* max-width: 500px; */
+  /* margin-top: 100px; */
+  position: absolute;
+  left: 47%;
+  transform: translateX(-50%);
+  /* display: table; */
+  /* margin-top: 100px; */
+  /* margin-bottom: 100px; */
+  /* margin-right: 2px; */
+  /* margin-left: 350px; */
+  /* text-align: center; */
+  /* width: 200px; */
+  /* height: 65px; */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.autocompleteForm{
+  width: 200px;
+}
+
+.AutoCompleteText input,.AutoCompleteText2 input {
+  width: 100%;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: black;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  outline: none;
+}
+.AutoComplete-Component{
+  margin: 150px auto 0 auto;
+}
+.AutoCompleteText ul, .AutoCompleteText2 ul{
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border-top: 1px;
+}
+
+.AutoCompleteText ul::before, .AutoCompleteText2 ul::before{
+  content: "";
+}
+
+.AutoCompleteText li, .AutoCompleteText2 li{
+  padding: 10px 5px;
+  cursor: ponter;
+}
+
+.AutoCompleteText li:hover, .AutoCompleteText2 li:hover{
+  text-decoration: underline;
+  background-color: rgb(201, 192, 192)
+}

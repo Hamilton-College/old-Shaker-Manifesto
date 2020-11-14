@@ -2,7 +2,7 @@ from ngram import NGram
 from suffix_trees import STree
 import sys, re, os, json, pickle, time
 
-DIRECTORY_NAME=os.path.join(".", "react-with-flask2", "flask-server", "Volume01")
+DIRECTORY_NAME=os.path.join(".", "flask-server", "Volume01")
 PAGE_LIMIT=15
 
 class Result:
