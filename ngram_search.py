@@ -168,7 +168,7 @@ class SM_Search:
                 # print(ids)
                 self._remain = [Result(exact, 1, idict[i], self._index_dict) for i in ids]
                 # print(self._remain)
-                return self._generate_results()#results for pure literal search
+                return self.generate_results()#results for pure literal search
             # print(words)
             word = (words := words.split())[0]
             results = []
@@ -198,7 +198,7 @@ class SM_Search:
                 self._remain = list(rdict.values())
             self._remain.sort(key=Result.getThresh)
 
-        return self._generate_results()
+        return self.generate_results()
 
 def main():
     """testing command line interface"""
