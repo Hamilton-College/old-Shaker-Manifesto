@@ -35,6 +35,12 @@ class Result:
     def getArticle(self):
         return self.article
 
+    def store_results(self):
+        return self._remain
+
+    def load_results(self, results):
+        self._remain = results
+
     def _processRaw(self, dict):
         """sets volume, issue, article, and index fields based on the passed
         dictionary and raw_index"""
