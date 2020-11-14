@@ -126,9 +126,7 @@ class SM_Search:
         simplified = [results[0]]
         for i in range(len(results)):
             if (s:= simplified[-1]).id() == (r := results[i]).id():
-                if s.getTerm() == r.getTerm():
-                    s.occur += 1
-                elif s.getThresh() < r.getThresh(): #r is closer to original term
+                if s.getThresh() < r.getThresh(): #r is closer to original term
                     simplified.pop()
                     simplified.append(r)
             else: #no simplification
