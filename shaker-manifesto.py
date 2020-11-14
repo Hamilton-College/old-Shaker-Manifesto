@@ -58,6 +58,12 @@ def basicSearch():
         resultDict = {}
         searchObj = SM_Search()
         artRes = searchObj.search(enteredText)
+        print("Entire thing", artRes)
+        print("First", artRes[0])
+        numOfPages = artRes.page_num()
+        print("num of pages", artRes.page_num())
+        print("last page: ", artRes[numOfPages])
+        return
         for i in range(len(artRes)):
             artRes[i] = list(artRes[i])
         resultDict[1] = artRes
