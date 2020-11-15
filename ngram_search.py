@@ -134,7 +134,7 @@ class SM_Search:
         simplified.sort(key=Result.getThresh)
         return simplified
 
-    def generate_results(self, pg_num = 0):
+    def _generate_results(self, pg_num = 0):
         """generate and return a page worth of results"""
         if self._remain and pg_num <= self.page_num():
             return [[r.id(), r.getPreview()] for r in self._remain[pg_num*PAGE_LIMIT: (pg_num + 1)*PAGE_LIMIT]]
@@ -177,7 +177,6 @@ class SM_Search:
                 results.extend([Result([w[0]], w[1], e, self._index_dict) for e in self._tree.find_all(w[0])])
             if not results:
                 return []
-            print(results)
             results = self._simplify_results(results)
             self._remain = list(filter((lambda r : r.id() in ids), results)) if ids else results
             rdict = dict(zip(list(map(Result.id, self._remain)), self._remain))
