@@ -1,12 +1,15 @@
 from ngram import NGram
 from suffix_trees import STree
-import sys, re, os, json, pickle, time
+import sys, re, os, json, time
 
 DIRECTORY_NAME=os.path.join(".", "flask-server", "Volume01")
 PAGE_LIMIT=15 #number of results per page
 
 class Result:
-    def __init__(self, terms, thresh, raw_index, dict):
+    def __init__(self, terms=[], thresh=0, raw_index=0, dict={}, load=False):
+        if load:
+            self.__dict__.update(dict)
+            return
         self.terms = terms          #list of search terms contained in result
         self.thresh = thresh        #combined search threshold via ngram similarity
         self.raw_index = raw_index  #raw index from entire search directory
@@ -15,7 +18,8 @@ class Result:
         self.article = -1
         self.index = 0              #index within specified article
         self.preview = None
-        self._processRaw(dict)
+        if dict:
+            self._processRaw(dict)
 
     def getTerm(self):
         return self.terms
@@ -76,6 +80,12 @@ class SM_Search:
         self._remain = None         #current search result
         self._load(DIRECTORY_NAME)
 
+
+    def store_results(self):
+        return json.dumps([vars(r) for r in self._remain])
+
+    def load_results(self, results):
+        self._remain = [Result(dict=d, load=True) for d in json.loads(results)]
 
     def _load(self, dic_name, debug=False):
         """reads the .txt files from the given directory and builds the ngram
@@ -169,7 +179,7 @@ class SM_Search:
                 # print(ids)
                 self._remain = [Result(exact, 1, idict[i], self._index_dict) for i in ids]
                 # print(self._remain)
-                return self._generate_results()#results for pure literal search
+                return self.generate_results()#results for pure literal search
             # print(words)
             word = (words := words.split())[0]
             results = []
@@ -199,7 +209,7 @@ class SM_Search:
                 self._remain = list(rdict.values())
             self._remain.sort(key=Result.getThresh)
 
-        return self._generate_results()
+        return self.generate_results()
 
 def main():
     """testing command line interface"""
