@@ -209,7 +209,7 @@ class SM_Search:
                 self._remain = list(rdict.values())
             self._remain.sort(key=Result.getThresh)
 
-        return self.generate_results()
+        return self._generate_results()
 
 def main():
     """testing command line interface"""
