@@ -4,12 +4,17 @@ import shakerLogo from '../images/shaker-manifesto-logo2.PNG';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
 import SearchBar from './SearchBar'
 import AdvancedNav from './AdvancedNav'
-
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 function ArticleResults() { //This is the Result component
 
   return (
     <div>
+
+  
+
+
       <nav className="navbar fixed-top navbar-expand-sm navbar-light"  style={{"background-color": '#003153'}}>
         <a href="http://elib.hamilton.edu/"><img src={hamiltonLogo} alt="Hamilton logo" width="130" height="60" className = "navbar-brand" /></a>
           <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
@@ -33,28 +38,44 @@ function ArticleResults() { //This is the Result component
           </div>
       </nav>
     <br/><br/> <br/>
-    <br/><br/> <br/>
-    <br/><br/> <br/>
-
+    <br/>
+    
     <div className="container">
-      {/* <div className="articleImage"> */}
-        {/* <img src = {`data:image/jpeg;base64,${data}`} alt ="article image" width="60%" height="60%"/> */}
-      {/* </div> */}
 
-      {window.image.map((num, index) => (
-            <div key={index} className="articleImage">
+      <h3>Volume {window.articleID.slice(1,3)}  Issue {window.articleID.slice(3,5)} </h3>
+    
+    <Tabs defaultIndex={0}>
+    <TabList>
+      <Tab>Image</Tab>
+      <Tab>Thumbnails</Tab>
+      <Tab>Full text of issue</Tab>
+    </TabList>
+ 
+    <TabPanel>
+      <h2>Image will be displayed here</h2>
+      <p>There will be a next page and a previous page button</p>
+    </TabPanel>
+    <TabPanel>
+      <div className="thumbWrapper">
+        {window.image.map((num, index) => (
+            <div key={index} className="thumb">
               {/* <form action={num[0]} method="GET" id="nameform">   "/NextResults/{window.enteredTerm}/{value}" */}
                 {/* <button type="submit" name="page" value={num[0]}> */}
               <img src = {`data:image/jpeg;base64,${num}`} alt ="article image" />
-              {console.log(num)}
-                    {/* <p>{num[0]}</p> */}
+              {/* <div className="thumbLabel"> */}
+                <p> page {index+1} </p>
+              {/* </div> */}
                 {/* </button> */}
                 {/* </form> */}
 
             </div>
             ))}
-
-
+        </div>
+    </TabPanel>
+    <TabPanel>
+      <br/>
+      <p>Article text is bolded</p>
+      <br/>
       <div className="textContainer">
         <div className= "articleText">
         <div dangerouslySetInnerHTML={{__html: window.articleText}}></div>
@@ -62,13 +83,18 @@ function ArticleResults() { //This is the Result component
           {/* <p>{window.articleText}</p> */}
         </div>
       </div>
+    </TabPanel>
+  </Tabs>
+      {/* <div className="articleImage"> */}
+        {/* <img src = {`data:image/jpeg;base64,${data}`} alt ="article image" width="60%" height="60%"/> */}
+      {/* </div> */}
 
-
-      <form action={nextArticle} method="GET" id="nameform">   {/*"/NextResults/{window.enteredTerm}/{value}" */}
+      
+      {/* <form action={nextArticle} method="GET" id="nameform">  
         <button type="submit" name="page" value="Next article">
             <p>Next article</p>
         </button>
-      </form>
+      </form> */}
 
 
     </div>

@@ -77,7 +77,25 @@ li {
   text-align:center;
   margin:auto;
 }
+.thumbWrapper{
+  /* margin: auto; */
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-flow: row wrap;
+}
 
+.thumb{
+  /* display: inline; */
+  margin-left: 5%;
+  text-align: center;
+
+}
+.thumbLabel{
+  display: inline;
+  width: 50px;
+  text-align: auto;
+}
 .ShakerLogo {
   display: inline;
   /* margin-top: 0px; */

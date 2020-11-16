@@ -328,7 +328,6 @@ def articleResults(articleID=None): # Open the text and image file of the articl
     curr = textStart
     issueText = ""
     while(os.path.exists(f"C:\\Users\\nonso\\OneDrive\\Documents\\Shaker-Manifesto\\textfiles\\{str(curr)}.txt")):
-    # while(curr[3] == textStart[3]):
         path = f"C:\\Users\\nonso\\OneDrive\\Documents\\Shaker-Manifesto\\textfiles\\{str(curr)}.txt"
         articleText = open(path, "r")
         articleText = articleText.read()
@@ -352,7 +351,6 @@ def articleResults(articleID=None): # Open the text and image file of the articl
     # Get list of thumbnail paths
     curr = textStart[:-1] + str(1) # images start at 1
     thumbPaths = []
-    # print((f"C:\\Users\\nonso\\OneDrive\\Documents\\thumbs\\thumbs\\{str(curr)}.jpg"))
     while(os.path.exists(f"C:\\Users\\nonso\\OneDrive\\Documents\\thumbs\\thumbs\\{str(curr)}.jpg")):
         path = f"C:\\Users\\nonso\\OneDrive\\Documents\\thumbs\\thumbs\\{str(curr)}.jpg"
         thumbPaths.append(path)
@@ -369,9 +367,6 @@ def articleResults(articleID=None): # Open the text and image file of the articl
         newResponse = get_response_image(i).replace("\n", "\\n")
         encodedImages.append(newResponse)
         
-
-    # image_path = f"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\0107001.jpg"#{articleID}.jpg" # point to your image location
-    # encoded_img = get_response_image(image_path)
     print(thumbPaths)
     print(encodedImages)
     print(len(encodedImages))
