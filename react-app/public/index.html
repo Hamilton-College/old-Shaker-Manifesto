@@ -55,6 +55,8 @@
       // window.enteredText = text
     </script>
     <script> window.name="{{name}}"</script>
+    <!-- <script> window.image="{{image}}"</script> -->
+    <!-- <script> window.image='{{image|default("")|tojson}}'</script> We need the default because we are not passing the var on every page  -->
 
     <script> window.enteredText='{{enteredText|default("")|tojson}}'</script> <!-- We need the default because we are not passing the var on every page  -->
     <script> window.selectedTopic='{{topic|default("")|tojson}}'</script>
@@ -66,6 +68,7 @@
     <script> window.articleText='{{articleText|default("")|tojson}}'</script>
     <script> window.pageNum='{{pageNum|default("")|tojson}}'</script>
     <script> window.articleID='{{articleID|default("")|tojson}}'</script>
+    
 
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 
@@ -95,6 +98,9 @@
 
       var list5 = '{{pageButtons|default("")|tojson}}'
       window.pageButtons= convert(list5)
+
+      var list6 = '{{image|default("")|tojson}}'
+      window.image = convert(list6)
 
       // var str3 = '{{firstLetter|safe}}' // list of authors of a particular letter
       // window.firstLetter = convert(str3)

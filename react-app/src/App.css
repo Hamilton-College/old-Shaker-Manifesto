@@ -73,6 +73,10 @@ li {
   /* float: left; */
   /* width: 50%; */
 }
+.articleImage {
+  text-align:center;
+  margin:auto;
+}
 
 .ShakerLogo {
   display: inline;

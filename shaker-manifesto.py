@@ -8,6 +8,11 @@ from functools import reduce
 import re
 import ast
 from flask_cors import CORS
+#For sending images
+import io
+from base64 import encodebytes
+from PIL import Image
+# from Face_extraction import face_extraction_v2
 
 from ngram_search import *
 
@@ -120,25 +125,6 @@ def displayTypes():
             return redirect(url_for("basicResults1", values=enteredText, results = searchResults, numOfPages = numOfPages, page = 1)) # put in the function of the url you want to go to
        
 
-        # enteredText = request.form["query"] # name matches the name of the post form in the HTML
-        # print("HERE")
-
-        # if(enteredText and topics):
-        #     return redirect(url_for("advancedResults", queryAd=enteredText, topics = topics, enteredText = enteredText)) # put in the name of function of the url you want to go to
-        # elif(not topics):
-        #     queryString = f"SELECT title, author_tag FROM articles WHERE author_tag LIKE '%{enteredText}%' order by author_tag;" # add author to select
-        #     print(queryString)
-        #     curr = mysql.connection.cursor()
-        #     curr.execute(queryString)
-        #     fetchdata = curr.fetchall()
-        #     curr.close()
-        #     return redirect(url_for("basicResults1", query = fetchdata, enteredText = enteredText)) # Query with no type. Perhaps we should force them to select a type
-        # elif(not enteredText):
-        #     return redirect(url_for("basicResults2", topics = topics)) # all articles related to a certain article type
-        # else: # Don't have anything selected, stay on page
-        #     print("Here: ",topics, enteredText)
-        #     return render_template("index.html")
-
 # AUTHOR SEARCH
 @app.route("/Author", methods=["POST", "GET"]) # From advanced search
 def displayAuthors(): # display landing page
@@ -177,6 +163,7 @@ def displayAuthors(): # display landing page
             # print("data: ", type(fetchdata)) # tuple
             curr.close()
             return redirect(url_for("authorResults", letterOrName = name, query=fetchdata)) # put in the function of the url you want to go to
+
 # AUTHOR FIRST LETTER
 @app.route("/AuthorNames/<letter>~<query>", methods=["POST", "GET"]) 
 def letterOfAuthors(letter, query): # This gives us all the authors of the clicked letter
@@ -226,40 +213,11 @@ def letterOfAuthors(letter, query): # This gives us all the authors of the click
         for i in range(len(query)):
             if(len(query[i]) > 1):
                 query[i][0] = query[i][0] +","
-        # if(multipleNames == True):
-        #     for i in range(len(query)):
-        #         query[i][1] = query[i][1][1:] # when we have multiple authors, because we split on ;, we don't have the leading '
-        #         temp = query[i][-2] 
-        #         query[i][-2] = query[i][-1]
-        #         query[i][-1] = temp
-        #     print(query)
-        #     newQuery = []
-        #     for i in query:
-        #         for j in i:
-        #             newQuery.append(j)
-        #     query = newQuery
-        #     print(query)
-        #     for i in range(2,len(query)-1,2):
-        #         query[i] = query[i]+", "
-
-        # for i in range(len(query)):
-        #         query[i][0] = query[i][0][1:]
-        #         temp = query[i][-1] 
-        #         query[i][-1] = query[i][0]
-        #         query[i][0] = temp
-        # query[-1][0] = query[-1][0][:-1]
-        # print(query)
-        # get rid of duplicates
        
         query = set(tuple(i) for i in query) # get rid of any possible dups (there shouldn't be any)
         query = list(query)
-        # for i in range(len(query)):
-        #     query[i] = list(query[i])
-        #     query[i][0] = query[i][0][1:]
-        # print(query)
+      
         namesOfLetter = query
-        # letter = json.dumps(letter)
-        # letter = json.loads(letter)
         query.sort()
         print(" final", query)
     else: # query = () meaning empty meaning no authors
@@ -337,52 +295,10 @@ def basicResults1(values, results, numOfPages, page):
         author = titleAuthor[0][1].split(", ")
         i.append(", ".join(author))
 
-    
- 
-
     pageList = [str(i) for i in range(1, numOfPages+1)]
     print(pageList)
     return render_template("index.html", enteredTerm = values, results =pageOfResults, pageButtons=pageList, pageNum = page+1)# we're just using enteredText to display it
-
-# @app.route("/NextResults/<values>/<page>", methods=["POST", "GET"]) # We need to get the page number through the URL
-# def basicResults1Next(values=None, page=None): 
-#     # values = enteredText 
-#     print("vals:",values) # val is entered term
-#     print("page from URL:", page)
-#     print(type(page))
-#     page = int(page)
-#     # if(request.form.get("page")):
-#     #     print("we are here")
-#         # results = searchObj.generate_results()
-#     #     for i in range(len(results)):
-#     #         results[i] = list(results[i])# print(results)
-#     #     for i in range(len(results)):
-#     #         results[i][1] = results[i][1].replace("\'", "")
-#     #         results[i][1] = results[i][1].replace('"', "")
-#     #         results[i][1] = results[i][1].replace("\\", "")
-#     #         results[i][1] = results[i][1].replace("<!b>", "</b>")
-#     # page = int(request.form["page"]) 
-#     # print("page from form:", page)
-#     print(resultDict)
-#     results = resultDict # it doesn't know what results is until this point
-#     # print(results)
-#     print(results[page])
-#     if(results[page] != "None" and results[page] != None):
-#         print("results are here", results[page])
-#         # print(type(results), results, results[0], type(results[0]))
-        
-#         for i in range(len(results[page])):
-#             results[page][i][1] = results[page][i][1].replace("\'", "")
-#             results[page][i][1] = results[page][i][1].replace('"', "")
-#             results[page][i][1] = results[page][i][1].replace("\\", "")
-#             results[page][i][1] = results[page][i][1].replace("<!b>", "</b>")
-#     # global pageCount
-#     # pageCount += 1
-#     pageList = [str(i) for i in range(1,len(results)+1)]
-#     return render_template("index.html", enteredTerm = values, results =results[page], pageButtons=pageList, pageNum=page)# we're just using enteredText to display it
-
     
-    # return values
 @app.route("/TopicResults/<topic>~<results>", methods=["POST", "GET"]) 
 def topicResults(topic=None, results =None): # all articles related to a certain topic
     
@@ -391,36 +307,86 @@ def topicResults(topic=None, results =None): # all articles related to a certain
     results = list(results)
     results = [list(i) for i in results]
     print("new: ", results)
-    # for i in range(len(query)):
-    #     query[i][1]=re.split(", |;", query[i][1])
+    results.sort()
     
     return render_template("index.html", topic=topic, topicResults=results)
 
 @app.route("/ArticleResults/<articleID>", methods=["POST", "GET"]) 
 def articleResults(articleID=None): # Open the text and image file of the article
     # aID = request.form["article"]
+    sixDigits = False
     print(articleID)
-    # filename = "0" + aID + ".txt"
+    print(len(articleID))
     if(len(articleID)==6):
-        path = f"C:\\Users\\nonso\\OneDrive\\Documents\\Shaker-Manifesto\\textfiles\\0{articleID}.txt"
+        sixDigits = True
+        articleID = "0" + articleID
+        textStart = articleID[:4] + "000"
+    else: # ID length is 7
+        textStart = articleID[:4] + "000"
+    # print(textStart)
+    # textStart = int(textStart)
+    curr = textStart
+    issueText = ""
+    while(os.path.exists(f"C:\\Users\\nonso\\OneDrive\\Documents\\Shaker-Manifesto\\textfiles\\{str(curr)}.txt")):
+    # while(curr[3] == textStart[3]):
+        path = f"C:\\Users\\nonso\\OneDrive\\Documents\\Shaker-Manifesto\\textfiles\\{str(curr)}.txt"
         articleText = open(path, "r")
         articleText = articleText.read()
-        print(articleText)
-    else:
-        path = f"C:\\Users\\nonso\\OneDrive\\Documents\\Shaker-Manifesto\\textfiles\\{articleID}.txt"
-        articleText = open(path, "r")
-        articleText = articleText.read()
-        print(articleText)
-    # replace non-UTF8 chars
-    
-    articleText = articleText.replace('ï¿½', '�') # em dash
-    articleText = articleText.replace('.â€”', '—') # em dash
-    articleText = articleText.replace('â€”', '—') # em dash
-    
-    articleText = articleText.replace("â€¢", '•') # dot
+        if(curr == articleID):
+            issueText += ("<b>" + articleText+ "</b>" + "<br/> <br/> <br/>")
+        else:
+            issueText += (articleText + "<br/> <br/> <br/>")
+        curr = int(curr) + 1 # lose leading zero 
+        if(sixDigits):
+            curr = "0" + str(curr)
+        else: # 7
+            curr = str(curr)
 
+    # replace non-UTF8 chars
+    issueText = issueText.replace('ï¿½', '�') # em dash
+    issueText = issueText.replace('.â€”', '—') # em dash
+    issueText = issueText.replace('â€”', '—') # em dash
+    issueText = issueText.replace("â€¢", '•') # dot
+    issueText = issueText.replace("â€ž", '„') # dot
     
-    return render_template("index.html", articleText = articleText, articleID=articleID) # we need to pass in everything here b/c we only want to use one page
+    # Get list of thumbnail paths
+    curr = textStart[:-1] + str(1) # images start at 1
+    thumbPaths = []
+    # print((f"C:\\Users\\nonso\\OneDrive\\Documents\\thumbs\\thumbs\\{str(curr)}.jpg"))
+    while(os.path.exists(f"C:\\Users\\nonso\\OneDrive\\Documents\\thumbs\\thumbs\\{str(curr)}.jpg")):
+        path = f"C:\\Users\\nonso\\OneDrive\\Documents\\thumbs\\thumbs\\{str(curr)}.jpg"
+        thumbPaths.append(path)
+        curr = int(curr) + 1 
+        if(sixDigits):
+            curr = "0" + str(curr)# int() loses leading zero 
+        else: # 7
+            curr = str(curr)
+
+    encodedImages = []
+    for i in thumbPaths:
+        # print(i)
+
+        newResponse = get_response_image(i).replace("\n", "\\n")
+        encodedImages.append(newResponse)
+        
+
+    # image_path = f"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\0107001.jpg"#{articleID}.jpg" # point to your image location
+    # encoded_img = get_response_image(image_path)
+    print(thumbPaths)
+    print(encodedImages)
+    print(len(encodedImages))
+    # print(thumbPaths[0])
+    # print("no escape:", get_response_image(thumbPaths[0]))
+    print("after escape:",encodedImages[0])
+
+    return render_template("index.html", articleText = issueText, articleID=articleID, image=encodedImages) # we need to pass in everything here b/c we only want to use one page
+
+def get_response_image(image_path):
+    pil_img = Image.open(image_path, mode='r') # reads the PIL image
+    byte_arr = io.BytesIO()
+    pil_img.save(byte_arr, format='JPEG') # convert the PIL image to byte array
+    encoded_img = encodebytes(byte_arr.getvalue()).decode('ascii') # encode as base64
+    return encoded_img
 
 @app.route("/TopicWordResults/<topic>/<word>/<results>/<numOfPages>/<page>", methods=["POST", "GET"]) 
 def topicWordResults(topic=None, word=None, results=None, numOfPages =None, page=None): # all articles related to a certain topic
@@ -452,33 +418,6 @@ def topicWordResults(topic=None, word=None, results=None, numOfPages =None, page
 
     return render_template("index.html", topic=topic, topicWord= word, topicWordResults=pageOfResults, pageButtons=pageList, pageNum=page+1)
 
-@app.route("/TopicWordResultsNext/<topic>/<word>/<page>", methods=["POST", "GET"]) 
-def topicWordResultsNext(topic=None, word=None, page=None): 
-    # word = enteredText #getting the global var
-    print("entered word:", word)
-    theTopic = topic # getting the global var
-    print("entered topic:", theTopic)
-    page = int(page)
-
-    print(resultDict)
-    results = resultDict # it doesn't know what results is until this point
-    # print("everything", results)
-    print("the page", results[page])
-    if(results[page] != "None" and results[page] != None):
-        print("results are here", results[page])
-        # print(type(results), results, results[0], type(results[0]))
-        
-        for i in range(len(results[page])):
-            results[page][i][1] = results[page][i][1].replace("\'", "")
-            results[page][i][1] = results[page][i][1].replace('"', "")
-            results[page][i][1] = results[page][i][1].replace("\\", "")
-            results[page][i][1] = results[page][i][1].replace("<!b>", "</b>")
-    # global pageCount
-    # pageCount += 1
-    pageList = [str(i) for i in range(1,len(results)+1)]
-    return render_template("index.html", topic=theTopic, topicWord= word, topicWordResults =results[page], pageButtons=pageList, pageNum=page)# we're just using enteredText to display it
-
-    
 # # AUTHOR RESULTS
 
 @app.route("/AuthorList/<letterOrName>~<query>", methods=["POST", "GET"])
@@ -531,36 +470,6 @@ def authorResults(letterOrName = None, query = None): # query right now is the d
                 query[i][1][0] = query[i][1][1]
                 query[i][1][1] = " " + temp
 
-
-        # b = query[0][1][i].split(";")
-        # b = re.split(",|;", query[0][1][i])
-        # if(len(b) > 2): # multiple authors
-        #     for i in reversed(range(2, len(b)-1, 2)):
-        #         b[i] = b[i]+","
-        # b = b.split(",")
-        # if(";" in b):
-        #     b = b.split(";")
-        # b = b.replace(",", "")
-        # print(query)
-        # articlesList[a] = b
-
-
-    # if(multipleNames):
-    #     query[0][1][0] = " " + query[0][1][0] # add a space in front of the first name to be consistent 
-    #     for i in range(1, len(query[0][1]), 2):
-    #         temp = query[0][1][i-1]
-    #         query[0][1][i-1] = query[0][1][i]
-    #         query[0][1][i] = temp
-    #         # query[0][1][i-1] = query[0][1][i-1][1:]  # delete leading space and add a space between the names
-    #         query[0][1][i] = query[0][1][i]+", "   # delete leading space and add a space between the names
-    #     query[0][1][-1] = query[0][1][-1][:-2] # get rid of extra comma and space
-    #     print(query[0][1])
-    # else: # only one author of the article
-    #     for i in range(len(query)):
-    #         query[i][1][1] = query[i][1][1] 
-    #         temp = query[i][1][0]
-    #         query[i][1][0] = query[i][1][1]
-    #         query[i][1][1] = " " + temp
     for i in query:
         # for j in i:
         authorCombined = i[1][1][1:] + ", " + i[1][0]

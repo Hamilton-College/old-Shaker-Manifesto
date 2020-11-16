@@ -95,6 +95,8 @@ function Results() { //This is the Result component
   );
 
 }
+console.log(typeof window.results)
+console.log(window.results)
 var articleItem = window.results
 var buttons = window.pageButtons
 // var actionLink = "/Results/" + window.enteredTerm + "/" + articleItem + "/"  // next page is page 2
