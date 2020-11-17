@@ -314,11 +314,9 @@ def topicResults(topic=None, results =None): # all articles related to a certain
 @app.route("/ArticleResults/<articleID>", methods=["POST", "GET"]) 
 def articleResults(articleID=None): # Open the text and image file of the article
     # aID = request.form["article"]
-    sixDigits = False
     print(articleID)
     print(len(articleID))
     if(len(articleID)==6):
-        sixDigits = True
         articleID = "0" + articleID
         textStart = articleID[:4] + "000"
     else: # ID length is 7
@@ -336,7 +334,7 @@ def articleResults(articleID=None): # Open the text and image file of the articl
         else:
             issueText += (articleText + "<br/> <br/> <br/>")
         curr = int(curr) + 1 # lose leading zero 
-        if(sixDigits):
+        if(len(str(curr))==6):
             curr = "0" + str(curr)
         else: # 7
             curr = str(curr)
@@ -355,7 +353,7 @@ def articleResults(articleID=None): # Open the text and image file of the articl
         path = f"C:\\Users\\nonso\\OneDrive\\Documents\\thumbs\\thumbs\\{str(curr)}.jpg"
         thumbPaths.append(path)
         curr = int(curr) + 1 
-        if(sixDigits):
+        if(len(str(curr))==6):
             curr = "0" + str(curr)# int() loses leading zero 
         else: # 7
             curr = str(curr)
