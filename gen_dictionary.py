@@ -33,11 +33,16 @@ def create_dictionary(directory):
             #             w = re.sub("[-.,\"?\\\\/()!#$;:%&{}=0-9'*+|~\[\]^_]", "", w)
             #             s.add(w.lower())
 
+    with open("general_dictionary.txt", "r") as f:
+        l = f.read().split()
+
     s.discard("") #remove empty string
     for c in "qwertyuiopasdfghjklzxcvbnm": #removes single letter results
         s.discard(c)
     t = s.copy()
     for w in t:
+        if len(w) < 4 or w not in l:
+            s.discard(w)
         if w + "s" in s:
             s.discard(w + "s")
 
