@@ -37,8 +37,6 @@ def create_dictionary(directory):
         l = f.read().split()
 
     s.discard("") #remove empty string
-    for c in "qwertyuiopasdfghjklzxcvbnm": #removes single letter results
-        s.discard(c)
     t = s.copy()
     for w in t:
         if len(w) < 4 or w not in l:
