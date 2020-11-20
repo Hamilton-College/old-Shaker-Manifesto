@@ -155,7 +155,7 @@ class SM_Search:
         string) constrained to the given list of ids (if applicable) and returns
         the first page of results. If no search term is passed, returns the
         first page of results of the stored search"""
-        print(string)
+        # print(string)
         string = string.strip().lower()
         c = re.compile("\".*?\"")
         if string:
@@ -190,9 +190,9 @@ class SM_Search:
             results = self._simplify_results(results)
             self._remain = list(filter((lambda r : r.id() in ids), results)) if ids else results
             rdict = dict(zip(list(map(Result.id, self._remain)), self._remain))
-            print(rdict)
+            # print(rdict)
             for word in words[1:]:
-                print("additional fuzzy")
+                # print("additional fuzzy")
                 if not self._remain:
                     return []
                 for w in self._ngram.search(word, threshold=thresh):
