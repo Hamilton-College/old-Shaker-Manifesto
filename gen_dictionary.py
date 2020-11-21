@@ -18,6 +18,30 @@ def xml_traverse(root, names):
             names.append(elem.attrib.get("reg"))
         xml_traverse(elem, names)
 
+def create_common(directory):
+    s = set()
+    for filename in os.listdir(directory):
+        if filename.endswith(".txt"):
+            a = set()
+            with open(os.path.join(directory, filename), "rb") as f:
+                file = re.sub("[,'.]", "", f.read().decode("utf8", errors="ignore").lower())
+            if not file:
+                continue
+            for w in file.split():
+                a.add(w)
+            if s:
+                s.intersection_update(a)
+            else:
+                s = a
+
+    s.discard("b")
+    for w in list(s):
+        if w[-1] == 's':
+            s.discard(w)
+            s.add(w[:-1])
+    with open("common.txt", "w+") as output:
+        output.write("\n".join(sorted(list(s))))
+
 def create_names():
     with open("names.csv", "r") as f:
         contents = f.read()
@@ -64,6 +88,8 @@ def main():
     elif len(sys.argv) == 3 and sys.argv[1] == '-n':
         n = get_xml_names(sys.argv[2])
         print(n)
+    elif len(sys.argv) == 3 and sys.argv[1] == '-i':
+        create_common(sys.argv[2])
     elif len(sys.argv) == 3 and sys.argv[1] == "-d":
         names = []
         for filename in os.listdir(sys.argv[2]):

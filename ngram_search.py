@@ -173,7 +173,7 @@ class SM_Search:
                 else:
                     ids = s
 
-            #list of fuzzy search terms
+            #fuzzy search individual words
             if not (words := c.sub("", string).strip()):
                 # print("pure literal case")
                 # print(ids)
@@ -181,7 +181,15 @@ class SM_Search:
                 # print(self._remain)
                 return self.generate_results()#results for pure literal search
             # print(words)
-            word = (words := words.split())[0]
+
+            #clean words based on words common to all articles
+            with open("common.txt", "r") as f:
+                common = f.readlines()
+                for w in (words := words.split()):
+                    if w in common:
+                        exact.append(w)
+
+            word = words[0]
             results = []
             for w in self._ngram.search(word, threshold=thresh):
                 results.extend([Result([w[0]], w[1], e, self._index_dict) for e in self._tree.find_all(w[0])])
