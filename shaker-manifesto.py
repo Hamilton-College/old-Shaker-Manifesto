@@ -3,7 +3,7 @@ import json
 from flask import Flask, request, render_template, redirect, url_for, jsonify
 from flask_mysqldb import MySQL
 from search import *
-from autocomplete import search, AUTOCOMPLETE
+from autocomplete import *#search, AUTOCOMPLETE
 from functools import reduce
 import re
 import ast
@@ -43,7 +43,8 @@ def basicSearch():
     if(request.method == "GET"):
         return render_template("index.html")
     else: # POST
-        if(request.form.get("query") == False): # if nothing typed in the search bar
+        if(request.form.get("query").strip() == ""): # if nothing typed in the search bar
+            # flash("Please enter a valid search term", "info")
             return render_template("index.html") # maybe display a flash message here
 
         print("Right before we get query")
@@ -150,13 +151,13 @@ def displayAuthors(): # display landing page
             if(" " in name): # this means first and last name entered or multiple names
                 nameList = name.split()
                 if(len(nameList) == 2):
-                    queryString = f"SELECT title, author_tag FROM articles WHERE author_tag LIKE '%{nameList[0]}%' && author_tag LIKE '%{nameList[1]}%' order by author_tag;"
+                    queryString = f"SELECT title, author_tag, id FROM articles WHERE author_tag LIKE '%{nameList[0]}%' && author_tag LIKE '%{nameList[1]}%' order by author_tag;"
                 elif(len(nameList) == 3):
-                    queryString = f"SELECT title, author_tag FROM articles WHERE author_tag LIKE '%{nameList[0]}%' && author_tag LIKE '%{nameList[1]}%' && author_tag like '%{nameList[2]}%' order by author_tag;"
+                    queryString = f"SELECT title, author_tag, id FROM articles WHERE author_tag LIKE '%{nameList[0]}%' && author_tag LIKE '%{nameList[1]}%' && author_tag like '%{nameList[2]}%' order by author_tag;"
             elif(len(name) == 1):
-                queryString = f"SELECT author_tag FROM articles WHERE author_tag LIKE '%, {name}%' group by author_tag;" # add author to select
+                queryString = f"SELECT title, author_tag, id FROM articles WHERE author_tag LIKE '%, {name}%' group by author_tag;" # add author to select
             else: # either someone's firs or last name was displayed
-                queryString = f"SELECT title, author_tag FROM articles WHERE author_tag LIKE '%, {name}%' OR author_tag LIKE '{name}%' order by author_tag;" # add author to select
+                queryString = f"SELECT title, author_tag, id FROM articles WHERE author_tag LIKE '%, {name}%' OR author_tag LIKE '{name}%' order by author_tag;" # add author to select
             curr = mysql.connection.cursor()
             curr.execute(queryString)
             fetchdata = curr.fetchall()
@@ -233,7 +234,8 @@ def displayNames(): # display author names. When user clicks on an author's name
         undefined = False
         name = request.form["name"]
         print(name)
-        name = name.replace("'", "\'") # do we need this? Maybe
+        # name = name.replace("'", "\'") # do we need this? Maybe
+
         print("Name Displayed: ", name)
         # if article written by multiple people:
         # if(";" in name):
@@ -242,22 +244,25 @@ def displayNames(): # display author names. When user clicks on an author's name
         if(name[-9:] == "undefined"):
             name = name[:-9]
             undefined = True
+        name = name.replace("'", "''") # double up the apostrophre in SQL to escape it
         nameList = name.split(", ") # 
         print(nameList)
         print(undefined)
+        
         if(undefined==True): # one name author, single letter, etc
-            queryString = f"SELECT title, author_tag FROM articles WHERE author_tag LIKE '{name}' order by author_tag;" # add author to select
+            queryString = f"SELECT title, author_tag, id FROM articles WHERE author_tag LIKE '{name}' order by author_tag;" # add author to select
 
         elif(len(nameList) == 2):
-            queryString = f'SELECT title, author_tag FROM articles WHERE (author_tag LIKE "{nameList[0]}%" && author_tag LIKE "%, {nameList[1]}%") OR (author_tag LIKE "%; {nameList[0]}%" && author_tag LIKE "%, {nameList[1]}%") order by author_tag;'# either the last name appears first or it appears after a semicolon
+            queryString = f"SELECT title, author_tag, id FROM articles WHERE (author_tag LIKE '{nameList[0]}%' && author_tag LIKE '%, {nameList[1]}%') OR (author_tag LIKE '%; {nameList[0]}%' && author_tag LIKE '%, {nameList[1]}%') order by author_tag;"# either the last name appears first or it appears after a semicolon
      
         else: # one word name
-            queryString = f"SELECT title, author_tag FROM articles WHERE author_tag LIKE '%{name}%' order by author_tag;" # add author to select
+            queryString = f"SELECT title, author_tag, id FROM articles WHERE author_tag LIKE '%{name}%' order by author_tag;" # add author to select
         curr = mysql.connection.cursor()
         curr.execute(queryString)
         fetchdata = curr.fetchall()
         curr.close()
         print(fetchdata)
+        name = name.replace("''", "'")
         return redirect(url_for("authorResults", letterOrName = name, query=fetchdata)) # put in the function of the url you want to go to
 
 
@@ -330,7 +335,7 @@ def articleResults(articleID=None): # Open the text and image file of the articl
         articleText = open(path, "r")
         articleText = articleText.read()
         if(curr == articleID):
-            issueText += ("<b>" + articleText+ "</b>" + "<br/> <br/> <br/>")
+            issueText += ("<div id=\"target\">  </div>" + "<b>" + articleText+ " </b>" + "<br/> <br/> <br/>")
         else:
             issueText += (articleText + "<br/> <br/> <br/>")
         curr = int(curr) + 1 # lose leading zero 
@@ -346,12 +351,12 @@ def articleResults(articleID=None): # Open the text and image file of the articl
     issueText = issueText.replace("â€¢", '•') # dot
     issueText = issueText.replace("â€ž", '„') # dot
     
-    # Get list of thumbnail paths
+    # Get list of  image paths
     curr = textStart[:-1] + str(1) # images start at 1
-    thumbPaths = []
-    while(os.path.exists(f"C:\\Users\\nonso\\OneDrive\\Documents\\thumbs\\thumbs\\{str(curr)}.jpg")):
-        path = f"C:\\Users\\nonso\\OneDrive\\Documents\\thumbs\\thumbs\\{str(curr)}.jpg"
-        thumbPaths.append(path)
+    imagePaths = []
+    while(os.path.exists(f"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\{str(curr)}.jpg")):
+        imgPath = f"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\{str(curr)}.jpg"
+        imagePaths.append(imgPath)
         curr = int(curr) + 1 
         if(len(str(curr))==6):
             curr = "0" + str(curr)# int() loses leading zero 
@@ -359,20 +364,11 @@ def articleResults(articleID=None): # Open the text and image file of the articl
             curr = str(curr)
 
     encodedImages = []
-    for i in thumbPaths:
-        # print(i)
+    for i in range(len(imagePaths)):
+        newResponseImg = get_response_image(imagePaths[i]).replace("\n", "\\n")
+        encodedImages.append(newResponseImg)
 
-        newResponse = get_response_image(i).replace("\n", "\\n")
-        encodedImages.append(newResponse)
-        
-    print(thumbPaths)
-    print(encodedImages)
-    print(len(encodedImages))
-    # print(thumbPaths[0])
-    # print("no escape:", get_response_image(thumbPaths[0]))
-    print("after escape:",encodedImages[0])
-
-    return render_template("index.html", articleText = issueText, articleID=articleID, image=encodedImages) # we need to pass in everything here b/c we only want to use one page
+    return render_template("index.html", articleText = issueText, articleID=articleID, images=encodedImages) # we need to pass in everything here b/c we only want to use one page
 
 def get_response_image(image_path):
     pil_img = Image.open(image_path, mode='r') # reads the PIL image
@@ -380,6 +376,58 @@ def get_response_image(image_path):
     pil_img.save(byte_arr, format='JPEG') # convert the PIL image to byte array
     encoded_img = encodebytes(byte_arr.getvalue()).decode('ascii') # encode as base64
     return encoded_img
+
+@app.route("/VolumeIssueResults/<articleID>", methods=["POST", "GET"]) 
+def volumeIssueResults(articleID=None): # Open the text and image file of the article
+    # aID = request.form["article"]
+    print(articleID)
+    print(len(articleID))
+    if(len(articleID)==6):
+        articleID = "0" + articleID
+        textStart = articleID[:4] + "000"
+    else: # ID length is 7
+        textStart = articleID[:4] + "000"
+    # print(textStart)
+    # textStart = int(textStart)
+    curr = textStart
+    issueText = ""
+    while(os.path.exists(f"C:\\Users\\nonso\\OneDrive\\Documents\\Shaker-Manifesto\\textfiles\\{str(curr)}.txt")):
+        path = f"C:\\Users\\nonso\\OneDrive\\Documents\\Shaker-Manifesto\\textfiles\\{str(curr)}.txt"
+        articleText = open(path, "r")
+        articleText = articleText.read()
+        issueText += (articleText + "<br/> <br/> <br/>")
+        curr = int(curr) + 1 # lose leading zero 
+        if(len(str(curr))==6):
+            curr = "0" + str(curr)
+        else: # 7
+            curr = str(curr)
+
+    # replace non-UTF8 chars
+    issueText = issueText.replace('ï¿½', '�') # em dash
+    issueText = issueText.replace('.â€”', '—') # em dash
+    issueText = issueText.replace('â€”', '—') # em dash
+    issueText = issueText.replace("â€¢", '•') # dot
+    issueText = issueText.replace("â€ž", '„') # dot
+    
+    # Get list of  image paths
+    curr = textStart[:-1] + str(1) # images start at 1
+    imagePaths = []
+    while(os.path.exists(f"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\{str(curr)}.jpg")):
+        imgPath = f"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\{str(curr)}.jpg"
+        imagePaths.append(imgPath)
+        curr = int(curr) + 1 
+        if(len(str(curr))==6):
+            curr = "0" + str(curr)# int() loses leading zero 
+        else: # 7
+            curr = str(curr)
+
+    encodedImages = []
+    for i in range(len(imagePaths)):
+        newResponseImg = get_response_image(imagePaths[i]).replace("\n", "\\n")
+        encodedImages.append(newResponseImg)
+
+    return render_template("index.html", articleText = issueText, articleID=articleID, images=encodedImages) # we need to pass in everything here b/c we only want to use one page
+
 
 @app.route("/TopicWordResults/<topic>/<word>/<results>/<numOfPages>/<page>", methods=["POST", "GET"]) 
 def topicWordResults(topic=None, word=None, results=None, numOfPages =None, page=None): # all articles related to a certain topic
@@ -415,8 +463,6 @@ def topicWordResults(topic=None, word=None, results=None, numOfPages =None, page
 
 @app.route("/AuthorList/<letterOrName>~<query>", methods=["POST", "GET"])
 def authorResults(letterOrName = None, query = None): # query right now is the data retrieved from the sql query
-    #In order to enable re-searching on this page, I'd need to run the query again on this function. We don't want to do that
-    # Perhaps in the form, I can hardcode the path to the previous function that generates the query?
     # if(len(letterOrName) == 1): # then it's a letter. When is this ever the case?
     #     query = query.replace("(", "")
     #     query = query.replace(")", "")
@@ -462,19 +508,22 @@ def authorResults(letterOrName = None, query = None): # query right now is the d
                 temp = query[i][1][0]
                 query[i][1][0] = query[i][1][1]
                 query[i][1][1] = " " + temp
-
-    for i in query:
-        # for j in i:
-        authorCombined = i[1][1][1:] + ", " + i[1][0]
-        print(authorCombined)
-        queryString = f"SELECT id FROM articles WHERE title LIKE '{i[0]}' AND author_tag LIKE '%{authorCombined}%';" 
-        curr = mysql.connection.cursor()
-        curr.execute(queryString)
-        artID = curr.fetchall()
-        curr.close()
-        artID = list(artID)
-        i.append(artID)
-
+    # for i in query:
+    #     # i[0][0].replace("'","''")
+    #     if(len(query[0][1]) > 1): # combine name
+    #         authorCombined = i[1][1][1:] + ", " + i[1][0]
+    #         authorCombined = authorCombined.replace("'", "''") # double up the apostrophre in SQL to escape it
+    #         print(authorCombined)
+    #         queryString = f"SELECT id FROM articles WHERE title LIKE '{i[0]}' AND author_tag LIKE '%{authorCombined}%';" 
+    #     else: # one word name
+    #         queryString = f"SELECT id FROM articles WHERE title LIKE '{i[0]}' AND author_tag LIKE '%{query[0][1]}%';" 
+    #         curr = mysql.connection.cursor()
+    #         curr.execute(queryString)
+    #         artID = curr.fetchall()
+    #         curr.close()
+    #         artID = list(artID)
+    #         i.append(artID)
+    
     print(query)
     print(type(query))
     # articlesList = json.dumps(query)
@@ -482,23 +531,20 @@ def authorResults(letterOrName = None, query = None): # query right now is the d
     return render_template("index.html", enteredText=letterOrName, articlesList=query) # return all articles written by an author
 
 
-
+auto = SM_Autocomplete()
 @app.route("/autocomplete", methods=["POST", "GET"])
 def autocomplete():
-    print("in shaker-manifestoo.py")
-    # print(json.dumps(request.data))
-    # print("raw data: ", request.get_data())
     print("request.data: ", request.data)
-    # print("request.json: ", request.json)
-    # print(type(request.json))
-    # print("request.get_json: ", request.get_json()) #bad request err on client
-    # print(type(request.form.get("txt")))
-    # print("request.form: ", request.form["txt"]) # key err
 
-    return json.dumps([item for sl in search(json.loads(request.data)["txt"]) for item in sl ])
+    return json.dumps([item for sl in auto.general(json.loads(request.data)["txt"]) for item in sl ])
 
-    # return reduce(lambda x, y: str(x) + ',' + str(y),
-            # [item for sublist in search(json.loads(request.data)["txt"]) for item in sublist]) # this is what produces the list of options
+@app.route("/autocomplete2", methods=["POST", "GET"])
+def autocomplete2(): # This is for the author search
+    print("request.data: ", request.data)
+
+    return json.dumps([item for sl in auto.author(json.loads(request.data)["txt"]) for item in sl ])
+
+
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')

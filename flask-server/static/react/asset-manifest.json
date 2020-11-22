@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/react/css/main.fa7c9ef7.chunk.css",
-    "main.js": "/static/react/js/main.bf18f716.chunk.js",
-    "main.js.map": "/static/react/js/main.bf18f716.chunk.js.map",
+    "main.css": "/static/react/css/main.f2d04cdc.chunk.css",
+    "main.js": "/static/react/js/main.283425a9.chunk.js",
+    "main.js.map": "/static/react/js/main.283425a9.chunk.js.map",
     "runtime-main.js": "/static/react/js/runtime-main.6edcfee7.js",
     "runtime-main.js.map": "/static/react/js/runtime-main.6edcfee7.js.map",
-    "css/2.94372793.chunk.css": "/static/react/css/2.94372793.chunk.css",
-    "js/2.a56ceb8a.chunk.js": "/static/react/js/2.a56ceb8a.chunk.js",
-    "js/2.a56ceb8a.chunk.js.map": "/static/react/js/2.a56ceb8a.chunk.js.map",
+    "css/2.71c815f3.chunk.css": "/static/react/css/2.71c815f3.chunk.css",
+    "js/2.95168fdf.chunk.js": "/static/react/js/2.95168fdf.chunk.js",
+    "js/2.95168fdf.chunk.js.map": "/static/react/js/2.95168fdf.chunk.js.map",
     "../../templates/index.html": "/static/react/../../templates/index.html",
-    "css/2.94372793.chunk.css.map": "/static/react/css/2.94372793.chunk.css.map",
-    "css/main.fa7c9ef7.chunk.css.map": "/static/react/css/main.fa7c9ef7.chunk.css.map",
-    "js/2.a56ceb8a.chunk.js.LICENSE.txt": "/static/react/js/2.a56ceb8a.chunk.js.LICENSE.txt",
+    "css/2.71c815f3.chunk.css.map": "/static/react/css/2.71c815f3.chunk.css.map",
+    "css/main.f2d04cdc.chunk.css.map": "/static/react/css/main.f2d04cdc.chunk.css.map",
+    "js/2.95168fdf.chunk.js.LICENSE.txt": "/static/react/js/2.95168fdf.chunk.js.LICENSE.txt",
     "media/article-group.c5278052.png": "/static/react/media/article-group.c5278052.png",
     "media/hamilton-lib-logo.f0c779ea.PNG": "/static/react/media/hamilton-lib-logo.f0c779ea.PNG",
     "media/manifesto-office-lomas.798b1e22.jpg": "/static/react/media/manifesto-office-lomas.798b1e22.jpg",
@@ -19,9 +19,9 @@
   },
   "entrypoints": [
     "js/runtime-main.6edcfee7.js",
-    "css/2.94372793.chunk.css",
-    "js/2.a56ceb8a.chunk.js",
-    "css/main.fa7c9ef7.chunk.css",
-    "js/main.bf18f716.chunk.js"
+    "css/2.71c815f3.chunk.css",
+    "js/2.95168fdf.chunk.js",
+    "css/main.f2d04cdc.chunk.css",
+    "js/main.283425a9.chunk.js"
   ]
 }

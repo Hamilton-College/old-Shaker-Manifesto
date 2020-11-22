@@ -87,7 +87,7 @@ li {
 
 .thumb{
   /* display: inline; */
-  margin-left: 5%;
+  margin-left: 3%;
   text-align: center;
 
 }
@@ -121,10 +121,10 @@ li {
   margin: auto;
   background-color: #f1f1e4;
   border: 5px solid #003153;
-  width: 50%;
-  height: 80%;
+  width: 80%;
+  max-height: 800px;
   border-radius: 5px;
-
+  overflow-y: scroll;    
 }
 .articleText{
   font-family: 'Lato', sans-serif;
@@ -238,11 +238,19 @@ form.example::after {
   /* transform: translateX(-50%); */
   position: absolute;
   /* margin-top: 6px; */
-  top: 358px;
+  top: 357px;
   /* cursor: pointer; */
   overflow: hidden;
   /* border: 1px solid green; */
 
+}
+#target{
+  display: block; 
+  content: " "; 
+  margin-top: -150px; 
+  height: 150px; 
+  visibility: hidden; 
+  pointer-events: none;
 }
 
 .searchButton2{
@@ -577,3 +585,26 @@ input[type=submit] {
   text-decoration: underline;
   background-color: rgb(201, 192, 192)
 }
+
+
+.carousel .carousel-root{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.carousel-root{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.carousel .control-prev.control-arrow:before{
+  border-right: 25px solid #000;
+}
+
+.carousel .control-next.control-arrow:before{
+  border-left: 25px solid #000;
+}
+
+.carousel .carousel-status{
+  font-size: 30px;
+}
+

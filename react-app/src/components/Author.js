@@ -37,7 +37,7 @@ function Author() {
       </nav>
       <div className="container">
     <br/><br/> <br/>
-    <br/><br/> <br/>
+    <br/><br/> 
       <img src={shakerLogo} alt="Shaker logo"width="600" height="150" className = "ShakerLogo"/>
       
       {/* <div class="searchBar">
@@ -80,7 +80,7 @@ function Author() {
 
       </div>
         <br/><br/>
-        <AutoComplete2 items = {ListOfAuthors}/>
+        <AutoComplete2/>
           {/* <input id="MySearchTerm" data-provide="typeahead" autocomplete="off" type="text" name="query"/> */}
           {/* <input type="text" className= "span3" data-provide="typeahead" data-items="4" placeholder="Introduce un país" data-source='["Alabama", "California", "Marte"]' autoComplete="off" name="query"></input> */}
           

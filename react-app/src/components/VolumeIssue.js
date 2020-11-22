@@ -16,7 +16,7 @@ class VolumeIssue extends Component {
       console.log(e)
       console.log(e.target.value)
       // console.log(this.state.checkbox.checked)
-      var newSearch = "/ArticleResults/" + e.target.value;
+      var newSearch = "/VolumeIssueResults/" + e.target.value;
 
       this.setState({url: newSearch})
   }
@@ -78,7 +78,7 @@ class VolumeIssue extends Component {
           </div>
       </nav>
     <br/><br/> <br/>
-    <br/><br/> <br/>
+    <br/><br/> 
     
     <div className="container">
     <img src={shakerLogo} alt="Shaker logo"width="600" height="150" className = "ShakerLogo"/>

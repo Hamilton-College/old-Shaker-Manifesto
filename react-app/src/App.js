@@ -16,6 +16,7 @@ import TopicResults from './components/TopicResults';
 import TopicWordResults from './components/TopicWordResults';
 import TopicWordResultsNext from './components/TopicWordResultsNext';
 import AuthorNames from './components/AuthorNames';
+import VolumeIssueResults from './components/VolumeIssueResults';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {NavLink} from 'react-router-dom';
 import AutoComplete2 from './components/autocomplete2';
@@ -39,6 +40,7 @@ function App() {
             <Route path="/TopicWordResults" component={TopicWordResults}/>
             <Route path="/TopicWordResultsNext" component={TopicWordResultsNext}/>
             <Route path="/ArticleResults" component={ArticleResults}/>
+            <Route path="/VolumeIssueResults" component={VolumeIssueResults}/>
           </Switch>
         
       </Router>
@@ -77,7 +79,7 @@ const Home = () => (
       <div className="container">
 
       <br/><br/> <br/>
-      <br/><br/> <br/>
+      <br/><br/> 
 
       <img src={shakerLogo} alt="Shaker logo" width="700" height="250" className = "ShakerLogo"/>
 

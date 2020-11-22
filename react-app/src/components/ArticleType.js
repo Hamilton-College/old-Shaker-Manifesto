@@ -34,7 +34,7 @@ function ArticleType() {
       </nav>
     <div className = "container">
     <br/><br/> <br/>
-    <br/><br/> <br/>
+    <br/><br/> 
       <img src={shakerLogo} alt="Shaker logo"width="600" height="150" className = "ShakerLogo"/>
       <br/><br/> <br/>
       <br/><br/> <br/>

@@ -10,7 +10,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import 'react-tabs/style/react-tabs.css';
 
 
-function ArticleResults() { //This is the Result component
+function VolumeIssueResults() { //This is the Result component
 
   return (
     <div>
@@ -75,10 +75,6 @@ function ArticleResults() { //This is the Result component
     <TabPanel>
       <br/>
 
-      <div className="pClass">
-        <a href="#target"><b>Click here</b></a> to jump to the selected article
-      </div>
-
       <div className="textContainer">
         <div className= "articleText">
         <div dangerouslySetInnerHTML={{__html: window.articleText}}></div>
@@ -88,16 +84,6 @@ function ArticleResults() { //This is the Result component
       </div>
     </TabPanel>
   </Tabs>
-      {/* <div className="articleImage"> */}
-        {/* <img src = {`data:image/jpeg;base64,${data}`} alt ="article image" width="60%" height="60%"/> */}
-      {/* </div> */}
-
-      
-      {/* <form action={nextArticle} method="GET" id="nameform">  
-        <button type="submit" name="page" value="Next article">
-            <p>Next article</p>
-        </button>
-      </form> */}
 
 
     </div>
@@ -108,35 +94,6 @@ function ArticleResults() { //This is the Result component
 }
 console.log(window.image)
 
-// var i;
-// for (i = 0; i < window.image.length; i++) {
-//   for (var j=0; j < window.image[i].length; j++) {
-//     if(Array.isArray(window.image[i][j])){ // WE SHOULD DO A WHILE
-//       window.image[i].splice(j,1) // remove the item
-//       j--
-//     }
-//     else{ // if it's the string
-//       window.image[i][j] = (window.image.slice(1,-1));
-//     }
-//   console.log(window.image[i])
-//   } 
-// }
-// var data = window.image
-// data.reduce((acc, val) => acc.concat(val), []);
-
-//var data = window.image//[].concat.apply([], [window.image]);
-// function flattenDeep(arr1) {
-//   return arr1.reduce((acc, val) => Array.isArray(val) ? acc.concat(flattenDeep(val)) : acc.concat(val), []);
-// }
-
-
-// var data = (window.image.slice(1,-1))
-// var data = `data:image/jpeg;base64,${window.image}`
-// console.log(data)
-
-// const Example = {data}  => <img src={`data:image/jpeg;base64,${data}`} />
-
-// var articleItem = window.results
 var lastDigit = window.articleID.slice(-2,-1)
 var lastDigit = lastDigit.slice(0,1)
 
@@ -144,4 +101,4 @@ var incDigit = parseInt(lastDigit) +1
 var nextArticle = window.articleID.slice(1, -2) + (incDigit.toString())  //+ JSON.stringify(value)
 
 
-export default ArticleResults;
+export default VolumeIssueResults;

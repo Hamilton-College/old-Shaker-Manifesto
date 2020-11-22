@@ -70,7 +70,10 @@ class SearchBar extends Component {
 
         
     handleSubmit = (e) =>{
-        // alert(`${this.state.search}`)
+        if(this.state.value.length == 0){
+            alert(`${this.state.search}`)
+        }
+        else{
         fetch("#", {
             method:"POST",
             headers:{
@@ -86,7 +89,7 @@ class SearchBar extends Component {
       .then(json => {
       this.setState({search: e.target.value})
       })
-    }
+    }}
     render() {
         const {search} = this.state // now we don't have to type this.state when we want to edit the search property
         return(
