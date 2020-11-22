@@ -9,12 +9,10 @@ import ArticleType from './components/ArticleType';
 import Author from './components/Author';
 import VolumeIssue from './components/VolumeIssue';
 import Results from './components/Results';
-import NextResults from './components/NextResults';
 import ArticleResults from './components/ArticleResults';
 import AuthorList from './components/AuthorList';
 import TopicResults from './components/TopicResults';
 import TopicWordResults from './components/TopicWordResults';
-import TopicWordResultsNext from './components/TopicWordResultsNext';
 import AuthorNames from './components/AuthorNames';
 import VolumeIssueResults from './components/VolumeIssueResults';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -26,7 +24,6 @@ function App() {
   return (
     <div>
       <Router>
-          {/* <AdvancedNav />  always display nave component */}
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/ArticleType" component={ArticleType}/>
@@ -34,11 +31,9 @@ function App() {
             <Route path="/Author" exact component={Author}/>
             <Route path="/VolumeIssue" component={VolumeIssue}/>
             <Route path="/Results" component={Results}/>
-            <Route path="/NextResults" component={NextResults}/>
             <Route path="/AuthorNames" component={AuthorNames}/>
             <Route path="/TopicResults" component={TopicResults}/>
             <Route path="/TopicWordResults" component={TopicWordResults}/>
-            <Route path="/TopicWordResultsNext" component={TopicWordResultsNext}/>
             <Route path="/ArticleResults" component={ArticleResults}/>
             <Route path="/VolumeIssueResults" component={VolumeIssueResults}/>
           </Switch>
@@ -88,13 +83,21 @@ const Home = () => (
       
 
       {/* <div className="searchBar"> */}
+      {/* <br/> */}
+      {/* <br/> */}
+      {/* <br/> */}
+      {/* <br/> */}
+      {/* <div className="searchBarContainer"> */}
+      <img src={articleGroup} alt="Lomas" width="210" height="335" className = "lomasL"/>
+      <img src={lomas} alt="Lomas" width="230" height="250" className = "lomasR"/>
+      <br/>
       <br/>
       <br/>
       <br/>
       <br/>
       <SearchBar />
-      <img src={articleGroup} alt="Lomas" width="210" height="335" className = "lomasL"/>
-      <img src={lomas} alt="Lomas" width="230" height="250" className = "lomasR"/>
+      {/* </div> */}
+
       <br/>
       <br/>
       <br/>

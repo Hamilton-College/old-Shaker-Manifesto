@@ -3,7 +3,6 @@ import '../App.css';
 import shakerLogo from '../images/shaker-manifesto-logo2.PNG';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
 import SearchBar from './SearchBar';
-import AdvancedNav from './AdvancedNav';
 import AutoComplete2 from './AutoComplete2';
 import { Typeahead } from 'react-bootstrap-typeahead'; // ES2015
 import ListOfAuthors from '../AutoComplete-lists/ListOfAuthors';
@@ -43,8 +42,7 @@ function Author() {
       {/* <div class="searchBar">
         <SearchBar />
       </div>    */}
-      <br/><br/><br/> <br/>
-      <br/><br/><br/> <br/> <br/>
+      <br/><br/><br/> 
       <div className="textAboveAlphabet">
         <p>Browse by last name of author</p>
       </div>

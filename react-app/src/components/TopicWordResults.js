@@ -3,7 +3,6 @@ import '../App.css';
 import shakerLogo from '../images/shaker-manifesto-logo2.PNG';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
 import SearchBar from './SearchBar'
-import AdvancedNav from './AdvancedNav'
 
 
 function TopicWordResults() { //This is the Result component

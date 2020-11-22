@@ -30,7 +30,7 @@ li {
   /* border: 1px solid red; */
 
   /* position: relative; */
-  min-height: 800px;
+  min-height: 1200px;
 }
 .footer{
   text-align: center;
@@ -97,14 +97,10 @@ li {
   text-align: auto;
 }
 .ShakerLogo {
-  display: inline;
-  /* margin-top: 0px; */
-  /* margin-bottom: ; */
-  /* border: 1px solid green; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
-  left: 26.5%;
-  position: absolute;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
   width: 600px;
   height: 150px;
 }
@@ -164,26 +160,15 @@ li {
   /* width: 50%; */
 }
 
-.searchBar{ /*we can get rid of this altogether if it doesn't work. this is just the background */
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
+.searchBarContainer{ /*we can get rid of this altogether if it doesn't work. this is just the background */
+  display:flex;
+  /* margin: auto; */
   /* width: 40%; */
-  /* border: 1px solid grey; */
-  /* box-shadow: 0 0 0 1px rgb(204, 199, 199), 0 2px 4px 1px rgb(190, 188, 188); */
-  background: #FAFAD2;
-  /* max-width: 500px; */
-  margin: 0 auto;
-  width: 200px;
-  height: 65px;
-  padding: 5px;
-  border-radius: 5px;
-  display: inline-block;
-  /* justify-content: space-between; */
-  border: 1px solid green;
-  /* overflow: hidden; */
+  /* border: 1px solid green; */
+  /* text-align:center; */
+  flex-direction: column-reverse;
 }
+
 form.example button {
   float: left;
   width: 20%;

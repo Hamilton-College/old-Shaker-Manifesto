@@ -83,8 +83,6 @@ class VolumeIssue extends Component {
     <div className="container">
     <img src={shakerLogo} alt="Shaker logo"width="600" height="150" className = "ShakerLogo"/>
     <br/><br/> <br/>
-    <br/><br/> <br/>
-    <br/> <br/>
     <div className = "volumeAndIssue">
       <h1>Browse by volume and issue:</h1> <br/>
       </div>

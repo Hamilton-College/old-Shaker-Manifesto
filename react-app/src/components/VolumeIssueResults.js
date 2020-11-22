@@ -3,7 +3,6 @@ import '../App.css';
 import shakerLogo from '../images/shaker-manifesto-logo2.PNG';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
 import SearchBar from './SearchBar'
-import AdvancedNav from './AdvancedNav'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
