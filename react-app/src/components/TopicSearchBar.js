@@ -84,6 +84,7 @@ class TopicSearchBar extends Component {
 
     handleSubmit = (e) =>{
         // alert(`${this.state.search}`)
+
         fetch("#", {
             method:"POST",
             headers:{
@@ -98,7 +99,7 @@ class TopicSearchBar extends Component {
       })
       .then(json => {
       this.setState({search: e.target.value})
-      this.setState({checkbox: null})
+    //   this.setState({checkbox: null})
       console.log("HERE",this.state.checkbox)
 
       })
@@ -106,9 +107,9 @@ class TopicSearchBar extends Component {
 
     render () {
         const { search, checkbox, label } = this.state;
-        window.addEventListener('unload', function(event) {
-            document.getElementById("radio-group").reset();
-           }, false);
+        // window.addEventListener('unload', function(event) {
+        //     document.getElementById("radio-group").reset();
+        //    }, false);
         return (
             
                 <form onSubmit={this.handleSubmit} action = "#" method="POST">

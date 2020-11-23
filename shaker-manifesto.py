@@ -72,10 +72,10 @@ def displayTypes():
     if(request.method == "GET"):
         return render_template("index.html")
     else: # POST
-        if(not request.form.get("query") and not request.form.get("checkbox")): # if no boxes checked and nothing entered
+        if(request.form.get("query").strip() == "" and not request.form.get("checkbox")): # if no boxes checked and nothing entered
             return render_template("index.html") # display flash message
 
-        elif(request.form.get("checkbox") and request.form.get("query")): # Typical: If we have a box checked and word entered 
+        elif(request.form.get("checkbox") and request.form.get("query").strip() != ""): # Typical: If we have a box checked and word entered 
             # print("Boxes checked:", request.form.getlist("checkbox"))
             enteredText = request.form.get("query")
             topic = request.form.get("checkbox")
@@ -144,9 +144,9 @@ def displayAuthors(): # display landing page
             print(fetchdata)
             return redirect(url_for("letterOfAuthors", letter = letter, query=fetchdata)) 
         else: # name was entered
-            name = request.form["query"]
-            # name = request.get_json(force=True)
-            # name = request.json
+            name = request.form.get("query").strip()
+            if(name == ""):
+                return render_template("index.html")
             print("entered val: ", name)
             if(" " in name): # this means first and last name entered or multiple names
                 nameList = name.split()

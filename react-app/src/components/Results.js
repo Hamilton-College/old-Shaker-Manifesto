@@ -76,11 +76,11 @@ function Results() { //This is the Result component
                 </div>
             ))}
       </form> */}
-
+      Page: 
       {buttons.map((num, index) => (
             <div key={index} className="pageButton">
-                 <form action={num[0]} method="GET" id="nameform">   {/*"/NextResults/{window.enteredTerm}/{value}" */}
-                <button type="submit" name="page" value={num[0]}>
+                <form action={num[0]} method="GET" id="nameform">   {/*"/NextResults/{window.enteredTerm}/{value}" */}
+                <button className="pageButton" type="submit" name="page" value={num[0]}>
                     <p>{num[0]}</p>
                 </button>
                 </form>

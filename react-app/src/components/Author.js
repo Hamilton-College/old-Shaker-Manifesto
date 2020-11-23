@@ -5,7 +5,6 @@ import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
 import SearchBar from './SearchBar';
 import AutoComplete2 from './AutoComplete2';
 import { Typeahead } from 'react-bootstrap-typeahead'; // ES2015
-import ListOfAuthors from '../AutoComplete-lists/ListOfAuthors';
 
 
 

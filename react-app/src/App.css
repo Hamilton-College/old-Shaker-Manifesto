@@ -43,6 +43,12 @@ li {
 
 .pageButton{
   display: inline-block;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 12pt;
+  padding: 8px;
+  color: rgb(47, 127, 233);
 }
 
 #current a{
@@ -101,8 +107,10 @@ li {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  width: 600px;
-  height: 150px;
+  width: 55%;
+  height: 50%;
+  /* width: 600px; */
+  /* height: 150px; */
 }
 
 .pageNumber {
@@ -330,7 +338,8 @@ form.example::after {
 
 #dropdownWrapper{
 
-  width: 536px;
+  /* width: 536px; */
+  width: 48.5%;
   margin: 0 auto; /* this centers it*/
   /* border: 1px solid green; */
   /* overflow: hidden; */
@@ -452,6 +461,7 @@ input[type=submit] {
   text-decoration: underline;
   font-family: inherit;
   font-size: 14pt;
+  text-align: left;
   /* color: rgb(0, 110, 253); */
   /* border-bottom: 1px solid #7e7e78; */
   /* border-top: 1px solid #7e7e78; */
