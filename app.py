@@ -281,7 +281,7 @@ def basicResults1(values, results, numOfPages, page):
 
     searchObj.load_results(results) # results is a jsonified string. This just sets some of the internal state of SM obj
 
-    pageOfResults = searchObj._generate_results(page) # results is our search obj
+    pageOfResults = searchObj.generate_results(page) # results is our search obj
 
     for i in pageOfResults:
         i[1] = i[1].replace("\'", "")
@@ -444,7 +444,7 @@ def topicWordResults(topic=None, word=None, results=None, numOfPages =None, page
 
     searchObj.load_results(results) # results is a jsonified string. This just sets some of the internal state of SM obj
 
-    pageOfResults = searchObj._generate_results(page) # results is our search obj
+    pageOfResults = searchObj.generate_results(page) # results is our search obj
 
     for i in pageOfResults:
         i[1] = i[1].replace("\'", "")

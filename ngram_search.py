@@ -144,7 +144,7 @@ class SM_Search:
         simplified.sort(key=Result.getThresh)
         return simplified
 
-    def _generate_results(self, pg_num = 0):
+    def generate_results(self, pg_num = 0):
         """generate and return a page worth of results"""
         if self._remain and pg_num <= self.page_num():
             return [[r.id(), r.getPreview()] for r in self._remain[pg_num*PAGE_LIMIT: (pg_num + 1)*PAGE_LIMIT]]
@@ -217,7 +217,7 @@ class SM_Search:
                 self._remain = list(rdict.values())
             self._remain.sort(key=Result.getThresh)
 
-        return self._generate_results()
+        return self.generate_results()
 
 def main():
     """testing command line interface"""
@@ -226,7 +226,12 @@ def main():
     print(time.perf_counter() - tic)
     while (inp := input("::> ")) != "exit":
         tic = time.perf_counter()
-        result = s.search(inp)
+        if not inp:
+            result = s.generate_results(pg)
+            pg += 1
+        else:
+            result = s.search(inp)
+            pg = 0
         for r in result:
             print(r)
         print(time.perf_counter() - tic)
