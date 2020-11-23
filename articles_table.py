@@ -117,15 +117,29 @@ def title(str1, str2):
 		return str1
 	return str1
 
+def author(str1):
+	if str1.count(",") == 2 and str1.count(";") == 0:
+		found = False
+		for i in range(0, len(str1)):
+			if str1[i] == "," and not found:
+				found = True
+			elif str1[i] == "," and found:
+				str1 = str1[0:i] + " " + str1[i+1:]
+				str1 = space_remover(str1)
+				break
+	return str1
+
 def list_to_str_articles1(list1, key):
-	str1 = "INSERT INTO articles (id, issue_id, topics, title, author_tag, author_text) VALUES "
+	str1 = "INSERT INTO articles (id, issue_id, topics, title, author_tag, author_text, start, end) VALUES "
 	str1 += "("
 	str1 += key + ", "
 	str1 += key[0:4] + ", "
 	str1 += "\"" + list1[0] + "\", "
 	str1 += "\"" + title(list1[1], list1[2]) + "\", "
-	str1 += "\"" + list1[3] + "\", "
-	str1 += "\"" + list1[4] + "\"); \n"
+	str1 += "\"" + author(list1[3]) + "\", "
+	str1 += "\"" + list1[4] + "\", "
+	str1 += "" + str(list1[13]) + ", "
+	str1 += "" + str(list1[14]) + "); \n"
 	f = open("articles_command.txt", "a")
 	f.write(str1)
 	f.close()
@@ -452,6 +466,7 @@ def main():
 	f = open("articles_command.txt", "a")
 	f.truncate(0)
 	f.close()
+	print(os.getcwd())
 	path = os.getcwd() + "/journals"
 	files_list = os.listdir(path)
 	body_reader(files_list, path)

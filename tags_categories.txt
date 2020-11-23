@@ -1,3 +1,43 @@
+Group 1: Farm, Food, Health, Home, and Family (9)
+
+‘equipment’ 	-> Equipment
+‘livestock’	-> Livestock
+‘recipe’ 	-> Recipes
+‘food’ 		-> Food
+‘farming’	-> Farming
+'crops'		-> Crops
+‘health’	-> Health and Sanitation / health
+‘house’		-> House / house
+'juvenile'	-> Juvenile / juvenile
+
+News and Events (6)
+
+‘shaker-press’	-> Shakers in the Press
+‘shaker-history’-> Shaker History
+‘history’ 	-> Historical Events
+
+Music, Dance, Literature, and Culture (10)
+
+‘music’		-> Music
+‘dance’		-> Dance
+‘hymn’ 		-> Hymns
+‘humor’ 	-> Humor
+‘fiction’	-> Fiction
+‘story’		-> Story
+‘figure’	-> Illustrations
+
+Knowledge and Beliefs (4)
+
+‘lecture’	-> Lecture
+‘science’	-> Science
+
+Other (9)
+
+‘publication’	-> Publication
+‘biography’	-> Biographies
+‘ann lee’ 	-> Mother Ann Lee
+‘quote’		-> Quotes from other sources
+
 Farm, Food, Health, Home, and Family (9)
 
 ‘equipment’ 	-> Equipment
@@ -134,5 +174,5 @@ all = ["equipment", "livestock", "recipe", "food", "shaker-press", "shaker-histo
 
  source /Users/samuelvigneault/PycharmProjects/Shaker-Manifesto1/articles_command.txt
 
-create table articles (id int, issue_id int, topics varchar(200), title varchar(500), author_tag varchar(500), author_text varchar(1000), PRIMARY KEY (ID));
+ create table articles (id int, issue_id int, topics varchar(200), title varchar(500), author_tag varchar(500), author_text varchar(1000), start int, end int, PRIMARY KEY (ID));
 
