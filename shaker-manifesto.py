@@ -319,6 +319,15 @@ def topicResults(topic=None, results =None): # all articles related to a certain
 @app.route("/ArticleResults/<articleID>", methods=["POST", "GET"]) 
 def articleResults(articleID=None): # Open the text and image file of the article
     # aID = request.form["article"]
+    queryString = f"SELECT start FROM articles WHERE id LIKE '{articleID}';" 
+    curr = mysql.connection.cursor()
+    curr.execute(queryString)
+    startPage = list(curr.fetchall())
+    curr.close()
+    print(startPage)
+    print(startPage[0][0])
+    startPage = startPage[0][0]
+
     print(articleID)
     print(len(articleID))
     if(len(articleID)==6):
@@ -368,7 +377,7 @@ def articleResults(articleID=None): # Open the text and image file of the articl
         newResponseImg = get_response_image(imagePaths[i]).replace("\n", "\\n")
         encodedImages.append(newResponseImg)
 
-    return render_template("index.html", articleText = issueText, articleID=articleID, images=encodedImages) # we need to pass in everything here b/c we only want to use one page
+    return render_template("index.html", articleText = issueText, articleID=articleID, images=encodedImages, startPage=startPage) # we need to pass in everything here b/c we only want to use one page
 
 def get_response_image(image_path):
     pil_img = Image.open(image_path, mode='r') # reads the PIL image

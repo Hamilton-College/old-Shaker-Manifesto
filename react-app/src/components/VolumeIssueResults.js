@@ -50,7 +50,7 @@ function VolumeIssueResults() { //This is the Result component
     </TabList>
  
     <TabPanel>
-      <Carousel selectedItem={3} showArrows={true}>
+      <Carousel showArrows={true}>
       {window.images.map((num, index) => (
             <div key={index}>
               <img src = {`data:image/jpeg;base64,${num}`} alt ="article image"/>

@@ -50,7 +50,7 @@ function ArticleResults() { //This is the Result component
     </TabList>
  
     <TabPanel>
-      <Carousel selectedItem={3} showArrows={true}>
+      <Carousel selectedItem={window.startPage} showArrows={true}>
       {window.images.map((num, index) => (
             <div key={index}>
               <img src = {`data:image/jpeg;base64,${num}`} alt ="article image"/>
@@ -106,6 +106,7 @@ function ArticleResults() { //This is the Result component
 
 }
 console.log(window.image)
+console.log(window.startPage)
 
 // var i;
 // for (i = 0; i < window.image.length; i++) {
