@@ -1,22 +1,20 @@
-import os
-import json
-from flask import Flask, request, render_template, redirect, url_for, jsonify
-from flask_mysqldb import MySQL
-from autocomplete import *#search, AUTOCOMPLETE
+import os, sys, json, re, ast, io
 from functools import reduce
-import re
-import ast
+
+from flask import Flask, request, render_template, redirect, url_for, jsonify
 from flask_cors import CORS
-#For sending images
-import io
-from base64 import encodebytes
-from PIL import Image
-# from Face_extraction import face_extraction_v2
+from flask_mysqldb import MySQL
 
 from ngram_search import *
+from autocomplete import *
 
-template_dir = os.path.abspath("./flask-server/templates") # change THESE
-static_dir = os.path.abspath("./flask-server/static") #
+#For sending images
+from base64 import encodebytes
+from PIL import Image
+from waitress import serve
+
+template_dir = os.path.abspath("./flask-server/templates")
+static_dir = os.path.abspath("./flask-server/static")
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir )
 CORS(app)
 
@@ -561,4 +559,7 @@ def index(path):
     # return app.send_static_file("index.html")
 
 if __name__ == "__main__":
-    app.run(debug=True, use_reloader = True)
+    if len(sys.argv) == 2 and sys.argv[1] == '-d':
+        serve(app)
+    else:
+        app.run(debug=True, use_reloader = True)
