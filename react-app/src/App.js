@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import shakerLogo from './images/shaker-manifesto-logo2.PNG';
+import shakerLogo from './images/shaker-manifesto-logo2.png';
 import hamiltonLogo from './images/hamilton-lib-logo.PNG';
 import lomas from './images/manifesto-office-lomas.jpg';
 import articleGroup from './images/article-group.png';
@@ -38,7 +38,7 @@ function App() {
             <Route path="/VolumeIssueResults" component={VolumeIssueResults}/>
             <Route path="/HowTo" component={HowTo}/>
           </Switch>
-        
+
       </Router>
       <br/>
       <br/>
@@ -59,7 +59,7 @@ const Home = () => (
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarMenu">
-            <ul className="navbar-nav ml-auto"> 
+            <ul className="navbar-nav ml-auto">
               <li id="current">
                 <a href="/#" className="nav-link"> Basic Search</a>
               </li>
@@ -78,7 +78,7 @@ const Home = () => (
       <div className="container">
 
       <br/><br/> <br/>
-      <br/><br/> 
+      <br/><br/>
 
       <img src={shakerLogo} alt="Shaker logo" width="700" height="250" className = "ShakerLogo"/>
 
