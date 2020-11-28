@@ -13,6 +13,7 @@ from base64 import encodebytes
 from PIL import Image
 from waitress import serve
 
+images_dir = os.path.join("..", "images")#"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\"
 template_dir = os.path.abspath("./flask-server/templates")
 static_dir = os.path.abspath("./flask-server/static")
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir )
@@ -313,8 +314,7 @@ def articleResults(articleID=None): # Open the text and image file of the articl
     # Get list of  image paths
     curr = textStart[:-1] + str(1) # images start at 1
     imagePaths = []
-    while(os.path.exists(f"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\{str(curr)}.jpg")):
-        imgPath = f"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\{str(curr)}.jpg"
+    while(os.path.exists(imgPath := os.path.join(images_dir, "{}.jpg".format(str(curr))))):
         imagePaths.append(imgPath)
         curr = int(curr) + 1
         if(len(str(curr))==6):
@@ -366,8 +366,7 @@ def volumeIssueResults(articleID=None): # Open the text and image file of the ar
     # Get list of  image paths
     curr = textStart[:-1] + str(1) # images start at 1
     imagePaths = []
-    while(os.path.exists(f"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\{str(curr)}.jpg")):
-        imgPath = f"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\{str(curr)}.jpg"
+    while(os.path.exists(os.path.join(imgPath := images_dir, "{}.jpg".format(str(curr))))):
         imagePaths.append(imgPath)
         curr = int(curr) + 1
         if(len(str(curr))==6):
