@@ -467,6 +467,6 @@ def index(path):
 
 if __name__ == "__main__":
     if len(sys.argv) == 2 and sys.argv[1] == '-d':
-        serve(app)
+        serve(app, host='150.209.88.127')
     else:
         app.run(debug=True, use_reloader = True)
