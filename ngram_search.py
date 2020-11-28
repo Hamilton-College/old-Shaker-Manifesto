@@ -106,7 +106,7 @@ class SM_Search:
                 w = ''
                 with open(os.path.join(dic_name, filename), "rb") as file:
                     for c in file.read().decode("utf8", errors="replace").lower():
-                        if c in [' ', '\t', '\n', '\r', '\ufffd']:
+                        if c in " \t\n\r\ufffd,./?\'\";:<>[]{}\\|+=_-()*&^%$#@!~`":
                             if total[-1] == ' ':
                                 index += 1
                                 continue
@@ -155,7 +155,6 @@ class SM_Search:
         string) constrained to the given list of ids (if applicable) and returns
         the first page of results. If no search term is passed, returns the
         first page of results of the stored search"""
-        print(string)
         string = string.strip().lower()
         c = re.compile("\".*?\"")
         if string:
@@ -164,7 +163,6 @@ class SM_Search:
             #literal search for quoted search terms
             for quote in (exact := [s[1:-1] for s in c.findall(string)]):
                 s = set()
-                # print(quote)
                 for raw in self._tree.find_all(quote):
                     s.add(id := int("{:02d}{:02d}{:03d}".format(*(self._index_dict[raw][:3]))))
                     idict[id] = min([raw, idict.get(id, float('inf'))])
@@ -175,12 +173,8 @@ class SM_Search:
 
             #fuzzy search individual words
             if not (words := c.sub("", string).strip()):
-                # print("pure literal case")
-                # print(ids)
                 self._remain = [Result(exact, 1, idict[i], self._index_dict) for i in ids]
-                # print(self._remain)
                 return self.generate_results()#results for pure literal search
-            # print(words)
 
             #clean words based on words common to all articles
             with open("common.txt", "r") as f:
@@ -194,13 +188,12 @@ class SM_Search:
             for w in self._ngram.search(word, threshold=thresh):
                 results.extend([Result([w[0]], w[1], e, self._index_dict) for e in self._tree.find_all(w[0])])
             if not results:
+                self._remain = []
                 return []
             results = self._simplify_results(results)
             self._remain = list(filter((lambda r : r.id() in ids), results)) if ids else results
             rdict = dict(zip(list(map(Result.id, self._remain)), self._remain))
-            # print(rdict)
             for word in words[1:]:
-                # print("additional fuzzy")
                 if not self._remain:
                     return []
                 for w in self._ngram.search(word, threshold=thresh):
