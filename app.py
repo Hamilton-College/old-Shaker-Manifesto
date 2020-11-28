@@ -19,8 +19,8 @@ app = Flask(__name__, template_folder=template_dir, static_folder=static_dir )
 CORS(app)
 
 app.config["MYSQL_HOST"] = "localhost"
-app.config["MYSQL_USER"] = "root"
-app.config["MYSQL_PASSWORD"] = "root"
+app.config["MYSQL_USER"] = "csteam"
+app.config["MYSQL_PASSWORD"] = "Lib-CS-Collab"
 app.config["MYSQL_DB"] = "shaker"
 mysql = MySQL(app)
 
@@ -31,7 +31,7 @@ searchObj = SM_Search()
 # BASIC SEARCH
 
 # POST is to send/change data.
-@app.route("/", methods=["POST", "GET"]) 
+@app.route("/", methods=["POST", "GET"])
 def basicSearch():
     if(request.method == "GET"):
         return render_template("index.html")
@@ -45,17 +45,17 @@ def basicSearch():
         print(type(firstPage),firstPage)
         if(not firstPage):
             firstPage = "None"
-            return redirect(url_for("basicResults1", values=enteredText, results = firstPage, numOfPages = 0, page = 0)) 
+            return redirect(url_for("basicResults1", values=enteredText, results = firstPage, numOfPages = 0, page = 0))
 
         else:
             numOfPages = searchObj.page_num()
             searchResults = searchObj.store_results() # store as jsonified string so that we can pass it through urls
-            return redirect(url_for("basicResults1", values=enteredText, results = searchResults, numOfPages = numOfPages, page = 1)) 
+            return redirect(url_for("basicResults1", values=enteredText, results = searchResults, numOfPages = numOfPages, page = 1))
 
 
 # ARTICLE TYPE SEARCH
 
-@app.route("/ArticleType", methods=["POST", "GET"]) 
+@app.route("/ArticleType", methods=["POST", "GET"])
 def displayTypes():
     if(request.method == "GET"):
         return render_template("index.html")
@@ -96,7 +96,7 @@ def displayTypes():
             return redirect(url_for("topicResults", topic = topic, results = fetchdata))
 
         else: # if no checkboxes checked, and just text entered. work like basic
-            enteredText = request.form["query"] 
+            enteredText = request.form["query"]
 
             firstPage = searchObj.search(enteredText) # when you call search. It's just the 1st page
             numOfPages = searchObj.page_num()
@@ -108,8 +108,8 @@ def displayTypes():
 
 
 # AUTHOR SEARCH
-@app.route("/Author", methods=["POST", "GET"]) 
-def displayAuthors(): 
+@app.route("/Author", methods=["POST", "GET"])
+def displayAuthors():
     if(request.method == "GET"):
         return render_template("index.html")
     else: # POST
@@ -139,7 +139,7 @@ def displayAuthors():
             curr.execute(queryString)
             fetchdata = curr.fetchall()
             curr.close()
-            return redirect(url_for("authorResults", letterOrName = name, query=fetchdata)) 
+            return redirect(url_for("authorResults", letterOrName = name, query=fetchdata))
 
 # AUTHOR FIRST LETTER
 @app.route("/AuthorNames/<letter>~<query>", methods=["POST", "GET"])
@@ -186,19 +186,19 @@ def letterOfAuthors(letter, query): # This gives us all the authors of the click
     return render_template("index.html", firstLetter = letter, namesOfLetter=namesOfLetter)
 
 # AUTHOR NAMES
-@app.route("/AuthorNames", methods=["POST", "GET"]) 
+@app.route("/AuthorNames", methods=["POST", "GET"])
 def displayNames(): # display author articles When user clicks on an author's name,
     if(request.method == "GET"):
-        return render_template("index.html") 
+        return render_template("index.html")
     else: # POST
         undefined = False
         name = request.form["name"]
-        
+
         if(name[-9:] == "undefined"):
             name = name[:-9]
             undefined = True
         name = name.replace("'", "''") # double up the apostrophre in SQL to escape it
-        nameList = name.split(", ") 
+        nameList = name.split(", ")
 
         if(undefined==True): # one name author, single letter, etc
             queryString = f"SELECT title, author_tag, id FROM articles WHERE author_tag LIKE '{name}' order by author_tag;" # add author to select
@@ -217,7 +217,7 @@ def displayNames(): # display author articles When user clicks on an author's na
 
 
 # VOLUME & ISSUE SEARCH
-@app.route("/VolumeIssue", methods=["POST", "GET"]) 
+@app.route("/VolumeIssue", methods=["POST", "GET"])
 def displayVolumes():
     return render_template("index.html")
 
@@ -229,7 +229,7 @@ def basicResults1(values=None, results=None, numOfPages=0, page=0):
 
     if(results=="None"): # no results for entered item
         return render_template("index.html", enteredTerm = values, results =results, pageNum = 0)# we're just passing enteredText to display it
-        
+
     page = int(page) -1 # index begins at 0
     numOfPages = int(numOfPages)
 
@@ -275,7 +275,7 @@ def articleResults(articleID=None): # Open the text and image file of the articl
     startPage = list(curr.fetchall())
     curr.close()
     startPage = startPage[0][0]
-    startPage += 1 # image files are 1-indexed 
+    startPage += 1 # image files are 1-indexed
     print(startPage)
 
     if(len(articleID)==6):
@@ -416,7 +416,7 @@ def topicWordResults(topic=None, word=None, results=None, numOfPages =None, page
 
 @app.route("/AuthorList/<letterOrName>~<query>", methods=["POST", "GET"])
 def authorResults(letterOrName = None, query = None): # query right now is the data retrieved from the sql query
-    
+
     multipleNames = False
     if(";" in query):
         multipleNames = True
@@ -441,11 +441,11 @@ def authorResults(letterOrName = None, query = None): # query right now is the d
                 temp = query[i][1][0]
                 query[i][1][0] = query[i][1][1]
                 query[i][1][1] = " " + temp
-    
+
     return render_template("index.html", enteredText=letterOrName, articlesList=query) # return all articles written by an author
 
 @app.route("/HowTo", methods=["POST", "GET"])
-def howToUser(): # 
+def howToUser(): #
     return render_template("index.html")
 
 auto = SM_Autocomplete()
