@@ -2,9 +2,7 @@ import React from 'react';
 import '../App.css';
 import shakerLogo from '../images/shaker-manifesto-logo2.PNG';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
-import SearchBar from './SearchBar';
-import AutoComplete2 from './AutoComplete2';
-import { Typeahead } from 'react-bootstrap-typeahead'; // ES2015
+import AuthorAutoComplete from './AuthorAutoComplete';
 
 
 
@@ -38,9 +36,6 @@ function Author() {
     <br/><br/> 
       <img src={shakerLogo} alt="Shaker logo"width="600" height="150" className = "ShakerLogo"/>
       
-      {/* <div class="searchBar">
-        <SearchBar />
-      </div>    */}
       <br/><br/><br/> 
       <div className="textAboveAlphabet">
         <p>Browse by last name of author</p>
@@ -77,21 +72,11 @@ function Author() {
 
       </div>
         <br/><br/>
-        <AutoComplete2/>
-          {/* <input id="MySearchTerm" data-provide="typeahead" autocomplete="off" type="text" name="query"/> */}
-          {/* <input type="text" className= "span3" data-provide="typeahead" data-items="4" placeholder="Introduce un país" data-source='["Alabama", "California", "Marte"]' autoComplete="off" name="query"></input> */}
+        <AuthorAutoComplete/>
           
-            {/* <input type="submit" value="search" className="searchButton"/> */}
-          {/* </form> */}
-        {/* <script type="text/javascript" src="../static/javascript/autocomplete.js" defer> </script> */}
       </div>
     </div>
 
-
-
-
-
-            
   );
 }
 

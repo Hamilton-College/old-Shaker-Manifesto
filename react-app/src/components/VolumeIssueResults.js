@@ -1,15 +1,13 @@
 import React from 'react';
 import '../App.css';
-import shakerLogo from '../images/shaker-manifesto-logo2.PNG';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
-import SearchBar from './SearchBar'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import 'react-tabs/style/react-tabs.css';
 
 
-function VolumeIssueResults() { //This is the Result component
+function VolumeIssueResults() { 
 
   return (
     <div>
@@ -43,7 +41,7 @@ function VolumeIssueResults() { //This is the Result component
 
       <h3>Volume {window.articleID.slice(1,3)}  Issue {window.articleID.slice(3,5)} </h3>
     
-    <Tabs> {/* defaultIndex={0} >*/}
+    <Tabs> 
     <TabList>
       <Tab>Image</Tab>
       <Tab>Full text of issue</Tab>
@@ -58,19 +56,7 @@ function VolumeIssueResults() { //This is the Result component
       ))}
       </Carousel>
     </TabPanel>
-    {/* <TabPanel>
-      <div className="thumbWrapper">
-        {window.thumbs.map((num, index) => (
-            <div key={index} className="thumb">
-              <img src = {`data:image/jpeg;base64,${num}`} alt ="article thumbnail" />
-              
-                <p> page {index+1} </p>
-              
-
-            </div>
-            ))}
-        </div>
-    </TabPanel> */}
+    
     <TabPanel>
       <br/>
 
@@ -78,7 +64,6 @@ function VolumeIssueResults() { //This is the Result component
         <div className= "articleText">
         <div dangerouslySetInnerHTML={{__html: window.articleText}}></div>
 
-          {/* <p>{window.articleText}</p> */}
         </div>
       </div>
     </TabPanel>
@@ -91,13 +76,5 @@ function VolumeIssueResults() { //This is the Result component
   );
 
 }
-console.log(window.image)
-
-var lastDigit = window.articleID.slice(-2,-1)
-var lastDigit = lastDigit.slice(0,1)
-
-var incDigit = parseInt(lastDigit) +1
-var nextArticle = window.articleID.slice(1, -2) + (incDigit.toString())  //+ JSON.stringify(value)
-
 
 export default VolumeIssueResults;

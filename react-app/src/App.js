@@ -15,9 +15,9 @@ import TopicResults from './components/TopicResults';
 import TopicWordResults from './components/TopicWordResults';
 import AuthorNames from './components/AuthorNames';
 import VolumeIssueResults from './components/VolumeIssueResults';
+import HowTo from './components/HowTo';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import {NavLink} from 'react-router-dom';
-import AutoComplete2 from './components/autocomplete2';
+
 
 
 function App() {
@@ -36,12 +36,16 @@ function App() {
             <Route path="/TopicWordResults" component={TopicWordResults}/>
             <Route path="/ArticleResults" component={ArticleResults}/>
             <Route path="/VolumeIssueResults" component={VolumeIssueResults}/>
+            <Route path="/HowTo" component={HowTo}/>
           </Switch>
         
       </Router>
       <br/>
       <br/>
+      <a href="/HowTo" className="pClass"> How to use</a>
+      <br/>
       <a className = "pClass" href="http://elib.hamilton.edu/"> ©2020 Hamilton College</a>
+
     </div>
 
   );
@@ -78,16 +82,6 @@ const Home = () => (
 
       <img src={shakerLogo} alt="Shaker logo" width="700" height="250" className = "ShakerLogo"/>
 
-
-
-      
-
-      {/* <div className="searchBar"> */}
-      {/* <br/> */}
-      {/* <br/> */}
-      {/* <br/> */}
-      {/* <br/> */}
-      {/* <div className="searchBarContainer"> */}
       <img src={articleGroup} alt="Lomas" width="210" height="335" className = "lomasL"/>
       <img src={lomas} alt="Lomas" width="230" height="250" className = "lomasR"/>
       <br/>
@@ -96,19 +90,11 @@ const Home = () => (
       <br/>
       <br/>
       <SearchBar />
-      {/* </div> */}
+      <br/>
+      <br/>
+      <br/>
+      <br/>
 
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      
-
-        {/* <form action= "#" method="POST" autocomplete="off"> */}
-          {/* <input id="MySearchTerm" type="text" name="query" onkeydown="AutoComplete()"/> */}
-          {/* <input type="submit" value="search" class="searchButton"/> */}
-        {/* </form> */}
-      {/* </div>    */}
       </div>
     </div>
 )

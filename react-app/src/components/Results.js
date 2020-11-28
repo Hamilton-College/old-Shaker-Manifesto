@@ -1,12 +1,9 @@
 import React from 'react';
 import '../App.css';
-import shakerLogo from '../images/shaker-manifesto-logo2.PNG';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
-import SearchBar from './SearchBar'
-import { stringify } from 'flatted';
 
 
-function Results() { //This is the Result component
+function Results() { 
 
   return (
     <div>
@@ -39,12 +36,8 @@ function Results() { //This is the Result component
     <div className="pageNumber">
         <h4>page {window.pageNum} of {buttons.length}</h4>
       </div>
-      <h4>Showing results for: {window.enteredTerm}</h4>
+      <h4>Showing results for: {window.enteredTerm.slice(1,-1)}</h4>
       
-      {/* <div class="searchBar">
-          <SearchBar />
-      </div>  */}
-
       {typeof articleItem === 'string' ? (
         <p>No results</p>
       ) : (
@@ -63,23 +56,10 @@ function Results() { //This is the Result component
         ))
       )}
 
-  
-
-      {/* maybe we need an if statement here to check to see if we have more results to display. If the object is empty? */}
-      {/* <form action={actionLink} method="POST" id="nameform">    */}
-        {/* <button value= "2" name={window.enteredTerm} type="submit">Next Page</button> */}
-        {/* {buttons.map((num, index) => (
-                <div key={index} className="pageButton">
-                <button type="submit" name="page" value={num[0]}>
-                    <p>{num[0]}</p>
-                </button>
-                </div>
-            ))}
-      </form> */}
       Page: 
       {buttons.map((num, index) => (
             <div key={index} className="pageButton">
-                <form action={num[0]} method="GET" id="nameform">   {/*"/NextResults/{window.enteredTerm}/{value}" */}
+                <form action={num[0]} method="GET" id="nameform">   
                 <button className="pageButton" type="submit" name="page" value={num[0]}>
                     <p>{num[0]}</p>
                 </button>
@@ -94,10 +74,7 @@ function Results() { //This is the Result component
   );
 
 }
-console.log(typeof window.results)
-console.log(window.results)
 var articleItem = window.results
 var buttons = window.pageButtons
-// var actionLink = "/Results/" + window.enteredTerm + "/" + articleItem + "/"  // next page is page 2
 
 export default Results;

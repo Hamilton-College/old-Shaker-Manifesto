@@ -1,11 +1,7 @@
-import Search from 'react-search'
-import ReactDOM, { render } from 'react-dom'
-import React, { Component, PropTypes } from 'react'
-// import useForm from 'react-hook-form';
-import {  useForm, Controller } from "react-hook-form";
+import React, { Component } from 'react'
 import 'react-bootstrap-typeahead/css/Typeahead.css';
-import axios from 'axios';
 import '../App.css';
+import {withRouter} from 'react-router';
 
 
 class TopicSearchBar extends Component {
@@ -16,16 +12,21 @@ class TopicSearchBar extends Component {
             label: "None",
             suggestions: [],
             search: ""
-        };
+        }
+    }
+  
+     
+  
+    componentDidMount() { // This is to clear the radio button
+        window.addEventListener('unload', function(event) {
+            document.getElementById("radioForm").reset();
+           }, false);
+
     }
 
     handleCheckbox = (e) => {
-        console.log(e)
-        console.log(e.target.checkbox)
-        // console.log(this.state.checkbox.checked)
         this.setState({checkbox: e.target.value})
         this.setState({label: e.target.id})
-        console.log(this.state.label)
 
     }
 
@@ -41,78 +42,53 @@ class TopicSearchBar extends Component {
         if(suggestions.length === 0) {
             return null;
         }
-        // const suggestions2 = suggestions.slice(0,10) //this limits the autocomplete suggestions to 10. We can change this
         return (
             <ul>
-            {/* <p>Here are the suggs: {suggestions}</p> */}
             {suggestions.map((item) => <li onClick={() => this.suggestionSelected(item)}> {item} </li>)}
             </ul>
         )
     }
 
     handleSearchChange = (e) => {
-        // const value = e.target.value
-        // this.setState({search: value})
-        const varString = e.target.value//this.state.search
+        const varString = e.target.value
         this.setState({search: varString})
 
-        // const homeSearchPage = document.getElementById("searchHome")
-
-        console.log(varString)
-        // console.log(this.state.search.value)
         fetch("/autocomplete", {
             method:"POST",
             headers:{
                 "Accept" : "application/json",
-                "content_type":"application/json", // tells the app that we're going to pass over a json object
+                "content_type":"application/json", 
             },
-            body:JSON.stringify({"txt":varString})//varString}// JSON.stringify(varString)//{txt: String(JSON.stringify(this.state.value)).toString()}//JSON.stringify(this.state.value)
+            body:JSON.stringify({"txt":varString})
             }).then(response => { //do
             return response.json() // this is another promise so we have to do ".then" after
           })
           .then(array => {
-            // console.log(array)
             this.setState({suggestions: array})
-            console.log("my suggestions", this.state.suggestions)
-            // homeSearchPage.innerHTML = listOfWords(array)
         })
-            // function listOfWords(array) {
-            //     const autowords = array.map(array => `<li>${array}</li>`).join("\n");
-            //     return `<ul>${autowords}</ul>`
-            // }
         }
 
     handleSubmit = (e) =>{
-        // alert(`${this.state.search}`)
-
         fetch("#", {
             method:"POST",
             headers:{
                 "Accept" : "application/json",
-                "contentType":"application/json", // tells the app that we're going to pass over a json object
+                "contentType":"application/json", 
             },
             body:JSON.stringify(e)
             }
-        ).then(response => { //do
-            console.log(JSON.stringify(this.state.value))
-        return response.json() // this is another promise so we have to do ".then" after
+        ).then(response => {
+        return response.json() 
       })
       .then(json => {
-      this.setState({search: e.target.value})
-    //   this.setState({checkbox: null})
-      console.log("HERE",this.state.checkbox)
-
       })
     }
 
     render () {
         const { search, checkbox, label } = this.state;
-        // window.addEventListener('unload', function(event) {
-        //     document.getElementById("radio-group").reset();
-        //    }, false);
         return (
             
-                <form onSubmit={this.handleSubmit} action = "#" method="POST">
+                <form onSubmit={this.handleSubmit} action = "#" method="POST" id="radioForm">
                     <div id="dropdownWrapper">
                     <div className="dropdown">
                         <label className="dropbtn">Literature</label>
@@ -242,8 +218,4 @@ class TopicSearchBar extends Component {
     }
 }
 
-
-
-    
 export default TopicSearchBar
-// ReactDOM.render( <AutoComplete2 />, document.getElementById('root'))

@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import shakerLogo from '../images/shaker-manifesto-logo2.PNG';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
-import SearchBar from './SearchBar';
 
 function AuthorNames() {
   return (
@@ -41,35 +40,16 @@ function AuthorNames() {
         <br/><br/> <br/>
         <h3>Authors whose last name begins with {window.firstLetter} </h3>
 
-        {/* <div>
-            {window.namesOfLetter.map((user, index) => (
-                <div key={index}>
-                    <h3>{user[0]}</h3>
-                    <p>{user[1]}</p>
-                </div>
-            ))}
-        </div> */}
-        
-        {/* this needs to be attached to the part directly above */}
-
-        {/* <div className="articleResults"> */}
         <form action="/AuthorNames" method="POST">
                 {window.namesOfLetter.map((user, index) => (
-                    // console.log(user[0] +user[1])
                     <div className = "articleResults" key={index}>
-                        
-                        <button className="btn-link" type="submit" value={user[0]+user[1]} name = "name">{/*look more into val and name */}
+                        <button className="btn-link" type="submit" value={user[0]+user[1]} name = "name">
                         <h3>{user[0]} {user[1]}</h3>
-                        {/* <p>{user}</p>
-                        <p>{user[0]}</p>
-                        <p>{user[1]}</p>
-                        <p>{user[0] + user[1]}</p>
-                        <p>{user.slice(0,2)}</p> */}
+                        
                         </button>
                     </div>
                 ))}
         </form>
-        {/* </div> */}
     </div>
     </div>
 

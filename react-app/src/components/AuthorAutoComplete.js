@@ -1,24 +1,15 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react'
 
 
-// This is a component that will be displayed in app.js
-
-class SearchBar extends Component {
-    // to convert this into a react, component, 
-    // we need to give it a component state
-    
+class AuthorAutoComplete extends Component {
     constructor(props){
         super(props)
         this.state = {
             suggestions: [],
-            search: "" // initialize state property to empty. 
-                        // "search" gets supplied as the value for the "value" element of the form input
-                        // whenever there is a change, that new value gets taken care of by "handleSearchChange"
-                        // which sets back the "search" state property to the updated value
-                        // Now that the state has been set (again), the new value(string) gets set as the "value" elemt 
-        }
+            search: ""
+        };
     }
-    
+
     suggestionSelected(value) {
         this.setState(() => ({
             search: value,
@@ -41,11 +32,11 @@ class SearchBar extends Component {
         const varString = e.target.value
         this.setState({search: varString})
 
-        fetch("/autocomplete", {
+        fetch("/autocomplete2", {
             method:"POST",
             headers:{
                 "Accept" : "application/json",
-                "content_type":"application/json", // tells the app that we're going to pass over a json object
+                "content_type":"application/json", // tells the server that we're going to pass over a json object
             },
             body:JSON.stringify({"txt":varString})
             }).then(response => { //do
@@ -58,10 +49,6 @@ class SearchBar extends Component {
 
         
     handleSubmit = (e) =>{
-        if(this.state.value.length == 0){
-            alert(`${this.state.search}`)
-        }
-        else{
         fetch("#", {
             method:"POST",
             headers:{
@@ -71,37 +58,29 @@ class SearchBar extends Component {
             body:JSON.stringify(e)
             }
         ).then(response => { //do
-        return response.json() 
+        return response.json() // this is another promise so we have to do ".then" after
       })
       .then(json => {
       this.setState({search: e.target.value})
       })
-    }}
-    render() {
-        const {search} = this.state // now we don't have to type this.state when we want to edit the search property
-        return(
+    }
 
+    render () {
+        const { search } = this.state;
+        return (
             <div>
             <form onSubmit={this.handleSubmit} action = "#" method="POST" >
-            <div className="AutoCompleteText">
-                <input
-                    placeholder="What are you looking for?"
-                    id = "MySearchTerm" 
-                    type = "text" 
-                    name = "query"
-                    value={search} 
-                    onChange={this.handleSearchChange}
-                    autoComplete="off"/> 
+            <div className="AutoCompleteText2">
+                <input value={search} id="MySearchTerm" onChange= {this.handleSearchChange} type ="text" name = "query" autoComplete="off" placeholder="Search by author..."/>
+
                 {this.renderSuggestions()}
             </div>
-            <button type="submit" className="searchButton">Search</button>
+            <button type="submit" className="searchButton2">Search</button>
             </form>
 
-           
             </div>
         )
     }
 }
-export default SearchBar
-
-
+    
+export default AuthorAutoComplete

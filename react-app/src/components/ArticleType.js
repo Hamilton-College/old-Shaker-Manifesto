@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import shakerLogo from '../images/shaker-manifesto-logo2.PNG';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
-import SearchBar from './SearchBar';
 import TopicSearchBar from './TopicSearchBar';
 
 
@@ -45,7 +44,6 @@ function ArticleType() {
       
   )
 };
-
   
 
 export default ArticleType;

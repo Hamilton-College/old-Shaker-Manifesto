@@ -35,10 +35,9 @@ function TopicResults() {
         <div className="container">
 
         <img src={shakerLogo} alt="Shaker logo"width="200" height="60" class = "ShakerLogoResults" />
-        <h4>Showing results for topic: {window.selectedTopic}</h4>
+        <h4>Showing results for topic: {window.selectedTopic.slice(1,-1)}</h4>
 
         <div>
-          {/* if not title, no article. {item[0].length > 0 ? ( */}
             {results.map((item, index) => (
                 <div key={index}>
                   {item[0].length > 0 ? ( 

@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import '../App.css';
 import shakerLogo from '../images/shaker-manifesto-logo2.PNG';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
@@ -13,43 +13,10 @@ class VolumeIssue extends Component {
     }  
   
     changeURL = (e) => {
-      console.log(e)
-      console.log(e.target.value)
-      // console.log(this.state.checkbox.checked)
       var newSearch = "/VolumeIssueResults/" + e.target.value;
 
       this.setState({url: newSearch})
   }
-    // const [pageNum, changePage] = useState(() =>{
-    //     return 2
-    // })
-
-  //   function handleSubmit(e) {
-  //     console.log(window.location.href)
-  //     console.log(this.action)
-  //     console.log(this.issue.value)
-  //     window.location.href = this.action + this.issue.value.slice(-7); 
-  //     return false;
-  //     // console.log(pageNum)
-  //     // changePage(pageNum => pageNum + 1)
-  //     // console.log(pageNum)
-  // }
-
-    // function submitForm() {
-    //   var ext = document.getElementById('issue');
-    //   var selected_opt = ext.options[ext.selectedIndex].value;
-
-    //     // Add own code to handle "All" here
-
-    //     var domain = document.getElementById('my');
-    //     // Append selected option
-    //     domain.value = domain.value + selected_opt;
-
-    //     // Submit form
-    //     document.getElementById('myform').submit();
-    // }
-
-
 
   render(){
   return (
@@ -86,8 +53,7 @@ class VolumeIssue extends Component {
     <div className = "volumeAndIssue">
       <h1>Browse by volume and issue:</h1> <br/>
       </div>
-      <form action={this.state.url} method="GET" id="myform"> {/* onSubmit={handleSubmit}> */}
-        {/* <button className="article-link" type="submit" name="article" value= {item[0]}></button> */}
+      <form action={this.state.url} method="GET" id="myform"> 
       <div className = "volumeAndIssue">
         <h3>Volume 1 (1871)</h3>
         </div>
@@ -121,9 +87,10 @@ class VolumeIssue extends Component {
         <button type="submit" value="0211000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="0212000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 3 (1872)</h3> 
+      <h3>Volume 3 (1873)</h3> 
     </div>
     <h4>Issue:&ensp; 
+        <button type="submit" value="0300000" name = "issue" onClick={this.changeURL}>0</button>
         <button type="submit" value="0301000" name = "issue" onClick={this.changeURL}>1</button>
         <button type="submit" value="0302000" name = "issue" onClick={this.changeURL}>2</button>
         <button type="submit" value="0303000" name = "issue" onClick={this.changeURL}>3</button>
@@ -135,9 +102,9 @@ class VolumeIssue extends Component {
         <button type="submit" value="0309000" name = "issue" onClick={this.changeURL}>9</button>
         <button type="submit" value="0310000" name = "issue" onClick={this.changeURL}>10</button>
         <button type="submit" value="0311000" name = "issue" onClick={this.changeURL}>11</button>
-        <button type="submit" value="0312000" name = "issue" onClick={this.changeURL}>Extra</button> </h4> <br/>
+        <button type="submit" value="0312000" name = "issue" onClick={this.changeURL}>12</button> </h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 4 (1872)</h3> 
+      <h3>Volume 4 (1874)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="0401000" name = "issue" onClick={this.changeURL}>1</button>
@@ -153,7 +120,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="0411000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="0412000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 5 (1872)</h3> 
+      <h3>Volume 5 (1875)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="0501000" name = "issue" onClick={this.changeURL}>1</button>
@@ -169,7 +136,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="0511000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="0512000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 6 (1872)</h3> 
+      <h3>Volume 6 (1876)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="0601000" name = "issue" onClick={this.changeURL}>1</button>
@@ -185,7 +152,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="0611000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="0612000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 7 (1872)</h3> 
+      <h3>Volume 7 (1877)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="0701000" name = "issue" onClick={this.changeURL}>1</button>
@@ -201,7 +168,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="0711000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="0712000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 8 (1872)</h3> 
+      <h3>Volume 8 (1878)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="0801000" name = "issue" onClick={this.changeURL}>1</button>
@@ -217,7 +184,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="0711000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="0712000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 9 (1872)</h3> 
+      <h3>Volume 9 (1879)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="0901000" name = "issue" onClick={this.changeURL}>1</button>
@@ -233,7 +200,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="0911000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="0912000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 10 (1872)</h3> 
+      <h3>Volume 10 (1880)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="1001000" name = "issue" onClick={this.changeURL}>1</button>
@@ -249,7 +216,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="1011000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="1012000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 11 (1872)</h3> 
+      <h3>Volume 11 (1881)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="1101000" name = "issue" onClick={this.changeURL}>1</button>
@@ -265,7 +232,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="1111000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="1112000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 12 (1872)</h3> 
+      <h3>Volume 12 (1882)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="1201000" name = "issue" onClick={this.changeURL}>1</button>
@@ -281,7 +248,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="1211000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="1212000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 13 (1872)</h3> 
+      <h3>Volume 13 (1883)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="1301000" name = "issue" onClick={this.changeURL}>1</button>
@@ -297,7 +264,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="1311000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="1312000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 14 (1872)</h3> 
+      <h3>Volume 14 (1884)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="1401000" name = "issue" onClick={this.changeURL}>1</button>
@@ -313,7 +280,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="1411000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="1412000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 15 (1872)</h3> 
+      <h3>Volume 15 (1885)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="1501000" name = "issue" onClick={this.changeURL}>1</button>
@@ -329,7 +296,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="1511000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="1512000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 16 (1872)</h3> 
+      <h3>Volume 16 (1886)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="1601000" name = "issue" onClick={this.changeURL}>1</button>
@@ -345,7 +312,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="1611000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="1612000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 17 (1872)</h3> 
+      <h3>Volume 17 (1887)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="1701000" name = "issue" onClick={this.changeURL}>1</button>
@@ -361,7 +328,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="1711000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="1712000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 18 (1872)</h3> 
+      <h3>Volume 18 (1888)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="1801000" name = "issue" onClick={this.changeURL}>1</button>
@@ -377,7 +344,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="1811000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="1812000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 19 (1872)</h3> 
+      <h3>Volume 19 (1889)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="1901000" name = "issue" onClick={this.changeURL}>1</button>
@@ -393,7 +360,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="1911000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="1912000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 20 (1872)</h3> 
+      <h3>Volume 20 (1890)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="2001000" name = "issue" onClick={this.changeURL}>1</button>
@@ -409,7 +376,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="2011000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="2012000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 21 (1872)</h3> 
+      <h3>Volume 21 (1891)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="2101000" name = "issue" onClick={this.changeURL}>1</button>
@@ -425,7 +392,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="2111000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="2112000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 22 (1872)</h3> 
+      <h3>Volume 22 (1892)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="2201000" name = "issue" onClick={this.changeURL}>1</button>
@@ -441,7 +408,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="2211000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="2212000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 23 (1872)</h3> 
+      <h3>Volume 23 (1893)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="2301000" name = "issue" onClick={this.changeURL}>1</button>
@@ -457,7 +424,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="2311000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="2312000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 24 (1872)</h3> 
+      <h3>Volume 24 (1894)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="2401000" name = "issue" onClick={this.changeURL}>1</button>
@@ -473,7 +440,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="2411000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="2412000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 25 (1872)</h3> 
+      <h3>Volume 25 (1895)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="2501000" name = "issue" onClick={this.changeURL}>1</button>
@@ -489,7 +456,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="2511000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="2512000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 26 (1872)</h3> 
+      <h3>Volume 26 (1896)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="2601000" name = "issue" onClick={this.changeURL}>1</button>
@@ -505,7 +472,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="2611000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="2612000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 27 (1872)</h3> 
+      <h3>Volume 27 (1897)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="2701000" name = "issue" onClick={this.changeURL}>1</button>
@@ -521,7 +488,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="2711000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="2712000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 28 (1872)</h3> 
+      <h3>Volume 28 (1898)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="2801000" name = "issue" onClick={this.changeURL}>1</button>
@@ -537,7 +504,7 @@ class VolumeIssue extends Component {
         <button type="submit" value="2811000" name = "issue" onClick={this.changeURL}>11</button>
         <button type="submit" value="2812000" name = "issue" onClick={this.changeURL}>12</button></h4> <br/>
     <div className = "volumeAndIssue"> 
-      <h3>Volume 29 (1872)</h3> 
+      <h3>Volume 29 (1899)</h3> 
     </div> 
     <h4>Issue:&ensp; 
         <button type="submit" value="2901000" name = "issue" onClick={this.changeURL}>1</button>

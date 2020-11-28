@@ -155,7 +155,7 @@ class SM_Search:
         string) constrained to the given list of ids (if applicable) and returns
         the first page of results. If no search term is passed, returns the
         first page of results of the stored search"""
-        # print(string)
+        print(string)
         string = string.strip().lower()
         c = re.compile("\".*?\"")
         if string:

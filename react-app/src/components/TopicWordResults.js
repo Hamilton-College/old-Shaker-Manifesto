@@ -1,11 +1,9 @@
 import React from 'react';
 import '../App.css';
-import shakerLogo from '../images/shaker-manifesto-logo2.PNG';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
-import SearchBar from './SearchBar'
 
 
-function TopicWordResults() { //This is the Result component
+function TopicWordResults() { 
 
   return (
       <div>
@@ -39,8 +37,8 @@ function TopicWordResults() { //This is the Result component
         <h4>page {window.pageNum} of {buttons.length}</h4>
       </div>
 
-    <h4>Showing results for: {window.topicWord} </h4>
-    <h4>In category: {window.topic} </h4>
+    <h4>Showing results for: {window.topicWord.slice(1,-1)} </h4>
+    <h4>In category: {window.topic.slice(1,-1)} </h4>
 
     {typeof articleItem === 'string' ? (
         <p>No results</p>
@@ -60,24 +58,11 @@ function TopicWordResults() { //This is the Result component
         ))
       )}
 
-
-
-      {/* maybe we need an if statement here to check to see if we have more results to display. If the object is empty? */}
-      {/* <form action="/TopicWordResultsNext/" method="POST" id="nameform"> */}
-        {/* <button value= "2" name={window.enteredTerm} type="submit">Next Page</button> */}
-        {/* {buttons.map((num, index) => (
-                <div key={index} className="pageButton">
-                <button type="submit" name="page" value={num[0]}>
-                    <p>{num[0]}</p>
-                </button>
-                </div>
-            ))}
-      </form> */}
-
+      Page: 
       {buttons.map((num, index) => (
             <div key={index} className="pageButton">
-                 <form action={num[0]} method="GET" id="nameform">   {/*"/NextResults/{window.enteredTerm}/{value}" */}
-                <button type="submit" name="page" value={num[0]}>
+                <form action={num[0]} method="GET" id="nameform">   
+                <button className="pageButton" type="submit" name="page" value={num[0]}>
                     <p>{num[0]}</p>
                 </button>
                 </form>
@@ -93,6 +78,5 @@ function TopicWordResults() { //This is the Result component
 }
 var articleItem = window.topicWordResults
 var buttons = window.pageButtons
-var actionLink = "/TopicWordResultsNext/" + window.topic + "/" + window.topicWord  + "/"   // next page is page 2
 
 export default TopicWordResults;

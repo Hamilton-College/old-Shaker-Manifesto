@@ -2,10 +2,7 @@ import React from 'react';
 import '../App.css';
 import hamiltonLogo from '../images/hamilton-lib-logo.PNG';
 
-// We come here after entering a name in author Search
-// We also come here by authorSearch -> click letter -> click name -> here
-
-function AuthorList () { 
+function HowTo () { 
 
   return (
       <div>
@@ -37,30 +34,28 @@ function AuthorList () {
 
         <br/><br/><br/>
 
-        <h4>Showing results for: {window.enteredText}</h4>
+        <h2>How to use the new Shake Manifesto search engine</h2> underline this
  
-   
-          {authors.map((item, index) => (
-              <div key={index}>
-              <form action={"/ArticleResults/" + item[2]} method="GET">
-              <button className="article-link" type="submit">
-                  <h3>{item[0]}</h3>
-              </button>
-                  <h4>{item[1]}</h4>
-                  <br/>
-              </form>
-              </div>
-          ))}
-          {/* 0: title, 1: author, 2: id */}
-    
+        <h3>Basic Search</h3>
+        <p>Basic search works just like any typical search engine like Google. You can search for a single word or multiple words. Don't worry if you spell something wrong. The search function will retrieve the results for the word(s) you likely meant to type. 
+            If you'd like to search for an exact phrase/sentetence, you can surround it in quotes. 
+            For example: "Ye must love one another" 
+        </p>
+        <br/>
+        <h3>Article Type</h3>
+        <p>There are three ways you can use Article type search.
+            1. With Article type search, you can narrow your search to a specific category. 
+            2. You can see all articles of a certain category
+            3. You can use it like basic search by not entering anything</p>
+        <br/>
+        <h3>Author</h3>
+        <br/>
+        <h3>Volume & Issue</h3>
+          
     </div>
     </div>
 
   );
 }
-var authors = window.articlesList
-const loopAuthors = Object.keys(authors).map(key => 
-    <option value={key}>{authors[key]}</option>
-)
 
-export default AuthorList;
+export default HowTo;

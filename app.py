@@ -2,7 +2,7 @@ import os
 import json
 from flask import Flask, request, render_template, redirect, url_for, jsonify
 from flask_mysqldb import MySQL
-from autocomplete import *#search, AUTOCOMPLETE
+from autocomplete import *
 from functools import reduce
 import re
 import ast
@@ -11,12 +11,11 @@ from flask_cors import CORS
 import io
 from base64 import encodebytes
 from PIL import Image
-# from Face_extraction import face_extraction_v2
 
 from ngram_search import *
 
-template_dir = os.path.abspath("./flask-server/templates") # change THESE
-static_dir = os.path.abspath("./flask-server/static") #
+template_dir = os.path.abspath("./flask-server/templates") 
+static_dir = os.path.abspath("./flask-server/static") 
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir )
 CORS(app)
 
@@ -24,58 +23,45 @@ app.config["MYSQL_HOST"] = "localhost"
 app.config["MYSQL_USER"] = "root"
 app.config["MYSQL_PASSWORD"] = "root"
 app.config["MYSQL_DB"] = "shaker"
-#articles.sql
 mysql = MySQL(app)
 
-#GLOBAL SM_Search Obj
-
+#GLOBAL Search Obj
 searchObj = SM_Search()
 
 
 # BASIC SEARCH
 
 # POST is to send/change data.
-@app.route("/", methods=["POST", "GET"]) #both paths work
-# @app.route("/basicSearch", methods=["POST", "GET"])
+@app.route("/", methods=["POST", "GET"]) 
 def basicSearch():
-    # return render_template("index.html", flask_token = "hi, there")
     if(request.method == "GET"):
         return render_template("index.html")
     else: # POST
         if(request.form.get("query").strip() == ""): # if nothing typed in the search bar
-            # flash("Please enter a valid search term", "info")
-            return render_template("index.html") # maybe display a flash message here
+            return render_template("index.html") # stay on the page
 
-        print("Right before we get query")
-        # global enteredText # declare it first if you're going to change it
         enteredText = request.form["query"] # name in brackets matches the name of the post form in the HTML
-        # enteredText = request.get_json()
-        print(enteredText, type(enteredText))
 
         firstPage = searchObj.search(enteredText) # when you call search. It's just the 1st page
-        print("First Page", firstPage)
         numOfPages = searchObj.page_num()
-        print("num of pages", numOfPages)
-
-
 
         if(firstPage == []):
             firstPage = "None"
-        searchResults = searchObj.store_results() # store as jsonified string so that we can pass through urls
-        return redirect(url_for("basicResults1", values=enteredText, results = searchResults, numOfPages = numOfPages, page = 1)) # put in the function of the url you want to go to
+        searchResults = searchObj.store_results() # store as jsonified string so that we can pass it through urls
+        return redirect(url_for("basicResults1", values=enteredText, results = searchResults, numOfPages = numOfPages, page = 1)) 
+
 
 # ARTICLE TYPE SEARCH
 
-@app.route("/ArticleType", methods=["POST", "GET"]) # From advanced search
+@app.route("/ArticleType", methods=["POST", "GET"]) 
 def displayTypes():
     if(request.method == "GET"):
         return render_template("index.html")
     else: # POST
         if(request.form.get("query").strip() == "" and not request.form.get("checkbox")): # if no boxes checked and nothing entered
-            return render_template("index.html") # display flash message
+            return render_template("index.html") # stay on page
 
         elif(request.form.get("checkbox") and request.form.get("query").strip() != ""): # Typical: If we have a box checked and word entered
-            # print("Boxes checked:", request.form.getlist("checkbox"))
             enteredText = request.form.get("query")
             topic = request.form.get("checkbox")
             queryString = f"SELECT id FROM articles WHERE topics LIKE '%{topic}%' order by author_tag;"
@@ -88,10 +74,8 @@ def displayTypes():
             idList = [list(i) for i in idList]
             idList = [j for i in idList for j in i] # flatten
             global searchObj
-            firstPage = searchObj.search(enteredText) # when you call search. It's just the 1st page
-            print("First Page", firstPage)
+            firstPage = searchObj.search(enteredText, idList) # when you call search. It's just the 1st page
             numOfPages = searchObj.page_num()
-            print("num of pages", numOfPages)
 
             if(firstPage == []):
                 firstPage = "None"
@@ -107,17 +91,13 @@ def displayTypes():
             curr.execute(queryString)
             fetchdata = curr.fetchall()
             curr.close()
-            # Return articles of certain topic
             return redirect(url_for("topicResults", topic = topic, results = fetchdata))
 
         else: # if no checkboxes checked, and just text entered. work like basic
-            enteredText = request.form["query"] # name in brackets matches the name of the post form in the HTML
-            print(enteredText, type(enteredText))
+            enteredText = request.form["query"] 
 
             firstPage = searchObj.search(enteredText) # when you call search. It's just the 1st page
-            print("First Page", firstPage)
             numOfPages = searchObj.page_num()
-            print("num of pages", numOfPages)
 
             if(firstPage == []):
                 firstPage = "None"
@@ -126,13 +106,11 @@ def displayTypes():
 
 
 # AUTHOR SEARCH
-@app.route("/Author", methods=["POST", "GET"]) # From advanced search
-def displayAuthors(): # display landing page
+@app.route("/Author", methods=["POST", "GET"]) 
+def displayAuthors(): 
     if(request.method == "GET"):
-        print("just arrived on Author")
         return render_template("index.html")
     else: # POST
-        print("Did a post on Author")
         if(request.form.get("letter")): # letter button is clicked
             letter = request.form["letter"]
             queryString = f"SELECT author_tag FROM articles WHERE author_tag LIKE '{letter}%' OR author_tag LIKE '%; {letter}%' group by author_tag;" # add author to select
@@ -140,14 +118,12 @@ def displayAuthors(): # display landing page
             curr.execute(queryString)
             fetchdata = curr.fetchall()
             curr.close()
-            print(fetchdata)
             return redirect(url_for("letterOfAuthors", letter = letter, query=fetchdata))
         else: # name was entered
             name = request.form.get("query").strip()
             if(name == ""):
                 return render_template("index.html")
-            print("entered val: ", name)
-            if(" " in name): # this means first and last name entered or multiple names
+            if(" " in name): # this means a first and last name entered or multiple names
                 nameList = name.split()
                 if(len(nameList) == 2):
                     queryString = f"SELECT title, author_tag, id FROM articles WHERE author_tag LIKE '%{nameList[0]}%' && author_tag LIKE '%{nameList[1]}%' order by author_tag;"
@@ -155,48 +131,34 @@ def displayAuthors(): # display landing page
                     queryString = f"SELECT title, author_tag, id FROM articles WHERE author_tag LIKE '%{nameList[0]}%' && author_tag LIKE '%{nameList[1]}%' && author_tag like '%{nameList[2]}%' order by author_tag;"
             elif(len(name) == 1):
                 queryString = f"SELECT title, author_tag, id FROM articles WHERE author_tag LIKE '%, {name}%' group by author_tag;" # add author to select
-            else: # either someone's firs or last name was displayed
+            else: # either someone's first or last name was displayed. Not both
                 queryString = f"SELECT title, author_tag, id FROM articles WHERE author_tag LIKE '%, {name}%' OR author_tag LIKE '{name}%' order by author_tag;" # add author to select
             curr = mysql.connection.cursor()
             curr.execute(queryString)
             fetchdata = curr.fetchall()
-            # print("data: ", type(fetchdata)) # tuple
             curr.close()
-            return redirect(url_for("authorResults", letterOrName = name, query=fetchdata)) # put in the function of the url you want to go to
+            return redirect(url_for("authorResults", letterOrName = name, query=fetchdata)) 
 
 # AUTHOR FIRST LETTER
 @app.route("/AuthorNames/<letter>~<query>", methods=["POST", "GET"])
 def letterOfAuthors(letter, query): # This gives us all the authors of the clicked letter
     multipleNames = False
-    print(letter, query)
     if(query != "()"):
         query = query.replace("(", "")
         query = query.replace(",)", "")
         query = query.replace(")", "") # this gets rid of the last )
-        print(query)
         if(";" in query):
             multipleNames = True
         query = re.split("', |\", |,, |;", query)
-        print("PRE-ERROR", query)
-        # print(query[1], type(query[1]))
 
         if(multipleNames == True): # this is to get rid of the authors that don't begin with the chosen letter
             ind = 0
             while(ind < len(query)):
                 query[ind] = query[ind].strip()
-                # print(query[ind], type(query[ind]))
-                # print(query[ind][0], type(query[ind][0]))
                 if(query[ind][0] != letter and query[ind][1] != letter):
                     query.pop(ind)
                 else:
                     ind += 1
-            # while(ind < len(query)):
-            #     if(query[ind][query[ind].index(",")+2] != letter): # look to the other function
-            #         query.pop(ind) # get rid of the co-authors from list
-            #     else:
-            #         ind += 1
-
-        print("Look here", query)
 
         # get rid of ' on last item
         query[-1] = query[-1][:-1]
@@ -208,8 +170,6 @@ def letterOfAuthors(letter, query): # This gives us all the authors of the click
             query[i] = query[i].split(",")
 
 
-        print("Got rid of leading ':", query)
-
         for i in range(len(query)):
             if(len(query[i]) > 1):
                 query[i][0] = query[i][0] +","
@@ -219,34 +179,24 @@ def letterOfAuthors(letter, query): # This gives us all the authors of the click
 
         namesOfLetter = query
         query.sort()
-        print(" final", query)
     else: # query = () meaning empty meaning no authors
         namesOfLetter = []
     return render_template("index.html", firstLetter = letter, namesOfLetter=namesOfLetter)
 
 # AUTHOR NAMES
-@app.route("/AuthorNames", methods=["POST", "GET"]) # We render this page, and then we perform a post when we click on a name. We need to copy this
-def displayNames(): # display author names. When user clicks on an author's name,
+@app.route("/AuthorNames", methods=["POST", "GET"]) 
+def displayNames(): # display author articles When user clicks on an author's name,
     if(request.method == "GET"):
-        return render_template("index.html") # it should never bet accessed through a get, so maybe we default it to home page
+        return render_template("index.html") 
     else: # POST
         undefined = False
         name = request.form["name"]
-        print(name)
-        # name = name.replace("'", "\'") # do we need this? Maybe
-
-        print("Name Displayed: ", name)
-        # if article written by multiple people:
-        # if(";" in name):
-        #     nameList = name.split(";") #COME BACK TO THIS
-        #article written by one person
+        
         if(name[-9:] == "undefined"):
             name = name[:-9]
             undefined = True
         name = name.replace("'", "''") # double up the apostrophre in SQL to escape it
-        nameList = name.split(", ") #
-        print(nameList)
-        print(undefined)
+        nameList = name.split(", ") 
 
         if(undefined==True): # one name author, single letter, etc
             queryString = f"SELECT title, author_tag, id FROM articles WHERE author_tag LIKE '{name}' order by author_tag;" # add author to select
@@ -260,22 +210,20 @@ def displayNames(): # display author names. When user clicks on an author's name
         curr.execute(queryString)
         fetchdata = curr.fetchall()
         curr.close()
-        print(fetchdata)
         name = name.replace("''", "'")
         return redirect(url_for("authorResults", letterOrName = name, query=fetchdata)) # put in the function of the url you want to go to
 
 
 # VOLUME & ISSUE SEARCH
-@app.route("/VolumeIssue", methods=["POST", "GET"]) # From advanced search
+@app.route("/VolumeIssue", methods=["POST", "GET"]) 
 def displayVolumes():
     return render_template("index.html")
 
-
 # RESULTS
 
+# BASIC SEARCH RESULTS
 @app.route("/Results/<values>/<results>/<numOfPages>/<page>", methods=["POST", "GET"])
 def basicResults1(values, results, numOfPages, page):
-    print("vals:",values)
     page = int(page) -1 # index begins at 0
     numOfPages = int(numOfPages)
 
@@ -300,42 +248,34 @@ def basicResults1(values, results, numOfPages, page):
         i.append(", ".join(author))
 
     pageList = [str(i) for i in range(1, numOfPages+1)]
-    print(pageList)
-    return render_template("index.html", enteredTerm = values, results =pageOfResults, pageButtons=pageList, pageNum = page+1)# we're just using enteredText to display it
+    return render_template("index.html", enteredTerm = values, results =pageOfResults, pageButtons=pageList, pageNum = page+1)# we're just passing enteredText to display it
+
 
 @app.route("/TopicResults/<topic>~<results>", methods=["POST", "GET"])
-def topicResults(topic=None, results =None): # all articles related to a certain topic
+def topicResults(topic=None, results =None): # all articles related to a certain topic. We come here when button is checked, but no text is entered.
 
-    print("start", type(results), results)
     results = ast.literal_eval(results)
     results = list(results)
     results = [list(i) for i in results]
-    print("new: ", results)
     results.sort()
 
     return render_template("index.html", topic=topic, topicResults=results)
 
 @app.route("/ArticleResults/<articleID>", methods=["POST", "GET"])
 def articleResults(articleID=None): # Open the text and image file of the article
-    # aID = request.form["article"]
     queryString = f"SELECT start FROM articles WHERE id LIKE '{articleID}';"
     curr = mysql.connection.cursor()
     curr.execute(queryString)
     startPage = list(curr.fetchall())
     curr.close()
-    print(startPage)
-    print(startPage[0][0])
     startPage = startPage[0][0]
 
-    print(articleID)
-    print(len(articleID))
     if(len(articleID)==6):
         articleID = "0" + articleID
         textStart = articleID[:4] + "000"
     else: # ID length is 7
         textStart = articleID[:4] + "000"
-    # print(textStart)
-    # textStart = int(textStart)
+
     curr = textStart
     issueText = ""
     while(os.path.exists(f"C:\\Users\\nonso\\OneDrive\\Documents\\Shaker-Manifesto\\textfiles\\{str(curr)}.txt")):
@@ -343,7 +283,10 @@ def articleResults(articleID=None): # Open the text and image file of the articl
         articleText = open(path, "r")
         articleText = articleText.read()
         if(curr == articleID):
-            issueText += ("<div id=\"target\">  </div>" + "<b>" + articleText+ " </b>" + "<br/> <br/> <br/>")
+            if(articleID[-3:] == "000"): # if first article in the issue
+                issueText += "<b>" + articleText+ " </b>" + "<br/> <br/> <br/>"
+            else: # everything else
+                issueText += ("<div id=\"target\">  </div>" + "<b>" + articleText+ " </b>" + "<br/> <br/> <br/>")
         else:
             issueText += (articleText + "<br/> <br/> <br/>")
         curr = int(curr) + 1 # lose leading zero
@@ -353,11 +296,11 @@ def articleResults(articleID=None): # Open the text and image file of the articl
             curr = str(curr)
 
     # replace non-UTF8 chars
-    issueText = issueText.replace('ï¿½', '�') # em dash
+    issueText = issueText.replace('ï¿½', '�') # ?
     issueText = issueText.replace('.â€”', '—') # em dash
     issueText = issueText.replace('â€”', '—') # em dash
     issueText = issueText.replace("â€¢", '•') # dot
-    issueText = issueText.replace("â€ž", '„') # dot
+    issueText = issueText.replace("â€ž", '„') # quote
 
     # Get list of  image paths
     curr = textStart[:-1] + str(1) # images start at 1
@@ -387,16 +330,11 @@ def get_response_image(image_path):
 
 @app.route("/VolumeIssueResults/<articleID>", methods=["POST", "GET"])
 def volumeIssueResults(articleID=None): # Open the text and image file of the article
-    # aID = request.form["article"]
-    print(articleID)
-    print(len(articleID))
     if(len(articleID)==6):
         articleID = "0" + articleID
         textStart = articleID[:4] + "000"
     else: # ID length is 7
         textStart = articleID[:4] + "000"
-    # print(textStart)
-    # textStart = int(textStart)
     curr = textStart
     issueText = ""
     while(os.path.exists(f"C:\\Users\\nonso\\OneDrive\\Documents\\Shaker-Manifesto\\textfiles\\{str(curr)}.txt")):
@@ -411,11 +349,11 @@ def volumeIssueResults(articleID=None): # Open the text and image file of the ar
             curr = str(curr)
 
     # replace non-UTF8 chars
-    issueText = issueText.replace('ï¿½', '�') # em dash
+    issueText = issueText.replace('ï¿½', '�') # ?
     issueText = issueText.replace('.â€”', '—') # em dash
     issueText = issueText.replace('â€”', '—') # em dash
     issueText = issueText.replace("â€¢", '•') # dot
-    issueText = issueText.replace("â€ž", '„') # dot
+    issueText = issueText.replace("â€ž", '„') # quote
 
     # Get list of  image paths
     curr = textStart[:-1] + str(1) # images start at 1
@@ -463,7 +401,6 @@ def topicWordResults(topic=None, word=None, results=None, numOfPages =None, page
         i.append(", ".join(author))
 
     pageList = [str(i) for i in range(1, numOfPages+1)]
-    print(pageList)
 
     return render_template("index.html", topic=topic, topicWord= word, topicWordResults=pageOfResults, pageButtons=pageList, pageNum=page+1)
 
@@ -471,27 +408,10 @@ def topicWordResults(topic=None, word=None, results=None, numOfPages =None, page
 
 @app.route("/AuthorList/<letterOrName>~<query>", methods=["POST", "GET"])
 def authorResults(letterOrName = None, query = None): # query right now is the data retrieved from the sql query
-    # if(len(letterOrName) == 1): # then it's a letter. When is this ever the case?
-    #     query = query.replace("(", "")
-    #     query = query.replace(")", "")
-    #     query = re.split("', |\",", query)
-    #     # print(query)
-    #     for i in range(len(query)):
-    #         query[i] = query[i].split(",")
-    #     # print(query)
-    #     for i in range(len(query)):
-    #         query[i][1] = query[i][1][2:]
-    #         temp = query[i][-2]
-    #         query[i][-2] = query[i][-1]
-    #         query[i][-1] = temp
-    #     query[-1][1] = query[-1][1][:-1]
-    #     # print(query)
-    #     return #render_template("authorList.html", authorNames=query) # this needs to go to a different page (i.e. not authorList). Just one with all the names of a particular letter
-    # else: # name typed in
+    
     multipleNames = False
     if(";" in query):
         multipleNames = True
-    print("start", type(query), query)
     query = ast.literal_eval(query)
     query = list(query)
     query = [list(i) for i in query]
@@ -499,15 +419,12 @@ def authorResults(letterOrName = None, query = None): # query right now is the d
         query[i][1]=re.split(", |;", query[i][1])
 
 
-    print("After: ", query)
-
     for i in range(len(query)):
         if(len(query[i][1]) > 2): # multiple author article
             for j in range(1, len(query[i][1]), 2):
                 temp = query[i][1][j-1]
                 query[i][1][j-1] = query[i][1][j]
                 query[i][1][j] = temp
-                # query[0][1][i-1] = query[0][1][i-1][1:]  # delete leading space and add a space between the names
                 query[i][1][j] = query[i][1][j]+", "   # delete leading space and add a space between the names
             query[i][1][-1] = query[i][1][-1][:-2] # get rid of extra comma and space after last item
             query[i][1][0] += " "
@@ -516,39 +433,21 @@ def authorResults(letterOrName = None, query = None): # query right now is the d
                 temp = query[i][1][0]
                 query[i][1][0] = query[i][1][1]
                 query[i][1][1] = " " + temp
-    # for i in query:
-    #     # i[0][0].replace("'","''")
-    #     if(len(query[0][1]) > 1): # combine name
-    #         authorCombined = i[1][1][1:] + ", " + i[1][0]
-    #         authorCombined = authorCombined.replace("'", "''") # double up the apostrophre in SQL to escape it
-    #         print(authorCombined)
-    #         queryString = f"SELECT id FROM articles WHERE title LIKE '{i[0]}' AND author_tag LIKE '%{authorCombined}%';"
-    #     else: # one word name
-    #         queryString = f"SELECT id FROM articles WHERE title LIKE '{i[0]}' AND author_tag LIKE '%{query[0][1]}%';"
-    #         curr = mysql.connection.cursor()
-    #         curr.execute(queryString)
-    #         artID = curr.fetchall()
-    #         curr.close()
-    #         artID = list(artID)
-    #         i.append(artID)
-
-    print(query)
-    print(type(query))
-    # articlesList = json.dumps(query)
-    # articlesList = json.loads(query)
+    
     return render_template("index.html", enteredText=letterOrName, articlesList=query) # return all articles written by an author
 
+@app.route("/HowTo", methods=["POST", "GET"])
+def howToUser(): # 
+    return render_template("index.html")
 
 auto = SM_Autocomplete()
 @app.route("/autocomplete", methods=["POST", "GET"])
-def autocomplete():
-    print("request.data: ", request.data)
+def autocomplete(): # basic and topic
 
     return json.dumps([item for sl in auto.general(json.loads(request.data)["txt"]) for item in sl ])
 
 @app.route("/autocomplete2", methods=["POST", "GET"])
 def autocomplete2(): # This is for the author search
-    print("request.data: ", request.data)
 
     return json.dumps([item for sl in auto.author(json.loads(request.data)["txt"]) for item in sl ])
 
@@ -558,7 +457,6 @@ def autocomplete2(): # This is for the author search
 @app.route('/<path:path>')
 def index(path):
     return "ERROR: URL NOT FOUND"
-    # return app.send_static_file("index.html")
 
 if __name__ == "__main__":
     app.run(debug=True, use_reloader = True)
