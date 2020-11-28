@@ -33,40 +33,49 @@ function Results() {
     <br/><br/> <br/>
 
     <div className="container">
-    <div className="pageNumber">
+      <div className="pageNumber">
         <h4>page {window.pageNum} of {buttons.length}</h4>
       </div>
       <h4>Showing results for: {window.enteredTerm.slice(1,-1)}</h4>
       
-      {typeof articleItem === 'string' ? (
-        <p>No results</p>
+      {typeof articleItem === 'string' ? ( //it's a string because it's "None"
+        <p>No results found</p>
       ) : (
         articleItem.map((item, index) => (
             <div key={index}>
-            <form action={"/ArticleResults/" + item[0]} method="GET">
-            <button className="article-link" type="submit" name="article" value= {item[0]}>
-              <h3>{item[2]}</h3>
-            </button>
-              <h4>{item[3]}</h4>
-              <div dangerouslySetInnerHTML={{__html: item[1] }}></div>
-              <br/>
-              {/* 0: id, 1: preview, 2: title, 3: author */}
-          </form>
+              <form action={"/ArticleResults/" + item[0]} method="GET">
+              <button className="article-link" type="submit" name="article" value= {item[0]}>
+                <h3>{item[2]}</h3>
+              </button>
+                <h4>{item[3]}</h4>
+                <div dangerouslySetInnerHTML={{__html: item[1] }}></div>
+                <br/>
+                {/* 0: id, 1: preview, 2: title, 3: author */}
+            </form>
           </div>
         ))
+
       )}
 
-      Page: 
-      {buttons.map((num, index) => (
-            <div key={index} className="pageButton">
-                <form action={num[0]} method="GET" id="nameform">   
-                <button className="pageButton" type="submit" name="page" value={num[0]}>
-                    <p>{num[0]}</p>
-                </button>
-                </form>
 
-            </div>
-            ))}
+      {typeof articleItem === 'string' ? ( //it's a string because it's "None"
+        <div></div>
+        ) : (
+          <p>Page:</p>,
+          buttons.map((num, index) => (
+                <div key={index} className="pageButton">
+                    <form action={num[0]} method="GET" id="nameform">   
+                    <button className="pageButton" type="submit" name="page" value={num[0]}>
+                        <p>{num[0]}</p>
+                    </button>
+                    </form>
+    
+                </div>
+                ))
+
+           )}
+
+      
         
     </div>
     </div>

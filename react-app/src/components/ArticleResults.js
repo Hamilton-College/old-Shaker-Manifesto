@@ -48,7 +48,7 @@ function ArticleResults() {
     </TabList>
  
     <TabPanel>
-      <Carousel selectedItem={parseInt(window.startPage)} showArrows={true}>
+      <Carousel selectedItem={parseInt(window.startPage)-1} showArrows={true}>
       {window.images.map((num, index) => (
             <div key={index}>
               <img src = {`data:image/jpeg;base64,${num}`} alt ="article image"/>

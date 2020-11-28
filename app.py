@@ -1,21 +1,20 @@
-import os
-import json
-from flask import Flask, request, render_template, redirect, url_for, jsonify
-from flask_mysqldb import MySQL
-from autocomplete import *
+import os, sys, json, re, ast, io
 from functools import reduce
-import re
-import ast
+
+from flask import Flask, request, render_template, redirect, url_for, jsonify
 from flask_cors import CORS
-#For sending images
-import io
-from base64 import encodebytes
-from PIL import Image
+from flask_mysqldb import MySQL
 
 from ngram_search import *
+from autocomplete import *
 
-template_dir = os.path.abspath("./flask-server/templates") 
-static_dir = os.path.abspath("./flask-server/static") 
+#For sending images
+from base64 import encodebytes
+from PIL import Image
+from waitress import serve
+
+template_dir = os.path.abspath("./flask-server/templates")
+static_dir = os.path.abspath("./flask-server/static")
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir )
 CORS(app)
 
@@ -43,12 +42,15 @@ def basicSearch():
         enteredText = request.form["query"] # name in brackets matches the name of the post form in the HTML
 
         firstPage = searchObj.search(enteredText) # when you call search. It's just the 1st page
-        numOfPages = searchObj.page_num()
-
-        if(firstPage == []):
+        print(type(firstPage),firstPage)
+        if(not firstPage):
             firstPage = "None"
-        searchResults = searchObj.store_results() # store as jsonified string so that we can pass it through urls
-        return redirect(url_for("basicResults1", values=enteredText, results = searchResults, numOfPages = numOfPages, page = 1)) 
+            return redirect(url_for("basicResults1", values=enteredText, results = firstPage, numOfPages = 0, page = 0)) 
+
+        else:
+            numOfPages = searchObj.page_num()
+            searchResults = searchObj.store_results() # store as jsonified string so that we can pass it through urls
+            return redirect(url_for("basicResults1", values=enteredText, results = searchResults, numOfPages = numOfPages, page = 1)) 
 
 
 # ARTICLE TYPE SEARCH
@@ -223,7 +225,11 @@ def displayVolumes():
 
 # BASIC SEARCH RESULTS
 @app.route("/Results/<values>/<results>/<numOfPages>/<page>", methods=["POST", "GET"])
-def basicResults1(values, results, numOfPages, page):
+def basicResults1(values=None, results=None, numOfPages=0, page=0):
+
+    if(results=="None"): # no results for entered item
+        return render_template("index.html", enteredTerm = values, results =results, pageNum = 0)# we're just passing enteredText to display it
+        
     page = int(page) -1 # index begins at 0
     numOfPages = int(numOfPages)
 
@@ -269,6 +275,8 @@ def articleResults(articleID=None): # Open the text and image file of the articl
     startPage = list(curr.fetchall())
     curr.close()
     startPage = startPage[0][0]
+    startPage += 1 # image files are 1-indexed 
+    print(startPage)
 
     if(len(articleID)==6):
         articleID = "0" + articleID
@@ -459,4 +467,7 @@ def index(path):
     return "ERROR: URL NOT FOUND"
 
 if __name__ == "__main__":
-    app.run(debug=True, use_reloader = True)
+    if len(sys.argv) == 2 and sys.argv[1] == '-d':
+        serve(app)
+    else:
+        app.run(debug=True, use_reloader = True)
