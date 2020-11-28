@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import shakerLogo from './images/shaker-manifesto-logo2.png';
+import shakerLogo from './images/shaker-manifesto-logo2.PNG';
 import hamiltonLogo from './images/hamilton-lib-logo.PNG';
 import lomas from './images/manifesto-office-lomas.jpg';
 import articleGroup from './images/article-group.png';
