@@ -6,7 +6,7 @@ DIRECTORY_NAME=os.path.join(".", "flask-server", "Volume01")
 PAGE_LIMIT=15 #number of results per page
 
 class Result:
-"""Stores the results of a given search with the associated information"""
+    """Stores the results of a given search with the associated information"""
 
     def __init__(self, terms=[], thresh=0, raw_index=0, dict={}, load=False):
         if load:

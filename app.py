@@ -13,15 +13,15 @@ from base64 import encodebytes
 from PIL import Image
 from waitress import serve
 
-images_dir = os.path.join("..", "images")#"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\"
+images_dir = os.path.join("..", "C:/images")#"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\"
 template_dir = os.path.abspath("./flask-server/templates")
 static_dir = os.path.abspath("./flask-server/static")
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir )
 CORS(app)
 
 app.config["MYSQL_HOST"] = "localhost"
-app.config["MYSQL_USER"] = "csteam" #"root"
-app.config["MYSQL_PASSWORD"] = "Lib-CS-Collab" #"root" 
+app.config["MYSQL_USER"] = "root"#"csteam"
+app.config["MYSQL_PASSWORD"] = "root" #"Lib-CS-Collab"
 app.config["MYSQL_DB"] = "shaker"
 mysql = MySQL(app)
 
@@ -76,10 +76,11 @@ def displayTypes():
             idList = list(fetchdata)
             idList = [list(i) for i in idList]
             idList = [j for i in idList for j in i] # flatten
-            print(type(idList[0]))
             for i in range(len(idList)):
                 if(len(str(idList[i])) == 6):
                     idList[i] = "0" + str(idList[i])
+                else:
+                    idList[i] = str(idList[i])
 
             global searchObj
 
@@ -247,24 +248,30 @@ def basicResults1(values=None, results=None, numOfPages=0, page=0):
     searchObj.load_results(results) # results is a jsonified string. This just sets some of the internal state of SM obj
 
     pageOfResults = searchObj.generate_results(page) # results is our search obj
-
     for i in pageOfResults:
         i[1] = i[1].replace("\'", "")
         i[1] = i[1].replace('"', "")
         i[1] = i[1].replace("\\", "")
         i[1] = i[1].replace("<!b>", "</b>")
-        queryString = f"SELECT title, author_tag FROM articles WHERE id LIKE '{i[0]}';"
+        queryString = f"SELECT title, author_tag FROM articles WHERE id LIKE '{int(i[0])}';"
         curr = mysql.connection.cursor()
         curr.execute(queryString)
         titleAuthor = curr.fetchall()
         curr.close()
         titleAuthor = list(titleAuthor)
+
         titleAuthor[0] = list(titleAuthor[0])
+
         if(titleAuthor[0][0] == ""):
             titleAuthor[0][0] = "Title Unknown"
         i.append(titleAuthor[0][0]) # Here, we are appending the Article title
-        author = titleAuthor[0][1].split(", ")
-        i.append(", ".join(author))
+
+        if(titleAuthor[0][1] == ""):
+            titleAuthor[0][1] = "Author Unknown"
+            i.append(titleAuthor[0][1])
+        else:
+            author = titleAuthor[0][1].split(", ")
+            i.append(", ".join(author))
 
     pageList = [str(i) for i in range(1, numOfPages+1)]
     return render_template("index.html", enteredTerm = values, results =pageOfResults, pageButtons=pageList, pageNum = page+1)# we're just passing enteredText to display it
@@ -276,6 +283,15 @@ def topicResults(topic=None, results =None): # all articles related to a certain
     results = ast.literal_eval(results)
     results = list(results)
     results = [list(i) for i in results]
+
+
+
+    for i in results:
+        if(i[0] == ""):
+            i[0] = "Title Unknown"
+        if(i[1] == ""):
+            i[1] = "Author Unknown"
+    print(results)
     results.sort()
 
     return render_template("index.html", topic=topic, topicResults=results)
@@ -412,7 +428,7 @@ def topicWordResults(topic=None, word=None, results=None, numOfPages =None, page
             i[1] = i[1].replace('"', "")
             i[1] = i[1].replace("\\", "")
             i[1] = i[1].replace("<!b>", "</b>")
-            queryString = f"SELECT title, author_tag FROM articles WHERE id LIKE '{i[0]}';"
+            queryString = f"SELECT title, author_tag FROM articles WHERE id LIKE '{int(i[0])}';"
             curr = mysql.connection.cursor()
             curr.execute(queryString)
             titleAuthor = curr.fetchall()
@@ -422,11 +438,15 @@ def topicWordResults(topic=None, word=None, results=None, numOfPages =None, page
             if(titleAuthor[0][0] == ""):
                 titleAuthor[0][0] = "Title Unknown"
             i.append(titleAuthor[0][0]) # Here, we are appending the Article title
-            author = titleAuthor[0][1].split(", ")
-            i.append(", ".join(author))
+
+            if(titleAuthor[0][1] == ""):
+                titleAuthor[0][1] = "Author Unknown"
+                i.append(titleAuthor[0][1])
+            else:
+                author = titleAuthor[0][1].split(", ")
+                i.append(", ".join(author))
 
         pageList = [str(i) for i in range(1, numOfPages+1)]
-
         return render_template("index.html", topic=topic, topicWord= word, topicWordResults=pageOfResults, pageButtons=pageList, pageNum=page+1)
 
 # # AUTHOR RESULTS
@@ -485,6 +505,6 @@ def index(path):
 
 if __name__ == "__main__":
     if len(sys.argv) == 2 and sys.argv[1] == '-d':
-        serve(app, host='150.209.88.127')
+        serve(app)
     else:
         app.run(debug=True, use_reloader = True)

@@ -44,7 +44,6 @@ function App() {
       <br/>
       <a href="/HowTo" className="pClass"> ⓘ How to use</a>
       <br/>
-      <br/>
       <a className = "pClass" href="http://elib.hamilton.edu/"> ©2020 Hamilton College</a>
 
     </div>
