@@ -222,7 +222,7 @@ class SM_Search:
                 rdict = d
             if rdict:
                 self._remain = list(rdict.values())
-            self._remain.sort(key=Result.getThresh)
+            self._remain.sort(key=Result.getThresh, reverse=True)
 
         return self.generate_results()
 
