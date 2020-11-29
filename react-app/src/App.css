@@ -87,6 +87,12 @@ li {
   height: 50%;
 }
 
+.pageLabel {
+  display: inline;
+  float: left;
+  margin-top: 16px;
+
+}
 .pageNumber {
   display: inline;
   float: right;
@@ -332,6 +338,10 @@ input[type=submit] {
 
 .volumeAndIssue {
   font-style: bold;
+  text-decoration: underline;
+}
+
+.howToHeader {
   text-decoration: underline;
 }
 

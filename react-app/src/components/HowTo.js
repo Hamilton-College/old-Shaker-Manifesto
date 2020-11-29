@@ -34,24 +34,35 @@ function HowTo () {
 
         <br/><br/><br/>
 
-        <h2>How to use the new Shake Manifesto search engine</h2> underline this
- 
+        <div className="howToHeader">
+        <h2>How to use the new Shake Manifesto search engine</h2> 
+        </div>
+        <br/>
+
         <h3>Basic Search</h3>
         <p>Basic search works just like any typical search engine like Google. You can search for a single word or multiple words. Don't worry if you spell something wrong. The search function will retrieve the results for the word(s) you likely meant to type. 
             If you'd like to search for an exact phrase/sentetence, you can surround it in quotes. 
+            <br/>
             For example: "Ye must love one another" 
         </p>
         <br/>
         <h3>Article Type</h3>
-        <p>There are three ways you can use Article type search.
-            1. With Article type search, you can narrow your search to a specific category. 
-            2. You can see all articles of a certain category
-            3. You can use it like basic search by not entering anything</p>
+        <p>There are three ways you can use Article type search:
+            <br/>
+            1. You can search for words within articles of a specific article type by selecting a category and entering the word(s) you're looking for. 
+            <br/>
+            2. You can view all articles of a certain category by selecting a category and clicking "search" without typing anything into the search bar.
+            <br/>
+            3. You can use it like basic search by not selecting a category and just entering words into the search box.</p>
         <br/>
         <h3>Author</h3>
+        <p>On Author search, you can browse all of the authors by their last name by clicking on one of the letters of the alphabet.
+        <br/>
+        If you know the author you're looking for, feel free to type their name right into the search bar.</p>
+
         <br/>
         <h3>Volume & Issue</h3>
-          
+          <p>On the Volume & Issue page, you can browse The Shaker Manifesto according to volume and issue</p>
     </div>
     </div>
 

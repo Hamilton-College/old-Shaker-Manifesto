@@ -38,20 +38,31 @@ function AuthorList () {
         <br/><br/><br/>
 
         <h4>Showing results for: {window.enteredText}</h4>
- 
-   
+
           {authors.map((item, index) => (
-              <div key={index}>
-              <form action={"/ArticleResults/" + item[2]} method="GET">
-              <button className="article-link" type="submit">
-                  <h3>{item[0]}</h3>
-              </button>
-                  <h4>{item[1]}</h4>
-                  <br/>
-              </form>
-              </div>
-          ))}
-          {/* 0: title, 1: author, 2: id */}
+                <div key={index}>
+                  {item[0].length > 0 ? (  //if we have a title
+                <form action={"/ArticleResults/" + item[2]} method="GET">
+                <button className="article-link" type="submit" >
+                    <h3>{item[0]}</h3>
+                </button>
+                    <h4>{item[1]}</h4>
+                    <br/>
+                </form>
+                    ) : (
+                    <div>
+                      <form action={"/ArticleResults/" + item[2]} method="GET">
+                    <button className="article-link" type="submit">
+                        <h3>Title Unknown</h3>
+                    </button>
+                        <h4>{item[1]}</h4>
+                        <br/>
+                    </form>
+                    </div>)}
+
+              {/* 0: title, 1: author, 2: id */}
+                </div>
+            ))}
     
     </div>
     </div>

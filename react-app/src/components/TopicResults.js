@@ -35,12 +35,12 @@ function TopicResults() {
         <div className="container">
 
         <img src={shakerLogo} alt="Shaker logo"width="200" height="60" class = "ShakerLogoResults" />
-        <h4>Showing results for topic: {window.selectedTopic.slice(1,-1)}</h4>
-
+        <h4>Showing results for category: {window.selectedTopic.slice(1,-1)}</h4>
+        <br/>
         <div>
             {results.map((item, index) => (
                 <div key={index}>
-                  {item[0].length > 0 ? ( 
+                  {item[0].length > 0 ? (  //if we have a title
                 <form action={"/ArticleResults/" + item[2]} method="GET">
                 <button className="article-link" type="submit" name = "article" value={item[2]}>
                     <h3>{item[0]}</h3>

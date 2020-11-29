@@ -39,9 +39,9 @@ function TopicWordResults() {
 
     <h4>Showing results for: {window.topicWord.slice(1,-1)} </h4>
     <h4>In category: {window.topic.slice(1,-1)} </h4>
-
+    <br/>
     {typeof articleItem === 'string' ? (
-        <p>No results</p>
+        <h3>No results found</h3>
       ) : (
         articleItem.map((item, index) => (
             <div key={index}>
@@ -58,17 +58,25 @@ function TopicWordResults() {
         ))
       )}
 
-      Page: 
-      {buttons.map((num, index) => (
-            <div key={index} className="pageButton">
-                <form action={num[0]} method="GET" id="nameform">   
-                <button className="pageButton" type="submit" name="page" value={num[0]}>
-                    <p>{num[0]}</p>
-                </button>
-                </form>
 
-            </div>
-            ))}
+        {typeof articleItem === 'string' ? ( //it's a string because it's "None"
+        <div></div>
+        ) : ([
+          <div className = "pageLabel">
+          <p>Page:</p>
+          </div>,
+          buttons.map((num, index) => (
+                <div key={index} className="pageButton">
+                    <form action={num[0]} method="GET" id="nameform">   
+                    <button className="pageButton" type="submit" name="page" value={num[0]}>
+                        <p>{num[0]}</p>
+                    </button>
+                    </form>
+    
+                </div>
+                ))]
+
+           )}
         
     </div>
     </div>

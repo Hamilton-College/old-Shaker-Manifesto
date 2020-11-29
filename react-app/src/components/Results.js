@@ -37,9 +37,9 @@ function Results() {
         <h4>page {window.pageNum} of {buttons.length}</h4>
       </div>
       <h4>Showing results for: {window.enteredTerm.slice(1,-1)}</h4>
-      
-      {typeof articleItem === 'string' ? ( //it's a string because it's "None"
-        <p>No results found</p>
+      <br/>
+      {typeof articleItem === 'string' ? ( //if it is "None"
+        <h3>No results found</h3>
       ) : (
         articleItem.map((item, index) => (
             <div key={index}>
@@ -60,8 +60,10 @@ function Results() {
 
       {typeof articleItem === 'string' ? ( //it's a string because it's "None"
         <div></div>
-        ) : (
-          <p>Page:</p>,
+        ) : ([
+          <div className = "pageLabel">
+          <p>Page:</p>
+          </div>,
           buttons.map((num, index) => (
                 <div key={index} className="pageButton">
                     <form action={num[0]} method="GET" id="nameform">   
@@ -71,7 +73,7 @@ function Results() {
                     </form>
     
                 </div>
-                ))
+                ))]
 
            )}
 

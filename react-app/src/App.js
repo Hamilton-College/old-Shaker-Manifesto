@@ -42,7 +42,8 @@ function App() {
       </Router>
       <br/>
       <br/>
-      <a href="/HowTo" className="pClass"> How to use</a>
+      <a href="/HowTo" className="pClass"> ⓘ How to use</a>
+      <br/>
       <br/>
       <a className = "pClass" href="http://elib.hamilton.edu/"> ©2020 Hamilton College</a>
 

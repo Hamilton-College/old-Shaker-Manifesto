@@ -20,8 +20,8 @@ app = Flask(__name__, template_folder=template_dir, static_folder=static_dir )
 CORS(app)
 
 app.config["MYSQL_HOST"] = "localhost"
-app.config["MYSQL_USER"] = "csteam"
-app.config["MYSQL_PASSWORD"] = "Lib-CS-Collab"
+app.config["MYSQL_USER"] = "csteam" #"root"
+app.config["MYSQL_PASSWORD"] = "Lib-CS-Collab" #"root" 
 app.config["MYSQL_DB"] = "shaker"
 mysql = MySQL(app)
 
@@ -43,7 +43,6 @@ def basicSearch():
         enteredText = request.form["query"] # name in brackets matches the name of the post form in the HTML
 
         firstPage = searchObj.search(enteredText) # when you call search. It's just the 1st page
-        print(type(firstPage),firstPage)
         if(not firstPage):
             firstPage = "None"
             return redirect(url_for("basicResults1", values=enteredText, results = firstPage, numOfPages = 0, page = 0))
@@ -66,7 +65,8 @@ def displayTypes():
 
         elif(request.form.get("checkbox") and request.form.get("query").strip() != ""): # Typical: If we have a box checked and word entered
             enteredText = request.form.get("query")
-            topic = request.form.get("checkbox")
+            topic = request.form.get("checkbox")[:request.form.get("checkbox").index(";")]
+            topicID = request.form.get("checkbox")[request.form.get("checkbox").index(";")+1:]
             queryString = f"SELECT id FROM articles WHERE topics LIKE '%{topic}%' order by author_tag;"
             curr = mysql.connection.cursor()
             curr.execute(queryString)
@@ -76,36 +76,46 @@ def displayTypes():
             idList = list(fetchdata)
             idList = [list(i) for i in idList]
             idList = [j for i in idList for j in i] # flatten
+            print(type(idList[0]))
+            for i in range(len(idList)):
+                if(len(str(idList[i])) == 6):
+                    idList[i] = "0" + str(idList[i])
+
             global searchObj
+
             firstPage = searchObj.search(enteredText, idList) # when you call search. It's just the 1st page
-            numOfPages = searchObj.page_num()
-
-            if(firstPage == []):
+            print(idList)
+            print(firstPage)
+            if(not firstPage): # no results
                 firstPage = "None"
-            searchResults = searchObj.store_results() # store as jsonified string so that we can pass through urls
-
-            return redirect(url_for("topicWordResults", topic = topic, word = enteredText, results = searchResults, numOfPages = numOfPages, page = 1))
+                return redirect(url_for("topicWordResults", topic = topicID, word = enteredText, results = firstPage, numOfPages = 0, page = 0))
+            else:
+                numOfPages = searchObj.page_num()
+                searchResults = searchObj.store_results() # store as jsonified string so that we can pass through urls
+                return redirect(url_for("topicWordResults", topic = topicID, word = enteredText, results = searchResults, numOfPages = numOfPages, page = 1))
 
 
         elif(request.form.get("checkbox")): # just a box checked, nothing typed
-            topic = request.form.get("checkbox")
+            topic = request.form.get("checkbox")[:request.form.get("checkbox").index(";")]
+            topicID = request.form.get("checkbox")[request.form.get("checkbox").index(";")+1:]
             queryString = f"SELECT title, author_tag, id FROM articles WHERE topics LIKE '%{topic}%' order by author_tag;"
             curr = mysql.connection.cursor()
             curr.execute(queryString)
             fetchdata = curr.fetchall()
             curr.close()
-            return redirect(url_for("topicResults", topic = topic, results = fetchdata))
+            return redirect(url_for("topicResults", topic = topicID, results = fetchdata))
 
         else: # if no checkboxes checked, and just text entered. work like basic
             enteredText = request.form["query"]
 
             firstPage = searchObj.search(enteredText) # when you call search. It's just the 1st page
-            numOfPages = searchObj.page_num()
-
-            if(firstPage == []):
+            if(not firstPage): # if no results for that word
                 firstPage = "None"
-            searchResults = searchObj.store_results() # store as jsonified string so that we can pass through urls
-            return redirect(url_for("basicResults1", values=enteredText, results = searchResults, numOfPages = numOfPages, page = 1)) # put in the function of the url you want to go to
+                return redirect(url_for("basicResults1", values=enteredText, results = firstPage, numOfPages = 0, page = 0))
+            else:
+                numOfPages = searchObj.page_num()
+                searchResults = searchObj.store_results() # store as jsonified string so that we can pass through urls
+                return redirect(url_for("basicResults1", values=enteredText, results = searchResults, numOfPages = numOfPages, page = 1)) # put in the function of the url you want to go to
 
 
 # AUTHOR SEARCH
@@ -250,6 +260,8 @@ def basicResults1(values=None, results=None, numOfPages=0, page=0):
         curr.close()
         titleAuthor = list(titleAuthor)
         titleAuthor[0] = list(titleAuthor[0])
+        if(titleAuthor[0][0] == ""):
+            titleAuthor[0][0] = "Title Unknown"
         i.append(titleAuthor[0][0]) # Here, we are appending the Article title
         author = titleAuthor[0][1].split(", ")
         i.append(", ".join(author))
@@ -384,32 +396,38 @@ def volumeIssueResults(articleID=None): # Open the text and image file of the ar
 
 @app.route("/TopicWordResults/<topic>/<word>/<results>/<numOfPages>/<page>", methods=["POST", "GET"])
 def topicWordResults(topic=None, word=None, results=None, numOfPages =None, page=None): # all articles related to a certain topic
-    page = int(page) -1 # index begins at 0
-    numOfPages = int(numOfPages)
+    if(results == "None"):
+        return render_template("index.html", topic=topic, topicWord= word, topicWordResults=results, pageNum=0)
+        
+    else:
+        page = int(page) -1 # index begins at 0
+        numOfPages = int(numOfPages)
 
-    searchObj.load_results(results) # results is a jsonified string. This just sets some of the internal state of SM obj
+        searchObj.load_results(results) # results is a jsonified string. This just sets some of the internal state of SM obj
 
-    pageOfResults = searchObj.generate_results(page) # results is our search obj
+        pageOfResults = searchObj.generate_results(page) # results is our search obj
 
-    for i in pageOfResults:
-        i[1] = i[1].replace("\'", "")
-        i[1] = i[1].replace('"', "")
-        i[1] = i[1].replace("\\", "")
-        i[1] = i[1].replace("<!b>", "</b>")
-        queryString = f"SELECT title, author_tag FROM articles WHERE id LIKE '{i[0]}';"
-        curr = mysql.connection.cursor()
-        curr.execute(queryString)
-        titleAuthor = curr.fetchall()
-        curr.close()
-        titleAuthor = list(titleAuthor)
-        titleAuthor[0] = list(titleAuthor[0])
-        i.append(titleAuthor[0][0]) # Here, we are appending the Article title
-        author = titleAuthor[0][1].split(", ")
-        i.append(", ".join(author))
+        for i in pageOfResults:
+            i[1] = i[1].replace("\'", "")
+            i[1] = i[1].replace('"', "")
+            i[1] = i[1].replace("\\", "")
+            i[1] = i[1].replace("<!b>", "</b>")
+            queryString = f"SELECT title, author_tag FROM articles WHERE id LIKE '{i[0]}';"
+            curr = mysql.connection.cursor()
+            curr.execute(queryString)
+            titleAuthor = curr.fetchall()
+            curr.close()
+            titleAuthor = list(titleAuthor)
+            titleAuthor[0] = list(titleAuthor[0])
+            if(titleAuthor[0][0] == ""):
+                titleAuthor[0][0] = "Title Unknown"
+            i.append(titleAuthor[0][0]) # Here, we are appending the Article title
+            author = titleAuthor[0][1].split(", ")
+            i.append(", ".join(author))
 
-    pageList = [str(i) for i in range(1, numOfPages+1)]
+        pageList = [str(i) for i in range(1, numOfPages+1)]
 
-    return render_template("index.html", topic=topic, topicWord= word, topicWordResults=pageOfResults, pageButtons=pageList, pageNum=page+1)
+        return render_template("index.html", topic=topic, topicWord= word, topicWordResults=pageOfResults, pageButtons=pageList, pageNum=page+1)
 
 # # AUTHOR RESULTS
 
