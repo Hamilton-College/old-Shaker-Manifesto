@@ -6,6 +6,8 @@ DIRECTORY_NAME=os.path.join(".", "flask-server", "Volume01")
 PAGE_LIMIT=15 #number of results per page
 
 class Result:
+"""Stores the results of a given search with the associated information"""
+
     def __init__(self, terms=[], thresh=0, raw_index=0, dict={}, load=False):
         if load:
             self.__dict__.update(dict)
@@ -21,23 +23,33 @@ class Result:
         if dict:
             self._processRaw(dict)
 
-    def getTerm(self):
+    def getTerms(self):
+        """List of matched search terms contained in this result"""
         return self.terms
 
     def getThresh(self):
+        """Result match threshold"""
         return self.thresh
 
     def getRawIndex(self):
+        """Index in the complete combined Shaker Manifesto"""
         return self.raw_index
 
     def getVol(self):
+        """Volume number of result"""
         return self.vol
 
     def getIssue(self):
+        """Issue number of result"""
         return self.issue
 
     def getArticle(self):
+        """Article number of result"""
         return self.article
+
+    def getIndex(self):
+        """Index of first term match within designated article"""
+        return self.index
 
     def _processRaw(self, dict):
         """sets volume, issue, article, and index fields based on the passed
@@ -45,14 +57,16 @@ class Result:
         self.vol, self.issue, self.article, self.index = dict[self.raw_index]
 
     def filename(self):
-        """only callable after _processRaw"""
+        """Generates associated filename.
+        Requires _processRaw to have been called"""
         assert(self.vol != -1)
         assert(self.issue != -1)
         assert(self.article != -1)
         return os.path.join(DIRECTORY_NAME, "{:07d}.txt".format(self.id()))
 
     def id(self):
-        """only callable after _processRaw"""
+        """Generates id number of result.
+        only callable after _processRaw"""
         return self.vol * 100000 + self.issue * 1000 + self.article
 
     def getPreview(self):
@@ -147,7 +161,7 @@ class SM_Search:
     def generate_results(self, pg_num = 0):
         """generate and return a page worth of results"""
         if self._remain and pg_num <= self.page_num():
-            return [[r.id(), r.getPreview()] for r in self._remain[pg_num*PAGE_LIMIT: (pg_num + 1)*PAGE_LIMIT]]
+            return [["{:07d}".format(r.id()), r.getPreview()] for r in self._remain[pg_num*PAGE_LIMIT: (pg_num + 1)*PAGE_LIMIT]]
         return []
 
     def search(self, string, ids=[], thresh=0.5):
