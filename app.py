@@ -4,16 +4,16 @@ from functools import reduce
 from flask import Flask, request, render_template, redirect, url_for, jsonify
 from flask_cors import CORS
 from flask_mysqldb import MySQL
-
+from urllib.parse import urlparse
 from ngram_search import *
 from autocomplete import *
+import urllib.parse 
 
-#For sending images
-from base64 import encodebytes
+from base64 import encodebytes #For sending images
 from PIL import Image
 from waitress import serve
 
-images_dir = os.path.join("..", "C:/images")#"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\"
+images_dir = os.path.join("..", "images")#"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\"
 template_dir = os.path.abspath("./flask-server/templates")
 static_dir = os.path.abspath("./flask-server/static")
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir )
@@ -50,6 +50,7 @@ def basicSearch():
         else:
             numOfPages = searchObj.page_num()
             searchResults = searchObj.store_results() # store as jsonified string so that we can pass it through urls
+            searchResults = urllib.parse.quote_plus(searchResults)# encode results for URL passing
             return redirect(url_for("basicResults1", values=enteredText, results = searchResults, numOfPages = numOfPages, page = 1))
 
 
@@ -76,11 +77,6 @@ def displayTypes():
             idList = list(fetchdata)
             idList = [list(i) for i in idList]
             idList = [j for i in idList for j in i] # flatten
-            for i in range(len(idList)):
-                if(len(str(idList[i])) == 6):
-                    idList[i] = "0" + str(idList[i])
-                else:
-                    idList[i] = str(idList[i])
 
             global searchObj
 
@@ -93,6 +89,7 @@ def displayTypes():
             else:
                 numOfPages = searchObj.page_num()
                 searchResults = searchObj.store_results() # store as jsonified string so that we can pass through urls
+                searchResults = urllib.parse.quote_plus(searchResults) # encode results for URL passing
                 return redirect(url_for("topicWordResults", topic = topicID, word = enteredText, results = searchResults, numOfPages = numOfPages, page = 1))
 
 
@@ -115,7 +112,8 @@ def displayTypes():
                 return redirect(url_for("basicResults1", values=enteredText, results = firstPage, numOfPages = 0, page = 0))
             else:
                 numOfPages = searchObj.page_num()
-                searchResults = searchObj.store_results() # store as jsonified string so that we can pass through urls
+                searchResults = searchObj.store_results() # store as jsonified string so that we can pass it through urls
+                searchResults = urllib.parse.quote_plus(searchResults)# encode results for URL passing
                 return redirect(url_for("basicResults1", values=enteredText, results = searchResults, numOfPages = numOfPages, page = 1)) # put in the function of the url you want to go to
 
 
@@ -245,6 +243,8 @@ def basicResults1(values=None, results=None, numOfPages=0, page=0):
     page = int(page) -1 # index begins at 0
     numOfPages = int(numOfPages)
 
+    results = urllib.parse.unquote_plus(results) # decode the results
+   
     searchObj.load_results(results) # results is a jsonified string. This just sets some of the internal state of SM obj
 
     pageOfResults = searchObj.generate_results(page) # results is our search obj
@@ -284,24 +284,23 @@ def topicResults(topic=None, results =None): # all articles related to a certain
     results = list(results)
     results = [list(i) for i in results]
 
-
-
     for i in results:
         if(i[0] == ""):
             i[0] = "Title Unknown"
         if(i[1] == ""):
             i[1] = "Author Unknown"
-    print(results)
     results.sort()
 
     return render_template("index.html", topic=topic, topicResults=results)
 
 @app.route("/ArticleResults/<articleID>", methods=["POST", "GET"])
 def articleResults(articleID=None): # Open the text and image file of the article
-    queryString = f"SELECT start FROM articles WHERE id LIKE '{articleID}';"
+    queryString = f"SELECT start FROM articles WHERE id LIKE '{int(articleID)}';"
     curr = mysql.connection.cursor()
     curr.execute(queryString)
     startPage = list(curr.fetchall())
+    print(startPage)
+    print(startPage[0])
     curr.close()
     startPage = startPage[0][0]
     startPage += 1 # image files are 1-indexed
@@ -351,6 +350,7 @@ def articleResults(articleID=None): # Open the text and image file of the articl
             curr = str(curr)
 
     encodedImages = []
+    print(imagePaths)
     for i in range(len(imagePaths)):
         newResponseImg = get_response_image(imagePaths[i]).replace("\n", "\\n")
         encodedImages.append(newResponseImg)
@@ -394,7 +394,7 @@ def volumeIssueResults(articleID=None): # Open the text and image file of the ar
     # Get list of  image paths
     curr = textStart[:-1] + str(1) # images start at 1
     imagePaths = []
-    while(os.path.exists(os.path.join(imgPath := images_dir, "{}.jpg".format(str(curr))))):
+    while(os.path.exists(imgPath := os.path.join(images_dir, "{}.jpg".format(str(curr))))):
         imagePaths.append(imgPath)
         curr = int(curr) + 1
         if(len(str(curr))==6):
@@ -402,7 +402,9 @@ def volumeIssueResults(articleID=None): # Open the text and image file of the ar
         else: # 7
             curr = str(curr)
 
+
     encodedImages = []
+    print(imagePaths)
     for i in range(len(imagePaths)):
         newResponseImg = get_response_image(imagePaths[i]).replace("\n", "\\n")
         encodedImages.append(newResponseImg)
@@ -419,12 +421,11 @@ def topicWordResults(topic=None, word=None, results=None, numOfPages =None, page
         page = int(page) -1 # index begins at 0
         numOfPages = int(numOfPages)
 
+        results = urllib.parse.unquote_plus(results) # decode the results
         searchObj.load_results(results) # results is a jsonified string. This just sets some of the internal state of SM obj
-
         pageOfResults = searchObj.generate_results(page) # results is our search obj
-
         for i in pageOfResults:
-            i[1] = i[1].replace("\'", "")
+            i[1] = i[1].replace("\'", "") # these characters prevent json from parsing the string on the react end
             i[1] = i[1].replace('"', "")
             i[1] = i[1].replace("\\", "")
             i[1] = i[1].replace("<!b>", "</b>")

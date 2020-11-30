@@ -36,7 +36,7 @@ function Author() {
     <br/><br/> 
       <img src={shakerLogo} alt="Shaker logo"width="600" height="150" className = "ShakerLogo"/>
       
-      <br/><br/><br/> 
+      <br/><br/>
       <div className="textAboveAlphabet">
         <p>Browse by last name of author</p>
       </div>

@@ -33,13 +33,13 @@ function AuthorNames() {
         <div className="container">
         
         <br/>
-        <img src={shakerLogo} alt="Shaker logo"width="600" height="150" className = "ShakerLogo"/>
+        <br/>
+        <img src={shakerLogo} alt="Shaker logo"width="370" height="90" class = "ShakerLogoResults" />
         
         <br/><br/> <br/>
-        <br/><br/> <br/>
-        <br/><br/> <br/>
-        <h3>Authors whose last name begins with {window.firstLetter} </h3>
-
+        <div className="howToHeader">
+          <h3>Authors whose last name begins with {window.firstLetter} </h3>
+        </div>
         <form action="/AuthorNames" method="POST">
                 {window.namesOfLetter.map((user, index) => (
                     <div className = "articleResults" key={index}>

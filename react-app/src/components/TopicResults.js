@@ -30,11 +30,12 @@ function TopicResults() {
           </div>
       </nav>
       <br/><br/> <br/>
-      <br/><br/> <br/>
-
+      <br/>
         <div className="container">
 
-        <img src={shakerLogo} alt="Shaker logo"width="200" height="60" class = "ShakerLogoResults" />
+        <img src={shakerLogo} alt="Shaker logo"width="370" height="90" class = "ShakerLogoResults" />
+      <br/>
+      <br/>
         <h4>Showing results for category: {window.selectedTopic.slice(1,-1)}</h4>
         <br/>
         <div>

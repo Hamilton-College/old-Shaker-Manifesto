@@ -44,6 +44,10 @@ function HowTo () {
             If you'd like to search for an exact phrase/sentetence, you can surround it in quotes. 
             <br/>
             For example: "Ye must love one another" 
+            <br/>
+            You can even combine an exact phrase with another word.
+            <br/>
+            For example: "house of" happiness 
         </p>
         <br/>
         <h3>Article Type</h3>
