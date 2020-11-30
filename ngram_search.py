@@ -1,5 +1,6 @@
 from ngram import NGram
 from suffix_trees import STree
+from functools import reduce
 import sys, re, os, json, time
 
 DIRECTORY_NAME=os.path.join(".", "flask-server", "Volume01")
@@ -82,9 +83,9 @@ class Result:
         with open(self.filename(), "rb") as file:
             file.seek(start)
             self.preview = re.sub("({})".format("|".join(self.terms)),
-                                r'<b>\1<!b>',
-                                file.read(200).decode("utf8", errors="ignore"),
-                                flags=re.I)
+                                r'<b>\1</b>',
+                                file.read(200).decode("ascii", errors="ignore"),
+                                flags=re.IGNORECASE)
 
 class SM_Search:
     def __init__(self):
@@ -187,7 +188,7 @@ class SM_Search:
 
             #fuzzy search individual words
             if not (words := c.sub("", string).strip()):
-                self._remain = [Result(exact, 1, idict[i], self._index_dict) for i in ids]
+                self._remain = [Result(exacts, 1, idict[i], self._index_dict) for i in ids]
                 return self.generate_results()#results for pure literal search
 
             #clean words based on words common to all articles
@@ -206,6 +207,10 @@ class SM_Search:
                 return []
             results = self._simplify_results(results)
             self._remain = list(filter((lambda r : r.id() in ids), results)) if ids else results
+            if ids:
+                for r in self._remain:
+                    r.terms += exact
+                    r.index = min(r.index, self._index_dict[idict[r.id()]][3])
             rdict = dict(zip(list(map(Result.id, self._remain)), self._remain))
             for word in words[1:]:
                 if not self._remain:
