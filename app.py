@@ -7,7 +7,7 @@ from flask_mysqldb import MySQL
 from urllib.parse import urlparse
 from ngram_search import *
 from autocomplete import *
-import urllib.parse 
+import urllib.parse
 
 from base64 import encodebytes #For sending images
 from PIL import Image
@@ -20,8 +20,8 @@ app = Flask(__name__, template_folder=template_dir, static_folder=static_dir )
 CORS(app)
 
 app.config["MYSQL_HOST"] = "localhost"
-app.config["MYSQL_USER"] = "root"#"csteam"
-app.config["MYSQL_PASSWORD"] = "root" #"Lib-CS-Collab"
+app.config["MYSQL_USER"] = "csteam"
+app.config["MYSQL_PASSWORD"] = "Lib-CS-Collab"
 app.config["MYSQL_DB"] = "shaker"
 mysql = MySQL(app)
 
@@ -244,7 +244,7 @@ def basicResults1(values=None, results=None, numOfPages=0, page=0):
     numOfPages = int(numOfPages)
 
     results = urllib.parse.unquote_plus(results) # decode the results
-   
+
     searchObj.load_results(results) # results is a jsonified string. This just sets some of the internal state of SM obj
 
     pageOfResults = searchObj.generate_results(page) # results is our search obj
@@ -416,7 +416,7 @@ def volumeIssueResults(articleID=None): # Open the text and image file of the ar
 def topicWordResults(topic=None, word=None, results=None, numOfPages =None, page=None): # all articles related to a certain topic
     if(results == "None"):
         return render_template("index.html", topic=topic, topicWord= word, topicWordResults=results, pageNum=0)
-        
+
     else:
         page = int(page) -1 # index begins at 0
         numOfPages = int(numOfPages)
