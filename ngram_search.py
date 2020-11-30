@@ -210,6 +210,7 @@ class SM_Search:
             for word in words[1:]:
                 if not self._remain:
                     return []
+                d = {}
                 for w in self._ngram.search(word, threshold=thresh):
                     r = [(int("{:02d}{:02d}{:03d}".format(*((i := self._index_dict[e])[:3]))), i[3]) for e in self._tree.find_all(w[0])]
                     d = {}
@@ -222,6 +223,9 @@ class SM_Search:
                 rdict = d
             if rdict:
                 self._remain = list(rdict.values())
+            else:
+                self._remain = []
+                return []
             self._remain.sort(key=Result.getThresh, reverse=True)
 
         return self.generate_results()
