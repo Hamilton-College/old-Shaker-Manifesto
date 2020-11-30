@@ -181,11 +181,11 @@ class SM_Search:
                 for raw in self._tree.find_all(quote):
                     s.add(id := int("{:02d}{:02d}{:03d}".format(*(self._index_dict[raw][:3]))))
                     idict[id] = min([raw, idict.get(id, float('inf'))])
+                # ids = s.intersection(ids) if ids else s
                 if ids:
                     ids.intersection_update(s)
                 else:
                     ids = s
-
             #fuzzy search individual words
             if not (words := c.sub("", string).strip()):
                 self._remain = [Result(exacts, 1, idict[i], self._index_dict) for i in ids]
@@ -207,7 +207,7 @@ class SM_Search:
                 return []
             results = self._simplify_results(results)
             self._remain = list(filter((lambda r : r.id() in ids), results)) if ids else results
-            if ids:
+            if exact:
                 for r in self._remain:
                     r.terms += exact
                     r.index = min(r.index, self._index_dict[idict[r.id()]][3])
