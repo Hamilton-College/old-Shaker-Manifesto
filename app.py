@@ -13,7 +13,7 @@ from base64 import encodebytes #For sending images
 from PIL import Image
 from waitress import serve
 
-images_dir = os.path.join("..", "C:/images")#"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\"
+images_dir = os.path.join("..", "images")#"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\"
 template_dir = os.path.abspath("./flask-server/templates")
 static_dir = os.path.abspath("./flask-server/static")
 app = Flask(__name__, template_folder=template_dir, static_folder=static_dir )
@@ -149,6 +149,8 @@ def displayAuthors():
             curr.execute(queryString)
             fetchdata = curr.fetchall()
             curr.close()
+            if(not fetchdata):
+                fetchdata="None"
             return redirect(url_for("authorResults", letterOrName = name, query=fetchdata))
 
 # AUTHOR FIRST LETTER
@@ -454,6 +456,8 @@ def topicWordResults(topic=None, word=None, results=None, numOfPages =None, page
 
 @app.route("/AuthorList/<letterOrName>~<query>", methods=["POST", "GET"])
 def authorResults(letterOrName = None, query = None): # query right now is the data retrieved from the sql query
+    if(query=="None"):
+        return render_template("index.html", enteredText=letterOrName, articlesList=[[" ", "No results found"]]) # return all articles written by an author
 
     multipleNames = False
     if(";" in query):
