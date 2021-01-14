@@ -149,6 +149,8 @@ def displayAuthors():
             curr.execute(queryString)
             fetchdata = curr.fetchall()
             curr.close()
+            if(not fetchdata):
+                fetchdata="None"
             return redirect(url_for("authorResults", letterOrName = name, query=fetchdata))
 
 # AUTHOR FIRST LETTER
@@ -454,6 +456,8 @@ def topicWordResults(topic=None, word=None, results=None, numOfPages =None, page
 
 @app.route("/AuthorList/<letterOrName>~<query>", methods=["POST", "GET"])
 def authorResults(letterOrName = None, query = None): # query right now is the data retrieved from the sql query
+    if(query=="None"):
+        return render_template("index.html", enteredText=letterOrName, articlesList=[[" ", "No results found"]]) # return all articles written by an author
 
     multipleNames = False
     if(";" in query):
