@@ -3,7 +3,7 @@ from suffix_trees import STree
 from functools import reduce
 import sys, re, os, json, time
 
-DIRECTORY_NAME=os.path.join(".", "flask-server", "Volume01")
+DIRECTORY_NAME=os.path.join(".", "textfiles")#, "flask-server", "Volume01")
 PAGE_LIMIT=15 #number of results per page
 
 class Result:
