@@ -5,8 +5,8 @@ from flask import Flask, request, render_template, redirect, url_for, jsonify
 from flask_cors import CORS
 from flask_mysqldb import MySQL
 from urllib.parse import urlparse
-from ngram_search import *
-from autocomplete import *
+from Shaker_Manifesto import SM_Search
+from Shaker_Manifesto import SM_Autocomplete
 import urllib.parse
 
 from base64 import encodebytes #For sending images
@@ -14,9 +14,17 @@ from PIL import Image
 from waitress import serve
 
 images_dir = os.path.join("..", "images")#"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\"
-template_dir = os.path.abspath("./flask-server/templates")
-static_dir = os.path.abspath("./flask-server/static")
-app = Flask(__name__, template_folder=template_dir, static_folder=static_dir )
+# template_dir = os.path.abspath("./flask-server/templates")
+# static_dir = os.path.abspath("./flask-server/static")
+app = None
+
+def create_app():
+    global app
+    if not app:
+        app = Flask(__name__)#, template_folder=template_dir, static_folder=static_dir)
+    return app
+
+create_app()
 CORS(app)
 
 app.config["MYSQL_HOST"] = "localhost"
