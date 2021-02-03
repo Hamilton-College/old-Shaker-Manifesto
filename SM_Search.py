@@ -5,7 +5,7 @@ import sys, re, os, json, time
 from pkg_resources import resource_stream as stream
 from pkg_resources import resource_listdir as listdir
 
-DIRECTORY_NAME='textfiles'#os.path.join(".", "flask-server", "Volume01")
+DIRECTORY_NAME='Volume01'#os.path.join(".", "flask-server", "Volume01")
 PAGE_LIMIT=15 #number of results per page
 
 class Result:
