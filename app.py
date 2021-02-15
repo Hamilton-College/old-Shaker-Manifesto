@@ -14,14 +14,14 @@ from PIL import Image
 from waitress import serve
 
 images_dir = os.path.join("..", "images")#"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\"
-# template_dir = os.path.abspath("./flask-server/templates")
-# static_dir = os.path.abspath("./flask-server/static")
+template_dir = os.path.abspath("./flask-server/templates")
+static_dir = os.path.abspath("./flask-server/static")
 app = None
 
 def create_app():
     global app
     if not app:
-        app = Flask(__name__)#, template_folder=template_dir, static_folder=static_dir)
+        app = Flask(__name__, template_folder=template_dir, static_folder=static_dir)
     return app
 
 create_app()
