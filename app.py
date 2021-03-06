@@ -13,9 +13,13 @@ from base64 import encodebytes #For sending images
 from PIL import Image
 from waitress import serve
 
-images_dir = os.path.join("..", "images")#"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\"
-template_dir = os.path.abspath("./flask-server/templates")
-static_dir = os.path.abspath("./flask-server/static")
+# images_dir = os.path.join("..", "images")#"C:\\Users\\nonso\\OneDrive\\Documents\\images\\images\\"
+# template_dir = os.path.abspath("./flask-server/templates")
+# static_dir = os.path.abspath("./flask-server/static")
+images_dir = "images"
+template_dir = "flask-server/templates"
+static_dir = "flask-server/static"
+
 app = None
 
 def create_app():
