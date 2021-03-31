@@ -83,8 +83,8 @@ class Result:
     def _set_preview(self):
         """sets the preview field and inserts bolding for frontend display"""
         start = max([self.index - 100, 0])
-        #with open(self.filename(), "rb") as file:
-        with stream(__name__, self.filename()) as file:
+        with open(self.filename(), "rb") as file:
+        #with stream(__name__, self.filename()) as file:
             file.seek(start)
             self.preview = re.sub("({})".format("|".join(self.terms)),
                                 r'<b>\1</b>',
@@ -116,16 +116,16 @@ class SM_Search:
         n = set()
         v, i, a = (0, 0, 0)
         r = re.compile("(\d\d)(\d\d)(\d\d\d).txt")
-        #for filename in sorted(os.listdir(dic_name)):
-        for filename in sorted(listdir('Shaker_Manifesto', dic_name)):
+        for filename in sorted(os.listdir(dic_name)):
+        #for filename in sorted(listdir('Shaker_Manifesto', dic_name)):
             index = 0
             if filename.endswith(".txt"):
                 if debug:
                     print("Processing {}".format(filename))
                 v, i, a = map(int, r.match(filename).groups())
                 w = ''
-                #with open(os.path.join(dic_name, filename), "rb") as file:
-                with stream(__name__, "{}/{}".format(dic_name, filename)) as file:
+                with open(os.path.join(dic_name, filename), "rb") as file:
+                #with stream(__name__, "{}/{}".format(dic_name, filename)) as file:
                     for c in file.read().decode("utf8", errors="replace").lower():
                         if c in " \t\n\r\ufffd,./?\'\";:<>[]{}\\|+=_-()*&^%$#@!~`":
                             if total[-1] == ' ':
@@ -198,8 +198,8 @@ class SM_Search:
                 return self.generate_results()#results for pure literal search
 
             #clean words based on words common to all articles
-            #with open("common.txt", "r") as f:
-            with stream(__name__, 'common.txt') as f:
+            with open("common.txt", "r") as f:
+            #with stream(__name__, 'common.txt') as f:
                 common = f.readlines()
                 for w in (words := words.split()):
                     if w in common:

@@ -4,14 +4,14 @@ from pkg_resources import resource_stream as stream
 class SM_Autocomplete:
 
     def __init__(self):
-        #with open("shaker_dictionary.txt", "r", encoding="utf8") as f:
-        with stream(__name__, 'shaker_dictionary.txt') as f:
+        with open("shaker_dictionary.txt", "r", encoding="utf8") as f:
+        #with stream(__name__, 'shaker_dictionary.txt') as f:
             words = f.readlines()
         words = dict(zip(words, [dict()] * len(words)))
         self.autocomplete = AutoComplete(words=words)
 
-        #with open("authors.txt", "r", encoding="utf8") as f:
-        with stream(__name__, 'authors.txt') as f:
+        with open("authors.txt", "r", encoding="utf8") as f:
+        #with stream(__name__, 'authors.txt') as f:
             names = f.readlines()
         names = dict(zip(names, [dict()] * len(names)))
         self.authors = AutoComplete(words=names)
